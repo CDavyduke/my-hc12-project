@@ -1,0 +1,12 @@
+*.cc~
+*.cpp~
+*.h~
+Makefile~
+*.lst
+*.map
+*.a
+*.o
+.#crt0.s.1.1
+.#main.cc.1.1
+.#Makefile.1.2
+.gdbinit
