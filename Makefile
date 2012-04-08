@@ -32,6 +32,9 @@ LFLAGS += -Wl,-Map,$*.map
 LFLAGS += -Wl,--defsym,_heap_top=0x7C00
 LFLAGS += -Wl,-T,$*.ld
 
+# And a flag for copying the object file to a .S19 record
+OFLAGS  = --output-target=srec
+
 # And some library files
 LIBS += iostream.a
 
@@ -42,6 +45,9 @@ LIBFLGS += -Wl,--start-group,$(patsubst %,%$(COMMA),$(LIBS))--end-group
 # Project object
 PROG	= project.o
 
+# Motorola S-record
+S_REC   = project.s19
+
 # Other object files to link into the project
 #OBJS	= crt0.o crt1.o main.o malloc.o new.o
 OBJS	= $(addsuffix .o, $(basename $(wildcard *.cc) $(wildcard *.s)))
@@ -49,10 +55,14 @@ OBJS	= $(addsuffix .o, $(basename $(wildcard *.cc) $(wildcard *.s)))
 # Compiler [driver] command line including flags
 CC	= hc12-coff-gcc
 
+# Object copy command line
+OBJCOPY = hc12-coff-objcopy
+
 all : $(PROG)
 
 $(PROG) : $(OBJS) $(LIBS)
 	$(CC) $(LFLAGS) -o $@ $^ $(LIBFLGS)
+	$(OBJCOPY) $(OFLAGS) $(PROG) $(S_REC)
 
 %.o : %.cc
 	$(CC) $(CFLAGS) -c $<
@@ -61,5 +71,5 @@ $(PROG) : $(OBJS) $(LIBS)
 	$(CC) -c $<
 
 clean :
-	rm -f $(PROG) $(OBJS)
+	rm -f $(PROG) $(OBJS) $(S_REC)
 
