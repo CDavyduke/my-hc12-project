@@ -49,7 +49,7 @@ int main( )
   // Just some simple little tasks for toggling bits.
   tt2 = new TestTask( stackSize, priTestTask1, bitmask2, 5, 2 );
   tt4 = new TestTask( stackSize, priTestTask2, bitmask4, 1, 4 );
-  tt5 = new TestTask( stackSize, priTestTask3, bitmask5, 15, 8 );
+  tt5 = new TestTask( stackSize, priTestTask3, bitmask5, 250, 1000 );
   
   // Must create appCmdProc task last, otherwise above tasks never run.
   AppCmdProc appCmdProc( sciBuf, stackSize, priAppCmdProcTask,
