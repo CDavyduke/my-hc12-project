@@ -1,0 +1,450 @@
+   1              	gcc2_compiled.:
+   2              	___gnu_compiled_cplusplus
+   3              		stabs "/home/cdavyduke/Projects/HC12/ELEX_8030/",100,0,0,Ltext0
+   4              		stabs "isr.cc",100,0,0,Ltext0
+   5              	
+   6              		section	.text
+   7              	
+   8              	Ltext0	stabs "int:t1=r1;-32768;32767;",128,0,0,0
+   9              		stabs "char:t2=r2;0;255;",128,0,0,0
+  10              		stabs "long int:t3=r1;0020000000000;0017777777777;",128,0,0,0
+  11              		stabs "unsigned int:t4=r4;0;65535;",128,0,0,0
+  12              		stabs "long unsigned int:t5=r1;0000000000000;0037777777777;",128,0,0,0
+  13              		stabs "long long int:t6=r1;0020000000000;0017777777777;",128,0,0,0
+  14              		stabs "long long unsigned int:t7=r1;0000000000000;0037777777777;",128,0,0,0
+  15              		stabs "short int:t8=r8;-32768;32767;",128,0,0,0
+  16              		stabs "short unsigned int:t9=r9;0;65535;",128,0,0,0
+  17              		stabs "signed char:t10=r10;-128;127;",128,0,0,0
+  18              		stabs "unsigned char:t11=r11;0;255;",128,0,0,0
+  19              		stabs "float:t12=r1;4;0;",128,0,0,0
+  20              		stabs "double:t13=r1;4;0;",128,0,0,0
+  21              		stabs "long double:t14=r1;4;0;",128,0,0,0
+  22              		stabs "complex int:t15=s4real:1,0,16;imag:1,16,16;;",128,0,0,0
+  23              		stabs "complex float:t16=r16;4;0;",128,0,0,0
+  24              		stabs "complex double:t17=r17;4;0;",128,0,0,0
+  25              		stabs "complex long double:t18=r18;4;0;",128,0,0,0
+  26              		stabs "bool:t19=@s8;-16;",128,0,0,0
+  27              		stabs "void:t20=20",128,0,0,0
+  28              		stabs "__wchar_t:t21=r21;-32768;32767;",128,0,0,0
+  29              		stabs "__vtbl_ptr_type:t22=*23=f1",128,0,0,0
+  30              		stabs "Isr:T24=s6ictlr:/025=&26=xsIctlr:,0,16;index:/04,16,16;\\",128,0,0,0
+  31              		stabs "$vf24:27=*28=ar0;0;3;22,32;__as::29=##30=&24;:RC3Isr;2A.;Isr::31=##32=*24;:RC3Isr;2A.\\",12
+  32              		stabs "33=##32;:R5IctlrUi;1A.34=#24,20,32,1,20;:_$_3Isr;1A*2;24;;handler::35=##20;:;0A*3;24;;;~%24
+  33              		stabs "Isr:Tt24",128,0,24,0
+  34              		stabs "Ictlr:Tt26=s6length:/04,0,16;isrTbl:/036=*32,16,16;\\",128,0,0,0
+  35              		stabs "$vf26:37=*38=ar0;0;2;22,32;__as::39=##25;:RC5Ictlr;2A.;Ictlr::40=##41=*26;:RC5Ictlr;2A.\\",
+  36              		stabs "42=##41;:Ui;2A.43=#26,20,41,1,20;:_$_5Ictlr;2A*2;26;;attach::44=##20;:P3Isr;2A.;\\",128,0,0
+  37              		stabs "detach::44:P3Isr;2A.;runHandler::45=##20;:Ui;1A.;;~%26;",128,0,44,0
+  38              	
+  39              		global	___3IsrR5IctlrUi
+  40              	___3IsrR5IctlrUi
+   1:isr.cc        **** // Filename:		ISR.CPP
+   2:isr.cc        **** // Author:			C. DAVYDUKE
+   3:isr.cc        **** // File Created:	03/10/20
+   4:isr.cc        **** // Last Modified: 03/10/29
+   5:isr.cc        **** // Description:	This file contains the class methods for interrupt service routines and interrupt c
+   6:isr.cc        **** 
+   7:isr.cc        **** #include "isr.h"
+   8:isr.cc        **** 
+   9:isr.cc        **** // Here are the methods for the interrupt service routine
+  10:isr.cc        **** //Isr::Isr( class Ictlr & ic, unsigned int i )
+  11:isr.cc        **** Isr::Isr( Ictlr & ic, unsigned int i )
+  12:isr.cc        **** :	ictlr( ic ),
+  41              		stabd 68,0,12
+  42 0000 1B9C     		leas	-4,s
+  43              	
+  44 0002 6C82     		std	2,s
+  45 0004 CC0006   		ldd	#___vt_3Isr
+  46 0007 ED82     		ldy	2,s
+  47 0009 6C44     		std	4,y
+  48 000b ED86     		ldy	6,s
+  49 000d 6DF30002 		sty	[2,s]
+  50 0011 EC88     		ldd	8,s
+  51 0013 ED82     		ldy	2,s
+  52 0015 6C42     		std	2,y
+  13:isr.cc        **** 	index( i )
+  14:isr.cc        **** {
+  53              		stabd 68,0,14
+  54              	
+  15:isr.cc        **** 	ictlr.attach( this );
+  55              	LBB2	stabd 68,0,15
+  56 0017 EEF30002 		ldx	[2,s]
+  57 001b 6D80     		sty	0,s
+  58 001d B754     		tfr	x,d
+  59 001f 1600BD   		jsr	_attach__5IctlrP3Isr
+  60              	
+  61 0022 EC82     	LBE2	ldd	2,s
+  16:isr.cc        **** }
+  62              		stabd 68,0,16
+  63              	
+  64 0024 1B84     		leas	4,s
+  65 0026 3D       		rts
+  66              	
+  67              		stabs "__3IsrR5IctlrUi:F32",36,0,12,___3IsrR5IctlrUi
+  68              		stabs "this:p32",160,0,12,2
+  69              		stabs "ic:p25",160,0,12,6
+  70              		stabs "i:p4",160,0,12,8
+  71              		stabn 192,0,0,LBB2
+  72              		stabn 224,0,0,LBE2
+  73              	
+  74              	Lscope0	stabs "",36,0,0,Lscope0-___3IsrR5IctlrUi
+  75              	
+  76              		global	__$_3Isr
+  77              	__$_3Isr
+  17:isr.cc        **** 
+  18:isr.cc        **** Isr::~Isr()
+  19:isr.cc        **** {
+  78              		stabd 68,0,19
+  79 0027 1B9C     		leas	-4,s
+  80              	
+  81 0029 6C82     		std	2,s
+  82 002b CC0006   		ldd	#___vt_3Isr
+  83 002e ED82     		ldy	2,s
+  84 0030 6C44     		std	4,y
+  85              	
+  20:isr.cc        **** 	ictlr.detach( this );
+  86              	LBB3	stabd 68,0,20
+  87 0032 EEF30002 		ldx	[2,s]
+  88 0036 6D80     		sty	0,s
+  89 0038 B754     		tfr	x,d
+  90 003a 1600D7   		jsr	_detach__5IctlrP3Isr
+  91              	
+  92 003d EC86     	LBE3	ldd	6,s
+  93 003f 87       		clra	
+  94 0040 C401     		andb	#1      & $FF
+  95 0042 B745     		tfr	d,x
+  96 0044 8E0000   		tstx	
+  97 0047 2705     		beq	L12
+  98              		
+  99 0049 EC82     		ldd	2,s
+ 100 004b 160000   		jsr	___builtin_delete
+ 101              	
+  21:isr.cc        **** }
+ 102              	L12	stabd 68,0,21
+ 103              	
+ 104 004e 1B84     		leas	4,s
+ 105 0050 3D       		rts
+ 106              	
+ 107              		stabs "_$_3Isr:F20",36,0,19,__$_3Isr
+ 108              		stabs "this:p32",160,0,19,2
+ 109              		stabs "__in_chrg:p1",160,0,19,6
+ 110              		stabn 192,0,0,LBB3
+ 111              		stabn 224,0,0,LBE3
+ 112              	
+ 113              	Lscope1	stabs "",36,0,0,Lscope1-__$_3Isr
+ 114              	
+ 115              		global	_handler__3Isr
+ 116              	_handler__3Isr
+  22:isr.cc        **** 
+  23:isr.cc        **** void Isr::handler()	// default handler
+  24:isr.cc        **** {
+ 117              		stabd 68,0,24
+ 118              	
+ 119              	
+ 120              	LBB4
+  25:isr.cc        **** }
+ 121              	LBE4	stabd 68,0,25
+ 122              	
+ 123 0051 3D       		rts
+ 124              	
+ 125              		stabs "handler__3Isr:F20",36,0,24,_handler__3Isr
+ 126              		stabs "this:P32",64,0,24,0
+ 127              		stabn 192,0,0,LBB4
+ 128              		stabn 224,0,0,LBE4
+ 129              	
+ 130              	Lscope2	stabs "",36,0,0,Lscope2-_handler__3Isr
+ 131              	
+ 132              		global	___5IctlrUi
+ 133              	___5IctlrUi
+  26:isr.cc        **** 
+  27:isr.cc        **** // Here are the methods for the interrupt controllers
+  28:isr.cc        **** Ictlr::Ictlr( unsigned int len )
+  29:isr.cc        **** :	length( len ),
+ 134              		stabd 68,0,29
+ 135 0052 1B9C     		leas	-4,s
+ 136              	
+ 137 0054 6C82     		std	2,s
+ 138 0056 EE86     		ldx	6,s
+ 139 0058 CC0000   		ldd	#___vt_5Ictlr
+ 140 005b ED82     		ldy	2,s
+ 141 005d 6C44     		std	4,y
+ 142 005f 6EF30002 		stx	[2,s]
+ 143 0063 B754     		tfr	x,d
+ 144 0065 59       		asld	
+ 145 0066 B745     		tfr	d,x
+ 146 0068 160000   		jsr	___builtin_vec_new
+ 147 006b B745     		tfr	d,x
+ 148 006d ED82     		ldy	2,s
+ 149 006f 6E42     		stx	2,y
+  30:isr.cc        **** 	isrTbl( new Isr * [length] )
+  31:isr.cc        **** {
+ 150              		stabd 68,0,31
+ 151              	
+  32:isr.cc        **** 	for( unsigned int i = 0; i < length; i++ )
+ 152              	LBB5	stabd 68,0,32
+ 153              	
+ 154 0071 87C7     	LBB6	clrd	
+ 155 0073 2015     		bra	L21
+ 156              		
+ 157              	
+  33:isr.cc        **** 		isrTbl[i] = 0;
+ 158              	L18	stabd 68,0,33
+ 159 0075 EC80     		ldd	0,s
+ 160 0077 59       		asld	
+ 161 0078 B745     		tfr	d,x
+ 162 007a ED82     		ldy	2,s
+ 163 007c EC42     		ldd	2,y
+ 164 007e 1AE6     		leax	d,x
+ 165 0080 18000000 		movw	#0,0,x
+ 165      00
+ 166 0085 EC80     		ldd	0,s
+ 167 0087 C30001   		addd	#1
+ 168              	
+ 169 008a 6C80     	L21	std	0,s
+ 170 008c ACF30002 		cpd	[2,s]
+ 171 0090 25E3     		blo	L18
+ 172              		
+ 173              	
+ 174              	LBE6
+ 175 0092 EC82     	LBE5	ldd	2,s
+  34:isr.cc        **** }
+ 176              		stabd 68,0,34
+ 177              	
+ 178 0094 1B84     		leas	4,s
+ 179 0096 3D       		rts
+ 180              	
+ 181              		stabs "__5IctlrUi:F41",36,0,29,___5IctlrUi
+ 182              		stabs "this:p41",160,0,29,2
+ 183              		stabs "len:p4",160,0,29,6
+ 184              		stabs "len:r4",64,0,29,2
+ 185              		stabn 192,0,0,LBB5
+ 186              		stabs "i:r46=*4",64,0,32,3
+ 187              		stabn 192,0,0,LBB6
+ 188              		stabn 224,0,0,LBE6
+ 189              		stabn 224,0,0,LBE5
+ 190              	
+ 191              	Lscope3	stabs "",36,0,0,Lscope3-___5IctlrUi
+ 192              	
+ 193              		global	__$_5Ictlr
+ 194              	__$_5Ictlr
+  35:isr.cc        **** 
+  36:isr.cc        **** Ictlr::~Ictlr()
+  37:isr.cc        **** {
+ 195              		stabd 68,0,37
+ 196 0097 1B9E     		leas	-2,s
+ 197              	
+ 198 0099 6C80     		std	0,s
+ 199 009b CC0000   		ldd	#___vt_5Ictlr
+ 200 009e ED80     		ldy	0,s
+ 201 00a0 6C44     		std	4,y
+ 202              	
+  38:isr.cc        **** 	delete[] isrTbl;
+ 203              	LBB7	stabd 68,0,38
+ 204 00a2 EE42     		ldx	2,y
+ 205 00a4 2705     		beq	L25
+ 206              		
+ 207 00a6 B754     		tfr	x,d
+ 208 00a8 160000   		jsr	___builtin_vec_delete
+ 209              	
+ 210              	LBE7
+ 211 00ab EC84     	L25	ldd	4,s
+ 212 00ad 87       		clra	
+ 213 00ae C401     		andb	#1      & $FF
+ 214 00b0 8C0000   		tstd	
+ 215 00b3 2705     		beq	L27
+ 216              		
+ 217 00b5 EC80     		ldd	0,s
+ 218 00b7 160000   		jsr	___builtin_delete
+ 219              	
+  39:isr.cc        **** }
+ 220              	L27	stabd 68,0,39
+ 221              	
+ 222 00ba 1B82     		leas	2,s
+ 223 00bc 3D       		rts
+ 224              	
+ 225              		stabs "_$_5Ictlr:F20",36,0,37,__$_5Ictlr
+ 226              		stabs "this:p41",160,0,37,0
+ 227              		stabs "__in_chrg:p1",160,0,37,4
+ 228              		stabn 192,0,0,LBB7
+ 229              		stabn 224,0,0,LBE7
+ 230              	
+ 231              	Lscope4	stabs "",36,0,0,Lscope4-__$_5Ictlr
+ 232              	
+ 233              		global	_attach__5IctlrP3Isr
+ 234              	_attach__5IctlrP3Isr
+  40:isr.cc        **** 
+  41:isr.cc        **** void Ictlr::attach( Isr * isr )
+  42:isr.cc        **** {
+ 235              		stabd 68,0,42
+ 236 00bd 1B9E     		leas	-2,s
+ 237              	
+ 238 00bf 6C80     		std	0,s
+ 239 00c1 EE84     		ldx	4,s
+ 240              	
+  43:isr.cc        **** 	if( isr->index < length )
+ 241              	LBB8	stabd 68,0,43
+ 242 00c3 EC02     		ldd	2,x
+ 243 00c5 ACF30000 		cpd	[0,s]
+ 244 00c9 2409     		bhs	L29
+ 245              		
+  44:isr.cc        **** 		isrTbl[isr->index] = isr;
+ 246              		stabd 68,0,44
+ 247 00cb 59       		asld	
+ 248 00cc ED80     		ldy	0,s
+ 249 00ce E342     		addd	2,y
+ 250 00d0 B746     		tfr	d,y
+ 251 00d2 6E40     		stx	0,y
+ 252              	
+ 253              	L29
+  45:isr.cc        **** }
+ 254              	LBE8	stabd 68,0,45
+ 255              	
+ 256 00d4 1B82     		leas	2,s
+ 257 00d6 3D       		rts
+ 258              	
+ 259              		stabs "attach__5IctlrP3Isr:F20",36,0,42,_attach__5IctlrP3Isr
+ 260              		stabs "this:p41",160,0,42,0
+ 261              		stabs "isr:p32",160,0,42,4
+ 262              		stabs "isr:r32",64,0,42,2
+ 263              		stabn 192,0,0,LBB8
+ 264              		stabn 224,0,0,LBE8
+ 265              	
+ 266              	Lscope5	stabs "",36,0,0,Lscope5-_attach__5IctlrP3Isr
+ 267              	
+ 268              		global	_detach__5IctlrP3Isr
+ 269              	_detach__5IctlrP3Isr
+  46:isr.cc        **** 
+  47:isr.cc        **** void Ictlr::detach( Isr * isr )
+  48:isr.cc        **** {
+ 270              		stabd 68,0,48
+ 271 00d7 1B9E     		leas	-2,s
+ 272              	
+ 273 00d9 B745     		tfr	d,x
+ 274 00db ED84     		ldy	4,s
+ 275              	
+  49:isr.cc        **** 	if( isr->index < length )
+ 276              	LBB9	stabd 68,0,49
+ 277 00dd ED42     		ldy	2,y
+ 278 00df 6D80     		sty	0,s
+ 279 00e1 AD00     		cpy	0,x
+ 280 00e3 240C     		bhs	L31
+ 281              		
+  50:isr.cc        **** 		isrTbl[isr->index] = 0;
+ 282              		stabd 68,0,50
+ 283 00e5 B764     		tfr	y,d
+ 284 00e7 59       		asld	
+ 285 00e8 E302     		addd	2,x
+ 286 00ea B745     		tfr	d,x
+ 287 00ec 18000000 		movw	#0,0,x
+ 287      00
+ 288              	
+ 289              	L31
+  51:isr.cc        **** }
+ 290              	LBE9	stabd 68,0,51
+ 291              	
+ 292 00f1 1B82     		leas	2,s
+ 293 00f3 3D       		rts
+ 294              	
+ 295              		stabs "detach__5IctlrP3Isr:F20",36,0,48,_detach__5IctlrP3Isr
+ 296              		stabs "this:P41",64,0,48,2
+ 297              		stabs "isr:p32",160,0,48,4
+ 298              		stabs "isr:r32",64,0,48,1
+ 299              		stabn 192,0,0,LBB9
+ 300              		stabn 224,0,0,LBE9
+ 301              	
+ 302              	Lscope6	stabs "",36,0,0,Lscope6-_detach__5IctlrP3Isr
+ 303              	
+ 304              		global	___vt_5Ictlr
+ 305              	
+ 306              		section	.const
+ 307              		stabs "__vt_5Ictlr:G38",32,0,44,0
+ 308              	___vt_5Ictlr
+ 309 0000 0000     		dc.w	0
+ 310 0002 0000     		dc.w	0
+ 311 0004 0097     		dc.w	__$_5Ictlr
+ 312              	
+ 313              		global	___vt_3Isr
+ 314              		stabs "__vt_3Isr:G28",32,0,24,0
+ 315              	___vt_3Isr
+ 316 0006 0000     		dc.w	0
+ 317 0008 0000     		dc.w	0
+ 318 000a 0027     		dc.w	__$_3Isr
+ 319 000c 0051     		dc.w	_handler__3Isr
+ 320              	
+ 321              		section	.text
+ 322              	
+ 323              		global	_runHandler__5IctlrUi
+ 324              	_runHandler__5IctlrUi
+ 325              		stabs "isr.h",132,0,0,Ltext1
+ 326              	
+   1:isr.h         **** // Filename:		ISR.H
+   2:isr.h         **** // Author:			C. DAVYDUKE
+   3:isr.h         **** // File Created:	03/10/20
+   4:isr.h         **** // Last Modified: 03/10/29
+   5:isr.h         **** // Description:	This file contains the class definitions for interrupt service routines and interru
+   6:isr.h         **** 
+   7:isr.h         **** #ifndef __INTCTLR_H__
+   8:isr.h         **** #define __INTCTLR_H__
+   9:isr.h         **** 
+  10:isr.h         **** class Isr
+  11:isr.h         **** {
+  12:isr.h         **** 	protected:
+  13:isr.h         **** //		Isr( class Ictlr &, unsigned int index );
+  14:isr.h         **** 		Isr( class Ictlr &, unsigned int index );	// forward reference to Ictlr
+  15:isr.h         **** 		virtual ~Isr();
+  16:isr.h         **** 
+  17:isr.h         **** 	private:
+  18:isr.h         **** 		virtual void handler();	// the actual interrupt service routine.
+  19:isr.h         **** //		class Ictlr & ictlr;
+  20:isr.h         **** 		Ictlr & ictlr;
+  21:isr.h         **** 		unsigned int index;
+  22:isr.h         **** 
+  23:isr.h         **** 		friend class Ictlr;	// Ictlr has access to private (& protected) members.
+  24:isr.h         **** };
+  25:isr.h         **** 
+  26:isr.h         **** class Ictlr
+  27:isr.h         **** {
+  28:isr.h         **** 	public:
+  29:isr.h         **** 		Ictlr( unsigned int len );	// len is max Isr's
+  30:isr.h         **** 		virtual ~Ictlr();
+  31:isr.h         **** 		void attach( Isr * isr );		// attach and detach an isr to the controller.
+  32:isr.h         **** 		void detach( Isr * isr );
+  33:isr.h         **** 
+  34:isr.h         **** 	protected:
+  35:isr.h         **** 		void runHandler( unsigned int index )
+  36:isr.h         **** 		{
+ 327              	Ltext1	stabd 68,0,36
+ 328              	
+ 329 00f4 B745     		tfr	d,x
+ 330              	
+  37:isr.h         **** 			if( isrTbl[index] )		// If an Isr is in table, run its handler
+ 331              	LBB10	stabd 68,0,37
+ 332 00f6 EC82     		ldd	2,s
+ 333 00f8 59       		asld	
+ 334 00f9 E302     		addd	2,x
+ 335 00fb B746     		tfr	d,y
+ 336 00fd EC40     		ldd	0,y
+ 337 00ff 2708     		beq	L3
+ 338              		
+  38:isr.h         **** 				isrTbl[index] -> handler();
+ 339              		stabd 68,0,38
+ 340 0101 B746     		tfr	d,y
+ 341 0103 EE44     		ldx	4,y
+ 342 0105 15E30006 		jsr	[6,x]
+ 343              	
+ 344              	LBE10
+  39:isr.h         **** 		}
+ 345              	L3	stabd 68,0,39
+ 346              	
+ 347 0109 3D       		rts
+ 348              	
+ 349              		stabs "runHandler__5IctlrUi:F20",36,0,36,_runHandler__5IctlrUi
+ 350              		stabs "this:P41",64,0,36,2
+ 351              		stabs "index:p4",160,0,36,2
+ 352              		stabn 192,0,0,LBB10
+ 353              		stabn 224,0,0,LBE10
+ 354              	
+ 355              	Lscope7	stabs "",36,0,0,Lscope7-_runHandler__5IctlrUi
+ 356              	
+ 357              	
+ 358              		end

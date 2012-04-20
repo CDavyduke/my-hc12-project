@@ -1,0 +1,302 @@
+   1              	gcc2_compiled.:
+   2              	___gnu_compiled_cplusplus
+   3              		stabs "/home/cdavyduke/Projects/HC12/ELEX_8030/",100,0,0,Ltext0
+   4              		stabs "mutex.cc",100,0,0,Ltext0
+   5              	
+   6              		section	.text
+   7              	
+   8              	Ltext0	stabs "int:t1=r1;-32768;32767;",128,0,0,0
+   9              		stabs "char:t2=r2;0;255;",128,0,0,0
+  10              		stabs "long int:t3=r1;0020000000000;0017777777777;",128,0,0,0
+  11              		stabs "unsigned int:t4=r4;0;65535;",128,0,0,0
+  12              		stabs "long unsigned int:t5=r1;0000000000000;0037777777777;",128,0,0,0
+  13              		stabs "long long int:t6=r1;0020000000000;0017777777777;",128,0,0,0
+  14              		stabs "long long unsigned int:t7=r1;0000000000000;0037777777777;",128,0,0,0
+  15              		stabs "short int:t8=r8;-32768;32767;",128,0,0,0
+  16              		stabs "short unsigned int:t9=r9;0;65535;",128,0,0,0
+  17              		stabs "signed char:t10=r10;-128;127;",128,0,0,0
+  18              		stabs "unsigned char:t11=r11;0;255;",128,0,0,0
+  19              		stabs "float:t12=r1;4;0;",128,0,0,0
+  20              		stabs "double:t13=r1;4;0;",128,0,0,0
+  21              		stabs "long double:t14=r1;4;0;",128,0,0,0
+  22              		stabs "complex int:t15=s4real:1,0,16;imag:1,16,16;;",128,0,0,0
+  23              		stabs "complex float:t16=r16;4;0;",128,0,0,0
+  24              		stabs "complex double:t17=r17;4;0;",128,0,0,0
+  25              		stabs "complex long double:t18=r18;4;0;",128,0,0,0
+  26              		stabs "bool:t19=@s8;-16;",128,0,0,0
+  27              		stabs "void:t20=20",128,0,0,0
+  28              		stabs "__wchar_t:t21=r21;-32768;32767;",128,0,0,0
+  29              		stabs "__vtbl_ptr_type:t22=*23=f1",128,0,0,0
+  30              		stabs "size_t:t4",128,0,11,0
+  31              		stabs "ptrdiff_t:t1",128,0,12,0
+  32              		stabs "Task:T24=s8current:/025=*24:_4Task$current;stack:/026=*27=*20,0,16;\\",128,0,0,0
+  33              		stabs "sp:/026,16,16;priority:/04,32,16;$vf24:28=*29=ar0;0;3;22,48;\\",128,0,0,0
+  34              		stabs "__as::30=##31=&24;:RC4Task;2A.;Task::32=##25;:RC4Task;2A.33=##25;:UiUi;2A.\\",128,0,0,0
+  35              		stabs "34=#24,20,25,1,20;:_$_4Task;2A*2;24;;yield::35=f20:;2A?;lowerPriorityThan::36=##19;:PC4Task
+  36              		stabs "fork::37=##20;:;1A.;main::37:;1A*3;24;;start::35:;0A?;dispatch::38=f20:P4Task;0A?;;~%24;",1
+  37              		stabs "Task:Tt24",128,0,34,0
+  38              		stabs "Node:Tt39=s6next:40=*39,0,16;task:25,16,16;\\",128,0,0,0
+  39              		stabs "time:1,32,16;__as::41=##42=&39;:Q28TaskList4NodeRCQ28TaskList4Node;2A.;\\",128,0,0,0
+  40              		stabs "Node::43=##40;:__Q28TaskList4NodeRCQ28TaskList4Node;2A.44=##40;:__Q28TaskList4NodeP4Task;2A
+  41              		stabs "TaskList:Tt45=s4first:/140,0,16;$vf45:28,16;__as::46=##47=&45;:RC8TaskList;2A.;\\",128,0,0,
+  42              		stabs "TaskList::48=##49=*45;:RC8TaskList;2A.50=##49;:P4Task;2A.51=#45,20,49,1,20;:_$_8TaskList;2A
+  43              		stabs "block::52=##20;:;2A.;unblock::52:;2A.;getCurrent::53=##25;:;2A.;insert::54=##20;:PQ28TaskLi
+  44              		stabs "remove::55=##40;:;0A.;;~%45;",128,0,60,0
+  45              		stabs "Mutex:Tt56=s6!1,020,45;holder:/057=*24,32,16;\\",128,0,0,0
+  46              		stabs "__as::58=##59=&56;:RC5Mutex;2A.;Mutex::60=##61=*56;:RC5Mutex;2A.62=#56,20,61,1,20;:_$_5Mute
+  47              		stabs "63=##61;:;2A.;acquire::64=##20;:;2A.;release::64:;2A.;;~%45;",128,0,20,0
+  48              		stabs "Interrupts:Tt65=s2oldMask:/01,0,16;__as::66=##67=&65;:RC10Interrupts;2A.;\\",128,0,0,0
+  49              		stabs "Interrupts::68=##69=*65;:RC10Interrupts;2A.70=##69;:;2A.71=#65,20,69,1,20;:_$_10Interrupts;
+  50              	
+  51              		global	___5Mutex
+  52              	___5Mutex
+   1:mutex.cc      **** // Filename:	  MUTEX.CC
+   2:mutex.cc      **** // Author:	  C. DAVYDUKE
+   3:mutex.cc      **** // File Created:  03/12/17
+   4:mutex.cc      **** // Last Modified: 03/12/20
+   5:mutex.cc      **** // Description:	  This file contains the class methods for the mutex base class.
+   6:mutex.cc      **** 
+   7:mutex.cc      **** #include "mutex.h"
+   8:mutex.cc      **** #include "interrupts.h"
+   9:mutex.cc      **** 
+  10:mutex.cc      **** Mutex::Mutex()
+  11:mutex.cc      **** : holder( 0 )
+  53              		stabd 68,0,11
+  54 0000 1B9C     		leas	-4,s
+  55              	
+  56 0002 6C82     		std	2,s
+  57 0004 18008000 		movw	#0,0,s
+  57      00
+  58 0009 160000   		jsr	___8TaskListP4Task
+  59 000c CC0000   		ldd	#___vt_5Mutex
+  60 000f ED82     		ldy	2,s
+  61 0011 6C42     		std	2,y
+  62 0013 87C7     		clrd	
+  63 0015 6C44     		std	4,y
+  12:mutex.cc      **** {
+  64              		stabd 68,0,12
+  65              	
+  66              	LBB2
+  67 0017 B764     	LBE2	tfr	y,d
+  13:mutex.cc      **** }
+  68              		stabd 68,0,13
+  69              	
+  70 0019 1B84     		leas	4,s
+  71 001b 3D       		rts
+  72              	
+  73              		stabs "__5Mutex:F61",36,0,11,___5Mutex
+  74              		stabs "this:p61",160,0,11,2
+  75              		stabn 192,0,0,LBB2
+  76              		stabn 224,0,0,LBE2
+  77              	
+  78              	Lscope0	stabs "",36,0,0,Lscope0-___5Mutex
+  79              	
+  80              		global	_acquire__5Mutex
+  81              	_acquire__5Mutex
+  14:mutex.cc      **** 
+  15:mutex.cc      **** void Mutex::acquire()
+  16:mutex.cc      **** {
+  82              		stabd 68,0,16
+  83 001c 1B9C     		leas	-4,s
+  84              	
+  85 001e 6C80     		std	0,s
+  86              	
+  87              	LBB3	stabs "interrupts.h",132,0,0,Ltext1
+  88              	
+   1:interrupts.h  **** // Filename:		INTERRUPTS.H
+   2:interrupts.h  **** // Author:			C. DAVYDUKE
+   3:interrupts.h  **** // File Created:	03/10/20
+   4:interrupts.h  **** // Last Modified: 03/10/29
+   5:interrupts.h  **** // Description:	This file contains the class definition of interrupts and some low level code.
+   6:interrupts.h  **** 
+   7:interrupts.h  **** #ifndef __INTERRUPTS_H__
+   8:interrupts.h  **** #define __INTERRUPTS_H__
+   9:interrupts.h  **** 
+  10:interrupts.h  **** // This class definition allows us to use the properties of classes (e.g. constructors and
+  11:interrupts.h  **** // destructors) to ensure that interrupts are always enabled and disabled, and one or
+  12:interrupts.h  **** // the other is not forgotten.  Very HC12 specific.
+  13:interrupts.h  **** class Interrupts
+  14:interrupts.h  **** {
+  15:interrupts.h  **** 	public:
+  16:interrupts.h  **** 		Interrupts()
+  17:interrupts.h  **** 		{
+  89              	Ltext1	stabd 68,0,17
+  90              	
+  91              	LBB4
+  18:interrupts.h  **** 			asm( "tfr ccr, b" );
+  92              	LBB5	stabd 68,0,18
+  93 0020 B721     		tfr ccr, b
+  19:interrupts.h  **** 			asm( "std %0" : : "m"(oldMask) : "d" );
+  94              		stabd 68,0,19
+  95 0022 6C82     		std 2,s
+  20:interrupts.h  **** 			asm( "sei" );
+  96              		stabd 68,0,20
+  97 0024 1410     		sei
+  98              	
+  21:interrupts.h  **** 		}
+  99              	LBE5	stabd 68,0,21
+ 100              	
+ 101              	LBE4	stabs "mutex.cc",132,0,0,Ltext2
+ 102              	
+  17:mutex.cc      ****   Interrupts masked;  // lock
+  18:mutex.cc      ****   while( holder )         // while !ready
+ 103              	Ltext2	stabd 68,0,18
+ 104 0026 2005     		bra	L37
+ 105              		
+ 106              	
+  19:mutex.cc      ****     block();                // block & unlock, lock
+ 107              	L30	stabd 68,0,19
+ 108 0028 EC80     		ldd	0,s
+ 109 002a 160000   		jsr	_block__8TaskList
+ 110              	
+ 111 002d ED80     	L37	ldy	0,s
+ 112 002f EC44     		ldd	4,y
+ 113 0031 26F5     		bne	L30
+ 114              		
+  20:mutex.cc      ****   holder = getCurrent();  // use
+ 115              		stabd 68,0,20
+ 116 0033 EC80     		ldd	0,s
+ 117 0035 160000   		jsr	_getCurrent__8TaskList
+ 118 0038 ED80     		ldy	0,s
+ 119 003a 6C44     		std	4,y
+ 120              		stabs "interrupts.h",132,0,0,Ltext3
+ 121              	
+  22:interrupts.h  **** 		~Interrupts()
+  23:interrupts.h  **** 		{
+ 122              	Ltext3	stabd 68,0,23
+ 123              	
+ 124              	LBB6
+  24:interrupts.h  **** 			asm( "ldd %0" : : "m"(oldMask) : "d" );
+ 125              	LBB7	stabd 68,0,24
+ 126 003c EC82     		ldd 2,s
+  25:interrupts.h  **** 			asm( "tfr b, ccr" );
+ 127              		stabd 68,0,25
+ 128 003e B712     		tfr b, ccr
+ 129              	
+  26:interrupts.h  **** 		}
+ 130              	LBE7	stabd 68,0,26
+ 131              	
+ 132              	LBE6	stabs "mutex.cc",132,0,0,Ltext4
+ 133              	
+  21:mutex.cc      **** }                             // unlock
+ 134              	Ltext4	stabd 68,0,21
+ 135              	
+ 136              	LBE3
+ 137 0040 1B84     		leas	4,s
+ 138 0042 3D       		rts
+ 139              	
+ 140              		stabs "acquire__5Mutex:F20",36,0,16,_acquire__5Mutex
+ 141              		stabs "this:p61",160,0,16,0
+ 142              		stabs "masked:65",128,0,17,2
+ 143              		stabn 192,0,0,LBB3
+ 144              		stabn 192,0,0,LBB4
+ 145              		stabn 192,0,0,LBB5
+ 146              		stabn 224,0,0,LBE5
+ 147              		stabn 224,0,0,LBE4
+ 148              		stabn 192,0,0,LBB6
+ 149              		stabn 192,0,0,LBB7
+ 150              		stabn 224,0,0,LBE7
+ 151              		stabn 224,0,0,LBE6
+ 152              		stabn 224,0,0,LBE3
+ 153              	
+ 154              	Lscope1	stabs "",36,0,0,Lscope1-_acquire__5Mutex
+ 155              	
+ 156              		global	_release__5Mutex
+ 157              	_release__5Mutex
+  22:mutex.cc      **** 
+  23:mutex.cc      **** void Mutex::release()
+  24:mutex.cc      **** {
+ 158              		stabd 68,0,24
+ 159 0043 1B9E     		leas	-2,s
+ 160              	
+ 161 0045 B746     		tfr	d,y
+ 162              	
+ 163              	LBB8	stabs "interrupts.h",132,0,0,Ltext5
+ 164              	
+ 165              	Ltext5	stabd 68,0,17
+ 166              	
+ 167              	LBB9
+ 168              	LBB10	stabd 68,0,18
+ 169 0047 B721     		tfr ccr, b
+ 170              		stabd 68,0,19
+ 171 0049 6C80     		std 0,s
+ 172              		stabd 68,0,20
+ 173 004b 1410     		sei
+ 174              	
+ 175              	LBE10	stabd 68,0,21
+ 176              	
+ 177              	LBE9	stabs "mutex.cc",132,0,0,Ltext6
+ 178              	
+  25:mutex.cc      ****   Interrupts masked;  // lock
+  26:mutex.cc      ****   holder = 0;             // make ready
+ 179              	Ltext6	stabd 68,0,26
+ 180 004d 18004400 		movw	#0,4,y
+ 180      00
+  27:mutex.cc      ****   unblock();              // unblock
+ 181              		stabd 68,0,27
+ 182 0052 B764     		tfr	y,d
+ 183 0054 160000   		jsr	_unblock__8TaskList
+ 184              		stabs "interrupts.h",132,0,0,Ltext7
+ 185              	
+ 186              	Ltext7	stabd 68,0,23
+ 187              	
+ 188              	LBB11
+ 189              	LBB12	stabd 68,0,24
+ 190 0057 EC80     		ldd 0,s
+ 191              		stabd 68,0,25
+ 192 0059 B712     		tfr b, ccr
+ 193              	
+ 194              	LBE12	stabd 68,0,26
+ 195              	
+ 196              	LBE11	stabs "mutex.cc",132,0,0,Ltext8
+ 197              	
+  28:mutex.cc      **** }                             // unlock
+ 198              	Ltext8	stabd 68,0,28
+ 199              	
+ 200              	LBE8
+ 201 005b 1B82     		leas	2,s
+ 202 005d 3D       		rts
+ 203              	
+ 204              		stabs "release__5Mutex:F20",36,0,24,_release__5Mutex
+ 205              		stabs "this:P61",64,0,24,1
+ 206              		stabs "masked:r72=*65",64,0,25,3
+ 207              		stabn 192,0,0,LBB8
+ 208              		stabn 192,0,0,LBB9
+ 209              		stabn 192,0,0,LBB10
+ 210              		stabn 224,0,0,LBE10
+ 211              		stabn 224,0,0,LBE9
+ 212              		stabn 192,0,0,LBB11
+ 213              		stabn 192,0,0,LBB12
+ 214              		stabn 224,0,0,LBE12
+ 215              		stabn 224,0,0,LBE11
+ 216              		stabn 224,0,0,LBE8
+ 217              	
+ 218              	Lscope2	stabs "",36,0,0,Lscope2-_release__5Mutex
+ 219              	
+ 220              		section	.const
+ 221              		stabs "__vt_5Mutex:S29",38,0,20,___vt_5Mutex
+ 222              	___vt_5Mutex
+ 223 0000 0000     		dc.w	0
+ 224 0002 0000     		dc.w	0
+ 225 0004 005E     		dc.w	__$_5Mutex
+ 226 0006 0000     		dc.w	_insert__8TaskListPQ28TaskList4Node
+ 227              	
+ 228              		section	.text
+ 229              	__$_5Mutex
+ 230              		stabd 68,0,28
+ 231 005e 1B9E     		leas	-2,s
+ 232              	
+ 233 0060 18028480 		movw	4,s,0,s
+ 234 0064 160000   		jsr	__$_8TaskList
+ 235              	
+ 236 0067 1B82     		leas	2,s
+ 237 0069 3D       		rts
+ 238              	
+ 239              		stabs "_$_5Mutex:f20",36,0,20,__$_5Mutex
+ 240              		stabs "this:P61",64,0,20,0
+ 241              		stabs "__in_chrg:p1",160,0,20,4
+ 242              	
+ 243              	Lscope3	stabs "",36,0,0,Lscope3-__$_5Mutex
+ 244              	
+ 245              	
+ 246              		end

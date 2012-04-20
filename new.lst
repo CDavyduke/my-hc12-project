@@ -1,0 +1,190 @@
+   1              	gcc2_compiled.:
+   2              	___gnu_compiled_cplusplus
+   3              		stabs "/home/cdavyduke/Projects/HC12/ELEX_8030/",100,0,0,Ltext0
+   4              		stabs "new.cc",100,0,0,Ltext0
+   5              	
+   6              		section	.text
+   7              	
+   8              	Ltext0	stabs "int:t1=r1;-32768;32767;",128,0,0,0
+   9              		stabs "char:t2=r2;0;255;",128,0,0,0
+  10              		stabs "long int:t3=r1;0020000000000;0017777777777;",128,0,0,0
+  11              		stabs "unsigned int:t4=r4;0;65535;",128,0,0,0
+  12              		stabs "long unsigned int:t5=r1;0000000000000;0037777777777;",128,0,0,0
+  13              		stabs "long long int:t6=r1;0020000000000;0017777777777;",128,0,0,0
+  14              		stabs "long long unsigned int:t7=r1;0000000000000;0037777777777;",128,0,0,0
+  15              		stabs "short int:t8=r8;-32768;32767;",128,0,0,0
+  16              		stabs "short unsigned int:t9=r9;0;65535;",128,0,0,0
+  17              		stabs "signed char:t10=r10;-128;127;",128,0,0,0
+  18              		stabs "unsigned char:t11=r11;0;255;",128,0,0,0
+  19              		stabs "float:t12=r1;4;0;",128,0,0,0
+  20              		stabs "double:t13=r1;4;0;",128,0,0,0
+  21              		stabs "long double:t14=r1;4;0;",128,0,0,0
+  22              		stabs "complex int:t15=s4real:1,0,16;imag:1,16,16;;",128,0,0,0
+  23              		stabs "complex float:t16=r16;4;0;",128,0,0,0
+  24              		stabs "complex double:t17=r17;4;0;",128,0,0,0
+  25              		stabs "complex long double:t18=r18;4;0;",128,0,0,0
+  26              		stabs "bool:t19=@s8;-16;",128,0,0,0
+  27              		stabs "void:t20=20",128,0,0,0
+  28              		stabs "__wchar_t:t21=r21;-32768;32767;",128,0,0,0
+  29              		stabs "__vtbl_ptr_type:t22=*23=f1",128,0,0,0
+  30              		stabs "size_t:t4",128,0,11,0
+  31              		stabs "ptrdiff_t:t1",128,0,12,0
+  32              	
+  33              		global	___builtin_new
+  34              	___builtin_new
+   1:new.cc        **** // Filename:			NEW.CC
+   2:new.cc        **** // Author:				C. DAVYDUKE
+   3:new.cc        **** // File Created:		03/10/08
+   4:new.cc        **** // Last Modified:		03/10/21
+   5:new.cc        **** // Description:		This file contains the code so that we can use operator new.
+   6:new.cc        **** 
+   7:new.cc        **** #include "new.h"
+   8:new.cc        **** #include "stddef.h"
+   9:new.cc        **** #include "malloc.h"
+  10:new.cc        **** #include "fatalheaperr.h"
+  11:new.cc        **** 
+  12:new.cc        **** void * operator new( size_t size )
+  13:new.cc        **** {
+  35              		stabd 68,0,13
+  36 0000 1B9E     		leas	-2,s
+  37              	
+  38              	
+  14:new.cc        **** 	void * callPtr = malloc( size );
+  39              	LBB2	stabd 68,0,14
+  40 0002 160000   		jsr	_malloc__FUi
+  41 0005 6C80     		std	0,s
+  15:new.cc        **** 
+  16:new.cc        **** 	if( !( callPtr ) )			// If the heap is exhausted, malloc
+  42              		stabd 68,0,16
+  43 0007 2609     		bne	L2
+  44              		
+  17:new.cc        **** 	{								// will return a null pointer.  If the heap
+  18:new.cc        **** 		EnterSafeMode();	// is exhausted, there is nothing meaningful
+  45              		stabd 68,0,18
+  46 0009 160000   		jsr	_EnterSafeMode__Fv
+  19:new.cc        **** 		SetErrorFlag();		// to do except restart.
+  47              		stabd 68,0,19
+  48 000c 160000   		jsr	_SetErrorFlag__Fv
+  20:new.cc        **** 		Restart();
+  49              		stabd 68,0,20
+  50 000f 160000   		jsr	_Restart__Fv
+  51              	
+  21:new.cc        **** 	}
+  22:new.cc        **** 
+  23:new.cc        **** 	return callPtr;				// If malloc worked, return the pointer.
+  52              	L2	stabd 68,0,23
+  53 0012 EC80     		ldd	0,s
+  54              	
+  24:new.cc        **** }
+  55              	LBE2	stabd 68,0,24
+  56              	
+  57 0014 1B82     		leas	2,s
+  58 0016 3D       		rts
+  59              	
+  60              		stabs "__builtin_new:F24=*20",36,0,13,___builtin_new
+  61              		stabs "size:P4",64,0,13,0
+  62              		stabs "callPtr:r25=*24",64,0,14,3
+  63              		stabn 192,0,0,LBB2
+  64              		stabn 224,0,0,LBE2
+  65              	
+  66              	Lscope0	stabs "",36,0,0,Lscope0-___builtin_new
+  67              	
+  68              		global	___builtin_vec_new
+  69              	___builtin_vec_new
+  25:new.cc        **** 
+  26:new.cc        **** void * operator new[]( size_t size )
+  27:new.cc        **** {
+  70              		stabd 68,0,27
+  71 0017 1B9E     		leas	-2,s
+  72              	
+  73              	
+  28:new.cc        **** 	void * callPtr = malloc( size );
+  74              	LBB3	stabd 68,0,28
+  75 0019 160000   		jsr	_malloc__FUi
+  76 001c 6C80     		std	0,s
+  29:new.cc        **** 
+  30:new.cc        **** 	if( !( callPtr ) )			// If the heap is exhausted, malloc
+  77              		stabd 68,0,30
+  78 001e 2609     		bne	L4
+  79              		
+  31:new.cc        **** 	{								// will return a null pointer.  If the heap
+  32:new.cc        **** 		EnterSafeMode();	// is exhausted, there is nothing meaningful
+  80              		stabd 68,0,32
+  81 0020 160000   		jsr	_EnterSafeMode__Fv
+  33:new.cc        **** 		SetErrorFlag();		// to do except restart.
+  82              		stabd 68,0,33
+  83 0023 160000   		jsr	_SetErrorFlag__Fv
+  34:new.cc        **** 		Restart();
+  84              		stabd 68,0,34
+  85 0026 160000   		jsr	_Restart__Fv
+  86              	
+  35:new.cc        **** 	}
+  36:new.cc        **** 
+  37:new.cc        **** 	return callPtr;				// If malloc worked, return the pointer.
+  87              	L4	stabd 68,0,37
+  88 0029 EC80     		ldd	0,s
+  89              	
+  38:new.cc        **** }
+  90              	LBE3	stabd 68,0,38
+  91              	
+  92 002b 1B82     		leas	2,s
+  93 002d 3D       		rts
+  94              	
+  95              		stabs "__builtin_vec_new:F24",36,0,27,___builtin_vec_new
+  96              		stabs "size:P4",64,0,27,0
+  97              		stabs "callPtr:r26=*24",64,0,28,3
+  98              		stabn 192,0,0,LBB3
+  99              		stabn 224,0,0,LBE3
+ 100              	
+ 101              	Lscope1	stabs "",36,0,0,Lscope1-___builtin_vec_new
+ 102              	
+ 103              		global	___builtin_delete
+ 104              	___builtin_delete
+  39:new.cc        **** 
+  40:new.cc        **** void operator delete( void * callPtr )
+  41:new.cc        **** {
+ 105              		stabd 68,0,41
+ 106              	
+ 107              	
+  42:new.cc        **** 	free( callPtr );
+ 108              	LBB4	stabd 68,0,42
+ 109 002e 160000   		jsr	_free__FPv
+ 110              	
+  43:new.cc        **** }
+ 111              	LBE4	stabd 68,0,43
+ 112              	
+ 113 0031 3D       		rts
+ 114              	
+ 115              		stabs "__builtin_delete:F20",36,0,41,___builtin_delete
+ 116              		stabs "callPtr:P24",64,0,41,0
+ 117              		stabn 192,0,0,LBB4
+ 118              		stabn 224,0,0,LBE4
+ 119              	
+ 120              	Lscope2	stabs "",36,0,0,Lscope2-___builtin_delete
+ 121              	
+ 122              		global	___builtin_vec_delete
+ 123              	___builtin_vec_delete
+  44:new.cc        **** 
+  45:new.cc        **** void operator delete[]( void * callPtr )
+  46:new.cc        **** {
+ 124              		stabd 68,0,46
+ 125              	
+ 126              	
+  47:new.cc        **** 	free( callPtr );
+ 127              	LBB5	stabd 68,0,47
+ 128 0032 160000   		jsr	_free__FPv
+ 129              	
+  48:new.cc        **** }
+ 130              	LBE5	stabd 68,0,48
+ 131              	
+ 132 0035 3D       		rts
+ 133              	
+ 134              		stabs "__builtin_vec_delete:F20",36,0,46,___builtin_vec_delete
+ 135              		stabs "callPtr:P24",64,0,46,0
+ 136              		stabn 192,0,0,LBB5
+ 137              		stabn 224,0,0,LBE5
+ 138              	
+ 139              	Lscope3	stabs "",36,0,0,Lscope3-___builtin_vec_delete
+ 140              	
+ 141              	
+ 142              		end

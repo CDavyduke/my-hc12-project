@@ -1,0 +1,65 @@
+   1              	gcc2_compiled.:
+   2              	___gnu_compiled_cplusplus
+   3              		stabs "/home/cdavyduke/Projects/HC12/ELEX_8030/",100,0,0,Ltext0
+   4              		stabs "restart.cc",100,0,0,Ltext0
+   5              	
+   6              		section	.text
+   7              	
+   8              	Ltext0	stabs "int:t1=r1;-32768;32767;",128,0,0,0
+   9              		stabs "char:t2=r2;0;255;",128,0,0,0
+  10              		stabs "long int:t3=r1;0020000000000;0017777777777;",128,0,0,0
+  11              		stabs "unsigned int:t4=r4;0;65535;",128,0,0,0
+  12              		stabs "long unsigned int:t5=r1;0000000000000;0037777777777;",128,0,0,0
+  13              		stabs "long long int:t6=r1;0020000000000;0017777777777;",128,0,0,0
+  14              		stabs "long long unsigned int:t7=r1;0000000000000;0037777777777;",128,0,0,0
+  15              		stabs "short int:t8=r8;-32768;32767;",128,0,0,0
+  16              		stabs "short unsigned int:t9=r9;0;65535;",128,0,0,0
+  17              		stabs "signed char:t10=r10;-128;127;",128,0,0,0
+  18              		stabs "unsigned char:t11=r11;0;255;",128,0,0,0
+  19              		stabs "float:t12=r1;4;0;",128,0,0,0
+  20              		stabs "double:t13=r1;4;0;",128,0,0,0
+  21              		stabs "long double:t14=r1;4;0;",128,0,0,0
+  22              		stabs "complex int:t15=s4real:1,0,16;imag:1,16,16;;",128,0,0,0
+  23              		stabs "complex float:t16=r16;4;0;",128,0,0,0
+  24              		stabs "complex double:t17=r17;4;0;",128,0,0,0
+  25              		stabs "complex long double:t18=r18;4;0;",128,0,0,0
+  26              		stabs "bool:t19=@s8;-16;",128,0,0,0
+  27              		stabs "void:t20=20",128,0,0,0
+  28              		stabs "__wchar_t:t21=r21;-32768;32767;",128,0,0,0
+  29              		stabs "__vtbl_ptr_type:t22=*23=f1",128,0,0,0
+  30              	
+  31              		global	_Restart__Fv
+  32              	_Restart__Fv
+   1:restart.cc    **** // Filename:		RESTART.CC
+   2:restart.cc    **** // Author:			C. DAVYDUKE
+   3:restart.cc    **** // File Created:	03/10/21
+   4:restart.cc    **** // Last Modified:	03/10/21
+   5:restart.cc    **** // Description:	This file contains the code for for restarting.
+   6:restart.cc    **** 
+   7:restart.cc    **** #include "restart.h"
+   8:restart.cc    **** 
+   9:restart.cc    **** // Maybe it makes sense to have the restart command in one separate
+  10:restart.cc    **** // file, maybe it does not.  I'm not sure yet, but there may be other
+  11:restart.cc    **** // reasons or files that need to call Restart.
+  12:restart.cc    **** void Restart( void )
+  13:restart.cc    **** {
+  33              		stabd 68,0,13
+  34              	
+  35              	
+  14:restart.cc    **** 	asm( "jmp _start" );
+  36              	LBB2	stabd 68,0,14
+  37 0000 060000   		jmp _start
+  38              	
+  15:restart.cc    **** }
+  39              	LBE2	stabd 68,0,15
+  40              	
+  41 0003 3D       		rts
+  42              	
+  43              		stabs "Restart__Fv:F20",36,0,13,_Restart__Fv
+  44              		stabn 192,0,0,LBB2
+  45              		stabn 224,0,0,LBE2
+  46              	
+  47              	Lscope0	stabs "",36,0,0,Lscope0-_Restart__Fv
+  48              	
+  49              	
+  50              		end

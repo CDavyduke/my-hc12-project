@@ -1,0 +1,723 @@
+   1              	gcc2_compiled.:
+   2              	___gnu_compiled_cplusplus
+   3              		stabs "/home/cdavyduke/Projects/HC12/ELEX_8030/",100,0,0,Ltext0
+   4              		stabs "ltc1404.cc",100,0,0,Ltext0
+   5              	
+   6              		section	.text
+   7              	
+   8              	Ltext0	stabs "int:t1=r1;-32768;32767;",128,0,0,0
+   9              		stabs "char:t2=r2;0;255;",128,0,0,0
+  10              		stabs "long int:t3=r1;0020000000000;0017777777777;",128,0,0,0
+  11              		stabs "unsigned int:t4=r4;0;65535;",128,0,0,0
+  12              		stabs "long unsigned int:t5=r1;0000000000000;0037777777777;",128,0,0,0
+  13              		stabs "long long int:t6=r1;0020000000000;0017777777777;",128,0,0,0
+  14              		stabs "long long unsigned int:t7=r1;0000000000000;0037777777777;",128,0,0,0
+  15              		stabs "short int:t8=r8;-32768;32767;",128,0,0,0
+  16              		stabs "short unsigned int:t9=r9;0;65535;",128,0,0,0
+  17              		stabs "signed char:t10=r10;-128;127;",128,0,0,0
+  18              		stabs "unsigned char:t11=r11;0;255;",128,0,0,0
+  19              		stabs "float:t12=r1;4;0;",128,0,0,0
+  20              		stabs "double:t13=r1;4;0;",128,0,0,0
+  21              		stabs "long double:t14=r1;4;0;",128,0,0,0
+  22              		stabs "complex int:t15=s4real:1,0,16;imag:1,16,16;;",128,0,0,0
+  23              		stabs "complex float:t16=r16;4;0;",128,0,0,0
+  24              		stabs "complex double:t17=r17;4;0;",128,0,0,0
+  25              		stabs "complex long double:t18=r18;4;0;",128,0,0,0
+  26              		stabs "bool:t19=@s8;-16;",128,0,0,0
+  27              		stabs "void:t20=20",128,0,0,0
+  28              		stabs "__wchar_t:t21=r21;-32768;32767;",128,0,0,0
+  29              		stabs "__vtbl_ptr_type:t22=*23=f1",128,0,0,0
+  30              		stabs "IoMask:t1",128,0,39,0
+  31              		stabs "pwmreg:T24=u2byte:25=ar0;0;1;2,0,16;word:4,0,16;\\",128,0,0,0
+  32              		stabs "__as::26=##27=&24;:RC6pwmreg;2A.;pwmreg::28=##29=*24;:RC6pwmreg;2A.30=##29;:;2A.;;",128,0,0
+  33              		stabs "pwmreg:Tt24",128,0,428,0
+  34              		stabs "sciport:Tt31=s8scbd:1,0,16;sccr1:2,16,8;\\",128,0,0,0
+  35              		stabs "loops:/21:loops;woms:/21:woms;rsrc:/21:rsrc;\\",128,0,0,0
+  36              		stabs "m:/21:m;wake:/21:wake;ilt:/21:ilt;\\",128,0,0,0
+  37              		stabs "pe:/21:pe;pt:/21:pt;sccr2:2,24,8;\\",128,0,0,0
+  38              		stabs "tie:/21:tie;tcie:/21:tcie;rie:/21:rie;\\",128,0,0,0
+  39              		stabs "ilie:/21:ilie;te:/21:te;re:/21:re;\\",128,0,0,0
+  40              		stabs "rwu:/21:rwu;sbk:/21:sbk;scsr1:2,32,8;\\",128,0,0,0
+  41              		stabs "tdre:/21:tdre;tc:/21:tc;rdrf:/21:rdrf;\\",128,0,0,0
+  42              		stabs "idle:/21:idle;or:/21:or;nf:/21:nf;\\",128,0,0,0
+  43              		stabs "fe:/21:fe;pf:/21:pf;scsr2:2,40,8;\\",128,0,0,0
+  44              		stabs "raf:/21:raf;scdrh:2,48,8;r8:/21:r8;\\",128,0,0,0
+  45              		stabs "t8:/21:t8;scdrl:2,56,8;__as::32=##33=&31;:RC7sciport;2A.;\\",128,0,0,0
+  46              		stabs "sciport::34=##35=*31;:RC7sciport;2A.36=##35;:;2A.;;",128,0,636,0
+  47              		stabs "spiport:Tt37=s6spcr1:2,0,8;spie:/21:spie;\\",128,0,0,0
+  48              		stabs "spe:/21:spe;swom:/21:swom;mstr:/21:mstr;\\",128,0,0,0
+  49              		stabs "cpol:/21:cpol;cpha:/21:cpha;ssoe:/21:ssoe;\\",128,0,0,0
+  50              		stabs "lsbf:/21:lsbf;spcr2:2,8,8;sswai:/21:sswai;\\",128,0,0,0
+  51              		stabs "spc0:/21:spc0;spbr:2,16,8;spr31:/21:spr31;\\",128,0,0,0
+  52              		stabs "spr62:/21:spr62;spr125:/21:spr125;\\",128,0,0,0
+  53              		stabs "spr250:/21:spr250;spr500:/21:spr500;\\",128,0,0,0
+  54              		stabs "spr1000:/21:spr1000;spr2000:/21:spr2000;\\",128,0,0,0
+  55              		stabs "spr4000:/21:spr4000;spsr:2,24,8;spif:/21:spif;\\",128,0,0,0
+  56              		stabs "wcol:/21:wcol;modf:/21:modf;rsvd4:2,32,8;\\",128,0,0,0
+  57              		stabs "spdr:2,40,8;__as::38=##39=&37;:RC7spiport;2A.;spiport::40=##41=*37;:RC7spiport;2A.\\",128,0
+  58              		stabs "42=##41;:;2A.;;",128,0,689,0
+  59              		stabs "size_t:t4",128,0,11,0
+  60              		stabs "ptrdiff_t:t1",128,0,12,0
+  61              		stabs "Task:Tt43=s8current:/044=*43:_4Task$current;stack:/045=*46=*20,0,16;\\",128,0,0,0
+  62              		stabs "sp:/045,16,16;priority:/04,32,16;$vf43:47=*48=ar0;0;3;22,48;\\",128,0,0,0
+  63              		stabs "__as::49=##50=&43;:RC4Task;2A.;Task::51=##44;:RC4Task;2A.52=##44;:UiUi;2A.\\",128,0,0,0
+  64              		stabs "53=#43,20,44,1,20;:_$_4Task;2A*2;43;;yield::54=f20:;2A?;lowerPriorityThan::55=##19;:PC4Task
+  65              		stabs "fork::56=##20;:;1A.;main::56:;1A*3;43;;start::54:;0A?;dispatch::57=f20:P4Task;0A?;;~%43;",1
+  66              		stabs "Node:Tt58=s6next:59=*58,0,16;task:44,16,16;\\",128,0,0,0
+  67              		stabs "time:1,32,16;__as::60=##61=&58;:Q28TaskList4NodeRCQ28TaskList4Node;2A.;\\",128,0,0,0
+  68              		stabs "Node::62=##59;:__Q28TaskList4NodeRCQ28TaskList4Node;2A.63=##59;:__Q28TaskList4NodeP4Task;2A
+  69              		stabs "TaskList:Tt64=s4first:/159,0,16;$vf64:47,16;__as::65=##66=&64;:RC8TaskList;2A.;\\",128,0,0,
+  70              		stabs "TaskList::67=##68=*64;:RC8TaskList;2A.69=##68;:P4Task;2A.70=#64,20,68,1,20;:_$_8TaskList;2A
+  71              		stabs "block::71=##20;:;2A.;unblock::71:;2A.;getCurrent::72=##44;:;2A.;insert::73=##20;:PQ28TaskLi
+  72              		stabs "remove::74=##59;:;0A.;;~%64;",128,0,60,0
+  73              		stabs "Mutex:Tt75=s6!1,020,64;holder:/076=*43,32,16;\\",128,0,0,0
+  74              		stabs "__as::77=##78=&75;:RC5Mutex;2A.;Mutex::79=##80=*75;:RC5Mutex;2A.81=#75,20,80,1,20;:_$_5Mute
+  75              		stabs "82=##80;:;2A.;acquire::83=##20;:;2A.;release::83:;2A.;;~%64;",128,0,20,0
+  76              		stabs "Spi:Tt84=s8mutex:/075,0,48;$vf84:85=*86=ar0;0;4;22,48;\\",128,0,0,0
+  77              		stabs "__as::87=##88=&84;:RC3Spi;2A.;Spi::89=##90=*84;:RC3Spi;2A.91=##90;:;2A.\\",128,0,0,0
+  78              		stabs "92=#84,20,90,1,20;:_$_3Spi;2A*2;84;;get::93=##20;:Pvi;0A*3;84;;\\",128,0,0,0
+  79              		stabs "put::93:Pvi;0A*4;84;;open::94=##20;:;0A.;close::94:;0A.;;~%84;",128,0,34,0
+  80              		stabs "SpiUser:Tt95=s2spi:/088,0,16;__as::96=##97=&95;:RC7SpiUser;2A.;\\",128,0,0,0
+  81              		stabs "SpiUser::98=##99=*95;:RC7SpiUser;2A.100=##99;:R3Spi;2A.101=#95,20,99,1,20;:_$_7SpiUser;2A.;
+  82              		stabs "get::102=##20;:Pvi;2A.;put::102:Pvi;2A.;;",128,0,58,0
+  83              		stabs "Interrupts:Tt103=s2oldMask:/01,0,16;__as::104=##105=&103;:RC10Interrupts;2A.;\\",128,0,0,0
+  84              		stabs "Interrupts::106=##107=*103;:RC10Interrupts;2A.108=##107;:;2A.109=#103,20,107,1,20;:_$_10Int
+  85              		stabs "Ltc1404SpiUser:Tt110=s2!1,020,95;__as::111=##112=&110;:Q27Ltc140414Ltc1404SpiUserRCQ27Ltc14
+  86              		stabs "Ltc1404SpiUser::113=##114=*110;:__Q27Ltc140414Ltc1404SpiUserRCQ27Ltc140414Ltc1404SpiUser;2A
+  87              		stabs "115=##114;:__Q27Ltc140414Ltc1404SpiUserR3Spi;2A.116=#110,20,114,1,20;:_$_Q27Ltc140414Ltc140
+  88              		stabs "__opi::117=##1;:Q27Ltc140414Ltc1404SpiUser;2A.;;",128,0,73,0
+  89              		stabs "Ltc1404:Tt118=s12!1,020,43;spi:/088,64,16;\\",128,0,0,0
+  90              		stabs "time:/01,80,16;__as::119=##120=&118;:RC7Ltc1404;2A.;Ltc1404::121=##122=*118;:RC7Ltc1404;2A.
+  91              		stabs "123=##122;:UiUiR3Spii;2A.124=#118,20,122,1,20;:_$_7Ltc1404;2A*2;43;;main::125=##20;:;1A*3;4
+  92              		stabs "Isr:Tt126=s6ictlr:/0127=&128=xsIctlr:,0,16;index:/04,16,16;\\",128,0,0,0
+  93              		stabs "$vf126:47,32;__as::129=##130=&126;:RC3Isr;2A.;Isr::131=##132=*126;:RC3Isr;2A.133=##132;:R5I
+  94              		stabs "134=#126,20,132,1,20;:_$_3Isr;1A*2;126;;handler::135=##20;:;0A*3;126;;;~%126;",128,0,24,0
+  95              		stabs "Ictlr:Tt128=s6length:/04,0,16;isrTbl:/0136=*132,16,16;\\",128,0,0,0
+  96              		stabs "$vf128:137=*138=ar0;0;2;22,32;__as::139=##127;:RC5Ictlr;2A.;Ictlr::140=##141=*128;:RC5Ictlr
+  97              		stabs "142=##141;:Ui;2A.143=#128,20,141,1,20;:_$_5Ictlr;2A*2;128;;attach::144=##20;:P3Isr;2A.;\\",
+  98              		stabs "detach::144:P3Isr;2A.;runHandler::145=##20;:Ui;1A.;;~%128;",128,0,44,0
+  99              		stabs "DeltaTaskList:Tt146=s6!1,020,64;time:/01,32,16;\\",128,0,0,0
+ 100              		stabs "__as::147=##148=&146;:RC13DeltaTaskList;2A.;DeltaTaskList::149=##150=*146;:RC13DeltaTaskLis
+ 101              		stabs "151=##150;:;2A.152=#146,20,150,1,20;:_$_13DeltaTaskList;2A*2;64;;block::152:i;2A.;\\",128,0
+ 102              		stabs "decrement::153=##20;:;2A.;zero::154=##19;:;2A.;insert::155=##20;:PQ28TaskList4Node;0A*3;64;
+ 103              		stabs "block::153:;0A.;;~%64;",128,0,22,0
+ 104              		stabs "TimerTask:Tt156=s26!2,020,43;0264,126;deltaList:/0146,112,48;\\",128,0,0,0
+ 105              		stabs "waitList:/064,160,32;rate:/01,192,16;theTimerTask:/0157=*156:_9TimerTask$theTimerTask;\\",1
+ 106              		stabs "__as::158=##159=&156;:RC9TimerTask;2A.;TimerTask::160=##157;:RC9TimerTask;2A.;delay::161=f2
+ 107              		stabs "TimerTask::162=##157;:UiUiR5Ictlrii;1A.163=#156,20,157,1,20;:_$_9TimerTask;1A*2;43;;\\",128
+ 108              		stabs "handler::164=##20;:;1A*3;126;;main::164:;0A*3;43;;;~%43;",128,0,29,0
+ 109              	
+ 110              		global	_main__7Ltc1404
+ 111              	_main__7Ltc1404
+   1:ltc1404.cc    **** // Filename:      LTC1404.CC
+   2:ltc1404.cc    **** // Author:        C. DAVYDUKE
+   3:ltc1404.cc    **** // File Created:  03/12/20
+   4:ltc1404.cc    **** // Last Modified: 03/12/20
+   5:ltc1404.cc    **** // Description:   This file contains the class methods for the Ltc1404 base class.
+   6:ltc1404.cc    **** 
+   7:ltc1404.cc    **** #include "ltc1404.h"
+   8:ltc1404.cc    **** #include "timertask.h"
+   9:ltc1404.cc    **** #include "chipio.h"
+  10:ltc1404.cc    **** 
+  11:ltc1404.cc    **** // Had to create this dumb stuff to satisfy compiler
+  12:ltc1404.cc    **** void Ltc1404::main()
+  13:ltc1404.cc    **** {
+ 112              		stabd 68,0,13
+ 113 0000 1B90     		leas	-16,s
+ 114              	
+ 115 0002 6C88     		std	8,s
+ 116              	
+  14:ltc1404.cc    ****   while( 1 )
+ 117              	LBB2	stabd 68,0,14
+ 118 0004 198C     		leay	12,s
+ 119 0006 6D86     		sty	6,s
+ 120              	
+ 121              	L144
+  15:ltc1404.cc    ****   {
+  16:ltc1404.cc    ****     portdlc ^= ( 1 << 6 );
+ 122              	LBB3	stabd 68,0,16
+ 123 0008 F60000   		ldab	_portdlc
+ 124 000b C840     		eorb	#64
+ 125 000d 7B0000   		stab	_portdlc
+  17:ltc1404.cc    ****     int raw;
+  18:ltc1404.cc    ****     raw = Ltc1404SpiUser( spi );
+ 126              		stabd 68,0,18
+ 127              		stabs "ltc1404.h",132,0,0,Ltext1
+ 128              	
+   1:ltc1404.h     **** // $Id: ltc1404.h,v 1.2 2003/12/20 22:54:19 cdavyduk Exp $
+   2:ltc1404.h     **** 
+   3:ltc1404.h     **** // ltc1404.h			   Copyright (C) 2003, Real-Time Systems Inc.
+   4:ltc1404.h     **** //-------------------------------------------- All Rights Reserved ----------
+   5:ltc1404.h     **** //
+   6:ltc1404.h     **** //	LTC1404 A/D Converter Driver
+   7:ltc1404.h     **** //
+   8:ltc1404.h     **** //---------------------------------------------------------------------------
+   9:ltc1404.h     **** 
+  10:ltc1404.h     **** #ifndef LTC1404_H
+  11:ltc1404.h     **** #define LTC1404_H
+  12:ltc1404.h     **** 
+  13:ltc1404.h     **** #include "chipio.h"
+  14:ltc1404.h     **** #include "spi.h"
+  15:ltc1404.h     **** #include "task.h"
+  16:ltc1404.h     **** #include "interrupts.h"
+  17:ltc1404.h     **** 
+  18:ltc1404.h     **** // Need a mask to configure SCK and SS as outputs.
+  19:ltc1404.h     **** const unsigned int selMask = 0xC0;
+  20:ltc1404.h     **** 
+  21:ltc1404.h     **** class Ltc1404 : public Task
+  22:ltc1404.h     **** {
+  23:ltc1404.h     **** public:
+  24:ltc1404.h     ****   Ltc1404( size_t stackSize, unsigned int priority, Spi & s, int t )
+  25:ltc1404.h     ****   : Task( stackSize, priority ),
+  26:ltc1404.h     ****     spi( s ),
+  27:ltc1404.h     ****     time( t )
+  28:ltc1404.h     ****   {
+  29:ltc1404.h     ****     Interrupts masked;
+  30:ltc1404.h     ****     
+  31:ltc1404.h     ****     ddrs |= selMask;
+  32:ltc1404.h     **** 
+  33:ltc1404.h     ****     ddrdlc |= ( 1 << 6 );
+  34:ltc1404.h     ****     portdlc &= ~(1 << 6 );
+  35:ltc1404.h     ****     fork();
+  36:ltc1404.h     ****   }
+  37:ltc1404.h     **** 
+  38:ltc1404.h     ****   ~Ltc1404()
+  39:ltc1404.h     ****   {
+  40:ltc1404.h     ****     Interrupts masked;
+  41:ltc1404.h     ****     
+  42:ltc1404.h     ****     ddrs &= ~selMask;
+  43:ltc1404.h     ****   }
+  44:ltc1404.h     ****   
+  45:ltc1404.h     **** protected:
+  46:ltc1404.h     ****   void main();
+  47:ltc1404.h     **** 
+  48:ltc1404.h     **** private:
+  49:ltc1404.h     ****   class Ltc1404SpiUser : public SpiUser
+  50:ltc1404.h     ****   {
+  51:ltc1404.h     ****   public:
+  52:ltc1404.h     ****     Ltc1404SpiUser(Spi& spi)
+  53:ltc1404.h     ****     : SpiUser(spi)
+ 129              	Ltext1	stabd 68,0,53
+ 130 0010 ED88     		ldy	8,s
+ 131 0012 EC48     		ldd	8,y
+ 132              	
+ 133              	LBB4	stabs "spi.h",132,0,0,Ltext2
+ 134              	
+   1:spi.h         **** // Filename:      SPI.H
+   2:spi.h         **** // Author:        C. DAVYDUKE
+   3:spi.h         **** // File Created:  03/12/17
+   4:spi.h         **** // Last Modified: 03/12/20
+   5:spi.h         **** // Description:   This file contains the class definitions for the Spi base class.
+   6:spi.h         **** 
+   7:spi.h         **** #ifndef __SPI_H__
+   8:spi.h         **** #define __SPI_H__
+   9:spi.h         **** 
+  10:spi.h         **** #include "mutex.h"
+  11:spi.h         **** 
+  12:spi.h         **** class Spi  // body class
+  13:spi.h         **** {
+  14:spi.h         ****   public:
+  15:spi.h         ****     Spi();
+  16:spi.h         ****     virtual ~Spi();
+  17:spi.h         ****   private:
+  18:spi.h         ****     virtual void get( void *, int )
+  19:spi.h         ****     {
+  20:spi.h         ****     }
+  21:spi.h         ****     virtual void put( void *, int )
+  22:spi.h         ****     {
+  23:spi.h         ****     }
+  24:spi.h         ****     void open()
+  25:spi.h         ****     {
+  26:spi.h         ****       mutex.acquire();
+  27:spi.h         ****     }
+  28:spi.h         ****     void close()
+  29:spi.h         ****     {
+  30:spi.h         ****       mutex.release();
+  31:spi.h         ****     }
+  32:spi.h         ****     Mutex mutex;
+  33:spi.h         ****     friend class SpiUser;
+  34:spi.h         **** };
+  35:spi.h         **** 
+  36:spi.h         **** class SpiUser  // handle class
+  37:spi.h         **** {
+  38:spi.h         ****   public:
+  39:spi.h         ****     SpiUser( Spi & s )
+  40:spi.h         ****     : spi( s )
+ 135              	Ltext2	stabd 68,0,40
+ 136              	
+ 137 0014 6CF30006 	LBB5	std	[6,s]
+  41:spi.h         ****     {
+ 138              		stabd 68,0,41
+ 139              	
+ 140              	LBB6	stabd 68,0,25
+ 141              	
+ 142              	LBB7
+ 143              	LBB8	stabd 68,0,26
+ 144 0018 160000   		jsr	_acquire__5Mutex
+ 145              	
+ 146              	LBE8	stabd 68,0,27
+ 147              	
+  42:spi.h         ****       spi.open();
+ 148              	LBE7	stabd 68,0,42
+ 149              	
+  43:spi.h         ****     }
+ 150              	LBE6	stabd 68,0,43
+ 151              	
+ 152              	LBE5	stabs "ltc1404.h",132,0,0,Ltext3
+ 153              	
+  54:ltc1404.h     ****     {
+ 154              	Ltext3	stabd 68,0,54
+ 155              	
+ 156              	LBB9	stabs "interrupts.h",132,0,0,Ltext4
+ 157              	
+   1:interrupts.h  **** // Filename:		INTERRUPTS.H
+   2:interrupts.h  **** // Author:			C. DAVYDUKE
+   3:interrupts.h  **** // File Created:	03/10/20
+   4:interrupts.h  **** // Last Modified: 03/10/29
+   5:interrupts.h  **** // Description:	This file contains the class definition of interrupts and some low level code.
+   6:interrupts.h  **** 
+   7:interrupts.h  **** #ifndef __INTERRUPTS_H__
+   8:interrupts.h  **** #define __INTERRUPTS_H__
+   9:interrupts.h  **** 
+  10:interrupts.h  **** // This class definition allows us to use the properties of classes (e.g. constructors and
+  11:interrupts.h  **** // destructors) to ensure that interrupts are always enabled and disabled, and one or
+  12:interrupts.h  **** // the other is not forgotten.  Very HC12 specific.
+  13:interrupts.h  **** class Interrupts
+  14:interrupts.h  **** {
+  15:interrupts.h  **** 	public:
+  16:interrupts.h  **** 		Interrupts()
+  17:interrupts.h  **** 		{
+ 158              	Ltext4	stabd 68,0,17
+ 159              	
+ 160              	LBB10
+  18:interrupts.h  **** 			asm( "tfr ccr, b" );
+ 161              	LBB11	stabd 68,0,18
+ 162 001b B721     		tfr ccr, b
+  19:interrupts.h  **** 			asm( "std %0" : : "m"(oldMask) : "d" );
+ 163              		stabd 68,0,19
+ 164 001d 6C8E     		std 14,s
+  20:interrupts.h  **** 			asm( "sei" );
+ 165              		stabd 68,0,20
+ 166 001f 1410     		sei
+ 167              	
+  21:interrupts.h  **** 		}
+ 168              	LBE11	stabd 68,0,21
+ 169              	
+ 170              	LBE10	stabs "ltc1404.h",132,0,0,Ltext5
+ 171              	
+  55:ltc1404.h     ****       Interrupts masked;
+  56:ltc1404.h     ****       
+  57:ltc1404.h     ****       ports |= selMask;
+ 172              	Ltext5	stabd 68,0,57
+ 173 0021 F60000   		ldab	_ports
+ 174 0024 CAC0     		orab	#192
+ 175 0026 7B0000   		stab	_ports
+ 176              		stabs "interrupts.h",132,0,0,Ltext6
+ 177              	
+  22:interrupts.h  **** 		~Interrupts()
+  23:interrupts.h  **** 		{
+ 178              	Ltext6	stabd 68,0,23
+ 179              	
+ 180              	LBB12
+  24:interrupts.h  **** 			asm( "ldd %0" : : "m"(oldMask) : "d" );
+ 181              	LBB13	stabd 68,0,24
+ 182 0029 EC8E     		ldd 14,s
+  25:interrupts.h  **** 			asm( "tfr b, ccr" );
+ 183              		stabd 68,0,25
+ 184 002b B712     		tfr b, ccr
+ 185              	
+  26:interrupts.h  **** 		}
+ 186              	LBE13	stabd 68,0,26
+ 187              	
+ 188              	LBE12	stabs "ltc1404.h",132,0,0,Ltext7
+ 189              	
+  58:ltc1404.h     ****     }
+ 190              	Ltext7	stabd 68,0,58
+ 191              	
+ 192              	LBE9
+ 193              	LBE4	stabs "ltc1404.cc",132,0,0,Ltext8
+ 194              	
+ 195              	Ltext8	stabd 68,0,18
+ 196              		stabs "ltc1404.h",132,0,0,Ltext9
+ 197              	
+  59:ltc1404.h     **** 
+  60:ltc1404.h     ****     ~Ltc1404SpiUser()
+  61:ltc1404.h     ****     {
+  62:ltc1404.h     ****       Interrupts masked;
+  63:ltc1404.h     ****       
+  64:ltc1404.h     ****       ports &= ~selMask;
+  65:ltc1404.h     ****     }
+  66:ltc1404.h     **** 
+  67:ltc1404.h     ****     operator int()
+  68:ltc1404.h     ****     {
+ 198              	Ltext9	stabd 68,0,68
+ 199              	
+ 200              	LBB14
+ 201              	LBB15	stabs "spi.h",132,0,0,Ltext10
+ 202              	
+  44:spi.h         ****     ~SpiUser()
+  45:spi.h         ****     {
+  46:spi.h         ****       spi.close();
+  47:spi.h         ****     }
+  48:spi.h         ****     void get( void * p, int b ) // reflect operation to body class.
+  49:spi.h         ****     {
+ 203              	Ltext10	stabd 68,0,49
+ 204 002d B774     		tfr	s,d
+ 205 002f C3000A   		addd	#10
+ 206              	
+ 207              	LBB16
+  50:spi.h         ****       spi.get( p, b );
+ 208              	LBB17	stabd 68,0,50
+ 209 0032 EEF30006 		ldx	[6,s]
+ 210 0036 ED06     		ldy	6,x
+ 211 0038 6C80     		std	0,s
+ 212 003a 18008200 		movw	#16,2,s
+ 212      10
+ 213 003f B754     		tfr	x,d
+ 214 0041 15EB0006 		jsr	[6,y]
+ 215              	
+  51:spi.h         ****     }
+ 216              	LBE17	stabd 68,0,51
+ 217              	
+ 218              	LBE16	stabs "ltc1404.h",132,0,0,Ltext11
+ 219              	
+  69:ltc1404.h     ****       int buf;
+  70:ltc1404.h     ****       get(&buf, sizeof(buf) * 8);
+  71:ltc1404.h     ****       return buf;
+ 220              	Ltext11	stabd 68,0,71
+ 221              	
+  72:ltc1404.h     ****     }
+ 222              	LBE15	stabd 68,0,72
+ 223              	
+ 224              	LBE14	stabs "ltc1404.cc",132,0,0,Ltext12
+ 225              	
+ 226              	Ltext12	stabd 68,0,18
+ 227              		stabs "ltc1404.h",132,0,0,Ltext13
+ 228              	
+ 229              	Ltext13	stabd 68,0,61
+ 230              	
+ 231              	LBB18
+ 232              	LBB19	stabs "interrupts.h",132,0,0,Ltext14
+ 233              	
+ 234              	Ltext14	stabd 68,0,17
+ 235              	
+ 236              	LBB20
+ 237              	LBB21	stabd 68,0,18
+ 238 0045 B721     		tfr ccr, b
+ 239              		stabd 68,0,19
+ 240 0047 6C8E     		std 14,s
+ 241              		stabd 68,0,20
+ 242 0049 1410     		sei
+ 243              	
+ 244              	LBE21	stabd 68,0,21
+ 245              	
+ 246              	LBE20	stabs "ltc1404.h",132,0,0,Ltext15
+ 247              	
+ 248              	Ltext15	stabd 68,0,64
+ 249 004b F60000   		ldab	_ports
+ 250 004e C43F     		andb	#63
+ 251 0050 7B0000   		stab	_ports
+ 252              		stabs "interrupts.h",132,0,0,Ltext16
+ 253              	
+ 254              	Ltext16	stabd 68,0,23
+ 255              	
+ 256              	LBB22
+ 257              	LBB23	stabd 68,0,24
+ 258 0053 EC8E     		ldd 14,s
+ 259              		stabd 68,0,25
+ 260 0055 B712     		tfr b, ccr
+ 261              	
+ 262              	LBE23	stabd 68,0,26
+ 263              	
+ 264              	LBE22	stabs "ltc1404.h",132,0,0,Ltext17
+ 265              	
+ 266              	Ltext17	stabd 68,0,65
+ 267              	
+ 268              	LBE19	stabs "spi.h",132,0,0,Ltext18
+ 269              	
+ 270              	Ltext18	stabd 68,0,45
+ 271              	
+ 272              	LBB24
+ 273              	LBB25	stabd 68,0,29
+ 274 0057 ECF30006 		ldd	[6,s]
+ 275              	
+ 276              	LBB26
+ 277              	LBB27	stabd 68,0,30
+ 278 005b 160000   		jsr	_release__5Mutex
+ 279              	
+ 280              	LBE27	stabd 68,0,31
+ 281              	
+ 282              	LBE26	stabd 68,0,46
+ 283              	
+ 284              	LBE25	stabd 68,0,47
+ 285              	
+ 286              	LBE24	stabs "ltc1404.h",132,0,0,Ltext19
+ 287              	
+ 288              	Ltext19	stabd 68,0,65
+ 289              	
+ 290              	LBE18	stabs "ltc1404.cc",132,0,0,Ltext20
+ 291              	
+ 292              	Ltext20	stabd 68,0,18
+  19:ltc1404.cc    ****     // do something useful with raw
+  20:ltc1404.cc    ****     TimerTask::delay( time );
+ 293              		stabd 68,0,20
+ 294 005e ED88     		ldy	8,s
+ 295 0060 EC4A     		ldd	10,y
+ 296 0062 160000   		jsr	_delay__9TimerTaski
+  21:ltc1404.cc    ****     yield();
+ 297              		stabd 68,0,21
+ 298 0065 160000   		jsr	_yield__4Task
+ 299              	
+ 300 0068 060008   	LBE3	jmp	L144
+ 301              		
+ 302              	
+  22:ltc1404.cc    ****   }
+  23:ltc1404.cc    **** }
+ 303              	LBE2	stabd 68,0,23
+ 304              	
+ 305 006b 1BF010   		leas	16,s
+ 306 006e 3D       		rts
+ 307              	
+ 308              		stabs "main__7Ltc1404:F20",36,0,13,_main__7Ltc1404
+ 309              		stabs "this:p122",160,0,13,8
+ 310              		stabn 192,0,0,LBB2
+ 311              		stabn 192,0,0,LBB3
+ 312              		stabs "this:114",128,0,18,6
+ 313              		stabs "spi:r88",64,0,18,0
+ 314              		stabn 192,0,0,LBB4
+ 315              		stabs "s:r88",64,0,54,0
+ 316              		stabs "this:99",128,0,54,6
+ 317              		stabn 192,0,0,LBB5
+ 318              		stabn 192,0,0,LBB6
+ 319              		stabn 192,0,0,LBB7
+ 320              		stabn 192,0,0,LBB8
+ 321              		stabn 224,0,0,LBE8
+ 322              		stabn 224,0,0,LBE7
+ 323              		stabn 224,0,0,LBE6
+ 324              		stabn 224,0,0,LBE5
+ 325              		stabs "masked:103",128,0,55,14
+ 326              		stabn 192,0,0,LBB9
+ 327              		stabn 192,0,0,LBB10
+ 328              		stabn 192,0,0,LBB11
+ 329              		stabn 224,0,0,LBE11
+ 330              		stabn 224,0,0,LBE10
+ 331              		stabn 192,0,0,LBB12
+ 332              		stabn 192,0,0,LBB13
+ 333              		stabn 224,0,0,LBE13
+ 334              		stabn 224,0,0,LBE12
+ 335              		stabn 224,0,0,LBE9
+ 336              		stabn 224,0,0,LBE4
+ 337              		stabn 192,0,0,LBB14
+ 338              		stabs "buf:1",128,0,69,10
+ 339              		stabn 192,0,0,LBB15
+ 340              		stabs "p:r46",64,0,70,0
+ 341              		stabn 192,0,0,LBB16
+ 342              		stabn 192,0,0,LBB17
+ 343              		stabn 224,0,0,LBE17
+ 344              		stabn 224,0,0,LBE16
+ 345              		stabn 224,0,0,LBE15
+ 346              		stabn 224,0,0,LBE14
+ 347              		stabn 192,0,0,LBB18
+ 348              		stabn 192,0,0,LBB19
+ 349              		stabn 192,0,0,LBB20
+ 350              		stabs "this:r90",64,0,46,0
+ 351              		stabn 192,0,0,LBB21
+ 352              		stabn 192,0,0,LBB22
+ 353              		stabn 224,0,0,LBE22
+ 354              		stabn 224,0,0,LBE21
+ 355              		stabn 224,0,0,LBE20
+ 356              		stabn 224,0,0,LBE19
+ 357              		stabs "masked:103",128,0,62,14
+ 358              		stabn 192,0,0,LBB23
+ 359              		stabn 192,0,0,LBB24
+ 360              		stabn 192,0,0,LBB25
+ 361              		stabn 224,0,0,LBE25
+ 362              		stabn 224,0,0,LBE24
+ 363              		stabn 192,0,0,LBB26
+ 364              		stabn 192,0,0,LBB27
+ 365              		stabn 224,0,0,LBE27
+ 366              		stabn 224,0,0,LBE26
+ 367              		stabn 224,0,0,LBE23
+ 368              		stabn 224,0,0,LBE18
+ 369              		stabn 224,0,0,LBE3
+ 370              		stabn 224,0,0,LBE2
+ 371              	
+ 372              	Lscope0	stabs "",36,0,0,Lscope0-_main__7Ltc1404
+ 373              	
+ 374              		global	___vt_7Ltc1404
+ 375              	
+ 376              		section	.const
+ 377              		stabs "__vt_7Ltc1404:G48",32,0,77,0
+ 378              	___vt_7Ltc1404
+ 379 0000 0000     		dc.w	0
+ 380 0002 0000     		dc.w	0
+ 381 0004 006F     		dc.w	__$_7Ltc1404
+ 382 0006 0000     		dc.w	_main__7Ltc1404
+ 383              	
+ 384              		section	.text
+ 385              	
+ 386              		global	__$_7Ltc1404
+ 387              	__$_7Ltc1404
+ 388              		stabs "ltc1404.h",132,0,0,Ltext21
+ 389              	
+ 390              	Ltext21	stabd 68,0,39
+ 391 006f 1B9C     		leas	-4,s
+ 392              	
+ 393 0071 B745     		tfr	d,x
+ 394 0073 ED86     		ldy	6,s
+ 395 0075 18000600 		movw	#___vt_7Ltc1404,6,x
+ 395      00
+ 396              	
+ 397              	LBB28	stabs "interrupts.h",132,0,0,Ltext22
+ 398              	
+ 399              	Ltext22	stabd 68,0,17
+ 400              	
+ 401              	LBB29
+ 402              	LBB30	stabd 68,0,18
+ 403 007a B721     		tfr ccr, b
+ 404              		stabd 68,0,19
+ 405 007c 6C82     		std 2,s
+ 406              		stabd 68,0,20
+ 407 007e 1410     		sei
+ 408              	
+ 409              	LBE30	stabd 68,0,21
+ 410              	
+ 411              	LBE29	stabs "ltc1404.h",132,0,0,Ltext23
+ 412              	
+ 413              	Ltext23	stabd 68,0,42
+ 414 0080 F60000   		ldab	_ddrs
+ 415 0083 C43F     		andb	#63
+ 416 0085 7B0000   		stab	_ddrs
+ 417              		stabs "interrupts.h",132,0,0,Ltext24
+ 418              	
+ 419              	Ltext24	stabd 68,0,23
+ 420              	
+ 421              	LBB31
+ 422              	LBB32	stabd 68,0,24
+ 423 0088 EC82     		ldd 2,s
+ 424              		stabd 68,0,25
+ 425 008a B712     		tfr b, ccr
+ 426              	
+ 427              	LBE32	stabd 68,0,26
+ 428              	
+ 429              	LBE31	stabs "ltc1404.h",132,0,0,Ltext25
+ 430              	
+ 431              	Ltext25	stabd 68,0,43
+ 432              	
+ 433 008c 6D80     	LBE28	sty	0,s
+ 434 008e B754     		tfr	x,d
+ 435 0090 160000   		jsr	__$_4Task
+ 436              	
+ 437 0093 1B84     		leas	4,s
+ 438 0095 3D       		rts
+ 439              	
+ 440              		stabs "_$_7Ltc1404:F20",36,0,39,__$_7Ltc1404
+ 441              		stabs "this:P122",64,0,39,2
+ 442              		stabs "__in_chrg:p1",160,0,39,6
+ 443              		stabs "__in_chrg:r1",64,0,39,1
+ 444              		stabs "masked:103",128,0,40,2
+ 445              		stabn 192,0,0,LBB28
+ 446              		stabn 192,0,0,LBB29
+ 447              		stabn 192,0,0,LBB30
+ 448              		stabn 224,0,0,LBE30
+ 449              		stabn 224,0,0,LBE29
+ 450              		stabn 192,0,0,LBB31
+ 451              		stabn 192,0,0,LBB32
+ 452              		stabn 224,0,0,LBE32
+ 453              		stabn 224,0,0,LBE31
+ 454              		stabn 224,0,0,LBE28
+ 455              	
+ 456              	Lscope1	stabs "",36,0,0,Lscope1-__$_7Ltc1404
+ 457              	
+ 458              		global	___7Ltc1404UiUiR3Spii
+ 459              	___7Ltc1404UiUiR3Spii
+ 460              		stabd 68,0,25
+ 461 0096 1B97     		leas	-9,s
+ 462              	
+ 463 0098 6C85     		std	5,s
+ 464 009a 18028B80 		movw	11,s,0,s
+ 465 009e 18028D82 		movw	13,s,2,s
+ 466 00a2 160000   		jsr	___4TaskUiUi
+ 467 00a5 CC0000   		ldd	#___vt_7Ltc1404
+ 468 00a8 ED85     		ldy	5,s
+ 469 00aa 6C46     		std	6,y
+ 470 00ac EC8F     		ldd	15,s
+ 471 00ae 6C48     		std	8,y
+ 472 00b0 ECF011   		ldd	17,s
+ 473 00b3 6C4A     		std	10,y
+ 474              		stabd 68,0,28
+ 475              	
+ 476              	LBB33	stabs "interrupts.h",132,0,0,Ltext26
+ 477              	
+ 478              	Ltext26	stabd 68,0,17
+ 479              	
+ 480              	LBB34
+ 481              	LBB35	stabd 68,0,18
+ 482 00b5 B721     		tfr ccr, b
+ 483              		stabd 68,0,19
+ 484 00b7 6C87     		std 7,s
+ 485              		stabd 68,0,20
+ 486 00b9 1410     		sei
+ 487              	
+ 488              	LBE35	stabd 68,0,21
+ 489              	
+ 490              	LBE34	stabs "ltc1404.h",132,0,0,Ltext27
+ 491              	
+ 492              	Ltext27	stabd 68,0,31
+ 493 00bb F60000   		ldab	_ddrs
+ 494 00be CAC0     		orab	#192
+ 495 00c0 7B0000   		stab	_ddrs
+ 496              		stabd 68,0,33
+ 497 00c3 F60000   		ldab	_ddrdlc
+ 498 00c6 CA40     		orab	#64
+ 499 00c8 7B0000   		stab	_ddrdlc
+ 500              		stabd 68,0,34
+ 501 00cb F60000   		ldab	_portdlc
+ 502 00ce C4BF     		andb	#191
+ 503 00d0 7B0000   		stab	_portdlc
+ 504              		stabd 68,0,35
+ 505 00d3 B764     		tfr	y,d
+ 506 00d5 160000   		jsr	_fork__4Task
+ 507              		stabs "interrupts.h",132,0,0,Ltext28
+ 508              	
+ 509              	Ltext28	stabd 68,0,23
+ 510              	
+ 511              	LBB36
+ 512              	LBB37	stabd 68,0,24
+ 513 00d8 EC87     		ldd 7,s
+ 514              		stabd 68,0,25
+ 515 00da B712     		tfr b, ccr
+ 516              	
+ 517              	LBE37	stabd 68,0,26
+ 518              	
+ 519              	LBE36	stabs "ltc1404.h",132,0,0,Ltext29
+ 520              	
+ 521              	Ltext29	stabd 68,0,36
+ 522              	
+ 523 00dc EC85     	LBE33	ldd	5,s
+ 524              	
+ 525 00de 1B89     		leas	9,s
+ 526 00e0 3D       		rts
+ 527              	
+ 528              		stabs "__7Ltc1404UiUiR3Spii:F122",36,0,25,___7Ltc1404UiUiR3Spii
+ 529              		stabs "this:p122",160,0,25,5
+ 530              		stabs "stackSize:p4",160,0,25,11
+ 531              		stabs "priority:p4",160,0,25,13
+ 532              		stabs "s:p88",160,0,25,15
+ 533              		stabs "t:p1",160,0,25,17
+ 534              		stabs "masked:103",128,0,29,7
+ 535              		stabn 192,0,0,LBB33
+ 536              		stabn 192,0,0,LBB34
+ 537              		stabn 192,0,0,LBB35
+ 538              		stabn 224,0,0,LBE35
+ 539              		stabn 224,0,0,LBE34
+ 540              		stabn 192,0,0,LBB36
+ 541              		stabn 192,0,0,LBB37
+ 542              		stabn 224,0,0,LBE37
+ 543              		stabn 224,0,0,LBE36
+ 544              		stabn 224,0,0,LBE33
+ 545              	
+ 546              	Lscope2	stabs "",36,0,0,Lscope2-___7Ltc1404UiUiR3Spii
+ 547              	
+ 548              	
+ 549              		end

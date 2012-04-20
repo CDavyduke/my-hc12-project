@@ -1,0 +1,750 @@
+   1              	gcc2_compiled.:
+   2              	___gnu_compiled_cplusplus
+   3              		stabs "/home/cdavyduke/Projects/HC12/ELEX_8030/",100,0,0,Ltext0
+   4              		stabs "pwmdriver.cc",100,0,0,Ltext0
+   5              	
+   6              		section	.text
+   7              	
+   8              	Ltext0	stabs "int:t1=r1;-32768;32767;",128,0,0,0
+   9              		stabs "char:t2=r2;0;255;",128,0,0,0
+  10              		stabs "long int:t3=r1;0020000000000;0017777777777;",128,0,0,0
+  11              		stabs "unsigned int:t4=r4;0;65535;",128,0,0,0
+  12              		stabs "long unsigned int:t5=r1;0000000000000;0037777777777;",128,0,0,0
+  13              		stabs "long long int:t6=r1;0020000000000;0017777777777;",128,0,0,0
+  14              		stabs "long long unsigned int:t7=r1;0000000000000;0037777777777;",128,0,0,0
+  15              		stabs "short int:t8=r8;-32768;32767;",128,0,0,0
+  16              		stabs "short unsigned int:t9=r9;0;65535;",128,0,0,0
+  17              		stabs "signed char:t10=r10;-128;127;",128,0,0,0
+  18              		stabs "unsigned char:t11=r11;0;255;",128,0,0,0
+  19              		stabs "float:t12=r1;4;0;",128,0,0,0
+  20              		stabs "double:t13=r1;4;0;",128,0,0,0
+  21              		stabs "long double:t14=r1;4;0;",128,0,0,0
+  22              		stabs "complex int:t15=s4real:1,0,16;imag:1,16,16;;",128,0,0,0
+  23              		stabs "complex float:t16=r16;4;0;",128,0,0,0
+  24              		stabs "complex double:t17=r17;4;0;",128,0,0,0
+  25              		stabs "complex long double:t18=r18;4;0;",128,0,0,0
+  26              		stabs "bool:t19=@s8;-16;",128,0,0,0
+  27              		stabs "void:t20=20",128,0,0,0
+  28              		stabs "__wchar_t:t21=r21;-32768;32767;",128,0,0,0
+  29              		stabs "__vtbl_ptr_type:t22=*23=f1",128,0,0,0
+  30              		stabs "Isr:T24=s6ictlr:/025=&26=xsIctlr:,0,16;index:/04,16,16;\\",128,0,0,0
+  31              		stabs "$vf24:27=*28=ar0;0;3;22,32;__as::29=##30=&24;:RC3Isr;2A.;Isr::31=##32=*24;:RC3Isr;2A.\\",12
+  32              		stabs "33=##32;:R5IctlrUi;1A.34=#24,20,32,1,20;:_$_3Isr;1A*2;24;;handler::35=##20;:;0A*3;24;;;~%24
+  33              		stabs "Isr:Tt24",128,0,24,0
+  34              		stabs "Ictlr:Tt26=s6length:/04,0,16;isrTbl:/036=*32,16,16;\\",128,0,0,0
+  35              		stabs "$vf26:37=*38=ar0;0;2;22,32;__as::39=##25;:RC5Ictlr;2A.;Ictlr::40=##41=*26;:RC5Ictlr;2A.\\",
+  36              		stabs "42=##41;:Ui;2A.43=#26,20,41,1,20;:_$_5Ictlr;2A*2;26;;attach::44=##20;:P3Isr;2A.;\\",128,0,0
+  37              		stabs "detach::44:P3Isr;2A.;runHandler::45=##20;:Ui;1A.;;~%26;",128,0,44,0
+  38              		stabs "IoMask:t1",128,0,39,0
+  39              		stabs "pwmreg:Tt46=u2byte:47=ar0;0;1;2,0,16;word:4,0,16;\\",128,0,0,0
+  40              		stabs "__as::48=##49=&46;:RC6pwmreg;2A.;pwmreg::50=##51=*46;:RC6pwmreg;2A.52=##51;:;2A.;;",128,0,4
+  41              		stabs "sciport:Tt53=s8scbd:1,0,16;sccr1:2,16,8;\\",128,0,0,0
+  42              		stabs "loops:/21:loops;woms:/21:woms;rsrc:/21:rsrc;\\",128,0,0,0
+  43              		stabs "m:/21:m;wake:/21:wake;ilt:/21:ilt;\\",128,0,0,0
+  44              		stabs "pe:/21:pe;pt:/21:pt;sccr2:2,24,8;\\",128,0,0,0
+  45              		stabs "tie:/21:tie;tcie:/21:tcie;rie:/21:rie;\\",128,0,0,0
+  46              		stabs "ilie:/21:ilie;te:/21:te;re:/21:re;\\",128,0,0,0
+  47              		stabs "rwu:/21:rwu;sbk:/21:sbk;scsr1:2,32,8;\\",128,0,0,0
+  48              		stabs "tdre:/21:tdre;tc:/21:tc;rdrf:/21:rdrf;\\",128,0,0,0
+  49              		stabs "idle:/21:idle;or:/21:or;nf:/21:nf;\\",128,0,0,0
+  50              		stabs "fe:/21:fe;pf:/21:pf;scsr2:2,40,8;\\",128,0,0,0
+  51              		stabs "raf:/21:raf;scdrh:2,48,8;r8:/21:r8;\\",128,0,0,0
+  52              		stabs "t8:/21:t8;scdrl:2,56,8;__as::54=##55=&53;:RC7sciport;2A.;\\",128,0,0,0
+  53              		stabs "sciport::56=##57=*53;:RC7sciport;2A.58=##57;:;2A.;;",128,0,636,0
+  54              		stabs "spiport:Tt59=s6spcr1:2,0,8;spie:/21:spie;\\",128,0,0,0
+  55              		stabs "spe:/21:spe;swom:/21:swom;mstr:/21:mstr;\\",128,0,0,0
+  56              		stabs "cpol:/21:cpol;cpha:/21:cpha;ssoe:/21:ssoe;\\",128,0,0,0
+  57              		stabs "lsbf:/21:lsbf;spcr2:2,8,8;sswai:/21:sswai;\\",128,0,0,0
+  58              		stabs "spc0:/21:spc0;spbr:2,16,8;spr31:/21:spr31;\\",128,0,0,0
+  59              		stabs "spr62:/21:spr62;spr125:/21:spr125;\\",128,0,0,0
+  60              		stabs "spr250:/21:spr250;spr500:/21:spr500;\\",128,0,0,0
+  61              		stabs "spr1000:/21:spr1000;spr2000:/21:spr2000;\\",128,0,0,0
+  62              		stabs "spr4000:/21:spr4000;spsr:2,24,8;spif:/21:spif;\\",128,0,0,0
+  63              		stabs "wcol:/21:wcol;modf:/21:modf;rsvd4:2,32,8;\\",128,0,0,0
+  64              		stabs "spdr:2,40,8;__as::60=##61=&59;:RC7spiport;2A.;spiport::62=##63=*59;:RC7spiport;2A.\\",128,0
+  65              		stabs "64=##63;:;2A.;;",128,0,689,0
+  66              		stabs "OutputCompare:Tt65=s8tcx:/066=&4,0,16;mask:/04,16,16;\\",128,0,0,0
+  67              		stabs "level:/04,32,16;mode:/04,48,16;__as::67=##68=&65;:RC13OutputCompare;2A.;\\",128,0,0,0
+  68              		stabs "OutputCompare::69=##70=*65;:RC13OutputCompare;2A.71=##70;:ib;2A.72=#65,20,70,1,20;:_$_13Out
+  69              		stabs "__opUi::73=##4;:;2B.;at::74=##20;:Ui;2A.;raiseAt::74:Ui;2A.;dropAt::74:Ui;2A.;\\",128,0,0,0
+  70              		stabs "oc7::72:i;2A.;;",128,0,84,0
+  71              		stabs "PwmChannel:Tt75=s38next:/076=*75,0,16;driver:/077=&78=xsPwmDriver:,16,16;\\",128,0,0,0
+  72              		stabs "dutyCycle:/012,32,32;direction:/01,64,16;newOnTime:/04,80,16;\\",128,0,0,0
+  73              		stabs "onTime:/04,96,16;ocDir:/065,112,64;ocPwm:/065,176,64;\\",128,0,0,0
+  74              		stabs "ocBrk:/065,240,64;__as::79=##80=&75;:RC10PwmChannel;2A.;PwmChannel::81=##76;:RC10PwmChannel
+  75              		stabs "82=#75,20,76,1,20;:_$_10PwmChannel;2A.83=##76;:R9PwmDriveri;2A.;setDuty::84=##20;:f;2A.;\\"
+  76              		stabs "getDuty::85=##12;:;2A.;handler::86=##76;:iUi;0A.;;",128,0,42,0
+  77              		stabs "PwmDriver:Tt78=s28!1,020,24;first:/076,48,16;\\",128,0,0,0
+  78              		stabs "period:/04,64,16;phase:/01,80,16;ocTick:/065,96,64;\\",128,0,0,0
+  79              		stabs "ocOff:/065,160,64;__as::87=##77;:RC9PwmDriver;2A.;PwmDriver::88=##89=*78;:RC9PwmDriver;2A.\
+  80              		stabs "90=#78,20,89,1,20;:_$_9PwmDriver;2A*2;24;91=##89;:R5IctlrUi;2A.;\\",128,0,0,0
+  81              		stabs "handler::92=##20;:;1A*3;24;;attach::93=##76;:P10PwmChannel;0A.;getPeriod::94=##4;:;0B.;;~%2
+  82              		stabs "Interrupts:Tt95=s2oldMask:/01,0,16;__as::96=##97=&95;:RC10Interrupts;2A.;\\",128,0,0,0
+  83              		stabs "Interrupts::98=##99=*95;:RC10Interrupts;2A.100=##99;:;2A.101=#95,20,99,1,20;:_$_10Interrupt
+  84              		stabs "Sources:t102=eisBdl:0,isAtd:1,isSc0:2,\\",128,0,0,0
+  85              		stabs "isSpi:3,isPai:4,isPao:5,isTof:6,\\",128,0,0,0
+  86              		stabs "isTc7:7,isTc6:8,isTc5:9,isTc4:10,\\",128,0,0,0
+  87              		stabs "isTc3:11,isTc2:12,isTc1:13,isTc0:14,\\",128,0,0,0
+  88              		stabs "isRti:15,isIrq:16,isNumSources:17,;",128,0,24,0
+  89              		stabs "HC12Ictlr:Tt103=s6!1,020,26;theHC12Ictlr:/0104=*103:_9HC12Ictlr$theHC12Ictlr;\\",128,0,0,0
+  90              		stabs "__as::105=##106=&103;:RC9HC12Ictlr;2A.;HC12Ictlr::107=##104;:RC9HC12Ictlr;2A.108=##104;:;2A
+  91              		stabs "109=#103,20,104,1,20;:_$_9HC12Ictlr;2A*2;26;;handlerTable::110=f20:;0A?;;~%26;",128,0,48,0
+  92              	
+  93              		global	___9PwmDriverR5IctlrUi
+  94              	___9PwmDriverR5IctlrUi
+   1:pwmdriver.cc  **** // Filename:       PWMDRIVER.CC
+   2:pwmdriver.cc  **** // Author:         C. DAVYDUKE
+   3:pwmdriver.cc  **** // File Created:   03/10/21
+   4:pwmdriver.cc  **** // Last Modified:  03/11/29
+   5:pwmdriver.cc  **** // Description:	This file contains the class methods for PWM driver.
+   6:pwmdriver.cc  **** 
+   7:pwmdriver.cc  **** #include "pwm.h"
+   8:pwmdriver.cc  **** #include "interrupts.h"
+   9:pwmdriver.cc  **** #include "hc12ictlr.h"
+  10:pwmdriver.cc  **** 
+  11:pwmdriver.cc  **** PwmDriver::PwmDriver( Ictlr & ic, unsigned per )
+  12:pwmdriver.cc  **** : Isr( ic, HC12Ictlr::isTc3 ),
+  95              		stabd 68,0,12
+  96 0000 1B93     		leas	-13,s
+  97              	
+  98 0002 6C8B     		std	11,s
+  99 0004 EC8F     		ldd	15,s
+ 100 0006 6C80     		std	0,s
+ 101 0008 18008200 		movw	#11,2,s
+ 101      0B
+ 102 000d EC8B     		ldd	11,s
+ 103 000f 160000   		jsr	___3IsrR5IctlrUi
+ 104 0012 CC0000   		ldd	#___vt_9PwmDriver
+ 105 0015 ED8B     		ldy	11,s
+ 106 0017 6C44     		std	4,y
+ 107 0019 87C7     		clrd	
+ 108 001b 6C46     		std	6,y
+ 109 001d ECF011   		ldd	17,s
+ 110 0020 6C48     		std	8,y
+ 111 0022 87C7     		clrd	
+ 112 0024 6C4A     		std	10,y
+ 113              		stabs "outputcompare.h",132,0,0,Ltext1
+ 114              	
+   1:outputcompare.h **** // Filename:		OUTPUTCOMPARE.H
+   2:outputcompare.h **** // Author:			C. DAVYDUKE
+   3:outputcompare.h **** // File Created:	03/10/21
+   4:outputcompare.h **** // Last Modified: 03/10/29
+   5:outputcompare.h **** // Description:	This file contains the class definitions for outputcompare.
+   6:outputcompare.h **** 
+   7:outputcompare.h **** #ifndef __OUTPUTCOMPARE_H__
+   8:outputcompare.h **** #define __OUTPUTCOMPARE_H__
+   9:outputcompare.h **** 
+  10:outputcompare.h **** #include "chipio.h"
+  11:outputcompare.h **** 
+  12:outputcompare.h **** class OutputCompare	// Controls 1 oc channel of the 8
+  13:outputcompare.h **** {
+  14:outputcompare.h **** 	private:
+  15:outputcompare.h **** 		volatile unsigned int & tcx;		// A reference to one of the TC0-TC7 compare registers
+  16:outputcompare.h **** 		unsigned mask;	// 1 << num ( chan number )
+  17:outputcompare.h **** 		unsigned level;	// Choose one of the 4 possible actions
+  18:outputcompare.h **** 		unsigned mode;	// on compare.
+  19:outputcompare.h **** 
+  20:outputcompare.h **** 	public:
+  21:outputcompare.h **** 		OutputCompare( int num, bool enable = false )
+  22:outputcompare.h **** 		:	tcx( ( & tc0 )[num] ),
+ 115              	Ltext1	stabd 68,0,22
+ 116 0026 1A4C     		leax	12,y
+ 117              	
+ 118 0028 18000000 	LBB2	movw	#_tc0+6,0,x
+ 118      06
+ 119 002d 18000200 		movw	#8,2,x
+ 119      08
+ 120 0032 18000400 		movw	#64,4,x
+ 120      40
+ 121 0037 18000600 		movw	#128,6,x
+ 121      80
+  23:outputcompare.h **** 			mask( 1 << num ),
+  24:outputcompare.h **** 			level( ol << ( 2 * num ) ),
+  25:outputcompare.h **** 			mode( om << ( 2 * num ) )
+  26:outputcompare.h **** 			{
+ 122              		stabd 68,0,26
+ 123              	
+  27:outputcompare.h **** 				tscr |= ( ten | tffca );	// Set up tcnt and interrupt ack system
+ 124              	LBB3	stabd 68,0,27
+ 125 003c F60000   		ldab	_tscr
+ 126 003f CA90     		orab	#144
+ 127 0041 7B0000   		stab	_tscr
+  28:outputcompare.h **** 				tcx = tcnt - 1;		// Set max time till next compare
+ 128              		stabd 68,0,28
+ 129 0044 ED00     		ldy	0,x
+ 130 0046 6D84     		sty	4,s
+ 131 0048 FC0000   		ldd	_tcnt
+ 132 004b C3FFFF   		addd	#-1
+ 133 004e 6CF30004 		std	[4,s]
+  29:outputcompare.h **** 				tios |= mask;		// Set channel to compare mode
+ 134              		stabd 68,0,29
+ 135 0052 F60000   		ldab	_tios
+ 136 0055 EA03     		orab	3,x
+ 137 0057 7B0000   		stab	_tios
+  30:outputcompare.h **** 
+  31:outputcompare.h **** 				if( enable )
+  32:outputcompare.h **** 				{
+  33:outputcompare.h **** 					tflg1 |= mask;	// ack any previous int.
+ 138              		stabd 68,0,33
+ 139 005a F60000   		ldab	_tflg1
+ 140 005d EA03     		orab	3,x
+ 141 005f 7B0000   		stab	_tflg1
+  34:outputcompare.h **** 					tmsk1 |= mask;	// enable the interrupt.
+ 142              		stabd 68,0,34
+ 143 0062 F60000   		ldab	_tmsk1
+ 144 0065 EA03     		orab	3,x
+ 145 0067 7B0000   		stab	_tmsk1
+ 146              	
+  35:outputcompare.h **** 				}
+  36:outputcompare.h **** 			}
+ 147              	LBE3	stabd 68,0,36
+ 148              	
+ 149              	LBE2	stabs "pwmdriver.cc",132,0,0,Ltext2
+ 150              	
+  13:pwmdriver.cc  ****   first( 0 ),
+  14:pwmdriver.cc  ****   period( per ),
+  15:pwmdriver.cc  ****   phase( 0 ),
+  16:pwmdriver.cc  ****   ocTick( 3, true ),
+  17:pwmdriver.cc  ****   ocOff( 7 )
+  18:pwmdriver.cc  **** {
+ 151              	Ltext2	stabd 68,0,18
+ 152              		stabs "outputcompare.h",132,0,0,Ltext3
+ 153              	
+ 154              	Ltext3	stabd 68,0,22
+ 155 006a ED8B     		ldy	11,s
+ 156 006c 19E814   		leay	20,y
+ 157 006f 6D84     		sty	4,s
+ 158              	
+ 159 0071 CC000E   	LBB4	ldd	#_tc0+14
+ 160 0074 6CF30004 		std	[4,s]
+ 161 0078 CC0080   		ldd	#128
+ 162 007b 6C42     		std	2,y
+ 163 007d CC4000   		ldd	#16384
+ 164 0080 6C44     		std	4,y
+ 165 0082 CC8000   		ldd	#-32768
+ 166 0085 6C46     		std	6,y
+ 167              		stabd 68,0,26
+ 168              	
+ 169              	LBB5	stabd 68,0,27
+ 170 0087 F60000   		ldab	_tscr
+ 171 008a CA90     		orab	#144
+ 172 008c 7B0000   		stab	_tscr
+ 173              		stabd 68,0,28
+ 174 008f EDF30004 		ldy	[4,s]
+ 175 0093 6D89     		sty	9,s
+ 176 0095 FC0000   		ldd	_tcnt
+ 177 0098 C3FFFF   		addd	#-1
+ 178 009b 6CF30009 		std	[9,s]
+ 179              		stabd 68,0,29
+ 180 009f F60000   		ldab	_tios
+ 181 00a2 ED84     		ldy	4,s
+ 182 00a4 EA43     		orab	3,y
+ 183 00a6 7B0000   		stab	_tios
+ 184              		stabd 68,0,34
+ 185              	
+ 186              	LBE5	stabd 68,0,36
+ 187              	
+ 188              	LBE4	stabs "pwmdriver.cc",132,0,0,Ltext4
+ 189              	
+ 190              	Ltext4	stabd 68,0,18
+ 191              	
+  19:pwmdriver.cc  ****   ocTick.at( tcnt + period / 2 );
+ 192              	LBB6	stabd 68,0,19
+ 193 00a9 ECF011   		ldd	17,s
+ 194 00ac 49       		lsrd	
+ 195 00ad 6C86     		std	6,s
+ 196              		stabs "outputcompare.h",132,0,0,Ltext5
+ 197              	
+  37:outputcompare.h **** 
+  38:outputcompare.h **** 		~OutputCompare()
+  39:outputcompare.h **** 		{
+  40:outputcompare.h **** 			// fill in later
+  41:outputcompare.h **** 		}
+  42:outputcompare.h **** 
+  43:outputcompare.h **** 		operator unsigned int() const	// conversion operator
+  44:outputcompare.h **** 		{
+  45:outputcompare.h **** 			return tcx;
+  46:outputcompare.h **** 		}
+  47:outputcompare.h **** 
+  48:outputcompare.h **** 		void at( unsigned time )
+  49:outputcompare.h **** 		{
+ 198              	Ltext5	stabd 68,0,49
+ 199 00af FD0000   		ldy	_tcnt
+ 200 00b2 B764     		tfr	y,d
+ 201 00b4 E386     		addd	6,s
+ 202              	
+ 203              	LBB7
+  50:outputcompare.h **** 			tcx = time;
+ 204              	LBB8	stabd 68,0,50
+ 205 00b6 EE00     		ldx	0,x
+ 206 00b8 B746     		tfr	d,y
+ 207 00ba 6D00     		sty	0,x
+ 208              	
+  51:outputcompare.h **** 		}
+ 209              	LBE8	stabd 68,0,51
+ 210              	
+ 211              	LBE7	stabs "pwmdriver.cc",132,0,0,Ltext6
+ 212              	
+ 213              	Ltext6	stabd 68,0,19
+ 214              	
+ 215 00bc EC8B     	LBE6	ldd	11,s
+  20:pwmdriver.cc  **** }
+ 216              		stabd 68,0,20
+ 217              	
+ 218 00be 1B8D     		leas	13,s
+ 219 00c0 3D       		rts
+ 220              	
+ 221              		stabs "__9PwmDriverR5IctlrUi:F89",36,0,12,___9PwmDriverR5IctlrUi
+ 222              		stabs "this:p89",160,0,12,11
+ 223              		stabs "ic:p25",160,0,12,15
+ 224              		stabs "per:p4",160,0,12,17
+ 225              		stabs "this:r70",64,0,18,2
+ 226              		stabn 192,0,0,LBB2
+ 227              		stabn 192,0,0,LBB3
+ 228              		stabn 224,0,0,LBE3
+ 229              		stabn 224,0,0,LBE2
+ 230              		stabs "this:70",128,0,18,4
+ 231              		stabn 192,0,0,LBB4
+ 232              		stabn 192,0,0,LBB5
+ 233              		stabn 224,0,0,LBE5
+ 234              		stabn 224,0,0,LBE4
+ 235              		stabn 192,0,0,LBB6
+ 236              		stabs "time:r4",64,0,19,1
+ 237              		stabn 192,0,0,LBB7
+ 238              		stabn 192,0,0,LBB8
+ 239              		stabn 224,0,0,LBE8
+ 240              		stabn 224,0,0,LBE7
+ 241              		stabn 224,0,0,LBE6
+ 242              	
+ 243              	Lscope0	stabs "",36,0,0,Lscope0-___9PwmDriverR5IctlrUi
+ 244              	
+ 245              		global	_handler__9PwmDriver
+ 246              	_handler__9PwmDriver
+  21:pwmdriver.cc  **** 
+  22:pwmdriver.cc  **** void PwmDriver::handler( )  // ints globally masked by HC12, automatically
+  23:pwmdriver.cc  **** {
+ 247              		stabd 68,0,23
+ 248 00c1 1B96     		leas	-10,s
+ 249              	
+ 250 00c3 6C88     		std	8,s
+ 251              	
+  24:pwmdriver.cc  ****   ocTick.at( ocTick + period / 2 );  // set time of next event to time of this event + period / 2
+ 252              	LBB9	stabd 68,0,24
+ 253              		stabs "outputcompare.h",132,0,0,Ltext7
+ 254              	
+ 255              	Ltext7	stabd 68,0,44
+ 256 00c5 B746     		tfr	d,y
+ 257 00c7 194C     		leay	12,y
+ 258 00c9 6D86     		sty	6,s
+ 259              	
+ 260              	LBB10
+ 261              	LBB11	stabd 68,0,45
+ 262 00cb EEF30006 		ldx	[6,s]
+ 263 00cf ED00     		ldy	0,x
+ 264 00d1 6D84     		sty	4,s
+ 265              	
+ 266              	LBE11	stabd 68,0,46
+ 267              	
+ 268              	LBE10	stabs "pwmdriver.cc",132,0,0,Ltext8
+ 269              	
+ 270              	Ltext8	stabd 68,0,24
+ 271 00d3 B746     		tfr	d,y
+ 272 00d5 EC48     		ldd	8,y
+ 273 00d7 49       		lsrd	
+ 274              		stabs "outputcompare.h",132,0,0,Ltext9
+ 275              	
+ 276              	Ltext9	stabd 68,0,49
+ 277 00d8 ED84     		ldy	4,s
+ 278 00da 19EE     		leay	d,y
+ 279 00dc B764     		tfr	y,d
+ 280              	
+ 281              	LBB12
+ 282              	LBB13	stabd 68,0,50
+ 283 00de 6C00     		std	0,x
+ 284              	
+ 285              	LBE13	stabd 68,0,51
+ 286              	
+ 287              	LBE12	stabs "pwmdriver.cc",132,0,0,Ltext10
+ 288              	
+  25:pwmdriver.cc  ****   phase = ( phase + 1 ) & 1;
+ 289              	Ltext10	stabd 68,0,25
+ 290 00e0 ED88     		ldy	8,s
+ 291 00e2 EC4A     		ldd	10,y
+ 292 00e4 C30001   		addd	#1
+ 293 00e7 87       		clra	
+ 294 00e8 C401     		andb	#1      & $FF
+ 295 00ea 6C4A     		std	10,y
+  26:pwmdriver.cc  **** 
+  27:pwmdriver.cc  ****   if( phase == 0 )
+ 296              		stabd 68,0,27
+ 297              	
+ 298 00ec 2612     	LBB14	bne	L73
+ 299              		
+  28:pwmdriver.cc  ****     ocOff.at( ocTick + period / 2 );  // set up Oc7 to generate falling edge on Pwm
+ 300              		stabd 68,0,28
+ 301              	
+ 302              	LBB15	stabs "outputcompare.h",132,0,0,Ltext11
+ 303              	
+ 304              	Ltext11	stabd 68,0,44
+ 305              	
+ 306              	LBB16
+ 307              	LBB17	stabd 68,0,45
+ 308 00ee EEF30006 		ldx	[6,s]
+ 309 00f2 EE00     		ldx	0,x
+ 310              	
+ 311              	LBE17	stabd 68,0,46
+ 312              	
+ 313              	LBE16	stabs "pwmdriver.cc",132,0,0,Ltext12
+ 314              	
+ 315              	Ltext12	stabd 68,0,28
+ 316 00f4 EC48     		ldd	8,y
+ 317 00f6 49       		lsrd	
+ 318              		stabs "outputcompare.h",132,0,0,Ltext13
+ 319              	
+ 320              	Ltext13	stabd 68,0,49
+ 321 00f7 1AE6     		leax	d,x
+ 322              	
+ 323              	LBB18
+ 324              	LBB19	stabd 68,0,50
+ 325 00f9 ECE814   		ldd	20,y
+ 326 00fc B746     		tfr	d,y
+ 327 00fe 6E40     		stx	0,y
+ 328              	
+ 329              	LBE19	stabd 68,0,51
+ 330              	
+ 331              	LBE18	stabs "pwmdriver.cc",132,0,0,Ltext14
+ 332              	
+ 333              	Ltext14	stabd 68,0,28
+ 334              	
+ 335              	LBE15
+ 336              	L73
+  29:pwmdriver.cc  **** 
+  30:pwmdriver.cc  ****   for( PwmChannel * chan = first; chan;
+ 337              	LBE14	stabd 68,0,30
+ 338              	
+ 339 0100 ED88     	LBB20	ldy	8,s
+ 340 0102 EE46     		ldx	6,y
+ 341 0104 271D     		beq	L77
+ 342              		
+  31:pwmdriver.cc  ****     chan = chan -> handler( phase, ocOff ) );
+ 343              		stabd 68,0,31
+ 344              	
+ 345              	L78	stabs "outputcompare.h",132,0,0,Ltext15
+ 346              	
+ 347              	Ltext15	stabd 68,0,44
+ 348              	
+ 349              	LBB21
+ 350              	LBB22	stabd 68,0,45
+ 351 0106 ED88     		ldy	8,s
+ 352 0108 ECE814   		ldd	20,y
+ 353 010b B746     		tfr	d,y
+ 354 010d EC40     		ldd	0,y
+ 355              	
+ 356              	LBE22	stabd 68,0,46
+ 357              	
+ 358              	LBE21	stabs "pwmdriver.cc",132,0,0,Ltext16
+ 359              	
+ 360              	Ltext16	stabd 68,0,31
+ 361 010f ED88     		ldy	8,s
+ 362 0111 ED4A     		ldy	10,y
+ 363 0113 6D80     		sty	0,s
+ 364 0115 6C82     		std	2,s
+ 365 0117 B754     		tfr	x,d
+ 366 0119 160000   		jsr	_handler__10PwmChanneliUi
+ 367 011c B745     		tfr	d,x
+ 368 011e 8E0000   		tstx	
+ 369 0121 26E3     		bne	L78
+ 370              		
+ 371              	
+ 372              	L77
+ 373              	LBE20
+  32:pwmdriver.cc  **** 
+  33:pwmdriver.cc  **** }
+ 374              	LBE9	stabd 68,0,33
+ 375              	
+ 376 0123 1B8A     		leas	10,s
+ 377 0125 3D       		rts
+ 378              	
+ 379              		stabs "handler__9PwmDriver:F20",36,0,23,_handler__9PwmDriver
+ 380              		stabs "this:p89",160,0,23,8
+ 381              		stabn 192,0,0,LBB9
+ 382              		stabs "this:111=*65",128,0,24,6
+ 383              		stabn 192,0,0,LBB10
+ 384              		stabn 192,0,0,LBB11
+ 385              		stabn 224,0,0,LBE11
+ 386              		stabn 224,0,0,LBE10
+ 387              		stabs "time:r4",64,0,24,0
+ 388              		stabn 192,0,0,LBB12
+ 389              		stabn 192,0,0,LBB13
+ 390              		stabn 224,0,0,LBE13
+ 391              		stabn 224,0,0,LBE12
+ 392              		stabn 192,0,0,LBB14
+ 393              		stabn 192,0,0,LBB15
+ 394              		stabn 192,0,0,LBB16
+ 395              		stabn 192,0,0,LBB17
+ 396              		stabn 224,0,0,LBE17
+ 397              		stabn 224,0,0,LBE16
+ 398              		stabs "time:r4",64,0,28,2
+ 399              		stabn 192,0,0,LBB18
+ 400              		stabn 192,0,0,LBB19
+ 401              		stabn 224,0,0,LBE19
+ 402              		stabn 224,0,0,LBE18
+ 403              		stabn 224,0,0,LBE15
+ 404              		stabn 224,0,0,LBE14
+ 405              		stabs "chan:r76",64,0,30,2
+ 406              		stabn 192,0,0,LBB20
+ 407              		stabn 192,0,0,LBB21
+ 408              		stabn 192,0,0,LBB22
+ 409              		stabn 224,0,0,LBE22
+ 410              		stabn 224,0,0,LBE21
+ 411              		stabn 224,0,0,LBE20
+ 412              		stabn 224,0,0,LBE9
+ 413              	
+ 414              	Lscope1	stabs "",36,0,0,Lscope1-_handler__9PwmDriver
+ 415              	
+ 416              		global	_attach__9PwmDriverP10PwmChannel
+ 417              	_attach__9PwmDriverP10PwmChannel
+  34:pwmdriver.cc  **** 
+  35:pwmdriver.cc  **** PwmChannel * PwmDriver::attach( PwmChannel * chan )
+  36:pwmdriver.cc  **** {
+ 418              		stabd 68,0,36
+ 419 0126 1B9C     		leas	-4,s
+ 420              	
+ 421 0128 B745     		tfr	d,x
+ 422              	
+ 423              	LBB23	stabs "interrupts.h",132,0,0,Ltext17
+ 424              	
+   1:interrupts.h  **** // Filename:		INTERRUPTS.H
+   2:interrupts.h  **** // Author:			C. DAVYDUKE
+   3:interrupts.h  **** // File Created:	03/10/20
+   4:interrupts.h  **** // Last Modified: 03/10/29
+   5:interrupts.h  **** // Description:	This file contains the class definition of interrupts and some low level code.
+   6:interrupts.h  **** 
+   7:interrupts.h  **** #ifndef __INTERRUPTS_H__
+   8:interrupts.h  **** #define __INTERRUPTS_H__
+   9:interrupts.h  **** 
+  10:interrupts.h  **** // This class definition allows us to use the properties of classes (e.g. constructors and
+  11:interrupts.h  **** // destructors) to ensure that interrupts are always enabled and disabled, and one or
+  12:interrupts.h  **** // the other is not forgotten.  Very HC12 specific.
+  13:interrupts.h  **** class Interrupts
+  14:interrupts.h  **** {
+  15:interrupts.h  **** 	public:
+  16:interrupts.h  **** 		Interrupts()
+  17:interrupts.h  **** 		{
+ 425              	Ltext17	stabd 68,0,17
+ 426              	
+ 427              	LBB24
+  18:interrupts.h  **** 			asm( "tfr ccr, b" );
+ 428              	LBB25	stabd 68,0,18
+ 429 012a B721     		tfr ccr, b
+  19:interrupts.h  **** 			asm( "std %0" : : "m"(oldMask) : "d" );
+ 430              		stabd 68,0,19
+ 431 012c 6C82     		std 2,s
+  20:interrupts.h  **** 			asm( "sei" );
+ 432              		stabd 68,0,20
+ 433 012e 1410     		sei
+ 434              	
+  21:interrupts.h  **** 		}
+ 435              	LBE25	stabd 68,0,21
+ 436              	
+ 437              	LBE24	stabs "pwmdriver.cc",132,0,0,Ltext18
+ 438              	
+  37:pwmdriver.cc  ****   Interrupts masked;
+  38:pwmdriver.cc  ****   PwmChannel * list = first;
+ 439              	Ltext18	stabd 68,0,38
+ 440 0130 ED06     		ldy	6,x
+ 441 0132 6D80     		sty	0,s
+  39:pwmdriver.cc  ****   first = chan;
+ 442              		stabd 68,0,39
+ 443 0134 ED86     		ldy	6,s
+ 444 0136 6D06     		sty	6,x
+  40:pwmdriver.cc  ****   return list;
+ 445              		stabd 68,0,40
+ 446              	
+ 447              	LBB26	stabs "interrupts.h",132,0,0,Ltext19
+ 448              	
+  22:interrupts.h  **** 		~Interrupts()
+  23:interrupts.h  **** 		{
+ 449              	Ltext19	stabd 68,0,23
+ 450              	
+ 451              	LBB27
+  24:interrupts.h  **** 			asm( "ldd %0" : : "m"(oldMask) : "d" );
+ 452              	LBB28	stabd 68,0,24
+ 453 0138 EC82     		ldd 2,s
+  25:interrupts.h  **** 			asm( "tfr b, ccr" );
+ 454              		stabd 68,0,25
+ 455 013a B712     		tfr b, ccr
+ 456              	
+  26:interrupts.h  **** 		}
+ 457              	LBE28	stabd 68,0,26
+ 458              	
+ 459              	LBE27	stabs "pwmdriver.cc",132,0,0,Ltext20
+ 460              	
+  41:pwmdriver.cc  **** }
+ 461              	Ltext20	stabd 68,0,41
+ 462              	
+ 463 013c EC80     	LBE26	ldd	0,s
+ 464              	
+ 465              	LBE23
+ 466 013e 1B84     		leas	4,s
+ 467 0140 3D       		rts
+ 468              	
+ 469              		stabs "attach__9PwmDriverP10PwmChannel:F76",36,0,36,_attach__9PwmDriverP10PwmChannel
+ 470              		stabs "this:P89",64,0,36,2
+ 471              		stabs "chan:p76",160,0,36,6
+ 472              		stabs "masked:95",128,0,37,2
+ 473              		stabs "list:r112=*76",64,0,38,3
+ 474              		stabn 192,0,0,LBB23
+ 475              		stabn 192,0,0,LBB24
+ 476              		stabn 192,0,0,LBB25
+ 477              		stabn 224,0,0,LBE25
+ 478              		stabn 224,0,0,LBE24
+ 479              		stabn 192,0,0,LBB26
+ 480              		stabn 192,0,0,LBB27
+ 481              		stabn 192,0,0,LBB28
+ 482              		stabn 224,0,0,LBE28
+ 483              		stabn 224,0,0,LBE27
+ 484              		stabn 224,0,0,LBE26
+ 485              		stabn 224,0,0,LBE23
+ 486              	
+ 487              	Lscope2	stabs "",36,0,0,Lscope2-_attach__9PwmDriverP10PwmChannel
+ 488              	
+ 489              		global	___vt_9PwmDriver
+ 490              	
+ 491              		section	.const
+ 492              		stabs "__vt_9PwmDriver:G28",32,0,71,0
+ 493              	___vt_9PwmDriver
+ 494 0000 0000     		dc.w	0
+ 495 0002 0000     		dc.w	0
+ 496 0004 0146     		dc.w	__$_9PwmDriver
+ 497 0006 00C1     		dc.w	_handler__9PwmDriver
+ 498              	
+ 499              		section	.text
+ 500              	
+ 501              		global	_getPeriod__C9PwmDriver
+ 502              	_getPeriod__C9PwmDriver
+ 503              		stabs "pwm.h",132,0,0,Ltext21
+ 504              	
+   1:pwm.h         **** // $Id: pwm.h,v 1.1 2003/11/06 05:27:26 cdavyduk Exp $
+   2:pwm.h         **** 
+   3:pwm.h         **** // pwm.h			   Copyright (C) 2003, Real-Time Systems Inc.
+   4:pwm.h         **** //-------------------------------------------- All Rights Reserved ----------
+   5:pwm.h         **** //
+   6:pwm.h         **** //	PWM Driver
+   7:pwm.h         **** //
+   8:pwm.h         **** //---------------------------------------------------------------------------
+   9:pwm.h         **** 
+  10:pwm.h         **** #ifndef PWM_H
+  11:pwm.h         **** #define PWM_H
+  12:pwm.h         **** 
+  13:pwm.h         **** #include "isr.h"
+  14:pwm.h         **** #include "outputcompare.h"
+  15:pwm.h         **** 
+  16:pwm.h         **** 
+  17:pwm.h         **** class PwmChannel
+  18:pwm.h         **** {
+  19:pwm.h         **** public:
+  20:pwm.h         ****   PwmChannel(class PwmDriver& driver, int chanNum);
+  21:pwm.h         **** 
+  22:pwm.h         ****   void setDuty(float duty);
+  23:pwm.h         ****   float getDuty();
+  24:pwm.h         **** 
+  25:pwm.h         **** private:
+  26:pwm.h         ****   PwmChannel* handler(int phase, unsigned nextCycle);
+  27:pwm.h         **** 
+  28:pwm.h         ****   friend class PwmDriver;
+  29:pwm.h         **** 
+  30:pwm.h         **** private:  
+  31:pwm.h         ****   PwmChannel* next;
+  32:pwm.h         ****   class PwmDriver& driver;
+  33:pwm.h         ****   
+  34:pwm.h         ****   float dutyCycle;
+  35:pwm.h         ****   int direction;
+  36:pwm.h         ****   unsigned newOnTime;
+  37:pwm.h         ****   unsigned onTime;
+  38:pwm.h         ****   
+  39:pwm.h         ****   OutputCompare ocDir;
+  40:pwm.h         ****   OutputCompare ocPwm;
+  41:pwm.h         ****   OutputCompare ocBrk;
+  42:pwm.h         **** };
+  43:pwm.h         **** 
+  44:pwm.h         **** 
+  45:pwm.h         **** class PwmDriver : public Isr
+  46:pwm.h         **** {
+  47:pwm.h         **** public:
+  48:pwm.h         ****   PwmDriver(Ictlr& ic, unsigned period);
+  49:pwm.h         **** 
+  50:pwm.h         **** protected:
+  51:pwm.h         ****   virtual void handler();
+  52:pwm.h         ****   
+  53:pwm.h         **** private:
+  54:pwm.h         ****   PwmChannel* attach(PwmChannel* chan);
+  55:pwm.h         **** 
+  56:pwm.h         ****   unsigned getPeriod() const
+  57:pwm.h         ****   {
+ 505              	Ltext21	stabd 68,0,57
+ 506              	
+ 507 0141 B746     		tfr	d,y
+ 508              	
+  58:pwm.h         ****     return period;
+ 509              	LBB29	stabd 68,0,58
+ 510 0143 EC48     		ldd	8,y
+ 511              	
+  59:pwm.h         ****   }
+ 512              	LBE29	stabd 68,0,59
+ 513              	
+ 514 0145 3D       		rts
+ 515              	
+ 516              		stabs "getPeriod__C9PwmDriver:F4",36,0,57,_getPeriod__C9PwmDriver
+ 517              		stabs "this:P113=*78",64,0,57,1
+ 518              		stabn 192,0,0,LBB29
+ 519              		stabn 224,0,0,LBE29
+ 520              	
+ 521              	Lscope3	stabs "",36,0,0,Lscope3-_getPeriod__C9PwmDriver
+ 522              	
+ 523              		global	__$_9PwmDriver
+ 524              	__$_9PwmDriver
+ 525              		stabs "pwmdriver.cc",132,0,0,Ltext22
+ 526              	
+ 527              	Ltext22	stabd 68,0,41
+ 528 0146 1B9E     		leas	-2,s
+ 529              	
+ 530              		stabs "outputcompare.h",132,0,0,Ltext23
+ 531              	
+ 532              	Ltext23	stabd 68,0,39
+ 533              	
+ 534              	LBB30
+ 535              	LBB31
+ 536              	LBE31	stabd 68,0,41
+ 537              	
+ 538              	LBE30	stabd 68,0,39
+ 539              	
+ 540              	LBB32
+ 541              	LBB33
+ 542              	LBE33	stabd 68,0,41
+ 543              	
+ 544              	LBE32	stabs "pwmdriver.cc",132,0,0,Ltext24
+ 545              	
+ 546              	Ltext24	stabd 68,0,41
+ 547 0148 18028480 		movw	4,s,0,s
+ 548 014c 160000   		jsr	__$_3Isr
+ 549              	
+ 550 014f 1B82     		leas	2,s
+ 551 0151 3D       		rts
+ 552              	
+ 553              		stabs "_$_9PwmDriver:F20",36,0,71,__$_9PwmDriver
+ 554              		stabs "this:P89",64,0,71,0
+ 555              		stabs "__in_chrg:p1",160,0,71,4
+ 556              		stabn 192,0,0,LBB30
+ 557              		stabn 192,0,0,LBB31
+ 558              		stabn 224,0,0,LBE31
+ 559              		stabn 224,0,0,LBE30
+ 560              		stabn 192,0,0,LBB32
+ 561              		stabn 192,0,0,LBB33
+ 562              		stabn 224,0,0,LBE33
+ 563              		stabn 224,0,0,LBE32
+ 564              	
+ 565              	Lscope4	stabs "",36,0,0,Lscope4-__$_9PwmDriver
+ 566              	
+ 567              	
+ 568              		end

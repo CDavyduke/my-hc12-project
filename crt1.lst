@@ -1,0 +1,207 @@
+   1              	gcc2_compiled.:
+   2              	___gnu_compiled_cplusplus
+   3              		stabs "/home/cdavyduke/Projects/HC12/ELEX_8030/",100,0,0,Ltext0
+   4              		stabs "crt1.cc",100,0,0,Ltext0
+   5              	
+   6              		section	.text
+   7              	
+   8              	Ltext0	stabs "int:t1=r1;-32768;32767;",128,0,0,0
+   9              		stabs "char:t2=r2;0;255;",128,0,0,0
+  10              		stabs "long int:t3=r1;0020000000000;0017777777777;",128,0,0,0
+  11              		stabs "unsigned int:t4=r4;0;65535;",128,0,0,0
+  12              		stabs "long unsigned int:t5=r1;0000000000000;0037777777777;",128,0,0,0
+  13              		stabs "long long int:t6=r1;0020000000000;0017777777777;",128,0,0,0
+  14              		stabs "long long unsigned int:t7=r1;0000000000000;0037777777777;",128,0,0,0
+  15              		stabs "short int:t8=r8;-32768;32767;",128,0,0,0
+  16              		stabs "short unsigned int:t9=r9;0;65535;",128,0,0,0
+  17              		stabs "signed char:t10=r10;-128;127;",128,0,0,0
+  18              		stabs "unsigned char:t11=r11;0;255;",128,0,0,0
+  19              		stabs "float:t12=r1;4;0;",128,0,0,0
+  20              		stabs "double:t13=r1;4;0;",128,0,0,0
+  21              		stabs "long double:t14=r1;4;0;",128,0,0,0
+  22              		stabs "complex int:t15=s4real:1,0,16;imag:1,16,16;;",128,0,0,0
+  23              		stabs "complex float:t16=r16;4;0;",128,0,0,0
+  24              		stabs "complex double:t17=r17;4;0;",128,0,0,0
+  25              		stabs "complex long double:t18=r18;4;0;",128,0,0,0
+  26              		stabs "bool:t19=@s8;-16;",128,0,0,0
+  27              		stabs "void:t20=20",128,0,0,0
+  28              		stabs "__wchar_t:t21=r21;-32768;32767;",128,0,0,0
+  29              		stabs "__vtbl_ptr_type:t22=*23=f1",128,0,0,0
+  30              		stabs "FPV:t24=*25=f20",128,0,13,0
+  31              	
+  32              		section	.const
+  33              	
+  34 0000 0000     	LC0	dc.w	_ctor_beg
+  35              	
+  36 0002 0000     	LC1	dc.w	_dtor_beg
+  37              	
+  38              		section	.text
+  39              	
+  40              		global	_crt1__Fv
+  41              	_crt1__Fv
+   1:crt1.cc       **** // Filename:  		CRT1.CC
+   2:crt1.cc       **** // Author:    		C. DAVYDUKE
+   3:crt1.cc       **** // File Created:	03/09/25
+   4:crt1.cc       **** // Last Modified:	03/10/21
+   5:crt1.cc       **** // Description:  	This file is used to initialize bss, call global constructors, call main, call gl
+   6:crt1.cc       **** //						and then go into an infinite loop upon termination.
+   7:crt1.cc       **** 
+   8:crt1.cc       **** extern int main();
+   9:crt1.cc       **** extern char bss_beg;
+  10:crt1.cc       **** extern char bss_end;
+  11:crt1.cc       **** 
+  12:crt1.cc       **** // Define a function pointer, read "pointer to a function, taking void, returning void."
+  13:crt1.cc       **** typedef void ( *FPV )( );
+  14:crt1.cc       **** 
+  15:crt1.cc       **** extern FPV ctor_beg[ ];
+  16:crt1.cc       **** extern FPV ctor_end[ ];
+  17:crt1.cc       **** 
+  18:crt1.cc       **** extern FPV dtor_beg[ ];
+  19:crt1.cc       **** extern FPV dtor_end[ ];
+  20:crt1.cc       **** 
+  21:crt1.cc       **** void crt1( )
+  22:crt1.cc       **** {
+  42              		stabd 68,0,22
+  43 0000 1B96     		leas	-10,s
+  44              	
+  45              	
+  23:crt1.cc       **** 	char * bss_cp;
+  24:crt1.cc       **** //	char * ctor_cp;
+  25:crt1.cc       **** //	char * dtor_cp;
+  26:crt1.cc       **** 	int i;
+  27:crt1.cc       **** 
+  28:crt1.cc       **** // Initialize the bss, set all values to 0.  
+  29:crt1.cc       **** 	for ( bss_cp = &bss_beg; bss_cp < &bss_end; bss_cp++ )
+  46              	LBB2	stabd 68,0,29
+  47 0002 CE0000   		ldx	#_bss_beg
+  48 0005 8E0000   		cpx	#_bss_end
+  49 0008 2409     		bhs	L3
+  50              		
+  51              	
+  30:crt1.cc       **** 		*bss_cp = 0;
+  52              	L5	stabd 68,0,30
+  53 000a 18083000 		movb	#0,1,x+
+  54 000e 8E0000   		cpx	#_bss_end
+  55 0011 25F7     		blo	L5
+  56              		
+  57              	
+  31:crt1.cc       **** 
+  32:crt1.cc       **** // Call the global constructors.
+  33:crt1.cc       **** //  for ( ctor_cp = &ctor_beg; ctor_cp < &ctor_end; ctor_cp++ )
+  34:crt1.cc       **** 	for ( i = 0; i < ( ctor_end - ctor_beg ); i++ )
+  58              	L3	stabd 68,0,34
+  59 0013 87C7     		clrd	
+  60 0015 6C88     		std	8,s
+  61 0017 CE0000   		ldx	#_ctor_end
+  62 001a B7C5     		xgdx	
+  63 001c B30000   		subd	LC0
+  64 001f B7C5     		xgdx	
+  65 0021 B754     		tfr	x,d
+  66 0023 4756     		asrd	
+  67 0025 B745     		tfr	d,x
+  68 0027 ED88     		ldy	8,s
+  69 0029 34       		pshx	
+  70 002a ADB1     		cpy	2,s+
+  71 002c 2C1A     		bge	L8
+  72              		
+  73 002e 6E86     		stx	6,s
+  74 0030 CD0000   		ldy	#_ctor_beg
+  75 0033 6D80     		sty	0,s
+  76              	
+  35:crt1.cc       **** 	{
+  36:crt1.cc       **** 		( *ctor_beg[ i ] )( );
+  77              	L10	stabd 68,0,36
+  78 0035 ED80     		ldy	0,s
+  79 0037 EE71     		ldx	2,y+
+  80 0039 6D80     		sty	0,s
+  81 003b 1500     		jsr	0,x
+  37:crt1.cc       **** //    ctor_beg++;
+  38:crt1.cc       **** 	}
+  82              		stabd 68,0,38
+  83 003d EC88     		ldd	8,s
+  84 003f C30001   		addd	#1
+  85 0042 6C88     		std	8,s
+  86 0044 AC86     		cpd	6,s
+  87 0046 2DED     		blt	L10
+  88              		
+  89              	
+  39:crt1.cc       ****   
+  40:crt1.cc       **** // Enable interrupts globally
+  41:crt1.cc       **** 	asm( "cli" );
+  90              	L8	stabd 68,0,41
+  91 0048 10EF     		cli
+  42:crt1.cc       **** 
+  43:crt1.cc       **** // Call main
+  44:crt1.cc       **** 	main( );
+  92              		stabd 68,0,44
+  93 004a 160000   		jsr	_main
+  45:crt1.cc       **** 
+  46:crt1.cc       **** // Disable interrupts globally
+  47:crt1.cc       **** 	asm( "sei" );
+  94              		stabd 68,0,47
+  95 004d 1410     		sei
+  48:crt1.cc       ****   
+  49:crt1.cc       **** // Call the global destructors.
+  50:crt1.cc       **** //  for ( dtor_cp = &dtor_beg; dtor_cp < &dtor_end; dtor_cp++ )
+  51:crt1.cc       **** 	for ( i = 0; i < ( dtor_end - dtor_beg ); i++ )
+  96              		stabd 68,0,51
+  97 004f 87C7     		clrd	
+  98 0051 6C88     		std	8,s
+  99 0053 CE0000   		ldx	#_dtor_end
+ 100 0056 B7C5     		xgdx	
+ 101 0058 B30002   		subd	LC1
+ 102 005b B7C5     		xgdx	
+ 103 005d B754     		tfr	x,d
+ 104 005f 4756     		asrd	
+ 105 0061 B745     		tfr	d,x
+ 106 0063 ED88     		ldy	8,s
+ 107 0065 34       		pshx	
+ 108 0066 ADB1     		cpy	2,s+
+ 109 0068 2C1A     		bge	L17
+ 110              		
+ 111 006a 6E84     		stx	4,s
+ 112 006c CD0000   		ldy	#_dtor_beg
+ 113 006f 6D82     		sty	2,s
+ 114              	
+  52:crt1.cc       **** 	{
+  53:crt1.cc       **** 		( *dtor_beg[ i ] )( );
+ 115              	L15	stabd 68,0,53
+ 116 0071 ED82     		ldy	2,s
+ 117 0073 EE71     		ldx	2,y+
+ 118 0075 6D82     		sty	2,s
+ 119 0077 1500     		jsr	0,x
+  54:crt1.cc       **** //    dtor_beg++;
+  55:crt1.cc       **** 	}
+ 120              		stabd 68,0,55
+ 121 0079 EC88     		ldd	8,s
+ 122 007b C30001   		addd	#1
+ 123 007e 6C88     		std	8,s
+ 124 0080 AC84     		cpd	4,s
+ 125 0082 2DED     		blt	L15
+ 126              		
+  56:crt1.cc       ****   
+  57:crt1.cc       **** // Sit and spin.
+  58:crt1.cc       **** 	while ( 1 )
+ 127              		stabd 68,0,58
+ 128              	
+ 129 0084 20FE     	L17	bra	L17
+ 130              		
+ 131              	
+  59:crt1.cc       **** 	{
+  60:crt1.cc       **** 	}
+  61:crt1.cc       **** }
+ 132              	LBE2	stabd 68,0,61
+ 133              	
+ 134 0086 1B8A     		leas	10,s
+ 135 0088 3D       		rts
+ 136              	
+ 137              		stabs "crt1__Fv:F20",36,0,22,_crt1__Fv
+ 138              		stabs "bss_cp:r26=*2",64,0,23,2
+ 139              		stabs "i:1",128,0,26,8
+ 140              		stabn 192,0,0,LBB2
+ 141              		stabn 224,0,0,LBE2
+ 142              	
+ 143              	Lscope0	stabs "",36,0,0,Lscope0-_crt1__Fv
+ 144              	
+ 145              	
+ 146              		end

@@ -1,0 +1,123 @@
+   1              	gcc2_compiled.:
+   2              	___gnu_compiled_cplusplus
+   3              		stabs "/home/cdavyduke/Projects/HC12/ELEX_8030/",100,0,0,Ltext0
+   4              		stabs "malloc.cc",100,0,0,Ltext0
+   5              	
+   6              		section	.text
+   7              	
+   8              	Ltext0	stabs "int:t1=r1;-32768;32767;",128,0,0,0
+   9              		stabs "char:t2=r2;0;255;",128,0,0,0
+  10              		stabs "long int:t3=r1;0020000000000;0017777777777;",128,0,0,0
+  11              		stabs "unsigned int:t4=r4;0;65535;",128,0,0,0
+  12              		stabs "long unsigned int:t5=r1;0000000000000;0037777777777;",128,0,0,0
+  13              		stabs "long long int:t6=r1;0020000000000;0017777777777;",128,0,0,0
+  14              		stabs "long long unsigned int:t7=r1;0000000000000;0037777777777;",128,0,0,0
+  15              		stabs "short int:t8=r8;-32768;32767;",128,0,0,0
+  16              		stabs "short unsigned int:t9=r9;0;65535;",128,0,0,0
+  17              		stabs "signed char:t10=r10;-128;127;",128,0,0,0
+  18              		stabs "unsigned char:t11=r11;0;255;",128,0,0,0
+  19              		stabs "float:t12=r1;4;0;",128,0,0,0
+  20              		stabs "double:t13=r1;4;0;",128,0,0,0
+  21              		stabs "long double:t14=r1;4;0;",128,0,0,0
+  22              		stabs "complex int:t15=s4real:1,0,16;imag:1,16,16;;",128,0,0,0
+  23              		stabs "complex float:t16=r16;4;0;",128,0,0,0
+  24              		stabs "complex double:t17=r17;4;0;",128,0,0,0
+  25              		stabs "complex long double:t18=r18;4;0;",128,0,0,0
+  26              		stabs "bool:t19=@s8;-16;",128,0,0,0
+  27              		stabs "void:t20=20",128,0,0,0
+  28              		stabs "__wchar_t:t21=r21;-32768;32767;",128,0,0,0
+  29              		stabs "__vtbl_ptr_type:t22=*23=f1",128,0,0,0
+  30              		stabs "size_t:t4",128,0,11,0
+  31              		stabs "ptrdiff_t:t1",128,0,12,0
+  32              	
+  33              		section	.data
+  34              		stabs "freePtr:S24=*2",38,0,13,_freePtr
+  35              	_freePtr
+  36 0000 0000     		dc.w	_heap_beg
+  37              	
+  38              		section	.text
+  39              	
+  40              		global	_malloc__FUi
+  41              	_malloc__FUi
+   1:malloc.cc     **** // Filename:		MALLOC.CC
+   2:malloc.cc     **** // Author:			C. DAVYDUKE
+   3:malloc.cc     **** // File Created:	03/10/08
+   4:malloc.cc     **** // Last Modified:	03/10/17
+   5:malloc.cc     **** // Description:	This file contains the code to allocate memory.
+   6:malloc.cc     **** 
+   7:malloc.cc     **** #include "malloc.h"
+   8:malloc.cc     **** #include "stddef.h"
+   9:malloc.cc     **** 
+  10:malloc.cc     **** extern char heap_beg;
+  11:malloc.cc     **** extern char heap_top;
+  12:malloc.cc     ****  
+  13:malloc.cc     **** static char * freePtr = &heap_beg;
+  14:malloc.cc     **** 
+  15:malloc.cc     **** // We allocate memory using a "one-way" allocator.
+  16:malloc.cc     **** void * malloc( size_t size )
+  17:malloc.cc     **** {
+  42              		stabd 68,0,17
+  43              	
+  44              	
+  18:malloc.cc     **** 	void * callPtr = freePtr;
+  45              	LBB2	stabd 68,0,18
+  46 0000 FE0000   		ldx	_freePtr
+  19:malloc.cc     **** 
+  20:malloc.cc     **** 	if( ( freePtr += size ) < &heap_top )
+  47              		stabd 68,0,20
+  48 0003 19E6     		leay	d,x
+  49 0005 7D0000   		sty	_freePtr
+  50 0008 8D0000   		cpy	#_heap_top
+  51 000b 2504     		blo	L2
+  52              		
+  21:malloc.cc     **** 		return callPtr;
+  22:malloc.cc     **** 
+  23:malloc.cc     **** 	else
+  24:malloc.cc     **** 		return 0;
+  53              		stabd 68,0,24
+  54 000d 87C7     		clrd	
+  55 000f 2002     		bra	L5
+  56              		
+  57              	
+  58              	L2	stabd 68,0,21
+  59 0011 B754     		tfr	x,d
+  60              	
+  61              	L5
+  25:malloc.cc     ****   
+  26:malloc.cc     **** }
+  62              	LBE2	stabd 68,0,26
+  63              	
+  64 0013 3D       		rts
+  65              	
+  66              		stabs "malloc__FUi:F25=*20",36,0,17,_malloc__FUi
+  67              		stabs "size:P4",64,0,17,0
+  68              		stabs "callPtr:r25",64,0,18,2
+  69              		stabn 192,0,0,LBB2
+  70              		stabn 224,0,0,LBE2
+  71              	
+  72              	Lscope0	stabs "",36,0,0,Lscope0-_malloc__FUi
+  73              	
+  74              		global	_free__FPv
+  75              	_free__FPv
+  27:malloc.cc     **** 
+  28:malloc.cc     **** // Also in the spirit of a one way allocator, we do not
+  29:malloc.cc     **** // have a way to de-allocate the memory.
+  30:malloc.cc     **** void free( void * )
+  31:malloc.cc     **** {
+  76              		stabd 68,0,31
+  77              	
+  78              	
+  79              	LBB3
+  32:malloc.cc     **** }
+  80              	LBE3	stabd 68,0,32
+  81              	
+  82 0014 3D       		rts
+  83              	
+  84              		stabs "free__FPv:F20",36,0,31,_free__FPv
+  85              		stabn 192,0,0,LBB3
+  86              		stabn 224,0,0,LBE3
+  87              	
+  88              	Lscope1	stabs "",36,0,0,Lscope1-_free__FPv
+  89              	
+  90              	
+  91              		end

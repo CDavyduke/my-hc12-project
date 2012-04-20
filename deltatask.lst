@@ -1,0 +1,575 @@
+   1              	gcc2_compiled.:
+   2              	___gnu_compiled_cplusplus
+   3              		stabs "/home/cdavyduke/Projects/HC12/ELEX_8030/",100,0,0,Ltext0
+   4              		stabs "deltatask.cc",100,0,0,Ltext0
+   5              	
+   6              		section	.text
+   7              	
+   8              	Ltext0	stabs "int:t1=r1;-32768;32767;",128,0,0,0
+   9              		stabs "char:t2=r2;0;255;",128,0,0,0
+  10              		stabs "long int:t3=r1;0020000000000;0017777777777;",128,0,0,0
+  11              		stabs "unsigned int:t4=r4;0;65535;",128,0,0,0
+  12              		stabs "long unsigned int:t5=r1;0000000000000;0037777777777;",128,0,0,0
+  13              		stabs "long long int:t6=r1;0020000000000;0017777777777;",128,0,0,0
+  14              		stabs "long long unsigned int:t7=r1;0000000000000;0037777777777;",128,0,0,0
+  15              		stabs "short int:t8=r8;-32768;32767;",128,0,0,0
+  16              		stabs "short unsigned int:t9=r9;0;65535;",128,0,0,0
+  17              		stabs "signed char:t10=r10;-128;127;",128,0,0,0
+  18              		stabs "unsigned char:t11=r11;0;255;",128,0,0,0
+  19              		stabs "float:t12=r1;4;0;",128,0,0,0
+  20              		stabs "double:t13=r1;4;0;",128,0,0,0
+  21              		stabs "long double:t14=r1;4;0;",128,0,0,0
+  22              		stabs "complex int:t15=s4real:1,0,16;imag:1,16,16;;",128,0,0,0
+  23              		stabs "complex float:t16=r16;4;0;",128,0,0,0
+  24              		stabs "complex double:t17=r17;4;0;",128,0,0,0
+  25              		stabs "complex long double:t18=r18;4;0;",128,0,0,0
+  26              		stabs "bool:t19=@s8;-16;",128,0,0,0
+  27              		stabs "void:t20=20",128,0,0,0
+  28              		stabs "__wchar_t:t21=r21;-32768;32767;",128,0,0,0
+  29              		stabs "__vtbl_ptr_type:t22=*23=f1",128,0,0,0
+  30              		stabs "size_t:t4",128,0,11,0
+  31              		stabs "ptrdiff_t:t1",128,0,12,0
+  32              		stabs "Task:T24=s8current:/025=*24:_4Task$current;stack:/026=*27=*20,0,16;\\",128,0,0,0
+  33              		stabs "sp:/026,16,16;priority:/04,32,16;$vf24:28=*29=ar0;0;3;22,48;\\",128,0,0,0
+  34              		stabs "__as::30=##31=&24;:RC4Task;2A.;Task::32=##25;:RC4Task;2A.33=##25;:UiUi;2A.\\",128,0,0,0
+  35              		stabs "34=#24,20,25,1,20;:_$_4Task;2A*2;24;;yield::35=f20:;2A?;lowerPriorityThan::36=##19;:PC4Task
+  36              		stabs "fork::37=##20;:;1A.;main::37:;1A*3;24;;start::35:;0A?;dispatch::38=f20:P4Task;0A?;;~%24;",1
+  37              		stabs "Task:Tt24",128,0,34,0
+  38              		stabs "Node:Tt39=s6next:40=*39,0,16;task:25,16,16;\\",128,0,0,0
+  39              		stabs "time:1,32,16;__as::41=##42=&39;:Q28TaskList4NodeRCQ28TaskList4Node;2A.;\\",128,0,0,0
+  40              		stabs "Node::43=##40;:__Q28TaskList4NodeRCQ28TaskList4Node;2A.44=##40;:__Q28TaskList4NodeP4Task;2A
+  41              		stabs "TaskList:Tt45=s4first:/140,0,16;$vf45:28,16;__as::46=##47=&45;:RC8TaskList;2A.;\\",128,0,0,
+  42              		stabs "TaskList::48=##49=*45;:RC8TaskList;2A.50=##49;:P4Task;2A.51=#45,20,49,1,20;:_$_8TaskList;2A
+  43              		stabs "block::52=##20;:;2A.;unblock::52:;2A.;getCurrent::53=##25;:;2A.;insert::54=##20;:PQ28TaskLi
+  44              		stabs "remove::55=##40;:;0A.;;~%45;",128,0,60,0
+  45              		stabs "DeltaTaskList:Tt56=s6!1,020,45;time:/01,32,16;\\",128,0,0,0
+  46              		stabs "__as::57=##58=&56;:RC13DeltaTaskList;2A.;DeltaTaskList::59=##60=*56;:RC13DeltaTaskList;2A.\
+  47              		stabs "61=##60;:;2A.62=#56,20,60,1,20;:_$_13DeltaTaskList;2A*2;45;;block::62:i;2A.;\\",128,0,0,0
+  48              		stabs "decrement::63=##20;:;2A.;zero::64=##19;:;2A.;insert::65=##20;:PQ28TaskList4Node;0A*3;45;;\\
+  49              		stabs "block::63:;0A.;;~%45;",128,0,22,0
+  50              		stabs "Interrupts:Tt66=s2oldMask:/01,0,16;__as::67=##68=&66;:RC10Interrupts;2A.;\\",128,0,0,0
+  51              		stabs "Interrupts::69=##70=*66;:RC10Interrupts;2A.71=##70;:;2A.72=#66,20,70,1,20;:_$_10Interrupts;
+  52              	
+  53              		global	_block__13DeltaTaskListi
+  54              	_block__13DeltaTaskListi
+   1:deltatask.cc  **** // Filename:        DELTATASK.CC
+   2:deltatask.cc  **** // Author:           C. DAVYDUKE
+   3:deltatask.cc  **** // File Created:   03/11/22
+   4:deltatask.cc  **** // Last Modified: 03/12/03
+   5:deltatask.cc  **** // Description:     This file contains the class methods for the consent multi-tasking base class.
+   6:deltatask.cc  **** 
+   7:deltatask.cc  **** #include "deltatask.h"
+   8:deltatask.cc  **** #include "interrupts.h"
+   9:deltatask.cc  **** #include "task.h"
+  10:deltatask.cc  **** 
+  11:deltatask.cc  **** void DeltaTaskList::block( int msec )
+  12:deltatask.cc  **** {
+  55              		stabd 68,0,12
+  56 0000 1B9E     		leas	-2,s
+  57              	
+  58 0002 B745     		tfr	d,x
+  59 0004 ED84     		ldy	4,s
+  60              	
+  13:deltatask.cc  ****   Interrupts masked;
+  61              	LBB2	stabd 68,0,13
+  62              		stabs "interrupts.h",132,0,0,Ltext1
+  63              	
+   1:interrupts.h  **** // Filename:		INTERRUPTS.H
+   2:interrupts.h  **** // Author:			C. DAVYDUKE
+   3:interrupts.h  **** // File Created:	03/10/20
+   4:interrupts.h  **** // Last Modified: 03/10/29
+   5:interrupts.h  **** // Description:	This file contains the class definition of interrupts and some low level code.
+   6:interrupts.h  **** 
+   7:interrupts.h  **** #ifndef __INTERRUPTS_H__
+   8:interrupts.h  **** #define __INTERRUPTS_H__
+   9:interrupts.h  **** 
+  10:interrupts.h  **** // This class definition allows us to use the properties of classes (e.g. constructors and
+  11:interrupts.h  **** // destructors) to ensure that interrupts are always enabled and disabled, and one or
+  12:interrupts.h  **** // the other is not forgotten.  Very HC12 specific.
+  13:interrupts.h  **** class Interrupts
+  14:interrupts.h  **** {
+  15:interrupts.h  **** 	public:
+  16:interrupts.h  **** 		Interrupts()
+  17:interrupts.h  **** 		{
+  64              	Ltext1	stabd 68,0,17
+  65              	
+  66              	LBB3
+  18:interrupts.h  **** 			asm( "tfr ccr, b" );
+  67              	LBB4	stabd 68,0,18
+  68 0006 B721     		tfr ccr, b
+  19:interrupts.h  **** 			asm( "std %0" : : "m"(oldMask) : "d" );
+  69              		stabd 68,0,19
+  70 0008 6C80     		std 0,s
+  20:interrupts.h  **** 			asm( "sei" );
+  71              		stabd 68,0,20
+  72 000a 1410     		sei
+  73              	
+  21:interrupts.h  **** 		}
+  74              	LBE4	stabd 68,0,21
+  75              	
+  76              	LBE3	stabs "deltatask.cc",132,0,0,Ltext2
+  77              	
+  14:deltatask.cc  ****   time = msec;  // save temporarily
+  78              	Ltext2	stabd 68,0,14
+  79 000c 6D04     		sty	4,x
+  15:deltatask.cc  ****   TaskList::block();
+  80              		stabd 68,0,15
+  81 000e B754     		tfr	x,d
+  82 0010 160000   		jsr	_block__8TaskList
+  83              		stabs "interrupts.h",132,0,0,Ltext3
+  84              	
+  22:interrupts.h  **** 		~Interrupts()
+  23:interrupts.h  **** 		{
+  85              	Ltext3	stabd 68,0,23
+  86              	
+  87              	LBB5
+  24:interrupts.h  **** 			asm( "ldd %0" : : "m"(oldMask) : "d" );
+  88              	LBB6	stabd 68,0,24
+  89 0013 EC80     		ldd 0,s
+  25:interrupts.h  **** 			asm( "tfr b, ccr" );
+  90              		stabd 68,0,25
+  91 0015 B712     		tfr b, ccr
+  92              	
+  26:interrupts.h  **** 		}
+  93              	LBE6	stabd 68,0,26
+  94              	
+  95              	LBE5	stabs "deltatask.cc",132,0,0,Ltext4
+  96              	
+  16:deltatask.cc  **** }
+  97              	Ltext4	stabd 68,0,16
+  98              	
+  99              	LBE2
+ 100 0017 1B82     		leas	2,s
+ 101 0019 3D       		rts
+ 102              	
+ 103              		stabs "block__13DeltaTaskListi:F20",36,0,12,_block__13DeltaTaskListi
+ 104              		stabs "this:P60",64,0,12,2
+ 105              		stabs "msec:p1",160,0,12,4
+ 106              		stabs "msec:r1",64,0,12,1
+ 107              		stabs "masked:r73=*66",64,0,13,3
+ 108              		stabn 192,0,0,LBB2
+ 109              		stabn 192,0,0,LBB3
+ 110              		stabn 192,0,0,LBB4
+ 111              		stabn 224,0,0,LBE4
+ 112              		stabn 224,0,0,LBE3
+ 113              		stabn 192,0,0,LBB5
+ 114              		stabn 192,0,0,LBB6
+ 115              		stabn 224,0,0,LBE6
+ 116              		stabn 224,0,0,LBE5
+ 117              		stabn 224,0,0,LBE2
+ 118              	
+ 119              	Lscope0	stabs "",36,0,0,Lscope0-_block__13DeltaTaskListi
+ 120              	
+ 121              		global	_insert__13DeltaTaskListPQ28TaskList4Node
+ 122              	_insert__13DeltaTaskListPQ28TaskList4Node
+  17:deltatask.cc  **** 
+  18:deltatask.cc  **** void DeltaTaskList::insert( TaskList::Node * node )
+  19:deltatask.cc  **** {
+ 123              		stabd 68,0,19
+ 124 001a 1B90     		leas	-16,s
+ 125              	
+ 126 001c 6C8C     		std	12,s
+ 127              	
+ 128              	LBB7	stabs "interrupts.h",132,0,0,Ltext5
+ 129              	
+ 130              	Ltext5	stabd 68,0,17
+ 131              	
+ 132              	LBB8
+ 133              	LBB9	stabd 68,0,18
+ 134 001e B721     		tfr ccr, b
+ 135              		stabd 68,0,19
+ 136 0020 6C8E     		std 14,s
+ 137              		stabd 68,0,20
+ 138 0022 1410     		sei
+ 139              	
+ 140              	LBE9	stabd 68,0,21
+ 141              	
+ 142              	LBE8	stabs "deltatask.cc",132,0,0,Ltext6
+ 143              	
+  20:deltatask.cc  ****   Interrupts masked;
+ 144              	Ltext6	stabd 68,0,20
+  21:deltatask.cc  ****   
+  22:deltatask.cc  ****   if( node )
+ 145              		stabd 68,0,22
+ 146              	
+ 147 0024 EDF012   	LBB10	ldy	18,s
+ 148 0027 182700C9 		lbeq	L33
+ 149              		
+  23:deltatask.cc  ****   {
+ 150              		stabd 68,0,23
+ 151              	
+  24:deltatask.cc  ****     node->time = time;  // set delay time of node
+ 152              	LBB11	stabd 68,0,24
+ 153 002b ED8C     		ldy	12,s
+ 154 002d EC44     		ldd	4,y
+ 155 002f EDF012   		ldy	18,s
+ 156 0032 6C44     		std	4,y
+  25:deltatask.cc  ****     
+  26:deltatask.cc  ****     if( Node * tempNode = (this)->first )
+ 157              		stabd 68,0,26
+ 158              	
+ 159 0034 EDF3000C 	LBB12	ldy	[12,s]
+ 160 0038 6D80     		sty	0,s
+ 161 003a 182700A9 		lbeq	L34
+ 162              		
+  27:deltatask.cc  ****     {
+ 163              		stabd 68,0,27
+ 164              	
+  28:deltatask.cc  ****       int sumTimes = tempNode->time;
+ 165              	LBB13	stabd 68,0,28
+ 166 003e EC44     		ldd	4,y
+  29:deltatask.cc  ****       
+  30:deltatask.cc  ****       while( tempNode->next )                 // Find the current sum total of the
+ 167              		stabd 68,0,30
+ 168 0040 200A     		bra	L54
+ 169              		
+ 170              	
+  31:deltatask.cc  ****       {                                                   // times of the currently existing tasks.
+  32:deltatask.cc  ****         tempNode = tempNode->next;
+ 171              	L37	stabd 68,0,32
+ 172 0042 EDF30000 		ldy	[0,s]
+ 173 0046 6D80     		sty	0,s
+  33:deltatask.cc  ****         sumTimes += tempNode->time;
+ 174              		stabd 68,0,33
+ 175 0048 EC8A     		ldd	10,s
+ 176 004a E344     		addd	4,y
+ 177              	
+ 178 004c 6C8A     	L54	std	10,s
+ 179 004e EEF30000 		ldx	[0,s]
+ 180 0052 26EE     		bne	L37
+ 181              		
+  34:deltatask.cc  ****       } 
+  35:deltatask.cc  ****         
+  36:deltatask.cc  ****       if( node->time >= sumTimes )  // We'll take care of the case where the new
+ 182              		stabd 68,0,36
+ 183              	
+ 184 0054 EDF012   	LBB14	ldy	18,s
+ 185 0057 EE44     		ldx	4,y
+ 186 0059 AE8A     		cpx	10,s
+ 187 005b 2D0F     		blt	L39
+ 188              		
+  37:deltatask.cc  ****       {                                           // node is added to the end of the list here.
+  38:deltatask.cc  ****         node->time -= sumTimes;
+ 189              		stabd 68,0,38
+ 190 005d B7C5     		xgdx	
+ 191 005f A38A     		subd	10,s
+ 192 0061 B7C5     		xgdx	
+ 193 0063 6E44     		stx	4,y
+  39:deltatask.cc  ****         tempNode->next = node;
+ 194              		stabd 68,0,39
+ 195 0065 6DF30000 		sty	[0,s]
+  40:deltatask.cc  ****         node->next = 0;
+ 196              		stabd 68,0,40
+ 197 0069 0600EE   		jmp	L55
+ 198              		
+ 199              	
+  41:deltatask.cc  ****       }
+  42:deltatask.cc  ****       
+  43:deltatask.cc  ****       else
+  44:deltatask.cc  ****       {
+ 200              	L39	stabd 68,0,44
+ 201              	
+  45:deltatask.cc  ****         Node * prevNode = (this)->first;
+ 202              	LBB15	stabd 68,0,45
+ 203 006c EDF3000C 		ldy	[12,s]
+ 204 0070 6D88     		sty	8,s
+  46:deltatask.cc  ****         
+  47:deltatask.cc  ****         if( node->time < prevNode->time ) // This takes care of the case where
+ 205              		stabd 68,0,47
+ 206              	
+ 207 0072 EC44     	LBB16	ldd	4,y
+ 208 0074 6C80     		std	0,s
+ 209 0076 AE80     		cpx	0,s
+ 210 0078 2C13     		bge	L41
+ 211              		
+  48:deltatask.cc  ****         {                                                 // the node is added to the beginning 
+  49:deltatask.cc  ****           prevNode->time -= node->time;   // of a pre-existing list.
+ 212              		stabd 68,0,49
+ 213 007a 34       		pshx	
+ 214 007b A3B1     		subd	2,s+
+ 215 007d 6C44     		std	4,y
+  50:deltatask.cc  ****           node->next = prevNode;
+ 216              		stabd 68,0,50
+ 217 007f 6DF30012 		sty	[18,s]
+  51:deltatask.cc  ****           (this)->first = node;
+ 218              		stabd 68,0,51
+ 219 0083 EDF012   		ldy	18,s
+ 220 0086 6DF3000C 		sty	[12,s]
+ 221 008a 0600F4   		jmp	L33
+ 222              		
+ 223              	
+  52:deltatask.cc  ****         }
+  53:deltatask.cc  ****         
+  54:deltatask.cc  ****         else      // This else statements takes care of the case where the
+  55:deltatask.cc  ****         {           // node is added somewhere in the middle of the list.
+ 224              	L41	stabd 68,0,55
+ 225              	
+  56:deltatask.cc  ****           Node * nextNode = 0;
+  57:deltatask.cc  ****           int prevSum = prevNode->time;
+ 226              	LBB17	stabd 68,0,57
+ 227 008d EC80     		ldd	0,s
+ 228 008f 6C86     		std	6,s
+  58:deltatask.cc  ****           int nextSum = 0;
+  59:deltatask.cc  ****           int bContinue = 1;
+ 229              		stabd 68,0,59
+ 230 0091 CD0001   		ldy	#1
+ 231 0094 6D84     		sty	4,s
+  60:deltatask.cc  ****         
+  61:deltatask.cc  ****           while( prevNode->next && bContinue )
+ 232              		stabd 68,0,61
+ 233              	
+ 234 0096 EEF30008 	L56	ldx	[8,s]
+ 235 009a 18270056 		lbeq	L33
+ 236              		
+ 237 009e EC84     		ldd	4,s
+ 238 00a0 18270050 		lbeq	L33
+ 239              		
+  62:deltatask.cc  ****           {
+  63:deltatask.cc  ****             nextNode = prevNode->next;        
+ 240              		stabd 68,0,63
+ 241 00a4 EEF30008 		ldx	[8,s]
+  64:deltatask.cc  ****             nextSum = prevSum + nextNode->time;
+ 242              		stabd 68,0,64
+ 243 00a8 EC86     		ldd	6,s
+ 244 00aa E304     		addd	4,x
+ 245 00ac 6C80     		std	0,s
+  65:deltatask.cc  ****           
+  66:deltatask.cc  ****             if( ( node->time >= prevSum ) && ( node->time <= nextSum ) )
+ 246              		stabd 68,0,66
+ 247 00ae EDF012   		ldy	18,s
+ 248 00b1 ED44     		ldy	4,y
+ 249 00b3 6D82     		sty	2,s
+ 250 00b5 AD86     		cpy	6,s
+ 251 00b7 2D21     		blt	L47
+ 252              		
+ 253 00b9 AD80     		cpy	0,s
+ 254 00bb 2E1D     		bgt	L47
+ 255              		
+  67:deltatask.cc  ****             {
+  68:deltatask.cc  ****               node->time -= prevSum;
+ 256              		stabd 68,0,68
+ 257 00bd B764     		tfr	y,d
+ 258 00bf A386     		subd	6,s
+ 259 00c1 6C80     		std	0,s
+ 260 00c3 EDF012   		ldy	18,s
+ 261 00c6 6C44     		std	4,y
+  69:deltatask.cc  ****               nextNode->time -= node->time;
+ 262              		stabd 68,0,69
+ 263 00c8 EC04     		ldd	4,x
+ 264 00ca A380     		subd	0,s
+ 265 00cc 6C04     		std	4,x
+  70:deltatask.cc  ****               node->next = nextNode;
+ 266              		stabd 68,0,70
+ 267 00ce 6EF30012 		stx	[18,s]
+  71:deltatask.cc  ****               prevNode->next = node;
+ 268              		stabd 68,0,71
+ 269 00d2 6DF30008 		sty	[8,s]
+  72:deltatask.cc  ****               bContinue = 0;
+ 270              		stabd 68,0,72
+ 271 00d6 87C7     		clrd	
+ 272 00d8 6C84     		std	4,s
+ 273              	
+  73:deltatask.cc  ****             }
+  74:deltatask.cc  ****         
+  75:deltatask.cc  ****             prevNode = nextNode;
+ 274              	L47	stabd 68,0,75
+ 275 00da 6E88     		stx	8,s
+  76:deltatask.cc  ****             prevSum += prevNode->time;
+ 276              		stabd 68,0,76
+ 277 00dc EC86     		ldd	6,s
+ 278 00de B756     		tfr	x,y
+ 279 00e0 E344     		addd	4,y
+ 280 00e2 6C86     		std	6,s
+ 281 00e4 060096   		jmp	L56
+ 282              		
+ 283              	
+ 284              	LBE17
+ 285              	LBE16
+ 286              	LBE15
+ 287              	LBE14
+ 288              	LBE13
+  77:deltatask.cc  ****           } // end of while( nextNode->next )
+  78:deltatask.cc  ****         } // end of else, covering all cases insertting a node into middle of the list.
+  79:deltatask.cc  ****       } // end of else, covering all cases where the new nodes time greater than first.
+  80:deltatask.cc  ****     } // end of if( Node * tempNode = (this)->first ), covering all cases where a first node
+  81:deltatask.cc  ****       // already exists on the list.
+  82:deltatask.cc  ****     else                          // This takes care of the case where the task to be added
+  83:deltatask.cc  ****     {                               // is the first one added to the list.
+  84:deltatask.cc  ****       (this)->first = node;
+ 289              	L34	stabd 68,0,84
+ 290 00e7 EDF012   		ldy	18,s
+ 291 00ea 6DF3000C 		sty	[12,s]
+  85:deltatask.cc  ****       node->next = 0;
+ 292              		stabd 68,0,85
+ 293              	
+ 294 00ee 87C7     	L55	clrd	
+ 295 00f0 6CF30012 		std	[18,s]
+ 296              	
+ 297              	LBE12
+ 298              	LBE11
+ 299              	L33
+ 300              	LBE10	stabs "interrupts.h",132,0,0,Ltext7
+ 301              	
+ 302              	Ltext7	stabd 68,0,23
+ 303              	
+ 304              	LBB18
+ 305              	LBB19	stabd 68,0,24
+ 306 00f4 EC8E     		ldd 14,s
+ 307              		stabd 68,0,25
+ 308 00f6 B712     		tfr b, ccr
+ 309              	
+ 310              	LBE19	stabd 68,0,26
+ 311              	
+ 312              	LBE18	stabs "deltatask.cc",132,0,0,Ltext8
+ 313              	
+  86:deltatask.cc  ****     }
+  87:deltatask.cc  ****   } // end of if( node )
+  88:deltatask.cc  **** }
+ 314              	Ltext8	stabd 68,0,88
+ 315              	
+ 316              	LBE7
+ 317 00f8 1BF010   		leas	16,s
+ 318 00fb 3D       		rts
+ 319              	
+ 320              		stabs "insert__13DeltaTaskListPQ28TaskList4Node:F20",36,0,19,_insert__13DeltaTaskListPQ28TaskList4
+ 321              		stabs "this:p60",160,0,19,12
+ 322              		stabs "node:p40",160,0,19,18
+ 323              		stabs "masked:66",128,0,20,14
+ 324              		stabn 192,0,0,LBB7
+ 325              		stabn 192,0,0,LBB8
+ 326              		stabn 192,0,0,LBB9
+ 327              		stabn 224,0,0,LBE9
+ 328              		stabn 224,0,0,LBE8
+ 329              		stabn 192,0,0,LBB10
+ 330              		stabn 192,0,0,LBB11
+ 331              		stabs "tempNode:r74=*40",64,0,26,3
+ 332              		stabn 192,0,0,LBB12
+ 333              		stabs "sumTimes:1",128,0,28,10
+ 334              		stabn 192,0,0,LBB13
+ 335              		stabn 192,0,0,LBB14
+ 336              		stabs "prevNode:40",128,0,45,8
+ 337              		stabn 192,0,0,LBB15
+ 338              		stabn 192,0,0,LBB16
+ 339              		stabs "nextNode:r40",64,0,56,2
+ 340              		stabs "prevSum:1",128,0,57,6
+ 341              		stabs "nextSum:r75=*1",64,0,58,3
+ 342              		stabs "bContinue:1",128,0,59,4
+ 343              		stabn 192,0,0,LBB17
+ 344              		stabn 224,0,0,LBE17
+ 345              		stabn 224,0,0,LBE16
+ 346              		stabn 224,0,0,LBE15
+ 347              		stabn 224,0,0,LBE14
+ 348              		stabn 224,0,0,LBE13
+ 349              		stabn 224,0,0,LBE12
+ 350              		stabn 224,0,0,LBE11
+ 351              		stabn 224,0,0,LBE10
+ 352              		stabn 192,0,0,LBB18
+ 353              		stabn 192,0,0,LBB19
+ 354              		stabn 224,0,0,LBE19
+ 355              		stabn 224,0,0,LBE18
+ 356              		stabn 224,0,0,LBE7
+ 357              	
+ 358              	Lscope1	stabs "",36,0,0,Lscope1-_insert__13DeltaTaskListPQ28TaskList4Node
+ 359              	
+ 360              		global	_decrement__13DeltaTaskList
+ 361              	_decrement__13DeltaTaskList
+  89:deltatask.cc  **** 
+  90:deltatask.cc  **** void DeltaTaskList::decrement()
+  91:deltatask.cc  **** {
+ 362              		stabd 68,0,91
+ 363              	
+ 364 00fc B746     		tfr	d,y
+ 365              	
+  92:deltatask.cc  ****   if( first )
+ 366              	LBB20	stabd 68,0,92
+ 367 00fe ED40     		ldy	0,y
+ 368 0100 2707     		beq	L58
+ 369              		
+  93:deltatask.cc  ****     --first->time;
+ 370              		stabd 68,0,93
+ 371 0102 EC44     		ldd	4,y
+ 372 0104 C3FFFF   		addd	#-1
+ 373 0107 6C44     		std	4,y
+ 374              	
+ 375              	L58
+  94:deltatask.cc  **** }
+ 376              	LBE20	stabd 68,0,94
+ 377              	
+ 378 0109 3D       		rts
+ 379              	
+ 380              		stabs "decrement__13DeltaTaskList:F20",36,0,91,_decrement__13DeltaTaskList
+ 381              		stabs "this:P60",64,0,91,1
+ 382              		stabn 192,0,0,LBB20
+ 383              		stabn 224,0,0,LBE20
+ 384              	
+ 385              	Lscope2	stabs "",36,0,0,Lscope2-_decrement__13DeltaTaskList
+ 386              	
+ 387              		global	_zero__13DeltaTaskList
+ 388              	_zero__13DeltaTaskList
+  95:deltatask.cc  **** 
+  96:deltatask.cc  **** bool DeltaTaskList::zero()
+  97:deltatask.cc  **** {
+ 389              		stabd 68,0,97
+ 390 010a 1B9F     		leas	-1,s
+ 391              	
+ 392 010c B746     		tfr	d,y
+ 393              	
+  98:deltatask.cc  ****   return first && first->time <= 0;
+ 394              	LBB21	stabd 68,0,98
+ 395 010e C7       		clrb	
+ 396 010f 6B80     		stab	0,s
+ 397 0111 ED40     		ldy	0,y
+ 398 0113 2708     		beq	L60
+ 399              		
+ 400 0115 EC44     		ldd	4,y
+ 401 0117 2E04     		bgt	L60
+ 402              		
+ 403 0119 C601     		ldab	#1
+ 404 011b 6B80     		stab	0,s
+ 405              	
+ 406 011d E680     	L60	ldab	0,s
+ 407              	
+  99:deltatask.cc  **** }
+ 408              	LBE21	stabd 68,0,99
+ 409              	
+ 410 011f 1B81     		leas	1,s
+ 411 0121 3D       		rts
+ 412              	
+ 413              		stabs "zero__13DeltaTaskList:F19",36,0,97,_zero__13DeltaTaskList
+ 414              		stabs "this:P60",64,0,97,1
+ 415              		stabn 192,0,0,LBB21
+ 416              		stabn 224,0,0,LBE21
+ 417              	
+ 418              	Lscope3	stabs "",36,0,0,Lscope3-_zero__13DeltaTaskList
+ 419              	
+ 420              		global	___vt_13DeltaTaskList
+ 421              	
+ 422              		section	.const
+ 423              		stabs "__vt_13DeltaTaskList:G29",32,0,22,0
+ 424              	___vt_13DeltaTaskList
+ 425 0000 0000     		dc.w	0
+ 426 0002 0000     		dc.w	0
+ 427 0004 0122     		dc.w	__$_13DeltaTaskList
+ 428 0006 001A     		dc.w	_insert__13DeltaTaskListPQ28TaskList4Node
+ 429              	
+ 430              		section	.text
+ 431              	
+ 432              		global	__$_13DeltaTaskList
+ 433              	__$_13DeltaTaskList
+ 434              		stabd 68,0,99
+ 435 0122 1B9E     		leas	-2,s
+ 436              	
+ 437 0124 18028480 		movw	4,s,0,s
+ 438 0128 160000   		jsr	__$_8TaskList
+ 439              	
+ 440 012b 1B82     		leas	2,s
+ 441 012d 3D       		rts
+ 442              	
+ 443              		stabs "_$_13DeltaTaskList:F20",36,0,22,__$_13DeltaTaskList
+ 444              		stabs "this:P60",64,0,22,0
+ 445              		stabs "__in_chrg:p1",160,0,22,4
+ 446              	
+ 447              	Lscope4	stabs "",36,0,0,Lscope4-__$_13DeltaTaskList
+ 448              	
+ 449              	
+ 450              		end

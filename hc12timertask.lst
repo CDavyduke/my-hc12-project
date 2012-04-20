@@ -1,0 +1,274 @@
+   1              	gcc2_compiled.:
+   2              	___gnu_compiled_cplusplus
+   3              		stabs "/home/cdavyduke/Projects/HC12/ELEX_8030/",100,0,0,Ltext0
+   4              		stabs "hc12timertask.cc",100,0,0,Ltext0
+   5              	
+   6              		section	.text
+   7              	
+   8              	Ltext0	stabs "int:t1=r1;-32768;32767;",128,0,0,0
+   9              		stabs "char:t2=r2;0;255;",128,0,0,0
+  10              		stabs "long int:t3=r1;0020000000000;0017777777777;",128,0,0,0
+  11              		stabs "unsigned int:t4=r4;0;65535;",128,0,0,0
+  12              		stabs "long unsigned int:t5=r1;0000000000000;0037777777777;",128,0,0,0
+  13              		stabs "long long int:t6=r1;0020000000000;0017777777777;",128,0,0,0
+  14              		stabs "long long unsigned int:t7=r1;0000000000000;0037777777777;",128,0,0,0
+  15              		stabs "short int:t8=r8;-32768;32767;",128,0,0,0
+  16              		stabs "short unsigned int:t9=r9;0;65535;",128,0,0,0
+  17              		stabs "signed char:t10=r10;-128;127;",128,0,0,0
+  18              		stabs "unsigned char:t11=r11;0;255;",128,0,0,0
+  19              		stabs "float:t12=r1;4;0;",128,0,0,0
+  20              		stabs "double:t13=r1;4;0;",128,0,0,0
+  21              		stabs "long double:t14=r1;4;0;",128,0,0,0
+  22              		stabs "complex int:t15=s4real:1,0,16;imag:1,16,16;;",128,0,0,0
+  23              		stabs "complex float:t16=r16;4;0;",128,0,0,0
+  24              		stabs "complex double:t17=r17;4;0;",128,0,0,0
+  25              		stabs "complex long double:t18=r18;4;0;",128,0,0,0
+  26              		stabs "bool:t19=@s8;-16;",128,0,0,0
+  27              		stabs "void:t20=20",128,0,0,0
+  28              		stabs "__wchar_t:t21=r21;-32768;32767;",128,0,0,0
+  29              		stabs "__vtbl_ptr_type:t22=*23=f1",128,0,0,0
+  30              		stabs "size_t:t4",128,0,11,0
+  31              		stabs "ptrdiff_t:t1",128,0,12,0
+  32              		stabs "Task:T24=s8current:/025=*24:_4Task$current;stack:/026=*27=*20,0,16;\\",128,0,0,0
+  33              		stabs "sp:/026,16,16;priority:/04,32,16;$vf24:28=*29=ar0;0;3;22,48;\\",128,0,0,0
+  34              		stabs "__as::30=##31=&24;:RC4Task;2A.;Task::32=##25;:RC4Task;2A.33=##25;:UiUi;2A.\\",128,0,0,0
+  35              		stabs "34=#24,20,25,1,20;:_$_4Task;2A*2;24;;yield::35=f20:;2A?;lowerPriorityThan::36=##19;:PC4Task
+  36              		stabs "fork::37=##20;:;1A.;main::37:;1A*3;24;;start::35:;0A?;dispatch::38=f20:P4Task;0A?;;~%24;",1
+  37              		stabs "Task:Tt24",128,0,34,0
+  38              		stabs "Node:Tt39=s6next:40=*39,0,16;task:25,16,16;\\",128,0,0,0
+  39              		stabs "time:1,32,16;__as::41=##42=&39;:Q28TaskList4NodeRCQ28TaskList4Node;2A.;\\",128,0,0,0
+  40              		stabs "Node::43=##40;:__Q28TaskList4NodeRCQ28TaskList4Node;2A.44=##40;:__Q28TaskList4NodeP4Task;2A
+  41              		stabs "TaskList:Tt45=s4first:/140,0,16;$vf45:28,16;__as::46=##47=&45;:RC8TaskList;2A.;\\",128,0,0,
+  42              		stabs "TaskList::48=##49=*45;:RC8TaskList;2A.50=##49;:P4Task;2A.51=#45,20,49,1,20;:_$_8TaskList;2A
+  43              		stabs "block::52=##20;:;2A.;unblock::52:;2A.;getCurrent::53=##25;:;2A.;insert::54=##20;:PQ28TaskLi
+  44              		stabs "remove::55=##40;:;0A.;;~%45;",128,0,60,0
+  45              		stabs "Isr:Tt56=s6ictlr:/057=&58=xsIctlr:,0,16;index:/04,16,16;\\",128,0,0,0
+  46              		stabs "$vf56:28,32;__as::59=##60=&56;:RC3Isr;2A.;Isr::61=##62=*56;:RC3Isr;2A.63=##62;:R5IctlrUi;1A
+  47              		stabs "64=#56,20,62,1,20;:_$_3Isr;1A*2;56;;handler::65=##20;:;0A*3;56;;;~%56;",128,0,24,0
+  48              		stabs "Ictlr:Tt58=s6length:/04,0,16;isrTbl:/066=*62,16,16;\\",128,0,0,0
+  49              		stabs "$vf58:67=*68=ar0;0;2;22,32;__as::69=##57;:RC5Ictlr;2A.;Ictlr::70=##71=*58;:RC5Ictlr;2A.\\",
+  50              		stabs "72=##71;:Ui;2A.73=#58,20,71,1,20;:_$_5Ictlr;2A*2;58;;attach::74=##20;:P3Isr;2A.;\\",128,0,0
+  51              		stabs "detach::74:P3Isr;2A.;runHandler::75=##20;:Ui;1A.;;~%58;",128,0,44,0
+  52              		stabs "DeltaTaskList:Tt76=s6!1,020,45;time:/01,32,16;\\",128,0,0,0
+  53              		stabs "__as::77=##78=&76;:RC13DeltaTaskList;2A.;DeltaTaskList::79=##80=*76;:RC13DeltaTaskList;2A.\
+  54              		stabs "81=##80;:;2A.82=#76,20,80,1,20;:_$_13DeltaTaskList;2A*2;45;;block::82:i;2A.;\\",128,0,0,0
+  55              		stabs "decrement::83=##20;:;2A.;zero::84=##19;:;2A.;insert::85=##20;:PQ28TaskList4Node;0A*3;45;;\\
+  56              		stabs "block::83:;0A.;;~%45;",128,0,22,0
+  57              		stabs "TimerTask:Tt86=s26!2,020,24;0264,56;deltaList:/076,112,48;\\",128,0,0,0
+  58              		stabs "waitList:/045,160,32;rate:/01,192,16;theTimerTask:/087=*86:_9TimerTask$theTimerTask;\\",128
+  59              		stabs "__as::88=##89=&86;:RC9TimerTask;2A.;TimerTask::90=##87;:RC9TimerTask;2A.;delay::91=f20:i;2A
+  60              		stabs "TimerTask::92=##87;:UiUiR5Ictlrii;1A.93=#86,20,87,1,20;:_$_9TimerTask;1A*2;24;;\\",128,0,0,
+  61              		stabs "handler::94=##20;:;1A*3;56;;main::94:;0A*3;24;;;~%24;",128,0,29,0
+  62              		stabs "IoMask:t1",128,0,39,0
+  63              		stabs "pwmreg:Tt95=u2byte:96=ar0;0;1;2,0,16;word:4,0,16;\\",128,0,0,0
+  64              		stabs "__as::97=##98=&95;:RC6pwmreg;2A.;pwmreg::99=##100=*95;:RC6pwmreg;2A.101=##100;:;2A.;;",128,
+  65              		stabs "sciport:Tt102=s8scbd:1,0,16;sccr1:2,16,8;\\",128,0,0,0
+  66              		stabs "loops:/21:loops;woms:/21:woms;rsrc:/21:rsrc;\\",128,0,0,0
+  67              		stabs "m:/21:m;wake:/21:wake;ilt:/21:ilt;\\",128,0,0,0
+  68              		stabs "pe:/21:pe;pt:/21:pt;sccr2:2,24,8;\\",128,0,0,0
+  69              		stabs "tie:/21:tie;tcie:/21:tcie;rie:/21:rie;\\",128,0,0,0
+  70              		stabs "ilie:/21:ilie;te:/21:te;re:/21:re;\\",128,0,0,0
+  71              		stabs "rwu:/21:rwu;sbk:/21:sbk;scsr1:2,32,8;\\",128,0,0,0
+  72              		stabs "tdre:/21:tdre;tc:/21:tc;rdrf:/21:rdrf;\\",128,0,0,0
+  73              		stabs "idle:/21:idle;or:/21:or;nf:/21:nf;\\",128,0,0,0
+  74              		stabs "fe:/21:fe;pf:/21:pf;scsr2:2,40,8;\\",128,0,0,0
+  75              		stabs "raf:/21:raf;scdrh:2,48,8;r8:/21:r8;\\",128,0,0,0
+  76              		stabs "t8:/21:t8;scdrl:2,56,8;__as::103=##104=&102;:RC7sciport;2A.;\\",128,0,0,0
+  77              		stabs "sciport::105=##106=*102;:RC7sciport;2A.107=##106;:;2A.;;",128,0,636,0
+  78              		stabs "spiport:Tt108=s6spcr1:2,0,8;spie:/21:spie;\\",128,0,0,0
+  79              		stabs "spe:/21:spe;swom:/21:swom;mstr:/21:mstr;\\",128,0,0,0
+  80              		stabs "cpol:/21:cpol;cpha:/21:cpha;ssoe:/21:ssoe;\\",128,0,0,0
+  81              		stabs "lsbf:/21:lsbf;spcr2:2,8,8;sswai:/21:sswai;\\",128,0,0,0
+  82              		stabs "spc0:/21:spc0;spbr:2,16,8;spr31:/21:spr31;\\",128,0,0,0
+  83              		stabs "spr62:/21:spr62;spr125:/21:spr125;\\",128,0,0,0
+  84              		stabs "spr250:/21:spr250;spr500:/21:spr500;\\",128,0,0,0
+  85              		stabs "spr1000:/21:spr1000;spr2000:/21:spr2000;\\",128,0,0,0
+  86              		stabs "spr4000:/21:spr4000;spsr:2,24,8;spif:/21:spif;\\",128,0,0,0
+  87              		stabs "wcol:/21:wcol;modf:/21:modf;rsvd4:2,32,8;\\",128,0,0,0
+  88              		stabs "spdr:2,40,8;__as::109=##110=&108;:RC7spiport;2A.;spiport::111=##112=*108;:RC7spiport;2A.\\"
+  89              		stabs "113=##112;:;2A.;;",128,0,689,0
+  90              		stabs "HC12TimerTask:Tt114=s26!1,020,86;rtres:/01:rtres;\\",128,0,0,0
+  91              		stabs "__as::115=##116=&114;:RC13HC12TimerTask;2A.;HC12TimerTask::117=##118=*114;:RC13HC12TimerTas
+  92              		stabs "119=##118;:UiUiR5Ictlr;2A.120=#114,20,118,1,20;:_$_13HC12TimerTask;2A*2;24;;\\",128,0,0,0
+  93              		stabs "handler::121=##20;:;0A*3;56;;;~%24;",128,0,21,0
+  94              		stabs "Sources:t122=eisBdl:0,isAtd:1,isSc0:2,\\",128,0,0,0
+  95              		stabs "isSpi:3,isPai:4,isPao:5,isTof:6,\\",128,0,0,0
+  96              		stabs "isTc7:7,isTc6:8,isTc5:9,isTc4:10,\\",128,0,0,0
+  97              		stabs "isTc3:11,isTc2:12,isTc1:13,isTc0:14,\\",128,0,0,0
+  98              		stabs "isRti:15,isIrq:16,isNumSources:17,;",128,0,24,0
+  99              		stabs "HC12Ictlr:Tt123=s6!1,020,58;theHC12Ictlr:/0124=*123:_9HC12Ictlr$theHC12Ictlr;\\",128,0,0,0
+ 100              		stabs "__as::125=##126=&123;:RC9HC12Ictlr;2A.;HC12Ictlr::127=##124;:RC9HC12Ictlr;2A.128=##124;:;2A
+ 101              		stabs "129=#123,20,124,1,20;:_$_9HC12Ictlr;2A*2;58;;handlerTable::35:;0A?;;~%58;",128,0,48,0
+ 102              	
+ 103              		global	___13HC12TimerTaskUiUiR5Ictlr
+ 104              	___13HC12TimerTaskUiUiR5Ictlr
+   1:hc12timertask.cc **** // Filename:		    HC12TIMERTASK.CC
+   2:hc12timertask.cc **** // Author:			     C. DAVYDUKE
+   3:hc12timertask.cc **** // File Created:  	03/11/22
+   4:hc12timertask.cc **** // Last Modified: 03/12/09
+   5:hc12timertask.cc **** // Description:	  This file contains the class definitions for the consent multi-tasking base class
+   6:hc12timertask.cc **** 
+   7:hc12timertask.cc **** #include "hc12timertask.h"
+   8:hc12timertask.cc **** #include "hc12ictlr.h"
+   9:hc12timertask.cc **** #include "chipio.h"
+  10:hc12timertask.cc **** 
+  11:hc12timertask.cc **** HC12TimerTask::HC12TimerTask( size_t stackSize, unsigned int priority, Ictlr & ictlr )
+  12:hc12timertask.cc **** : TimerTask( stackSize, priority, ictlr, HC12Ictlr::isRti, 1 << (rtres - 1 ) )
+ 105              		stabd 68,0,12
+ 106 0000 1B93     		leas	-13,s
+ 107              	
+ 108 0002 6C8B     		std	11,s
+ 109 0004 EC8F     		ldd	15,s
+ 110 0006 6C80     		std	0,s
+ 111 0008 EDF011   		ldy	17,s
+ 112 000b 6D82     		sty	2,s
+ 113 000d ECF013   		ldd	19,s
+ 114 0010 6C84     		std	4,s
+ 115 0012 18008600 		movw	#15,6,s
+ 115      0F
+ 116 0017 18008800 		movw	#1,8,s
+ 116      01
+ 117 001c EC8B     		ldd	11,s
+ 118 001e 160000   		jsr	___9TimerTaskUiUiR5Ictlrii
+ 119 0021 CC0000   		ldd	#___vt_13HC12TimerTask$3Isr
+ 120 0024 ED8B     		ldy	11,s
+ 121 0026 6C4C     		std	12,y
+ 122 0028 CC0008   		ldd	#___vt_13HC12TimerTask
+ 123 002b 6C46     		std	6,y
+  13:hc12timertask.cc **** {
+ 124              		stabd 68,0,13
+ 125              	
+  14:hc12timertask.cc ****   rtictl = rti + rtres;
+ 126              	LBB2	stabd 68,0,14
+ 127 002d 180B8100 		movb	#129,_rtictl
+ 127      00
+  15:hc12timertask.cc ****   fork();
+ 128              		stabd 68,0,15
+ 129 0032 B764     		tfr	y,d
+ 130 0034 160000   		jsr	_fork__4Task
+  16:hc12timertask.cc ****   ddrdlc |= 1;  // set bit 0 up as an output
+ 131              		stabd 68,0,16
+ 132 0037 F60000   		ldab	_ddrdlc
+ 133 003a CA01     		orab	#1
+ 134 003c 7B0000   		stab	_ddrdlc
+  17:hc12timertask.cc ****   portdlc &= ~1;  // set bit 0 to zero to start.
+ 135              		stabd 68,0,17
+ 136 003f F60000   		ldab	_portdlc
+ 137 0042 C4FE     		andb	#254
+ 138 0044 7B0000   		stab	_portdlc
+ 139              	
+ 140 0047 EC8B     	LBE2	ldd	11,s
+  18:hc12timertask.cc **** }
+ 141              		stabd 68,0,18
+ 142              	
+ 143 0049 1B8D     		leas	13,s
+ 144 004b 3D       		rts
+ 145              	
+ 146              		stabs "__13HC12TimerTaskUiUiR5Ictlr:F118",36,0,12,___13HC12TimerTaskUiUiR5Ictlr
+ 147              		stabs "this:p118",160,0,12,11
+ 148              		stabs "stackSize:p4",160,0,12,15
+ 149              		stabs "priority:p4",160,0,12,17
+ 150              		stabs "ictlr:p57",160,0,12,19
+ 151              		stabn 192,0,0,LBB2
+ 152              		stabn 224,0,0,LBE2
+ 153              	
+ 154              	Lscope0	stabs "",36,0,0,Lscope0-___13HC12TimerTaskUiUiR5Ictlr
+ 155              	
+ 156              		global	__$_13HC12TimerTask
+ 157              	__$_13HC12TimerTask
+  19:hc12timertask.cc **** 
+  20:hc12timertask.cc **** HC12TimerTask::~HC12TimerTask()
+  21:hc12timertask.cc **** {
+ 158              		stabd 68,0,21
+ 159 004c 1B9E     		leas	-2,s
+ 160              	
+ 161 004e B746     		tfr	d,y
+ 162 0050 18004C00 		movw	#___vt_13HC12TimerTask$3Isr,12,y
+ 162      00
+ 163 0055 18004600 		movw	#___vt_13HC12TimerTask,6,y
+ 163      08
+ 164              	
+  22:hc12timertask.cc ****   rtictl = ~rti & 0xff;
+ 165              	LBB3	stabd 68,0,22
+ 166 005a 180B7F00 		movb	#127,_rtictl
+ 166      00
+ 167              	
+ 168 005f 18028480 	LBE3	movw	4,s,0,s
+ 169 0063 160000   		jsr	__$_9TimerTask
+  23:hc12timertask.cc **** }
+ 170              		stabd 68,0,23
+ 171              	
+ 172 0066 1B82     		leas	2,s
+ 173 0068 3D       		rts
+ 174              	
+ 175              		stabs "_$_13HC12TimerTask:F20",36,0,21,__$_13HC12TimerTask
+ 176              		stabs "this:P118",64,0,21,1
+ 177              		stabs "__in_chrg:p1",160,0,21,4
+ 178              		stabn 192,0,0,LBB3
+ 179              		stabn 224,0,0,LBE3
+ 180              	
+ 181              	Lscope1	stabs "",36,0,0,Lscope1-__$_13HC12TimerTask
+ 182              	
+ 183              		global	_handler__13HC12TimerTask
+ 184              	_handler__13HC12TimerTask
+  24:hc12timertask.cc **** 
+  25:hc12timertask.cc **** void HC12TimerTask::handler()
+  26:hc12timertask.cc **** {
+ 185              		stabd 68,0,26
+ 186              	
+ 187 0069 B746     		tfr	d,y
+ 188              	
+  27:hc12timertask.cc ****   rtiflg = rti;
+ 189              	LBB4	stabd 68,0,27
+ 190 006b 180B8000 		movb	#128,_rtiflg
+ 190      00
+  28:hc12timertask.cc ****   portdlc ^= 1; // toggle bit 0 each time handler is run.
+ 191              		stabd 68,0,28
+ 192 0070 F60000   		ldab	_portdlc
+ 193 0073 C801     		eorb	#1
+ 194 0075 7B0000   		stab	_portdlc
+  29:hc12timertask.cc ****   TimerTask::handler();
+ 195              		stabd 68,0,29
+ 196 0078 B764     		tfr	y,d
+ 197 007a 160000   		jsr	_handler__9TimerTask
+ 198              	
+  30:hc12timertask.cc **** }
+ 199              	LBE4	stabd 68,0,30
+ 200              	
+ 201 007d 3D       		rts
+ 202              	
+ 203              		stabs "handler__13HC12TimerTask:F20",36,0,26,_handler__13HC12TimerTask
+ 204              		stabs "this:P118",64,0,26,1
+ 205              		stabn 192,0,0,LBB4
+ 206              		stabn 224,0,0,LBE4
+ 207              	
+ 208              	Lscope2	stabs "",36,0,0,Lscope2-_handler__13HC12TimerTask
+ 209              	___thunk_8__$_13HC12TimerTask
+ 210 007e C3FFF8   		addd	#-8
+ 211 0081 06004C   		jmp	__$_13HC12TimerTask
+ 212              	
+ 213              	___thunk_8_handler__13HC12TimerTask
+ 214 0084 C3FFF8   		addd	#-8
+ 215 0087 060069   		jmp	_handler__13HC12TimerTask
+ 216              	
+ 217              	
+ 218              		global	___vt_13HC12TimerTask$3Isr
+ 219              	
+ 220              		section	.const
+ 221              		stabs "__vt_13HC12TimerTask$3Isr:G29",32,0,21,0
+ 222              	___vt_13HC12TimerTask$3Isr
+ 223 0000 FFF8     		dc.w	-8
+ 224 0002 0000     		dc.w	0
+ 225 0004 007E     		dc.w	___thunk_8__$_13HC12TimerTask
+ 226 0006 0084     		dc.w	___thunk_8_handler__13HC12TimerTask
+ 227              	
+ 228              		global	___vt_13HC12TimerTask
+ 229              		stabs "__vt_13HC12TimerTask:G29",32,0,21,0
+ 230              	___vt_13HC12TimerTask
+ 231 0008 0000     		dc.w	0
+ 232 000a 0000     		dc.w	0
+ 233 000c 004C     		dc.w	__$_13HC12TimerTask
+ 234 000e 0000     		dc.w	_main__9TimerTask
+ 235              	
+ 236              	
+ 237              		end

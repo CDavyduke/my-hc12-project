@@ -1,0 +1,261 @@
+   1              	gcc2_compiled.:
+   2              	___gnu_compiled_cplusplus
+   3              		stabs "/home/cdavyduke/Projects/HC12/ELEX_8030/",100,0,0,Ltext0
+   4              		stabs "spi.cc",100,0,0,Ltext0
+   5              	
+   6              		section	.text
+   7              	
+   8              	Ltext0	stabs "int:t1=r1;-32768;32767;",128,0,0,0
+   9              		stabs "char:t2=r2;0;255;",128,0,0,0
+  10              		stabs "long int:t3=r1;0020000000000;0017777777777;",128,0,0,0
+  11              		stabs "unsigned int:t4=r4;0;65535;",128,0,0,0
+  12              		stabs "long unsigned int:t5=r1;0000000000000;0037777777777;",128,0,0,0
+  13              		stabs "long long int:t6=r1;0020000000000;0017777777777;",128,0,0,0
+  14              		stabs "long long unsigned int:t7=r1;0000000000000;0037777777777;",128,0,0,0
+  15              		stabs "short int:t8=r8;-32768;32767;",128,0,0,0
+  16              		stabs "short unsigned int:t9=r9;0;65535;",128,0,0,0
+  17              		stabs "signed char:t10=r10;-128;127;",128,0,0,0
+  18              		stabs "unsigned char:t11=r11;0;255;",128,0,0,0
+  19              		stabs "float:t12=r1;4;0;",128,0,0,0
+  20              		stabs "double:t13=r1;4;0;",128,0,0,0
+  21              		stabs "long double:t14=r1;4;0;",128,0,0,0
+  22              		stabs "complex int:t15=s4real:1,0,16;imag:1,16,16;;",128,0,0,0
+  23              		stabs "complex float:t16=r16;4;0;",128,0,0,0
+  24              		stabs "complex double:t17=r17;4;0;",128,0,0,0
+  25              		stabs "complex long double:t18=r18;4;0;",128,0,0,0
+  26              		stabs "bool:t19=@s8;-16;",128,0,0,0
+  27              		stabs "void:t20=20",128,0,0,0
+  28              		stabs "__wchar_t:t21=r21;-32768;32767;",128,0,0,0
+  29              		stabs "__vtbl_ptr_type:t22=*23=f1",128,0,0,0
+  30              		stabs "size_t:t4",128,0,11,0
+  31              		stabs "ptrdiff_t:t1",128,0,12,0
+  32              		stabs "Task:T24=s8current:/025=*24:_4Task$current;stack:/026=*27=*20,0,16;\\",128,0,0,0
+  33              		stabs "sp:/026,16,16;priority:/04,32,16;$vf24:28=*29=ar0;0;3;22,48;\\",128,0,0,0
+  34              		stabs "__as::30=##31=&24;:RC4Task;2A.;Task::32=##25;:RC4Task;2A.33=##25;:UiUi;2A.\\",128,0,0,0
+  35              		stabs "34=#24,20,25,1,20;:_$_4Task;2A*2;24;;yield::35=f20:;2A?;lowerPriorityThan::36=##19;:PC4Task
+  36              		stabs "fork::37=##20;:;1A.;main::37:;1A*3;24;;start::35:;0A?;dispatch::38=f20:P4Task;0A?;;~%24;",1
+  37              		stabs "Task:Tt24",128,0,34,0
+  38              		stabs "Node:Tt39=s6next:40=*39,0,16;task:25,16,16;\\",128,0,0,0
+  39              		stabs "time:1,32,16;__as::41=##42=&39;:Q28TaskList4NodeRCQ28TaskList4Node;2A.;\\",128,0,0,0
+  40              		stabs "Node::43=##40;:__Q28TaskList4NodeRCQ28TaskList4Node;2A.44=##40;:__Q28TaskList4NodeP4Task;2A
+  41              		stabs "TaskList:Tt45=s4first:/140,0,16;$vf45:28,16;__as::46=##47=&45;:RC8TaskList;2A.;\\",128,0,0,
+  42              		stabs "TaskList::48=##49=*45;:RC8TaskList;2A.50=##49;:P4Task;2A.51=#45,20,49,1,20;:_$_8TaskList;2A
+  43              		stabs "block::52=##20;:;2A.;unblock::52:;2A.;getCurrent::53=##25;:;2A.;insert::54=##20;:PQ28TaskLi
+  44              		stabs "remove::55=##40;:;0A.;;~%45;",128,0,60,0
+  45              		stabs "Mutex:Tt56=s6!1,020,45;holder:/057=*24,32,16;\\",128,0,0,0
+  46              		stabs "__as::58=##59=&56;:RC5Mutex;2A.;Mutex::60=##61=*56;:RC5Mutex;2A.62=#56,20,61,1,20;:_$_5Mute
+  47              		stabs "63=##61;:;2A.;acquire::64=##20;:;2A.;release::64:;2A.;;~%45;",128,0,20,0
+  48              		stabs "Spi:Tt65=s8mutex:/056,0,48;$vf65:66=*67=ar0;0;4;22,48;\\",128,0,0,0
+  49              		stabs "__as::68=##69=&65;:RC3Spi;2A.;Spi::70=##71=*65;:RC3Spi;2A.72=##71;:;2A.\\",128,0,0,0
+  50              		stabs "73=#65,20,71,1,20;:_$_3Spi;2A*2;65;;get::74=##20;:Pvi;0A*3;65;;\\",128,0,0,0
+  51              		stabs "put::74:Pvi;0A*4;65;;open::75=##20;:;0A.;close::75:;0A.;;~%65;",128,0,34,0
+  52              		stabs "SpiUser:Tt76=s2spi:/069,0,16;__as::77=##78=&76;:RC7SpiUser;2A.;\\",128,0,0,0
+  53              		stabs "SpiUser::79=##80=*76;:RC7SpiUser;2A.81=##80;:R3Spi;2A.82=#76,20,80,1,20;:_$_7SpiUser;2A.;\\
+  54              		stabs "get::83=##20;:Pvi;2A.;put::83:Pvi;2A.;;",128,0,58,0
+  55              	
+  56              		global	___3Spi
+  57              	___3Spi
+   1:spi.cc        **** // Filename:      SPI.CC
+   2:spi.cc        **** // Author:        C. DAVYDUKE
+   3:spi.cc        **** // File Created:  03/12/20
+   4:spi.cc        **** // Last Modified: 03/12/20
+   5:spi.cc        **** // Description:   This file contains the class methods for the Spi base class.
+   6:spi.cc        **** 
+   7:spi.cc        **** #include "spi.h"
+   8:spi.cc        **** 
+   9:spi.cc        **** // Had to create this dumb stuff to satisfy compiler
+  10:spi.cc        **** Spi::Spi()
+  11:spi.cc        **** {
+  58              		stabd 68,0,11
+  59 0000 1B9E     		leas	-2,s
+  60              	
+  61 0002 6C80     		std	0,s
+  62 0004 CC0000   		ldd	#___vt_3Spi
+  63 0007 ED80     		ldy	0,s
+  64 0009 6C46     		std	6,y
+  65 000b B764     		tfr	y,d
+  66 000d 160000   		jsr	___5Mutex
+  67              	
+  68              	LBB2
+  69 0010 EC80     	LBE2	ldd	0,s
+  12:spi.cc        **** }
+  70              		stabd 68,0,12
+  71              	
+  72 0012 1B82     		leas	2,s
+  73 0014 3D       		rts
+  74              	
+  75              		stabs "__3Spi:F71",36,0,11,___3Spi
+  76              		stabs "this:p71",160,0,11,0
+  77              		stabn 192,0,0,LBB2
+  78              		stabn 224,0,0,LBE2
+  79              	
+  80              	Lscope0	stabs "",36,0,0,Lscope0-___3Spi
+  81              	
+  82              		global	__$_3Spi
+  83              	__$_3Spi
+  13:spi.cc        **** 
+  14:spi.cc        **** Spi::~Spi()
+  15:spi.cc        **** {
+  84              		stabd 68,0,15
+  85 0015 1B9C     		leas	-4,s
+  86              	
+  87 0017 6C82     		std	2,s
+  88 0019 CC0000   		ldd	#___vt_3Spi
+  89 001c ED82     		ldy	2,s
+  90 001e 6C46     		std	6,y
+  91              	
+  92              	LBB3
+  93              	LBE3	stabd 68,0,11
+  94              	
+  95 0020 18008000 	LBB4	movw	#2,0,s
+  95      02
+  96 0025 B764     		tfr	y,d
+  97 0027 160000   		jsr	__$_8TaskList
+  98              	
+  16:spi.cc        **** }
+  99              	LBE4	stabd 68,0,16
+ 100 002a EC86     		ldd	6,s
+ 101 002c 87       		clra	
+ 102 002d C401     		andb	#1      & $FF
+ 103 002f B745     		tfr	d,x
+ 104 0031 8E0000   		tstx	
+ 105 0034 2705     		beq	L50
+ 106              		
+ 107 0036 EC82     		ldd	2,s
+ 108 0038 160000   		jsr	___builtin_delete
+ 109              	
+ 110              	L50
+ 111 003b 1B84     		leas	4,s
+ 112 003d 3D       		rts
+ 113              	
+ 114              		stabs "_$_3Spi:F20",36,0,15,__$_3Spi
+ 115              		stabs "this:p71",160,0,15,2
+ 116              		stabs "__in_chrg:p1",160,0,15,6
+ 117              		stabs "this:61",128,0,16,2
+ 118              		stabn 192,0,0,LBB3
+ 119              		stabn 224,0,0,LBE3
+ 120              		stabn 192,0,0,LBB4
+ 121              		stabn 224,0,0,LBE4
+ 122              	
+ 123              	Lscope1	stabs "",36,0,0,Lscope1-__$_3Spi
+ 124              	
+ 125              		global	___vt_3Spi
+ 126              	
+ 127              		section	.const
+ 128              		stabs "__vt_3Spi:G67",32,0,34,0
+ 129              	___vt_3Spi
+ 130 0000 0000     		dc.w	0
+ 131 0002 0000     		dc.w	0
+ 132 0004 0015     		dc.w	__$_3Spi
+ 133 0006 0047     		dc.w	_get__3SpiPvi
+ 134 0008 0046     		dc.w	_put__3SpiPvi
+ 135              	
+ 136              		section	.text
+ 137              	
+ 138              		global	_close__3Spi
+ 139              	_close__3Spi
+ 140              		stabs "spi.h",132,0,0,Ltext1
+ 141              	
+   1:spi.h         **** // Filename:      SPI.H
+   2:spi.h         **** // Author:        C. DAVYDUKE
+   3:spi.h         **** // File Created:  03/12/17
+   4:spi.h         **** // Last Modified: 03/12/20
+   5:spi.h         **** // Description:   This file contains the class definitions for the Spi base class.
+   6:spi.h         **** 
+   7:spi.h         **** #ifndef __SPI_H__
+   8:spi.h         **** #define __SPI_H__
+   9:spi.h         **** 
+  10:spi.h         **** #include "mutex.h"
+  11:spi.h         **** 
+  12:spi.h         **** class Spi  // body class
+  13:spi.h         **** {
+  14:spi.h         ****   public:
+  15:spi.h         ****     Spi();
+  16:spi.h         ****     virtual ~Spi();
+  17:spi.h         ****   private:
+  18:spi.h         ****     virtual void get( void *, int )
+  19:spi.h         ****     {
+  20:spi.h         ****     }
+  21:spi.h         ****     virtual void put( void *, int )
+  22:spi.h         ****     {
+  23:spi.h         ****     }
+  24:spi.h         ****     void open()
+  25:spi.h         ****     {
+  26:spi.h         ****       mutex.acquire();
+  27:spi.h         ****     }
+  28:spi.h         ****     void close()
+  29:spi.h         ****     {
+ 142              	Ltext1	stabd 68,0,29
+ 143              	
+ 144              	
+  30:spi.h         ****       mutex.release();
+ 145              	LBB5	stabd 68,0,30
+ 146 003e 160000   		jsr	_release__5Mutex
+ 147              	
+  31:spi.h         ****     }
+ 148              	LBE5	stabd 68,0,31
+ 149              	
+ 150 0041 3D       		rts
+ 151              	
+ 152              		stabs "close__3Spi:F20",36,0,29,_close__3Spi
+ 153              		stabs "this:P71",64,0,29,0
+ 154              		stabn 192,0,0,LBB5
+ 155              		stabn 224,0,0,LBE5
+ 156              	
+ 157              	Lscope2	stabs "",36,0,0,Lscope2-_close__3Spi
+ 158              	
+ 159              		global	_open__3Spi
+ 160              	_open__3Spi
+ 161              		stabd 68,0,25
+ 162              	
+ 163              	
+ 164              	LBB6	stabd 68,0,26
+ 165 0042 160000   		jsr	_acquire__5Mutex
+ 166              	
+ 167              	LBE6	stabd 68,0,27
+ 168              	
+ 169 0045 3D       		rts
+ 170              	
+ 171              		stabs "open__3Spi:F20",36,0,25,_open__3Spi
+ 172              		stabs "this:P71",64,0,25,0
+ 173              		stabn 192,0,0,LBB6
+ 174              		stabn 224,0,0,LBE6
+ 175              	
+ 176              	Lscope3	stabs "",36,0,0,Lscope3-_open__3Spi
+ 177              	
+ 178              		global	_put__3SpiPvi
+ 179              	_put__3SpiPvi
+ 180              		stabd 68,0,22
+ 181              	
+ 182              	
+ 183              	LBB7
+ 184              	LBE7	stabd 68,0,23
+ 185              	
+ 186 0046 3D       		rts
+ 187              	
+ 188              		stabs "put__3SpiPvi:F20",36,0,22,_put__3SpiPvi
+ 189              		stabs "this:P71",64,0,22,0
+ 190              		stabn 192,0,0,LBB7
+ 191              		stabn 224,0,0,LBE7
+ 192              	
+ 193              	Lscope4	stabs "",36,0,0,Lscope4-_put__3SpiPvi
+ 194              	
+ 195              		global	_get__3SpiPvi
+ 196              	_get__3SpiPvi
+ 197              		stabd 68,0,19
+ 198              	
+ 199              	
+ 200              	LBB8
+ 201              	LBE8	stabd 68,0,20
+ 202              	
+ 203 0047 3D       		rts
+ 204              	
+ 205              		stabs "get__3SpiPvi:F20",36,0,19,_get__3SpiPvi
+ 206              		stabs "this:P71",64,0,19,0
+ 207              		stabn 192,0,0,LBB8
+ 208              		stabn 224,0,0,LBE8
+ 209              	
+ 210              	Lscope5	stabs "",36,0,0,Lscope5-_get__3SpiPvi
+ 211              	
+ 212              	
+ 213              		end

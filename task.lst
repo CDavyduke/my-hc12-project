@@ -1,0 +1,1083 @@
+   1              	gcc2_compiled.:
+   2              	___gnu_compiled_cplusplus
+   3              		stabs "/home/cdavyduke/Projects/HC12/ELEX_8030/",100,0,0,Ltext0
+   4              		stabs "task.cc",100,0,0,Ltext0
+   5              	
+   6              		section	.text
+   7              	
+   8              	Ltext0	stabs "int:t1=r1;-32768;32767;",128,0,0,0
+   9              		stabs "char:t2=r2;0;255;",128,0,0,0
+  10              		stabs "long int:t3=r1;0020000000000;0017777777777;",128,0,0,0
+  11              		stabs "unsigned int:t4=r4;0;65535;",128,0,0,0
+  12              		stabs "long unsigned int:t5=r1;0000000000000;0037777777777;",128,0,0,0
+  13              		stabs "long long int:t6=r1;0020000000000;0017777777777;",128,0,0,0
+  14              		stabs "long long unsigned int:t7=r1;0000000000000;0037777777777;",128,0,0,0
+  15              		stabs "short int:t8=r8;-32768;32767;",128,0,0,0
+  16              		stabs "short unsigned int:t9=r9;0;65535;",128,0,0,0
+  17              		stabs "signed char:t10=r10;-128;127;",128,0,0,0
+  18              		stabs "unsigned char:t11=r11;0;255;",128,0,0,0
+  19              		stabs "float:t12=r1;4;0;",128,0,0,0
+  20              		stabs "double:t13=r1;4;0;",128,0,0,0
+  21              		stabs "long double:t14=r1;4;0;",128,0,0,0
+  22              		stabs "complex int:t15=s4real:1,0,16;imag:1,16,16;;",128,0,0,0
+  23              		stabs "complex float:t16=r16;4;0;",128,0,0,0
+  24              		stabs "complex double:t17=r17;4;0;",128,0,0,0
+  25              		stabs "complex long double:t18=r18;4;0;",128,0,0,0
+  26              		stabs "bool:t19=@s8;-16;",128,0,0,0
+  27              		stabs "void:t20=20",128,0,0,0
+  28              		stabs "__wchar_t:t21=r21;-32768;32767;",128,0,0,0
+  29              		stabs "__vtbl_ptr_type:t22=*23=f1",128,0,0,0
+  30              		stabs "size_t:t4",128,0,11,0
+  31              		stabs "ptrdiff_t:t1",128,0,12,0
+  32              		stabs "Task:T24=s8current:/025=*24:_4Task$current;stack:/026=*27=*20,0,16;\\",128,0,0,0
+  33              		stabs "sp:/026,16,16;priority:/04,32,16;$vf24:28=*29=ar0;0;3;22,48;\\",128,0,0,0
+  34              		stabs "__as::30=##31=&24;:RC4Task;2A.;Task::32=##25;:RC4Task;2A.33=##25;:UiUi;2A.\\",128,0,0,0
+  35              		stabs "34=#24,20,25,1,20;:_$_4Task;2A*2;24;;yield::35=f20:;2A?;lowerPriorityThan::36=##19;:PC4Task
+  36              		stabs "fork::37=##20;:;1A.;main::37:;1A*3;24;;start::35:;0A?;dispatch::38=f20:P4Task;0A?;;~%24;",1
+  37              		stabs "Task:Tt24",128,0,34,0
+  38              		stabs "Node:Tt39=s6next:40=*39,0,16;task:25,16,16;\\",128,0,0,0
+  39              		stabs "time:1,32,16;__as::41=##42=&39;:Q28TaskList4NodeRCQ28TaskList4Node;2A.;\\",128,0,0,0
+  40              		stabs "Node::43=##40;:__Q28TaskList4NodeRCQ28TaskList4Node;2A.44=##40;:__Q28TaskList4NodeP4Task;2A
+  41              		stabs "TaskList:Tt45=s4first:/140,0,16;$vf45:28,16;__as::46=##47=&45;:RC8TaskList;2A.;\\",128,0,0,
+  42              		stabs "TaskList::48=##49=*45;:RC8TaskList;2A.50=##49;:P4Task;2A.51=#45,20,49,1,20;:_$_8TaskList;2A
+  43              		stabs "block::52=##20;:;2A.;unblock::52:;2A.;getCurrent::53=##25;:;2A.;insert::54=##20;:PQ28TaskLi
+  44              		stabs "remove::55=##40;:;0A.;;~%45;",128,0,60,0
+  45              		stabs "PriorityTaskList:Tt56=s4!1,020,45;__as::57=##58=&56;:RC16PriorityTaskList;2A.;\\",128,0,0,0
+  46              		stabs "PriorityTaskList::59=##60=*56;:RC16PriorityTaskList;2A.61=#56,20,60,1,20;:_$_16PriorityTask
+  47              		stabs "62=##60;:P4Task;2A.;insert::63=##20;:PQ28TaskList4Node;0A*3;45;;;~%45;",128,0,23,0
+  48              		stabs "Interrupts:Tt64=s2oldMask:/01,0,16;__as::65=##66=&64;:RC10Interrupts;2A.;\\",128,0,0,0
+  49              		stabs "Interrupts::67=##68=*64;:RC10Interrupts;2A.69=##68;:;2A.70=#64,20,68,1,20;:_$_10Interrupts;
+  50              		stabs "Priorities:t71=epriHC12TmrTask:0,priTestTask1:1,\\",128,0,0,0
+  51              		stabs "priTestTask2:2,priTestTask3:3,priLTC1404Task:4,\\",128,0,0,0
+  52              		stabs "priAppCmdProcTask:5,priInitTask:6,;",128,0,12,0
+  53              	
+  54              		global	_initialTask
+  55              	
+  56              		section	.data
+  57              		stabs "initialTask:G24",32,0,13,0
+  58              	_initialTask
+  59 0000 00000000 		dcb.b	8,0
+  59      00000000 
+  60              	
+  61              		global	__4Task$current
+  62              		stabs "_4Task$current:G25",32,0,14,0
+  63              	__4Task$current
+  64 0008 0000     		dc.w	_initialTask
+  65              	
+  66              		section	.text
+  67              	
+  68              		global	_dispatch__4TaskP4Task
+  69              	_dispatch__4TaskP4Task
+   1:task.cc       **** // Filename:	  TASK.CC
+   2:task.cc       **** // Author:	  C. DAVYDUKE
+   3:task.cc       **** // File Created:  03/11/22
+   4:task.cc       **** // Last Modified: 03/12/20
+   5:task.cc       **** // Description:	  This file contains the class methods for the consent multi-tasking base class.
+   6:task.cc       **** 
+   7:task.cc       **** #include "task.h"
+   8:task.cc       **** #include "prioritytask.h"
+   9:task.cc       **** #include "interrupts.h"
+  10:task.cc       **** #include "priorities.h"
+  11:task.cc       **** 
+  12:task.cc       **** // static variables
+  13:task.cc       **** Task initialTask( 0, priInitTask );  // the initial task
+  14:task.cc       **** Task * Task::current = & initialTask;
+  15:task.cc       **** 
+  16:task.cc       **** // task switching
+  17:task.cc       **** register void * * hwsp asm( "s" ); // GCC magic
+  18:task.cc       **** 
+  19:task.cc       **** // forces variable hwsp into register "s", stack pointer
+  20:task.cc       **** void Task::dispatch( Task * task )
+  21:task.cc       **** {
+  70              		stabd 68,0,21
+  71              	
+  72 0000 B745     		tfr	d,x
+  73              	
+  22:task.cc       ****   current->sp = hwsp;  // save reg s in current->sp
+  74              	LBB2	stabd 68,0,22
+  75 0002 FD0008   		ldy	__4Task$current
+  76 0005 6F42     		sts	2,y
+  23:task.cc       ****   current = task;  // choose new current task
+  77              		stabd 68,0,23
+  78 0007 7E0008   		stx	__4Task$current
+  24:task.cc       ****   hwsp = current->sp;  // loag reg s from current->sp
+  79              		stabd 68,0,24
+  80 000a EF02     		lds	2,x
+  81              	
+  25:task.cc       **** }
+  82              	LBE2	stabd 68,0,25
+  83              	
+  84 000c 3D       		rts
+  85              	
+  86              		stabs "dispatch__4TaskP4Task:F20",36,0,21,_dispatch__4TaskP4Task
+  87              		stabs "task:P25",64,0,21,2
+  88              		stabn 192,0,0,LBB2
+  89              		stabn 224,0,0,LBE2
+  90              	
+  91              	Lscope0	stabs "",36,0,0,Lscope0-_dispatch__4TaskP4Task
+  92              	
+  93              		global	___8TaskListP4Task
+  94              	___8TaskListP4Task
+  26:task.cc       **** 
+  27:task.cc       **** // task list creation
+  28:task.cc       **** TaskList::TaskList( Task * task )
+  29:task.cc       **** : first( task ? new Node( task ) : 0 )
+  95              		stabd 68,0,29
+  96 000d 1B9E     		leas	-2,s
+  97              	
+  98 000f 6C80     		std	0,s
+  99 0011 CC0000   		ldd	#___vt_8TaskList
+ 100 0014 ED80     		ldy	0,s
+ 101 0016 6C42     		std	2,y
+ 102 0018 ED84     		ldy	4,s
+ 103 001a 2717     		beq	L29
+ 104              		
+ 105 001c CC0006   		ldd	#6
+ 106 001f 160000   		jsr	___builtin_new
+ 107 0022 B745     		tfr	d,x
+ 108              		stabs "task.h",132,0,0,Ltext1
+ 109              	
+   1:task.h        **** // Filename:      TASK.H
+   2:task.h        **** // Author:        C. DAVYDUKE
+   3:task.h        **** // File Created:  03/11/22
+   4:task.h        **** // Last Modified: 03/12/20
+   5:task.h        **** // Description:   This file contains the class definitions for the consent multi-tasking base class
+   6:task.h        **** 
+   7:task.h        **** #ifndef __TASK_H__
+   8:task.h        **** #define __TASK_H__
+   9:task.h        **** 
+  10:task.h        **** #include "stddef.h"
+  11:task.h        **** 
+  12:task.h        **** class Task
+  13:task.h        **** {
+  14:task.h        ****   public:
+  15:task.h        ****     Task( size_t stackSize, unsigned int priority );
+  16:task.h        ****     virtual ~Task();
+  17:task.h        ****     static void yield();  // switch to next task
+  18:task.h        ****     bool lowerPriorityThan( const Task * task ) const
+  19:task.h        ****     {
+  20:task.h        ****       return priority > task->priority;
+  21:task.h        ****     }
+  22:task.h        ****   protected:
+  23:task.h        ****     void fork();  // begin task execution
+  24:task.h        ****     virtual void main();  // task code
+  25:task.h        ****   private:
+  26:task.h        ****     static Task * current; // the running task.
+  27:task.h        ****     static void start();
+  28:task.h        ****     static void dispatch( Task * );  // switch Tasks
+  29:task.h        ****     friend class TaskList;
+  30:task.h        ****   private:
+  31:task.h        ****     void * * stack;  // the task stack
+  32:task.h        ****     void * * sp;  // sp when not running
+  33:task.h        ****     unsigned int priority;
+  34:task.h        **** };
+  35:task.h        **** 
+  36:task.h        **** class TaskList  // SLL (singely linked list) of tasks
+  37:task.h        **** {
+  38:task.h        ****   public:
+  39:task.h        ****     TaskList( Task * initial = 0 );
+  40:task.h        ****     virtual ~TaskList();
+  41:task.h        ****     void block();  // block the caller on this list
+  42:task.h        ****     void unblock();  // unblock first Task from list
+  43:task.h        ****     Task * getCurrent();
+  44:task.h        ****   protected:
+  45:task.h        ****     struct Node  // a node on the list
+  46:task.h        ****     {
+  47:task.h        ****       Node( class Task * t )
+  48:task.h        ****       : next( 0 ),
+ 110              	Ltext1	stabd 68,0,48
+ 111              	
+ 112 0024 18000000 	LBB3	movw	#0,0,x
+ 112      00
+ 113 0029 EC84     		ldd	4,s
+ 114 002b 6C02     		std	2,x
+  49:task.h        ****         task( t )
+  50:task.h        ****       {
+ 115              		stabd 68,0,50
+ 116              	
+ 117              	LBB4
+  51:task.h        ****       }
+ 118              	LBE4	stabd 68,0,51
+ 119              	
+ 120              	LBE3	stabs "task.cc",132,0,0,Ltext2
+ 121              	
+  30:task.cc       **** {
+ 122              	Ltext2	stabd 68,0,30
+ 123 002d 6EF30000 		stx	[0,s]
+ 124 0031 2006     		bra	L33
+ 125              		
+ 126              	
+ 127 0033 87C7     	L29	clrd	
+ 128 0035 6CF30000 		std	[0,s]
+ 129              	
+ 130              	LBB5
+ 131              	LBE5
+ 132 0039 EC80     	L33	ldd	0,s
+  31:task.cc       **** }
+ 133              		stabd 68,0,31
+ 134              	
+ 135 003b 1B82     		leas	2,s
+ 136 003d 3D       		rts
+ 137              	
+ 138              		stabs "__8TaskListP4Task:F49",36,0,29,___8TaskListP4Task
+ 139              		stabs "this:p49",160,0,29,0
+ 140              		stabs "task:p25",160,0,29,4
+ 141              		stabs "t:25",128,0,30,4
+ 142              		stabn 192,0,0,LBB3
+ 143              		stabn 192,0,0,LBB4
+ 144              		stabn 224,0,0,LBE4
+ 145              		stabn 224,0,0,LBE3
+ 146              		stabn 192,0,0,LBB5
+ 147              		stabn 224,0,0,LBE5
+ 148              	
+ 149              	Lscope1	stabs "",36,0,0,Lscope1-___8TaskListP4Task
+ 150              	
+ 151              		global	__$_8TaskList
+ 152              	__$_8TaskList
+  32:task.cc       **** 
+  33:task.cc       **** TaskList::~TaskList()
+  34:task.cc       **** {
+ 153              		stabd 68,0,34
+ 154              	
+ 155 003e B746     		tfr	d,y
+ 156 0040 EC82     		ldd	2,s
+ 157 0042 18004200 		movw	#___vt_8TaskList,2,y
+ 157      00
+ 158              	
+ 159              	LBB6
+ 160 0047 87       	LBE6	clra	
+ 161 0048 C401     		andb	#1      & $FF
+ 162 004a 8C0000   		tstd	
+ 163 004d 2705     		beq	L37
+ 164              		
+ 165 004f B764     		tfr	y,d
+ 166 0051 160000   		jsr	___builtin_delete
+ 167              	
+  35:task.cc       **** }
+ 168              	L37	stabd 68,0,35
+ 169              	
+ 170 0054 3D       		rts
+ 171              	
+ 172              		stabs "_$_8TaskList:F20",36,0,34,__$_8TaskList
+ 173              		stabs "this:P49",64,0,34,1
+ 174              		stabs "__in_chrg:p1",160,0,34,2
+ 175              		stabs "__in_chrg:r1",64,0,34,0
+ 176              		stabn 192,0,0,LBB6
+ 177              		stabn 224,0,0,LBE6
+ 178              	
+ 179              	Lscope2	stabs "",36,0,0,Lscope2-__$_8TaskList
+ 180              	
+ 181              		global	__readyList
+ 182              	
+ 183              		section	.data
+ 184              		stabs "_readyList:G56",32,0,38,0
+ 185              	__readyList
+ 186 000a 00000000 		dcb.b	4,0
+ 187              	
+ 188              		section	.text
+ 189              	
+ 190              		global	_insert__8TaskListPQ28TaskList4Node
+ 191              	_insert__8TaskListPQ28TaskList4Node
+  36:task.cc       **** 
+  37:task.cc       **** // ready list -- list of all tasks in "ready" state
+  38:task.cc       **** PriorityTaskList _readyList( & initialTask );
+  39:task.cc       **** TaskList & readyList( _readyList );
+  40:task.cc       **** 
+  41:task.cc       **** // low-level list manipulation
+  42:task.cc       **** void TaskList::insert( Node * node )  // insert at tail of list
+  43:task.cc       **** {                                                    // -- implies a search for the end
+ 192              		stabd 68,0,43
+ 193              	
+ 194 0055 B746     		tfr	d,y
+ 195 0057 EE82     		ldx	2,s
+ 196              	
+  44:task.cc       ****   if( node )
+ 197              	LBB7	stabd 68,0,44
+ 198              	
+ 199 0059 2715     	LBB8	beq	L39
+ 200              		
+  45:task.cc       ****   {
+ 201              		stabd 68,0,45
+ 202              	
+  46:task.cc       ****     Node * tempNode;
+  47:task.cc       **** 
+  48:task.cc       ****     if( !(this)->first )
+ 203              	LBB9	stabd 68,0,48
+ 204 005b EC40     		ldd	0,y
+ 205 005d 270A     		beq	L43
+ 206              		
+  49:task.cc       ****       (this)->first = node;
+  50:task.cc       **** 
+  51:task.cc       ****     else
+  52:task.cc       ****     {
+  53:task.cc       ****       for( tempNode = (this)->first; tempNode->next; tempNode = tempNode->next );
+ 207              		stabd 68,0,53
+ 208 005f B746     		tfr	d,y
+ 209 0061 2002     		bra	L47
+ 210              		
+ 211              	
+ 212 0063 ED40     	L44	ldy	0,y
+ 213              	
+ 214 0065 EC40     	L47	ldd	0,y
+ 215 0067 26FA     		bne	L44
+ 216              		
+ 217              	
+  54:task.cc       **** 
+  55:task.cc       ****       tempNode->next = node;
+ 218              	L43	stabd 68,0,55
+ 219 0069 6E40     		stx	0,y
+  56:task.cc       ****     }
+  57:task.cc       **** 
+  58:task.cc       ****     node->next = 0;
+ 220              		stabd 68,0,58
+ 221 006b 18000000 		movw	#0,0,x
+ 221      00
+ 222              	
+ 223              	LBE9
+ 224              	L39
+ 225              	LBE8
+  59:task.cc       ****   }
+  60:task.cc       **** }
+ 226              	LBE7	stabd 68,0,60
+ 227              	
+ 228 0070 3D       		rts
+ 229              	
+ 230              		stabs "insert__8TaskListPQ28TaskList4Node:F20",36,0,43,_insert__8TaskListPQ28TaskList4Node
+ 231              		stabs "this:P49",64,0,43,1
+ 232              		stabs "node:p40",160,0,43,2
+ 233              		stabs "node:r40",64,0,43,2
+ 234              		stabn 192,0,0,LBB7
+ 235              		stabn 192,0,0,LBB8
+ 236              		stabs "tempNode:r40",64,0,46,1
+ 237              		stabn 192,0,0,LBB9
+ 238              		stabn 224,0,0,LBE9
+ 239              		stabn 224,0,0,LBE8
+ 240              		stabn 224,0,0,LBE7
+ 241              	
+ 242              	Lscope3	stabs "",36,0,0,Lscope3-_insert__8TaskListPQ28TaskList4Node
+ 243              	
+ 244              		global	_remove__8TaskList
+ 245              	_remove__8TaskList
+  61:task.cc       **** 
+  62:task.cc       **** TaskList::Node * TaskList::remove()  // remove Node from head of list
+  63:task.cc       **** {
+ 246              		stabd 68,0,63
+ 247              	
+ 248 0071 B745     		tfr	d,x
+ 249              	
+  64:task.cc       ****   // lab exercise
+  65:task.cc       ****   Node * tempNode = (this)->first;
+ 250              	LBB10	stabd 68,0,65
+ 251 0073 ED00     		ldy	0,x
+  66:task.cc       ****   (this)->first = tempNode->next;
+ 252              		stabd 68,0,66
+ 253 0075 18024000 		movw	0,y,0,x
+  67:task.cc       ****   tempNode->next = 0;
+ 254              		stabd 68,0,67
+ 255 0079 18004000 		movw	#0,0,y
+ 255      00
+  68:task.cc       ****   return tempNode;
+ 256              		stabd 68,0,68
+ 257 007e B764     		tfr	y,d
+ 258              	
+  69:task.cc       **** }
+ 259              	LBE10	stabd 68,0,69
+ 260              	
+ 261 0080 3D       		rts
+ 262              	
+ 263              		stabs "remove__8TaskList:F40",36,0,63,_remove__8TaskList
+ 264              		stabs "this:P49",64,0,63,2
+ 265              		stabs "tempNode:r40",64,0,65,1
+ 266              		stabn 192,0,0,LBB10
+ 267              		stabn 224,0,0,LBE10
+ 268              	
+ 269              	Lscope4	stabs "",36,0,0,Lscope4-_remove__8TaskList
+ 270              	
+ 271              		global	_block__8TaskList
+ 272              	_block__8TaskList
+  70:task.cc       **** 
+  71:task.cc       **** // task state changes
+  72:task.cc       **** void TaskList::block()
+  73:task.cc       **** {
+ 273              		stabd 68,0,73
+ 274 0081 1B9A     		leas	-6,s
+ 275              	
+ 276 0083 6C82     		std	2,s
+ 277              	
+ 278              	LBB11	stabs "interrupts.h",132,0,0,Ltext3
+ 279              	
+   1:interrupts.h  **** // Filename:		INTERRUPTS.H
+   2:interrupts.h  **** // Author:			C. DAVYDUKE
+   3:interrupts.h  **** // File Created:	03/10/20
+   4:interrupts.h  **** // Last Modified: 03/10/29
+   5:interrupts.h  **** // Description:	This file contains the class definition of interrupts and some low level code.
+   6:interrupts.h  **** 
+   7:interrupts.h  **** #ifndef __INTERRUPTS_H__
+   8:interrupts.h  **** #define __INTERRUPTS_H__
+   9:interrupts.h  **** 
+  10:interrupts.h  **** // This class definition allows us to use the properties of classes (e.g. constructors and
+  11:interrupts.h  **** // destructors) to ensure that interrupts are always enabled and disabled, and one or
+  12:interrupts.h  **** // the other is not forgotten.  Very HC12 specific.
+  13:interrupts.h  **** class Interrupts
+  14:interrupts.h  **** {
+  15:interrupts.h  **** 	public:
+  16:interrupts.h  **** 		Interrupts()
+  17:interrupts.h  **** 		{
+ 280              	Ltext3	stabd 68,0,17
+ 281              	
+ 282              	LBB12
+  18:interrupts.h  **** 			asm( "tfr ccr, b" );
+ 283              	LBB13	stabd 68,0,18
+ 284 0085 B721     		tfr ccr, b
+  19:interrupts.h  **** 			asm( "std %0" : : "m"(oldMask) : "d" );
+ 285              		stabd 68,0,19
+ 286 0087 6C84     		std 4,s
+  20:interrupts.h  **** 			asm( "sei" );
+ 287              		stabd 68,0,20
+ 288 0089 1410     		sei
+ 289              	
+  21:interrupts.h  **** 		}
+ 290              	LBE13	stabd 68,0,21
+ 291              	
+ 292              	LBE12	stabs "task.cc",132,0,0,Ltext4
+ 293              	
+  74:task.cc       ****   Interrupts masked;
+  75:task.cc       ****   insert( readyList.remove() );  // remove head task from readyList (running task) inser on this li
+ 294              	Ltext4	stabd 68,0,75
+ 295 008b FC000E   		ldd	_readyList
+ 296 008e 160071   		jsr	_remove__8TaskList
+ 297 0091 ED82     		ldy	2,s
+ 298 0093 EE42     		ldx	2,y
+ 299 0095 6C80     		std	0,s
+ 300 0097 B764     		tfr	y,d
+ 301 0099 15E30006 		jsr	[6,x]
+  76:task.cc       ****   Task::dispatch( readyList.first->task ); // switch to new first task on ready list
+ 302              		stabd 68,0,76
+ 303 009d FE000E   		ldx	_readyList
+ 304 00a0 EE00     		ldx	0,x
+ 305 00a2 EC02     		ldd	2,x
+ 306 00a4 160000   		jsr	_dispatch__4TaskP4Task
+ 307              		stabs "interrupts.h",132,0,0,Ltext5
+ 308              	
+  22:interrupts.h  **** 		~Interrupts()
+  23:interrupts.h  **** 		{
+ 309              	Ltext5	stabd 68,0,23
+ 310              	
+ 311              	LBB14
+  24:interrupts.h  **** 			asm( "ldd %0" : : "m"(oldMask) : "d" );
+ 312              	LBB15	stabd 68,0,24
+ 313 00a7 EC84     		ldd 4,s
+  25:interrupts.h  **** 			asm( "tfr b, ccr" );
+ 314              		stabd 68,0,25
+ 315 00a9 B712     		tfr b, ccr
+ 316              	
+  26:interrupts.h  **** 		}
+ 317              	LBE15	stabd 68,0,26
+ 318              	
+ 319              	LBE14	stabs "task.cc",132,0,0,Ltext6
+ 320              	
+  77:task.cc       **** }
+ 321              	Ltext6	stabd 68,0,77
+ 322              	
+ 323              	LBE11
+ 324 00ab 1B86     		leas	6,s
+ 325 00ad 3D       		rts
+ 326              	
+ 327              		stabs "block__8TaskList:F20",36,0,73,_block__8TaskList
+ 328              		stabs "this:p49",160,0,73,2
+ 329              		stabs "masked:64",128,0,74,4
+ 330              		stabn 192,0,0,LBB11
+ 331              		stabn 192,0,0,LBB12
+ 332              		stabn 192,0,0,LBB13
+ 333              		stabn 224,0,0,LBE13
+ 334              		stabn 224,0,0,LBE12
+ 335              		stabn 192,0,0,LBB14
+ 336              		stabn 192,0,0,LBB15
+ 337              		stabn 224,0,0,LBE15
+ 338              		stabn 224,0,0,LBE14
+ 339              		stabn 224,0,0,LBE11
+ 340              	
+ 341              	Lscope5	stabs "",36,0,0,Lscope5-_block__8TaskList
+ 342              	
+ 343              		global	_unblock__8TaskList
+ 344              	_unblock__8TaskList
+  78:task.cc       **** 
+  79:task.cc       **** void TaskList::unblock()
+  80:task.cc       **** {
+ 345              		stabd 68,0,80
+ 346 00ae 1B9C     		leas	-4,s
+ 347              	
+ 348 00b0 B746     		tfr	d,y
+ 349              	
+ 350              	LBB16	stabs "interrupts.h",132,0,0,Ltext7
+ 351              	
+ 352              	Ltext7	stabd 68,0,17
+ 353              	
+ 354              	LBB17
+ 355              	LBB18	stabd 68,0,18
+ 356 00b2 B721     		tfr ccr, b
+ 357              		stabd 68,0,19
+ 358 00b4 6C82     		std 2,s
+ 359              		stabd 68,0,20
+ 360 00b6 1410     		sei
+ 361              	
+ 362              	LBE18	stabd 68,0,21
+ 363              	
+ 364              	LBE17	stabs "task.cc",132,0,0,Ltext8
+ 365              	
+  81:task.cc       ****   Interrupts masked;
+  82:task.cc       ****   readyList.insert( remove() );  // remove first task from this list, insert into readyList
+ 366              	Ltext8	stabd 68,0,82
+ 367 00b8 B764     		tfr	y,d
+ 368 00ba 160071   		jsr	_remove__8TaskList
+ 369 00bd FD000E   		ldy	_readyList
+ 370 00c0 ED42     		ldy	2,y
+ 371 00c2 6C80     		std	0,s
+ 372 00c4 FC000E   		ldd	_readyList
+ 373 00c7 15EB0006 		jsr	[6,y]
+  83:task.cc       ****   Task::dispatch( readyList.first->task ); // switch to new first task on ready list
+ 374              		stabd 68,0,83
+ 375 00cb FD000E   		ldy	_readyList
+ 376 00ce ED40     		ldy	0,y
+ 377 00d0 EC42     		ldd	2,y
+ 378 00d2 160000   		jsr	_dispatch__4TaskP4Task
+ 379              		stabs "interrupts.h",132,0,0,Ltext9
+ 380              	
+ 381              	Ltext9	stabd 68,0,23
+ 382              	
+ 383              	LBB19
+ 384              	LBB20	stabd 68,0,24
+ 385 00d5 EC82     		ldd 2,s
+ 386              		stabd 68,0,25
+ 387 00d7 B712     		tfr b, ccr
+ 388              	
+ 389              	LBE20	stabd 68,0,26
+ 390              	
+ 391              	LBE19	stabs "task.cc",132,0,0,Ltext10
+ 392              	
+  84:task.cc       **** }
+ 393              	Ltext10	stabd 68,0,84
+ 394              	
+ 395              	LBE16
+ 396 00d9 1B84     		leas	4,s
+ 397 00db 3D       		rts
+ 398              	
+ 399              		stabs "unblock__8TaskList:F20",36,0,80,_unblock__8TaskList
+ 400              		stabs "this:P49",64,0,80,1
+ 401              		stabs "masked:64",128,0,81,2
+ 402              		stabn 192,0,0,LBB16
+ 403              		stabn 192,0,0,LBB17
+ 404              		stabn 192,0,0,LBB18
+ 405              		stabn 224,0,0,LBE18
+ 406              		stabn 224,0,0,LBE17
+ 407              		stabn 192,0,0,LBB19
+ 408              		stabn 192,0,0,LBB20
+ 409              		stabn 224,0,0,LBE20
+ 410              		stabn 224,0,0,LBE19
+ 411              		stabn 224,0,0,LBE16
+ 412              	
+ 413              	Lscope6	stabs "",36,0,0,Lscope6-_unblock__8TaskList
+ 414              	
+ 415              		global	_getCurrent__8TaskList
+ 416              	_getCurrent__8TaskList
+  85:task.cc       **** 
+  86:task.cc       **** Task * TaskList::getCurrent()
+  87:task.cc       **** {
+ 417              		stabd 68,0,87
+ 418 00dc 1B9E     		leas	-2,s
+ 419              	
+ 420              	
+ 421              	LBB21	stabs "interrupts.h",132,0,0,Ltext11
+ 422              	
+ 423              	Ltext11	stabd 68,0,17
+ 424              	
+ 425              	LBB22
+ 426              	LBB23	stabd 68,0,18
+ 427 00de B721     		tfr ccr, b
+ 428              		stabd 68,0,19
+ 429 00e0 6C80     		std 0,s
+ 430              		stabd 68,0,20
+ 431 00e2 1410     		sei
+ 432              	
+ 433              	LBE23	stabd 68,0,21
+ 434              	
+ 435              	LBE22	stabs "task.cc",132,0,0,Ltext12
+ 436              	
+  88:task.cc       ****   Interrupts masked;
+  89:task.cc       ****   return readyList.first->task;
+ 437              	Ltext12	stabd 68,0,89
+ 438 00e4 FD000E   		ldy	_readyList
+ 439 00e7 ED40     		ldy	0,y
+ 440 00e9 ED42     		ldy	2,y
+ 441              	
+ 442              	LBB24	stabs "interrupts.h",132,0,0,Ltext13
+ 443              	
+ 444              	Ltext13	stabd 68,0,23
+ 445              	
+ 446              	LBB25
+ 447              	LBB26	stabd 68,0,24
+ 448 00eb EC80     		ldd 0,s
+ 449              		stabd 68,0,25
+ 450 00ed B712     		tfr b, ccr
+ 451              	
+ 452              	LBE26	stabd 68,0,26
+ 453              	
+ 454              	LBE25	stabs "task.cc",132,0,0,Ltext14
+ 455              	
+  90:task.cc       **** }
+ 456              	Ltext14	stabd 68,0,90
+ 457              	
+ 458 00ef B764     	LBE24	tfr	y,d
+ 459              	
+ 460              	LBE21
+ 461 00f1 1B82     		leas	2,s
+ 462 00f3 3D       		rts
+ 463              	
+ 464              		stabs "getCurrent__8TaskList:F25",36,0,87,_getCurrent__8TaskList
+ 465              		stabs "this:P49",64,0,87,0
+ 466              		stabs "masked:r72=*64",64,0,88,3
+ 467              		stabn 192,0,0,LBB21
+ 468              		stabn 192,0,0,LBB22
+ 469              		stabn 192,0,0,LBB23
+ 470              		stabn 224,0,0,LBE23
+ 471              		stabn 224,0,0,LBE22
+ 472              		stabn 192,0,0,LBB24
+ 473              		stabn 192,0,0,LBB25
+ 474              		stabn 192,0,0,LBB26
+ 475              		stabn 224,0,0,LBE26
+ 476              		stabn 224,0,0,LBE25
+ 477              		stabn 224,0,0,LBE24
+ 478              		stabn 224,0,0,LBE21
+ 479              	
+ 480              	Lscope7	stabs "",36,0,0,Lscope7-_getCurrent__8TaskList
+ 481              	
+ 482              		global	_yield__4Task
+ 483              	_yield__4Task
+  91:task.cc       **** 
+  92:task.cc       **** void Task::yield()  // give up CPU to another task by moving self to end of readyList
+  93:task.cc       **** {
+ 484              		stabd 68,0,93
+ 485              	
+ 486              	
+  94:task.cc       ****   readyList.block();
+ 487              	LBB27	stabd 68,0,94
+ 488 00f4 FC000E   		ldd	_readyList
+ 489 00f7 160081   		jsr	_block__8TaskList
+ 490              	
+  95:task.cc       **** }
+ 491              	LBE27	stabd 68,0,95
+ 492              	
+ 493 00fa 3D       		rts
+ 494              	
+ 495              		stabs "yield__4Task:F20",36,0,93,_yield__4Task
+ 496              		stabn 192,0,0,LBB27
+ 497              		stabn 224,0,0,LBE27
+ 498              	
+ 499              	Lscope8	stabs "",36,0,0,Lscope8-_yield__4Task
+ 500              	
+ 501              		global	_main__4Task
+ 502              	_main__4Task
+  96:task.cc       **** 
+  97:task.cc       **** // creating & starting tasks
+  98:task.cc       **** void Task::main()  // do nothing and return immediately
+  99:task.cc       **** {
+ 503              		stabd 68,0,99
+ 504              	
+ 505              	
+ 506              	LBB28
+ 100:task.cc       **** }
+ 507              	LBE28	stabd 68,0,100
+ 508              	
+ 509 00fb 3D       		rts
+ 510              	
+ 511              		stabs "main__4Task:F20",36,0,99,_main__4Task
+ 512              		stabs "this:P25",64,0,99,0
+ 513              		stabn 192,0,0,LBB28
+ 514              		stabn 224,0,0,LBE28
+ 515              	
+ 516              	Lscope9	stabs "",36,0,0,Lscope9-_main__4Task
+ 517              	
+ 518              		global	_start__4Task
+ 519              	_start__4Task
+ 101:task.cc       **** 
+ 102:task.cc       **** void Task::start()
+ 103:task.cc       **** {
+ 520              		stabd 68,0,103
+ 521 00fc 1B96     		leas	-10,s
+ 522              	
+ 523              	
+ 104:task.cc       ****   asm( "cli" );
+ 524              	LBB29	stabd 68,0,104
+ 525 00fe 10EF     		cli
+ 105:task.cc       ****   current->main();  // run the task code
+ 526              		stabd 68,0,105
+ 527 0100 FE0008   		ldx	__4Task$current
+ 528 0103 ED06     		ldy	6,x
+ 529 0105 B754     		tfr	x,d
+ 530 0107 15EB0006 		jsr	[6,y]
+ 106:task.cc       ****   TaskList temp;  // avoid returning from start()
+ 531              		stabd 68,0,106
+ 532 010b 1986     		leay	6,s
+ 533 010d 6D84     		sty	4,s
+ 534 010f 18008000 		movw	#0,0,s
+ 534      00
+ 535 0114 B764     		tfr	y,d
+ 536 0116 16000D   		jsr	___8TaskListP4Task
+ 107:task.cc       ****   temp.block();  // consumes no further CPU cycles
+ 537              		stabd 68,0,107
+ 538 0119 EC84     		ldd	4,s
+ 539 011b 160081   		jsr	_block__8TaskList
+ 540 011e 18008000 		movw	#2,0,s
+ 540      02
+ 541 0123 EC84     		ldd	4,s
+ 542 0125 16003E   		jsr	__$_8TaskList
+ 543              	
+ 108:task.cc       **** }  // never reached
+ 544              	LBE29	stabd 68,0,108
+ 545              	
+ 546 0128 1B8A     		leas	10,s
+ 547 012a 3D       		rts
+ 548              	
+ 549              		stabs "start__4Task:F20",36,0,103,_start__4Task
+ 550              		stabs "temp:45",128,0,106,6
+ 551              		stabn 192,0,0,LBB29
+ 552              		stabn 224,0,0,LBE29
+ 553              	
+ 554              	Lscope10	stabs "",36,0,0,Lscope10-_start__4Task
+ 555              	
+ 556              		global	___4TaskUiUi
+ 557              	___4TaskUiUi
+ 109:task.cc       **** 
+ 110:task.cc       **** Task::Task( size_t stackSize, unsigned int p )
+ 111:task.cc       **** : stack( new ( void * )[ stackSize / sizeof( void * ) ] ),
+ 558              		stabd 68,0,111
+ 559 012b 1B9C     		leas	-4,s
+ 560              	
+ 561 012d 6C82     		std	2,s
+ 562 012f CC0008   		ldd	#___vt_4Task
+ 563 0132 ED82     		ldy	2,s
+ 564 0134 6C46     		std	6,y
+ 565 0136 EC86     		ldd	6,s
+ 566 0138 C4FE     		andb	#-2      & $FF
+ 567 013a 6C80     		std	0,s
+ 568 013c 160000   		jsr	___builtin_vec_new
+ 569 013f B745     		tfr	d,x
+ 570 0141 6EF30002 		stx	[2,s]
+ 571 0145 EC80     		ldd	0,s
+ 572 0147 1AE6     		leax	d,x
+ 573 0149 ED82     		ldy	2,s
+ 574 014b 6E42     		stx	2,y
+ 575 014d EC88     		ldd	8,s
+ 576 014f 6C44     		std	4,y
+ 112:task.cc       ****   sp( & stack[ stackSize / sizeof( void * ) ] ),
+ 113:task.cc       ****   priority( p )
+ 114:task.cc       **** {
+ 577              		stabd 68,0,114
+ 578              	
+ 115:task.cc       ****   if( stackSize ) // if ! initialTask
+ 579              	LBB30	stabd 68,0,115
+ 580 0151 ED86     		ldy	6,s
+ 581 0153 272F     		beq	L75
+ 582              		
+ 116:task.cc       ****   {
+ 117:task.cc       ****     *--sp = 0; // terminate return chain
+ 583              		stabd 68,0,117
+ 584 0155 ED82     		ldy	2,s
+ 585 0157 EC42     		ldd	2,y
+ 586 0159 B746     		tfr	d,y
+ 587 015b 1A5E     		leax	-2,y
+ 588 015d ED82     		ldy	2,s
+ 589 015f 6E42     		stx	2,y
+ 590 0161 18000000 		movw	#0,0,x
+ 590      00
+ 118:task.cc       ****     *--sp = 0; // terminate frame chain
+ 591              		stabd 68,0,118
+ 592 0166 EC42     		ldd	2,y
+ 593 0168 B746     		tfr	d,y
+ 594 016a 1A5E     		leax	-2,y
+ 595 016c ED82     		ldy	2,s
+ 596 016e 6E42     		stx	2,y
+ 597 0170 18000000 		movw	#0,0,x
+ 597      00
+ 119:task.cc       ****     *--sp = &start; // push address of Task::start()
+ 598              		stabd 68,0,119
+ 599 0175 EC42     		ldd	2,y
+ 600 0177 B746     		tfr	d,y
+ 601 0179 1A5E     		leax	-2,y
+ 602 017b ED82     		ldy	2,s
+ 603 017d 6E42     		stx	2,y
+ 604 017f 18000000 		movw	#_start__4Task,0,x
+ 604      FC
+ 605              	
+ 606              	LBE30
+ 607 0184 EC82     	L75	ldd	2,s
+ 120:task.cc       ****   }
+ 121:task.cc       **** }
+ 608              		stabd 68,0,121
+ 609              	
+ 610 0186 1B84     		leas	4,s
+ 611 0188 3D       		rts
+ 612              	
+ 613              		stabs "__4TaskUiUi:F25",36,0,111,___4TaskUiUi
+ 614              		stabs "this:p25",160,0,111,2
+ 615              		stabs "stackSize:p4",160,0,111,6
+ 616              		stabs "p:p4",160,0,111,8
+ 617              		stabn 192,0,0,LBB30
+ 618              		stabn 224,0,0,LBE30
+ 619              	
+ 620              	Lscope11	stabs "",36,0,0,Lscope11-___4TaskUiUi
+ 621              	
+ 622              		global	__$_4Task
+ 623              	__$_4Task
+ 122:task.cc       **** 
+ 123:task.cc       **** Task::~Task()
+ 124:task.cc       **** {
+ 624              		stabd 68,0,124
+ 625 0189 1B9E     		leas	-2,s
+ 626              	
+ 627 018b 6C80     		std	0,s
+ 628 018d CC0008   		ldd	#___vt_4Task
+ 629 0190 ED80     		ldy	0,s
+ 630 0192 6C46     		std	6,y
+ 631              	
+ 125:task.cc       ****   delete stack;
+ 632              	LBB31	stabd 68,0,125
+ 633 0194 EEF30000 		ldx	[0,s]
+ 634 0198 B754     		tfr	x,d
+ 635 019a 160000   		jsr	___builtin_delete
+ 636              	
+ 637 019d EC84     	LBE31	ldd	4,s
+ 638 019f 87       		clra	
+ 639 01a0 C401     		andb	#1      & $FF
+ 640 01a2 B745     		tfr	d,x
+ 641 01a4 8E0000   		tstx	
+ 642 01a7 2705     		beq	L79
+ 643              		
+ 644 01a9 EC80     		ldd	0,s
+ 645 01ab 160000   		jsr	___builtin_delete
+ 646              	
+ 126:task.cc       **** }
+ 647              	L79	stabd 68,0,126
+ 648              	
+ 649 01ae 1B82     		leas	2,s
+ 650 01b0 3D       		rts
+ 651              	
+ 652              		stabs "_$_4Task:F20",36,0,124,__$_4Task
+ 653              		stabs "this:p25",160,0,124,0
+ 654              		stabs "__in_chrg:p1",160,0,124,4
+ 655              		stabn 192,0,0,LBB31
+ 656              		stabn 224,0,0,LBE31
+ 657              	
+ 658              	Lscope12	stabs "",36,0,0,Lscope12-__$_4Task
+ 659              	
+ 660              		global	_fork__4Task
+ 661              	_fork__4Task
+ 127:task.cc       **** 
+ 128:task.cc       **** void Task::fork()  // called by most-derived ctor
+ 129:task.cc       **** {
+ 662              		stabd 68,0,129
+ 663 01b1 1B98     		leas	-8,s
+ 664              	
+ 665              	
+ 130:task.cc       ****   TaskList temp( this );
+ 666              	LBB32	stabd 68,0,130
+ 667 01b3 1984     		leay	4,s
+ 668 01b5 6D82     		sty	2,s
+ 669 01b7 6C80     		std	0,s
+ 670 01b9 B764     		tfr	y,d
+ 671 01bb 16000D   		jsr	___8TaskListP4Task
+ 131:task.cc       ****   temp.unblock();
+ 672              		stabd 68,0,131
+ 673 01be EC82     		ldd	2,s
+ 674 01c0 1600AE   		jsr	_unblock__8TaskList
+ 675 01c3 18008000 		movw	#2,0,s
+ 675      02
+ 676 01c8 EC82     		ldd	2,s
+ 677 01ca 16003E   		jsr	__$_8TaskList
+ 678              	
+ 132:task.cc       **** }
+ 679              	LBE32	stabd 68,0,132
+ 680              	
+ 681 01cd 1B88     		leas	8,s
+ 682 01cf 3D       		rts
+ 683              	
+ 684              		stabs "fork__4Task:F20",36,0,129,_fork__4Task
+ 685              		stabs "this:P25",64,0,129,0
+ 686              		stabs "temp:45",128,0,130,4
+ 687              		stabn 192,0,0,LBB32
+ 688              		stabn 224,0,0,LBE32
+ 689              	
+ 690              	Lscope13	stabs "",36,0,0,Lscope13-_fork__4Task
+ 691              	
+ 692              		global	_readyList
+ 693              	
+ 694              		section	.data
+ 695              		stabs "readyList:G47",32,0,39,0
+ 696              	_readyList
+ 697 000e 0000     		dcb.b	2,0
+ 698              	
+ 699              		section	.text
+ 700              	
+ 701              		global	__GLOBAL_$D$initialTask
+ 702              	__GLOBAL_$D$initialTask
+ 703              		stabd 68,0,132
+ 704 01d0 1B9E     		leas	-2,s
+ 705              	
+ 706              	
+ 707              	LBB33
+ 708 01d2 18008000 	LBB34	movw	#2,0,s
+ 708      02
+ 709 01d7 CC000A   		ldd	#__readyList
+ 710 01da 16003E   		jsr	__$_8TaskList
+ 711              	
+ 712 01dd 18008000 	LBE34	movw	#2,0,s
+ 712      02
+ 713 01e2 CC0000   		ldd	#_initialTask
+ 714 01e5 160189   		jsr	__$_4Task
+ 715              	
+ 716              	LBE33
+ 717 01e8 1B82     		leas	2,s
+ 718 01ea 3D       		rts
+ 719              	
+ 720              		stabs "_GLOBAL_$D$initialTask:F20",36,0,132,__GLOBAL_$D$initialTask
+ 721              		stabn 192,0,0,LBB33
+ 722              		stabn 192,0,0,LBB34
+ 723              		stabn 224,0,0,LBE34
+ 724              		stabn 224,0,0,LBE33
+ 725              	
+ 726              	Lscope14	stabs "",36,0,0,Lscope14-__GLOBAL_$D$initialTask
+ 727              	
+ 728              		section	.dtor
+ 729 0000 01D0     		dc.w	__GLOBAL_$D$initialTask
+ 730              	
+ 731              		section	.text
+ 732              	
+ 733              		global	__GLOBAL_$I$initialTask
+ 734              	__GLOBAL_$I$initialTask
+ 735              		stabd 68,0,132
+ 736 01eb 1B9C     		leas	-4,s
+ 737              	
+ 738              	
+ 739              	LBB35	stabd 68,0,13
+ 740 01ed 18008000 		movw	#0,0,s
+ 740      00
+ 741 01f2 18008200 		movw	#6,2,s
+ 741      06
+ 742 01f7 CC0000   		ldd	#_initialTask
+ 743 01fa 16012B   		jsr	___4TaskUiUi
+ 744              		stabs "prioritytask.h",132,0,0,Ltext15
+ 745              	
+   1:prioritytask.h **** // Filename:        PRIORITYTASK.H
+   2:prioritytask.h **** // Author:          C. DAVYDUKE
+   3:prioritytask.h **** // File Created:    03/12/03
+   4:prioritytask.h **** // Last Modified:   03/12/03
+   5:prioritytask.h **** // Description:     This file contains the class definition for the piority 
+   6:prioritytask.h **** //                  task list.
+   7:prioritytask.h **** 
+   8:prioritytask.h **** #ifndef __PRIORITYTASK_H__
+   9:prioritytask.h **** #define __PRIORITYTASK_H__
+  10:prioritytask.h **** 
+  11:prioritytask.h **** #include "task.h"
+  12:prioritytask.h **** 
+  13:prioritytask.h **** class PriorityTaskList : public TaskList
+  14:prioritytask.h **** {
+  15:prioritytask.h ****   public:
+  16:prioritytask.h ****     PriorityTaskList( Task * task = 0 )
+  17:prioritytask.h ****     : TaskList( task )
+ 746              	Ltext15	stabd 68,0,17
+ 747              	
+ 748 01fd 18008000 	LBB36	movw	#_initialTask,0,s
+ 748      00
+ 749 0202 CC000A   		ldd	#__readyList
+ 750 0205 16000D   		jsr	___8TaskListP4Task
+ 751 0208 18030000 		movw	#___vt_16PriorityTaskList,__readyList+2
+ 751      000C
+  18:prioritytask.h ****     {
+ 752              		stabd 68,0,18
+ 753              	
+ 754              	LBB37
+  19:prioritytask.h ****     }
+ 755              	LBE37	stabd 68,0,19
+ 756              	
+ 757              	LBE36	stabs "task.cc",132,0,0,Ltext16
+ 758              	
+ 759              	Ltext16	stabd 68,0,39
+ 760 020e 1803000A 		movw	#__readyList,_readyList
+ 760      000E
+ 761              	
+ 762              	LBE35
+ 763 0214 1B84     		leas	4,s
+ 764 0216 3D       		rts
+ 765              	
+ 766              		stabs "_GLOBAL_$I$initialTask:F20",36,0,132,__GLOBAL_$I$initialTask
+ 767              		stabn 192,0,0,LBB35
+ 768              		stabn 192,0,0,LBB36
+ 769              		stabn 192,0,0,LBB37
+ 770              		stabn 224,0,0,LBE37
+ 771              		stabn 224,0,0,LBE36
+ 772              		stabn 224,0,0,LBE35
+ 773              	
+ 774              	Lscope15	stabs "",36,0,0,Lscope15-__GLOBAL_$I$initialTask
+ 775              	
+ 776              		section	.ctor
+ 777 0000 01EB     		dc.w	__GLOBAL_$I$initialTask
+ 778              	
+ 779              		global	___vt_8TaskList
+ 780              	
+ 781              		section	.const
+ 782              		stabs "__vt_8TaskList:G29",32,0,60,0
+ 783              	___vt_8TaskList
+ 784 0000 0000     		dc.w	0
+ 785 0002 0000     		dc.w	0
+ 786 0004 003E     		dc.w	__$_8TaskList
+ 787 0006 0055     		dc.w	_insert__8TaskListPQ28TaskList4Node
+ 788              	
+ 789              		global	___vt_4Task
+ 790              		stabs "__vt_4Task:G29",32,0,34,0
+ 791              	___vt_4Task
+ 792 0008 0000     		dc.w	0
+ 793 000a 0000     		dc.w	0
+ 794 000c 0189     		dc.w	__$_4Task
+ 795 000e 00FB     		dc.w	_main__4Task
+ 796              	
+ 797              		section	.text
+ 798              	
+ 799              		global	_lowerPriorityThan__C4TaskPC4Task
+ 800              	_lowerPriorityThan__C4TaskPC4Task
+ 801              		stabs "task.h",132,0,0,Ltext17
+ 802              	
+ 803              	Ltext17	stabd 68,0,19
+ 804 0217 1B9F     		leas	-1,s
+ 805              	
+ 806 0219 B745     		tfr	d,x
+ 807 021b ED83     		ldy	3,s
+ 808              	
+ 809              	LBB38	stabd 68,0,20
+ 810 021d C7       		clrb	
+ 811 021e 6B80     		stab	0,s
+ 812 0220 EE04     		ldx	4,x
+ 813 0222 AE44     		cpx	4,y
+ 814 0224 2304     		bls	L2
+ 815              		
+ 816 0226 C601     		ldab	#1
+ 817 0228 6B80     		stab	0,s
+ 818              	
+ 819 022a E680     	L2	ldab	0,s
+ 820              	
+ 821              	LBE38	stabd 68,0,21
+ 822              	
+ 823 022c 1B81     		leas	1,s
+ 824 022e 3D       		rts
+ 825              	
+ 826              		stabs "lowerPriorityThan__C4TaskPC4Task:F19",36,0,19,_lowerPriorityThan__C4TaskPC4Task
+ 827              		stabs "this:P73=*24",64,0,19,2
+ 828              		stabs "task:p73",160,0,19,3
+ 829              		stabs "task:r73",64,0,19,1
+ 830              		stabn 192,0,0,LBB38
+ 831              		stabn 224,0,0,LBE38
+ 832              	
+ 833              	Lscope16	stabs "",36,0,0,Lscope16-_lowerPriorityThan__C4TaskPC4Task
+ 834              		stabs "hwsp:r26",64,0,17,3
+ 835              	
+ 836              	
+ 837              		end

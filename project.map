@@ -1,0 +1,871 @@
+Archive member included       because of file (symbol)
+
+iostream.a(ostream_ctor_streambuf.o)
+                              main.o (ostream::ostream(int, streambuf *))
+iostream.a(istream_ctor_streambuf.o)
+                              main.o (istream::istream(int, streambuf *))
+iostream.a(ostream_ls_charp.o)
+                              main.o (ostream::operator<<(char const *))
+iostream.a(manip_endl.o)      main.o (endl(ostream &))
+iostream.a(ostream_ls_float.o)
+                              appcmdproc.o (ostream::operator<<(float))
+iostream.a(manip_flush.o)     appcmdproc.o (flush(ostream &))
+iostream.a(istream_rs_float.o)
+                              appcmdproc.o (istream::operator>>(float &))
+iostream.a(manip_hex.o)       appcmdproc.o (hex(ios &))
+iostream.a(istream_rs_uint.o)
+                              appcmdproc.o (istream::operator>>(unsigned int &))
+iostream.a(ostream_ls_int.o)  appcmdproc.o (ostream::operator<<(int))
+iostream.a(streambuf_ctor.o)  scibuf.o (streambuf::streambuf(void))
+iostream.a(streambuf_setg.o)  scibuf.o (streambuf::setg(char *, char *, char *))
+iostream.a(streambuf_setp.o)  scibuf.o (streambuf::setp(char *, char *))
+iostream.a(streambuf_dtor.o)  scibuf.o (streambuf::~streambuf(void))
+iostream.a(streambuf_sputc.o)
+                              scibuf.o (streambuf::sputc(int))
+iostream.a(streambuf_in_avail.o)
+                              scibuf.o (streambuf::in_avail(void))
+iostream.a(streambuf_seekoff.o)
+                              scibuf.o (streambuf::seekoff(int, ios::seek_dir, int))
+iostream.a(streambuf_seekpos.o)
+                              scibuf.o (streambuf::seekpos(int, int))
+iostream.a(streambuf_xsputn.o)
+                              scibuf.o (streambuf::xsputn(char const *, int))
+iostream.a(streambuf_xsgetn.o)
+                              scibuf.o (streambuf::xsgetn(char *, int))
+iostream.a(streambuf_putbackfail.o)
+                              scibuf.o (streambuf::pbackfail(int))
+iostream.a(manip_setw.o)      cmdproc.o (setw(int))
+iostream.a(istream_rs_charp.o)
+                              cmdproc.o (istream::operator>>(char *))
+iostream.a(strcmp.o)          cmdproc.o (strcmp(char const *, char const *))
+iostream.a(istream_get.o)     cmdproc.o (istream::get(void))
+iostream.a(isprint.o)         cmdproc.o (isprint(int))
+iostream.a(ostream_put.o)     cmdproc.o (ostream::put(char))
+iostream.a(ostream_flush.o)   cmdproc.o (ostream::flush(void))
+iostream.a(istrstream_ctor_charp.o)
+                              cmdproc.o (istrstream::istrstream(int, char *))
+iostream.a(istrstream_dtor.o)
+                              cmdproc.o (istrstream::~istrstream(void))
+iostream.a(ostream_dtor.o)    cmdproc.o (ostream::~ostream(void))
+iostream.a(istream_dtor.o)    cmdproc.o (istream::~istream(void))
+iostream.a(ios_ctor_streambuf.o)
+                              iostream.a(ostream_ctor_streambuf.o) (ios::ios(streambuf *))
+iostream.a(ostream_opfx.o)    iostream.a(ostream_ls_charp.o) (ostream::opfx(void))
+iostream.a(ostream_puts.o)    iostream.a(ostream_ls_charp.o) (ostream::puts(char const *, char const *))
+iostream.a(ostream_osfx.o)    iostream.a(ostream_ls_charp.o) (ostream::osfx(void))
+iostream.a(istream_ipfx.o)    iostream.a(istream_rs_float.o) (istream::ipfx(int))
+iostream.a(streambuf_sgetc.o)
+                              iostream.a(istream_rs_float.o) (streambuf::sgetc(void))
+iostream.a(streambuf_snextc.o)
+                              iostream.a(istream_rs_float.o) (streambuf::snextc(void))
+iostream.a(isdigit.o)         iostream.a(istream_rs_float.o) (isdigit(int))
+iostream.a(istream_rs_int.o)  iostream.a(istream_rs_uint.o) (istream::operator>>(int &))
+iostream.a(ostream_puti.o)    iostream.a(ostream_ls_int.o) (ostream::puti(unsigned int, int))
+iostream.a(streambuf_sync.o)  iostream.a(streambuf_dtor.o) (streambuf::sync(void))
+iostream.a(streambuf_overflow.o)
+                              iostream.a(streambuf_dtor.o) (streambuf::overflow(int))
+iostream.a(streambuf_underflow.o)
+                              iostream.a(streambuf_dtor.o) (streambuf::underflow(void))
+iostream.a(memcpy.o)          iostream.a(streambuf_xsputn.o) (memcpy)
+iostream.a(isspace.o)         iostream.a(istream_rs_charp.o) (isspace(int))
+iostream.a(streambuf_sbumpc.o)
+                              iostream.a(istream_get.o) (streambuf::sbumpc(void))
+iostream.a(ios_ctor.o)        iostream.a(istrstream_ctor_charp.o) (ios::ios(void))
+iostream.a(strstreambase_ctor_buf.o)
+                              iostream.a(istrstream_ctor_charp.o) (strstreambase::strstreambase(int, char *, int, char *))
+iostream.a(strstreambase_dtor.o)
+                              iostream.a(istrstream_dtor.o) (strstreambase::~strstreambase(void))
+iostream.a(ios_dtor.o)        iostream.a(istrstream_dtor.o) (ios::~ios(void))
+iostream.a(ios_init.o)        iostream.a(ios_ctor_streambuf.o) (ios::init(streambuf *, ostream *))
+iostream.a(strlen.o)          iostream.a(ostream_puts.o) (strlen(char const *))
+iostream.a(streambuf_stossc.o)
+                              iostream.a(istream_ipfx.o) (streambuf::stossc(void))
+iostream.a(tolower.o)         iostream.a(istream_rs_int.o) (tolower(int))
+iostream.a(strcpy.o)          iostream.a(ostream_puti.o) (strcpy(char *, char const *))
+iostream.a(strstreambuf_ctor_buf.o)
+                              iostream.a(strstreambase_ctor_buf.o) (strstreambuf::strstreambuf(char *, int, char *))
+iostream.a(strstreambuf_dtor.o)
+                              iostream.a(strstreambase_dtor.o) (strstreambuf::~strstreambuf(void))
+iostream.a(strstreambuf_init.o)
+                              iostream.a(strstreambuf_ctor_buf.o) (strstreambuf::init(char *, int, char *))
+iostream.a(strstreambuf_overflow.o)
+                              iostream.a(strstreambuf_dtor.o) (strstreambuf::overflow(int))
+iostream.a(strstreambuf_underflow.o)
+                              iostream.a(strstreambuf_dtor.o) (strstreambuf::underflow(void))
+iostream.a(streambuf_setb.o)  iostream.a(strstreambuf_init.o) (streambuf::setb(char *, char *, int))
+/usr/local/lib/gcc-lib/hc12-coff/2.8.1/libgcc.a(ashlhi.o)
+                              pwmchannel.o (__hc12_ashlhi)
+/usr/local/lib/gcc-lib/hc12-coff/2.8.1/libgcc.a(tstsf.o)
+                              pwmchannel.o (__hc12_tstsf)
+/usr/local/lib/gcc-lib/hc12-coff/2.8.1/libgcc.a(fltuhisf.o)
+                              pwmchannel.o (__hc12_floatunshisf)
+/usr/local/lib/gcc-lib/hc12-coff/2.8.1/libgcc.a(mulsf.o)
+                              pwmchannel.o (__hc12_mulsf)
+/usr/local/lib/gcc-lib/hc12-coff/2.8.1/libgcc.a(flthisf.o)
+                              pwmchannel.o (__hc12_floathisf)
+/usr/local/lib/gcc-lib/hc12-coff/2.8.1/libgcc.a(fixusfhi.o)
+                              pwmchannel.o (__hc12_fixuns_truncsfhi)
+/usr/local/lib/gcc-lib/hc12-coff/2.8.1/libgcc.a(negsf.o)
+                              iostream.a(ostream_ls_float.o) (__hc12_negsf)
+/usr/local/lib/gcc-lib/hc12-coff/2.8.1/libgcc.a(addsf.o)
+                              iostream.a(ostream_ls_float.o) (__hc12_addsf)
+/usr/local/lib/gcc-lib/hc12-coff/2.8.1/libgcc.a(divsf.o)
+                              iostream.a(ostream_ls_float.o) (__hc12_divsf)
+/usr/local/lib/gcc-lib/hc12-coff/2.8.1/libgcc.a(cmpsf.o)
+                              iostream.a(ostream_ls_float.o) (__hc12_cmpsf)
+/usr/local/lib/gcc-lib/hc12-coff/2.8.1/libgcc.a(fixsfhi.o)
+                              iostream.a(ostream_ls_float.o) (__hc12_fix_truncsfhi)
+/usr/local/lib/gcc-lib/hc12-coff/2.8.1/libgcc.a(subsf.o)
+                              iostream.a(ostream_ls_float.o) (__hc12_subsf)
+/usr/local/lib/gcc-lib/hc12-coff/2.8.1/libgcc.a(float.o)
+                              /usr/local/lib/gcc-lib/hc12-coff/2.8.1/libgcc.a(tstsf.o) (fp_push_float)
+/usr/local/lib/gcc-lib/hc12-coff/2.8.1/libgcc.a(sfsfsf.o)
+                              /usr/local/lib/gcc-lib/hc12-coff/2.8.1/libgcc.a(mulsf.o) (__hc12_sfsfsf)
+/usr/local/lib/gcc-lib/hc12-coff/2.8.1/libgcc.a(sfsf.o)
+                              /usr/local/lib/gcc-lib/hc12-coff/2.8.1/libgcc.a(negsf.o) (__hc12_sfsf)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+                0x00008000                _stack_top=0x8000
+                0x00007c00                _heap_top=0x7c00
+
+.io             0x00000000      0x100
+ *(.io)
+ .io            0x00000000      0x100 chipio.o
+                0x00000058                rsvd58
+                0x00000045                pwscnt0
+                0x00000096                tc3
+                0x000000d8                rsvdD8
+                0x00000024                brkd
+                0x0000008c                tmsk1
+                0x0000000b                moder
+                0x00000094                tc2
+                0x00000072                adr1
+                0x00000008                porte
+                0x00000018                itst0
+                0x000000a0                pactl
+                0x000000d0                spi0
+                0x00000015                rtiflg
+                0x00000050                pwdty01
+                0x00000082                oc7m
+                0x0000006f                portad
+                0x0000008f                tflg2
+                0x000000c8                rsvdC8
+                0x0000004a                pwcnt23
+                0x000000c0                sci0
+                0x00000046                pwscal1
+                0x00000001                portb
+                0x00000010                initrm
+                0x000000d7                ddrs
+                0x0000001b                itst3
+                0x00000022                brka
+                0x000000ad                timtst
+                0x000000f4                feelck
+                0x00000066                atdstat0
+                0x00000078                adr4
+                0x0000000e                rsvd0E
+                0x00000055                pwtst
+                0x000000a1                paflg
+                0x0000009c                tc6
+                0x000000af                ddrt
+                0x00000084                tcnt
+                0x0000000d                rdriv
+                0x000000fa                bsvr
+                0x00000020                brkct0
+                0x00000052                pwdty23
+                0x00000062                atdctl2
+                0x000000f2                eetst
+                0x000000f9                bcr2
+                0x0000001f                hprio
+                0x00000088                tctl1
+                0x0000009e                tc7
+                0x00000016                copctl
+                0x00000057                ddrp
+                0x00000048                pwcnt01
+                0x0000007a                adr5
+                0x000000f5                feemcr
+                0x00000002                ddra
+                0x000000f1                eeprot
+                0x0000008a                tctl3
+                0x0000001c                rsvd1C
+                0x00000087                tqcr
+                0x00000098                tc4
+                0x00000076                adr3
+                0x000000fb                bdr
+                0x00000013                misc
+                0x000000fc                bard
+                0x0000004c                pwper01
+                0x0000000a                pear
+                0x000000a2                pacnt
+                0x00000021                brkct1
+                0x0000006a                rsvd6A
+                0x00000026                rsvd26
+                0x0000004e                pwper23
+                0x0000001a                itst2
+                0x00000014                rtictl
+                0x000000f3                eeprog
+                0x00000068                atdtst
+                0x000000f0                eemcr
+                0x00000042                pwen
+                0x00000063                atdctl3
+                0x000000ae                portt
+                0x0000009a                tc5
+                0x000000fd                dlcscr
+                0x00000041                pwpol
+                0x0000001e                intcr
+                0x000000b0                rsvdB0
+                0x000000a4                rsvdA4
+                0x00000054                pwctl
+                0x00000081                cforc
+                0x00000090                tc0
+                0x00000080                tios
+                0x00000056                portp
+                0x0000008d                tmsk2
+                0x000000dc                rsvdDC
+                0x00000004                rsvd04
+                0x00000017                coprst
+                0x00000012                initee
+                0x00000083                oc7d
+                0x000000e0                rsvdE0
+                0x00000092                tc1
+                0x00000067                atdstat1
+                0x0000007e                adr7
+                0x00000011                initrg
+                0x00000043                pwpres
+                0x00000000                porta
+                0x00000044                pwscal0
+                0x00000086                tscr
+                0x0000008e                tflg1
+                0x000000f7                feectl
+                0x000000f6                feetst
+                0x00000009                ddre
+                0x00000070                adr0
+                0x000000d6                ports
+                0x00000064                atdctl4
+                0x00000065                atdctl5
+                0x00000019                itst1
+                0x00000074                adr2
+                0x000000fe                portdlc
+                0x00000047                pwscnt1
+                0x00000003                ddrb
+                0x000000f8                bcr1
+                0x00000040                pwmclk
+                0x000000db                purds
+                0x00000061                atdctl1
+                0x00000060                atdctl0
+                0x0000000c                pucr
+                0x000000ff                ddrdlc
+                0x0000007c                adr6
+
+.text           0x00001000     0x398f
+ *(.text)
+ .text          0x00001000      0x10a isr.o
+                0x00001000                Isr::Isr(Ictlr &, unsigned int)
+                0x00001097                Ictlr::~Ictlr(void)
+                0x000010bd                Ictlr::attach(Isr *)
+                0x000010f4                Ictlr::runHandler(unsigned int)
+                0x00001052                Ictlr::Ictlr(unsigned int)
+                0x00001027                Isr::~Isr(void)
+                0x00001051                Isr::handler(void)
+                0x000010d7                Ictlr::detach(Isr *)
+ .text          0x0000110a      0x34c pwmchannel.o
+                0x00001293                PwmChannel::setDuty(float)
+                0x0000133b                PwmChannel::handler(int, unsigned int)
+                0x0000110a                PwmChannel::PwmChannel(PwmDriver &, int)
+                0x0000131e                PwmChannel::getDuty(void)
+ .text          0x00001456      0x152 pwmdriver.o
+                0x00001597                PwmDriver::getPeriod(void) const
+                0x0000157c                PwmDriver::attach(PwmChannel *)
+                0x00001456                PwmDriver::PwmDriver(Ictlr &, unsigned int)
+                0x00001517                PwmDriver::handler(void)
+                0x0000159c                PwmDriver::~PwmDriver(void)
+ .text          0x000015a8      0x288 hc12ictlr.o
+                0x00001717                vsr9
+                0x000015e4                HC12Ictlr::handlerTable(void)
+                0x000015e4                vsr0
+                0x000016b0                vsr6
+                0x000017a3                vsr13
+                0x00001628                vsr2
+                0x0000173a                vsr10
+                0x000016f4                vsr8
+                0x000015a8                HC12Ictlr::HC12Ictlr(void)
+                0x0000180c                vsr16
+                0x00001780                vsr12
+                0x0000166c                vsr4
+                0x0000168e                vsr5
+                0x000017e9                vsr15
+                0x000015cb                HC12Ictlr::~HC12Ictlr(void)
+                0x000017c6                vsr14
+                0x000016d2                vsr7
+                0x0000164a                vsr3
+                0x0000175d                vsr11
+                0x00001606                vsr1
+ .text          0x00001830      0x389 main.o
+                0x00001830                main
+ .text          0x00001bb9      0x2cf appcmdproc.o
+                0x00001e5d                AppCmdProc::~AppCmdProc(void)
+                0x00001bb9                AppCmdProc::AppCmdProc(streambuf *, unsigned int, unsigned int, PwmChannel &, PwmChannel &)
+                0x00001c01                AppCmdProc::main(void)
+ .text          0x00001e88      0x196 scibuf.o
+                0x00001fca                SciBuf::poll(void)
+                0x00001f78                SciBuf::overflow(int)
+                0x00001efd                SciBuf::~SciBuf(void)
+                0x00001f30                SciBuf::underflow(void)
+                0x00001fd5                SciBuf::recv(void)
+                0x00001e88                SciBuf::SciBuf(volatile sciport &, unsigned int, unsigned int)
+                0x00001ff3                SciBuf::send(char)
+                0x00001f91                SciBuf::sync(void)
+ .text          0x0000201e       0x89 crt1.o
+                0x0000201e                crt1(void)
+ .text          0x000020a7       0xf1 prioritytask.o
+                0x00002175                PriorityTaskList::PriorityTaskList(Task *)
+                0x000020a7                PriorityTaskList::insert(TaskList::Node *)
+                0x0000218c                PriorityTaskList::~PriorityTaskList(void)
+ .text          0x00002198       0x48 spi.o
+                0x000021df                Spi::get(void *, int)
+                0x000021de                Spi::put(void *, int)
+                0x000021ad                Spi::~Spi(void)
+                0x00002198                Spi::Spi(void)
+                0x000021d6                Spi::close(void)
+                0x000021da                Spi::open(void)
+ .text          0x000021e0       0x6a mutex.o
+                0x000021e0                Mutex::Mutex(void)
+                0x000021fc                Mutex::acquire(void)
+                0x00002223                Mutex::release(void)
+ .text          0x0000224a      0x22c cmdproc.o
+                0x000022cf                CmdProc::CmdProc(streambuf *, char const *)
+                0x00002259                Cmd::match(istream &)
+                0x00002256                Cmd::parse(istream &, ostream &)
+                0x000022da                CmdProc::present(Cmd **)
+                0x0000224a                Cmd::Cmd(char const *)
+ .text          0x00002476       0xe1 ltc1404.o
+                0x000024e5                Ltc1404::~Ltc1404(void)
+                0x00002476                Ltc1404::main(void)
+                0x0000250c                Ltc1404::Ltc1404(unsigned int, unsigned int, Spi &, int)
+ .text          0x00002557       0x15 malloc.o
+                0x00002557                malloc(unsigned int)
+                0x0000256b                free(void *)
+ .text          0x0000256c        0x2 fatalheaperr.o
+                0x0000256d                SetErrorFlag(void)
+                0x0000256c                EnterSafeMode(void)
+ .text          0x0000256e      0x132 timertask.o
+                0x000025df                TimerTask::~TimerTask(void)
+                0x0000256e                TimerTask::TimerTask(unsigned int, unsigned int, Ictlr &, int, int)
+                0x0000262a                TimerTask::delay(int)
+                0x0000263e                TimerTask::main(void)
+                0x0000268d                TimerTask::handler(void)
+ .text          0x000026a0       0x36 new.o
+                0x000026ce                __builtin_delete
+                0x000026d2                __builtin_vec_delete
+                0x000026a0                __builtin_new
+                0x000026b7                __builtin_vec_new
+ .text          0x000026d6       0x8a hc12timertask.o
+                0x0000273f                HC12TimerTask::handler(void)
+                0x000026d6                HC12TimerTask::HC12TimerTask(unsigned int, unsigned int, Ictlr &)
+                0x00002722                HC12TimerTask::~HC12TimerTask(void)
+ .text          0x00002760      0x12e deltatask.o
+                0x0000286a                DeltaTaskList::zero(void)
+                0x0000277a                DeltaTaskList::insert(TaskList::Node *)
+                0x0000285c                DeltaTaskList::decrement(void)
+                0x00002882                DeltaTaskList::~DeltaTaskList(void)
+                0x00002760                DeltaTaskList::block(int)
+ .text          0x0000288e        0x4 restart.o
+                0x0000288e                Restart(void)
+ .text          0x00002892      0x22f task.o
+                0x00002903                TaskList::remove(void)
+                0x00002986                Task::yield(void)
+                0x00002940                TaskList::unblock(void)
+                0x000028d0                TaskList::~TaskList(void)
+                0x000029bd                Task::Task(unsigned int, unsigned int)
+                0x0000298d                Task::main(void)
+                0x00002a7d                global constructors keyed to initialTask
+                0x00002aa9                Task::lowerPriorityThan(Task const *) const
+                0x00002892                Task::dispatch(Task *)
+                0x00002913                TaskList::block(void)
+                0x0000296e                TaskList::getCurrent(void)
+                0x0000298e                Task::start(void)
+                0x000028e7                TaskList::insert(TaskList::Node *)
+                0x00002a62                global destructors keyed to initialTask
+                0x00002a43                Task::fork(void)
+                0x0000289f                TaskList::TaskList(Task *)
+                0x00002a1b                Task::~Task(void)
+ .text          0x00002ac1       0x12 crt0.o
+                0x00002ac1                start
+ .text          0x00002ad3       0x29 iostream.a(ostream_ctor_streambuf.o)
+                0x00002ad3                ostream::ostream(int, streambuf *)
+ .text          0x00002afc       0x29 iostream.a(istream_ctor_streambuf.o)
+                0x00002afc                istream::istream(int, streambuf *)
+ .text          0x00002b25       0x24 iostream.a(ostream_ls_charp.o)
+                0x00002b25                ostream::operator<<(char const *)
+ .text          0x00002b49       0x16 iostream.a(manip_endl.o)
+                0x00002b49                endl(ostream &)
+ .text          0x00002b5f      0x177 iostream.a(ostream_ls_float.o)
+                0x00002b5f                ostream::operator<<(float)
+ .text          0x00002cd6        0xc iostream.a(manip_flush.o)
+                0x00002cd6                flush(ostream &)
+ .text          0x00002ce2      0x20d iostream.a(istream_rs_float.o)
+                0x00002ce2                istream::operator>>(float &)
+ .text          0x00002eef        0xd iostream.a(manip_hex.o)
+                0x00002eef                hex(ios &)
+ .text          0x00002efc       0x16 iostream.a(istream_rs_uint.o)
+                0x00002efc                istream::operator>>(unsigned int &)
+ .text          0x00002f12       0x4d iostream.a(ostream_ls_int.o)
+                0x00002f12                ostream::operator<<(int)
+ .text          0x00002f5f       0x38 iostream.a(streambuf_ctor.o)
+                0x00002f5f                streambuf::streambuf(void)
+ .text          0x00002f97       0x10 iostream.a(streambuf_setg.o)
+                0x00002f97                streambuf::setg(char *, char *, char *)
+ .text          0x00002fa7        0xd iostream.a(streambuf_setp.o)
+                0x00002fa7                streambuf::setp(char *, char *)
+ .text          0x00002fb4       0x2d iostream.a(streambuf_dtor.o)
+                0x00002fb4                streambuf::~streambuf(void)
+ .text          0x00002fe1       0x29 iostream.a(streambuf_sputc.o)
+                0x00002fe1                streambuf::sputc(int)
+ .text          0x0000300a        0xc iostream.a(streambuf_in_avail.o)
+                0x0000300a                streambuf::in_avail(void)
+ .text          0x00003016        0x4 iostream.a(streambuf_seekoff.o)
+                0x00003016                streambuf::seekoff(int, ios::seek_dir, int)
+ .text          0x0000301a       0x1b iostream.a(streambuf_seekpos.o)
+                0x0000301a                streambuf::seekpos(int, int)
+ .text          0x00003035       0x87 iostream.a(streambuf_xsputn.o)
+                0x00003035                streambuf::xsputn(char const *, int)
+ .text          0x000030bc       0x68 iostream.a(streambuf_xsgetn.o)
+                0x000030bc                streambuf::xsgetn(char *, int)
+ .text          0x00003124        0x4 iostream.a(streambuf_putbackfail.o)
+                0x00003124                streambuf::pbackfail(int)
+ .text          0x00003128       0x13 iostream.a(manip_setw.o)
+                0x0000312f                setw(int)
+ .text          0x0000313b       0xb4 iostream.a(istream_rs_charp.o)
+                0x0000313b                istream::operator>>(char *)
+ .text          0x000031ef       0x25 iostream.a(strcmp.o)
+                0x000031ef                strcmp(char const *, char const *)
+ .text          0x00003214       0x52 iostream.a(istream_get.o)
+                0x00003214                istream::get(void)
+ .text          0x00003266       0x11 iostream.a(isprint.o)
+                0x00003266                isprint(int)
+ .text          0x00003277       0x4f iostream.a(ostream_put.o)
+                0x00003277                ostream::put(char)
+ .text          0x000032c6       0x38 iostream.a(ostream_flush.o)
+                0x000032c6                ostream::flush(void)
+ .text          0x000032fe       0x56 iostream.a(istrstream_ctor_charp.o)
+                0x000032fe                istrstream::istrstream(int, char *)
+ .text          0x00003354       0x54 iostream.a(istrstream_dtor.o)
+                0x00003354                istrstream::~istrstream(void)
+ .text          0x000033a8       0x3e iostream.a(ostream_dtor.o)
+                0x000033a8                ostream::~ostream(void)
+ .text          0x000033e6       0x3b iostream.a(istream_dtor.o)
+                0x000033e6                istream::~istream(void)
+ .text          0x00003421       0x1e iostream.a(ios_ctor_streambuf.o)
+                0x00003421                ios::ios(streambuf *)
+ .text          0x0000343f       0x55 iostream.a(ostream_opfx.o)
+                0x0000343f                ostream::opfx(void)
+ .text          0x00003494      0x1f3 iostream.a(ostream_puts.o)
+                0x00003494                ostream::puts(char const *, char const *)
+ .text          0x00003687       0x4c iostream.a(ostream_osfx.o)
+                0x00003687                ostream::osfx(void)
+ .text          0x000036d3      0x110 iostream.a(istream_ipfx.o)
+                0x000036d3                istream::ipfx(int)
+ .text          0x000037e3       0x18 iostream.a(streambuf_sgetc.o)
+                0x000037e3                streambuf::sgetc(void)
+ .text          0x000037fb       0x31 iostream.a(streambuf_snextc.o)
+                0x000037fb                streambuf::snextc(void)
+ .text          0x0000382c       0x11 iostream.a(isdigit.o)
+                0x0000382c                isdigit(int)
+ .text          0x0000383d      0x19b iostream.a(istream_rs_int.o)
+                0x0000383d                istream::operator>>(int &)
+ .text          0x000039d8      0x183 iostream.a(ostream_puti.o)
+                0x000039d8                ostream::puti(unsigned int, int)
+ .text          0x00003b5b        0x3 iostream.a(streambuf_sync.o)
+                0x00003b5b                streambuf::sync(void)
+ .text          0x00003b5e        0x4 iostream.a(streambuf_overflow.o)
+                0x00003b5e                streambuf::overflow(int)
+ .text          0x00003b62        0x4 iostream.a(streambuf_underflow.o)
+                0x00003b62                streambuf::underflow(void)
+ .text          0x00003b66       0x1d iostream.a(memcpy.o)
+                0x00003b66                memcpy
+ .text          0x00003b83       0x17 iostream.a(isspace.o)
+                0x00003b83                isspace(int)
+ .text          0x00003b9a       0x2e iostream.a(streambuf_sbumpc.o)
+                0x00003b9a                streambuf::sbumpc(void)
+ .text          0x00003bc8       0x1f iostream.a(ios_ctor.o)
+                0x00003bc8                ios::ios(void)
+ .text          0x00003be7       0x51 iostream.a(strstreambase_ctor_buf.o)
+                0x00003be7                strstreambase::strstreambase(int, char *, int, char *)
+ .text          0x00003c38       0x46 iostream.a(strstreambase_dtor.o)
+                0x00003c38                strstreambase::~strstreambase(void)
+ .text          0x00003c7e       0x17 iostream.a(ios_dtor.o)
+                0x00003c7e                ios::~ios(void)
+ .text          0x00003c95       0x30 iostream.a(ios_init.o)
+                0x00003c95                ios::init(streambuf *, ostream *)
+ .text          0x00003cc5       0x14 iostream.a(strlen.o)
+                0x00003cc5                strlen(char const *)
+ .text          0x00003cd9       0x1a iostream.a(streambuf_stossc.o)
+                0x00003cd9                streambuf::stossc(void)
+ .text          0x00003cf3        0xe iostream.a(tolower.o)
+                0x00003cf3                tolower(int)
+ .text          0x00003d01       0x13 iostream.a(strcpy.o)
+                0x00003d01                strcpy(char *, char const *)
+ .text          0x00003d14       0x25 iostream.a(strstreambuf_ctor_buf.o)
+                0x00003d14                strstreambuf::strstreambuf(char *, int, char *)
+ .text          0x00003d39       0x14 iostream.a(strstreambuf_dtor.o)
+                0x00003d39                strstreambuf::~strstreambuf(void)
+ .text          0x00003d4d       0x55 iostream.a(strstreambuf_init.o)
+                0x00003d4d                strstreambuf::init(char *, int, char *)
+ .text          0x00003da2        0x4 iostream.a(strstreambuf_overflow.o)
+                0x00003da2                strstreambuf::overflow(int)
+ .text          0x00003da6       0xad iostream.a(strstreambuf_underflow.o)
+                0x00003da6                strstreambuf::underflow(void)
+ .text          0x00003e53       0x28 iostream.a(streambuf_setb.o)
+                0x00003e53                streambuf::setb(char *, char *, int)
+ *(.const)
+ .const         0x00003e7b        0xe isr.o
+                0x00003e7b                Ictlr virtual table
+                0x00003e81                Isr virtual table
+ .const         0x00003e89        0x4 pwmchannel.o
+ .const         0x00003e8d        0x8 pwmdriver.o
+                0x00003e8d                PwmDriver virtual table
+ .const         0x00003e95        0x6 hc12ictlr.o
+                0x00003e95                HC12Ictlr virtual table
+ .const         0x00003e9b       0x20 main.o
+ .const         0x00003ebb       0x87 appcmdproc.o
+                0x00003f3a                AppCmdProc virtual table
+ .const         0x00003f42       0x18 scibuf.o
+                0x00003f42                SciBuf virtual table
+ .const         0x00003f5a        0x4 crt1.o
+ .const         0x00003f5e        0x8 prioritytask.o
+                0x00003f5e                PriorityTaskList virtual table
+ .const         0x00003f66        0xa spi.o
+                0x00003f66                Spi virtual table
+ .const         0x00003f70        0x8 mutex.o
+ .const         0x00003f78       0x22 cmdproc.o
+                0x00003f94                Cmd virtual table
+ .const         0x00003f9a        0x8 ltc1404.o
+                0x00003f9a                Ltc1404 virtual table
+ .const         0x00003fa2       0x10 timertask.o
+                0x00003fa2                TimerTask::Isr virtual table
+                0x00003faa                TimerTask virtual table
+ .const         0x00003fb2       0x10 hc12timertask.o
+                0x00003fb2                HC12TimerTask::Isr virtual table
+                0x00003fba                HC12TimerTask virtual table
+ .const         0x00003fc2        0x8 deltatask.o
+                0x00003fc2                DeltaTaskList virtual table
+ .const         0x00003fca       0x10 task.o
+                0x00003fd2                Task virtual table
+                0x00003fca                TaskList virtual table
+ .const         0x00003fda       0xa8 iostream.a(ostream_ls_float.o)
+ .const         0x00004082        0xc iostream.a(istream_rs_float.o)
+ .const         0x0000408e       0x18 iostream.a(streambuf_dtor.o)
+                0x0000408e                streambuf virtual table
+ .const         0x000040a6        0x6 iostream.a(istrstream_dtor.o)
+                0x000040a6                istrstream::ios virtual table
+ .const         0x000040ac        0x6 iostream.a(ostream_dtor.o)
+                0x000040ac                ostream::ios virtual table
+ .const         0x000040b2        0x6 iostream.a(istream_dtor.o)
+                0x000040b2                istream::ios virtual table
+ .const         0x000040b8       0x2d iostream.a(ostream_puti.o)
+ .const         0x000040e5        0x6 iostream.a(strstreambase_dtor.o)
+                0x000040e5                strstreambase::ios virtual table
+ .const         0x000040eb        0x6 iostream.a(ios_dtor.o)
+                0x000040eb                ios virtual table
+ .const         0x000040f1       0x18 iostream.a(strstreambuf_dtor.o)
+                0x000040f1                strstreambuf virtual table
+ .const         0x00004109        0xa /usr/local/lib/gcc-lib/hc12-coff/2.8.1/libgcc.a(ashlhi.o)
+                0x00004109                __hc12_ashlhi
+ .const         0x00004113       0x54 /usr/local/lib/gcc-lib/hc12-coff/2.8.1/libgcc.a(tstsf.o)
+                0x00004113                __hc12_tstsf
+ .const         0x00004167       0x48 /usr/local/lib/gcc-lib/hc12-coff/2.8.1/libgcc.a(fltuhisf.o)
+                0x00004167                __hc12_floatunshisf
+ .const         0x000041af        0x9 /usr/local/lib/gcc-lib/hc12-coff/2.8.1/libgcc.a(mulsf.o)
+                0x000041af                __hc12_mulsf
+ .const         0x000041b8       0x48 /usr/local/lib/gcc-lib/hc12-coff/2.8.1/libgcc.a(flthisf.o)
+                0x000041b8                __hc12_floathisf
+ .const         0x00004200       0x4a /usr/local/lib/gcc-lib/hc12-coff/2.8.1/libgcc.a(fixusfhi.o)
+                0x00004200                __hc12_fixuns_truncsfhi
+ .const         0x0000424a        0x9 /usr/local/lib/gcc-lib/hc12-coff/2.8.1/libgcc.a(negsf.o)
+                0x0000424a                __hc12_negsf
+ .const         0x00004253        0x9 /usr/local/lib/gcc-lib/hc12-coff/2.8.1/libgcc.a(addsf.o)
+                0x00004253                __hc12_addsf
+ .const         0x0000425c        0x9 /usr/local/lib/gcc-lib/hc12-coff/2.8.1/libgcc.a(divsf.o)
+                0x0000425c                __hc12_divsf
+ .const         0x00004265       0x63 /usr/local/lib/gcc-lib/hc12-coff/2.8.1/libgcc.a(cmpsf.o)
+                0x00004265                __hc12_cmpsf
+ .const         0x000042c8       0x4a /usr/local/lib/gcc-lib/hc12-coff/2.8.1/libgcc.a(fixsfhi.o)
+                0x000042c8                __hc12_fix_truncsfhi
+ .const         0x00004312        0x9 /usr/local/lib/gcc-lib/hc12-coff/2.8.1/libgcc.a(subsf.o)
+                0x00004312                __hc12_subsf
+ .const         0x0000431b      0x5a4 /usr/local/lib/gcc-lib/hc12-coff/2.8.1/libgcc.a(float.o)
+                0x00004532                fp_add
+                0x00004527                fp_abs
+                0x000043de                fp_pop_int
+                0x000044ca                fp_max
+                0x000044dc                fp_cmp
+                0x000045e8                fp_div
+                0x000044a4                fp_drop
+                0x0000451e                fp_neg
+                0x0000466f                fp_mod
+                0x000043c1                fp_pop_uint
+                0x00004477                fp_dup
+                0x000044b8                fp_min
+                0x00004340                fp_pop_float
+                0x0000438b                fp_push_long
+                0x00004406                fp_pop_long
+                0x0000459a                fp_mul
+                0x00004449                fp_int
+                0x0000431b                fp_push_float
+                0x00004450                fp_frac
+                0x0000448d                fp_over
+                0x0000452a                fp_sub
+                0x0000445a                fp_swap
+                0x00004363                fp_push_uint
+                0x000044ac                fp_tst
+                0x00004374                fp_push_int
+ .const         0x000048bf       0x6e /usr/local/lib/gcc-lib/hc12-coff/2.8.1/libgcc.a(sfsfsf.o)
+                0x000048bf                __hc12_sfsfsf
+ .const         0x0000492d       0x5e /usr/local/lib/gcc-lib/hc12-coff/2.8.1/libgcc.a(sfsf.o)
+                0x0000492d                __hc12_sfsf
+                0x0000498b                _ctor_beg=.
+ *(.ctor)
+ .ctor          0x0000498b        0x2 task.o
+                0x0000498d                _ctor_end=.
+                0x0000498d                _dtor_beg=.
+ *(.dtor)
+ .dtor          0x0000498d        0x2 task.o
+                0x0000498f                _dtor_end=.
+
+.data           0x0000498f       0x16
+ *(.data)
+ .data          0x0000498f        0x2 hc12ictlr.o
+                0x0000498f                HC12Ictlr::theHC12Ictlr
+ .data          0x00004991        0x2 malloc.o
+ .data          0x00004993        0x2 timertask.o
+                0x00004993                TimerTask::theTimerTask
+ .data          0x00004995       0x10 task.o
+                0x00004995                initialTask
+                0x0000499f                _readyList
+                0x000049a3                readyList
+                0x0000499d                Task::current
+
+.bss            0x000049a5        0x0
+                0x000049a5                _bss_beg=.
+ *(.bss)
+ *(COMMON)
+                0x000049a5                _bss_end=.
+
+.heap           0x000049a5        0x0
+                0x000049a5                _heap_beg=.
+ *(.heap)
+                0x000049a5                _heap_end=.
+
+.vectors        0x00000b00       0x40
+ *(.vectors)
+ .vectors       0x00000b00       0x40 vectors.o
+LOAD isr.o
+LOAD pwmchannel.o
+LOAD pwmdriver.o
+LOAD hc12ictlr.o
+LOAD main.o
+LOAD appcmdproc.o
+LOAD scibuf.o
+LOAD crt1.o
+LOAD prioritytask.o
+LOAD spi.o
+LOAD mutex.o
+LOAD cmdproc.o
+LOAD ltc1404.o
+LOAD chipio.o
+LOAD malloc.o
+LOAD fatalheaperr.o
+LOAD timertask.o
+LOAD new.o
+LOAD hc12timertask.o
+LOAD deltatask.o
+LOAD restart.o
+LOAD task.o
+LOAD vectors.o
+LOAD crt0.o
+LOAD iostream.a
+START GROUP
+LOAD iostream.a
+END GROUP
+LOAD /usr/local/lib/gcc-lib/hc12-coff/2.8.1/libgcc.a
+LOAD /usr/local/lib/gcc-lib/hc12-coff/2.8.1/libgcc.a
+OUTPUT(project.o coff-hc1x)
+
+.stab           0x00000b40    0x22d64
+ .stab          0x00000b40      0x594 isr.o
+ .stab          0x000010d4     0x13f8 pwmchannel.o
+ .stab          0x000024cc      0xd08 pwmdriver.o
+ .stab          0x000031d4      0xedc hc12ictlr.o
+ .stab          0x000040b0     0x1bb4 main.o
+ .stab          0x00005c64     0x16e0 appcmdproc.o
+ .stab          0x00007344      0xb04 scibuf.o
+ .stab          0x00007e48      0x228 crt1.o
+ .stab          0x00008070      0x8a0 prioritytask.o
+ .stab          0x00008910      0x4bc spi.o
+ .stab          0x00008dcc      0x5b8 mutex.o
+ .stab          0x00009384      0xe1c cmdproc.o
+ .stab          0x0000a1a0      0xec4 ltc1404.o
+ .stab          0x0000b064      0x858 chipio.o
+ .stab          0x0000b8bc      0x228 malloc.o
+ .stab          0x0000bae4      0x1bc fatalheaperr.o
+ .stab          0x0000bca0      0x78c timertask.o
+ .stab          0x0000c42c      0x354 new.o
+ .stab          0x0000c780      0x63c hc12timertask.o
+ .stab          0x0000cdbc      0x90c deltatask.o
+ .stab          0x0000d6c8      0x180 restart.o
+ .stab          0x0000d848      0xe94 task.o
+ .stab          0x0000e6dc      0x45c iostream.a(ostream_ctor_streambuf.o)
+ .stab          0x0000eb38      0x45c iostream.a(istream_ctor_streambuf.o)
+ .stab          0x0000ef94      0x45c iostream.a(ostream_ls_charp.o)
+ .stab          0x0000f3f0      0x444 iostream.a(manip_endl.o)
+ .stab          0x0000f834      0x7ec iostream.a(ostream_ls_float.o)
+ .stab          0x00010020      0x438 iostream.a(manip_flush.o)
+ .stab          0x00010458      0xb34 iostream.a(istream_rs_float.o)
+ .stab          0x00010f8c      0x4bc iostream.a(manip_hex.o)
+ .stab          0x00011448      0x45c iostream.a(istream_rs_uint.o)
+ .stab          0x000118a4      0x540 iostream.a(ostream_ls_int.o)
+ .stab          0x00011de4      0x48c iostream.a(streambuf_ctor.o)
+ .stab          0x00012270      0x468 iostream.a(streambuf_setg.o)
+ .stab          0x000126d8      0x45c iostream.a(streambuf_setp.o)
+ .stab          0x00012b34      0x450 iostream.a(streambuf_dtor.o)
+ .stab          0x00012f84      0x45c iostream.a(streambuf_sputc.o)
+ .stab          0x000133e0      0x42c iostream.a(streambuf_in_avail.o)
+ .stab          0x0001380c      0x42c iostream.a(streambuf_seekoff.o)
+ .stab          0x00013c38      0x444 iostream.a(streambuf_seekpos.o)
+ .stab          0x0001407c      0x768 iostream.a(streambuf_xsputn.o)
+ .stab          0x000147e4      0x720 iostream.a(streambuf_xsgetn.o)
+ .stab          0x00014f04      0x42c iostream.a(streambuf_putbackfail.o)
+ .stab          0x00015330      0x5d0 iostream.a(manip_setw.o)
+ .stab          0x00015900      0x840 iostream.a(istream_rs_charp.o)
+ .stab          0x00016140      0x1e0 iostream.a(strcmp.o)
+ .stab          0x00016320      0x5f4 iostream.a(istream_get.o)
+ .stab          0x00016914      0x18c iostream.a(isprint.o)
+ .stab          0x00016aa0      0x66c iostream.a(ostream_put.o)
+ .stab          0x0001710c      0x588 iostream.a(ostream_flush.o)
+ .stab          0x00017694      0x588 iostream.a(istrstream_ctor_charp.o)
+ .stab          0x00017c1c      0x4f8 iostream.a(istrstream_dtor.o)
+ .stab          0x00018114      0x444 iostream.a(ostream_dtor.o)
+ .stab          0x00018558      0x438 iostream.a(istream_dtor.o)
+ .stab          0x00018990      0x438 iostream.a(ios_ctor_streambuf.o)
+ .stab          0x00018dc8      0x6e4 iostream.a(ostream_opfx.o)
+ .stab          0x000194ac     0x11dc iostream.a(ostream_puts.o)
+ .stab          0x0001a688      0x540 iostream.a(ostream_osfx.o)
+ .stab          0x0001abc8      0xae0 iostream.a(istream_ipfx.o)
+ .stab          0x0001b6a8      0x444 iostream.a(streambuf_sgetc.o)
+ .stab          0x0001baec      0x450 iostream.a(streambuf_snextc.o)
+ .stab          0x0001bf3c      0x18c iostream.a(isdigit.o)
+ .stab          0x0001c0c8      0xe28 iostream.a(istream_rs_int.o)
+ .stab          0x0001cef0      0x9f0 iostream.a(ostream_puti.o)
+ .stab          0x0001d8e0      0x42c iostream.a(streambuf_sync.o)
+ .stab          0x0001dd0c      0x42c iostream.a(streambuf_overflow.o)
+ .stab          0x0001e138      0x42c iostream.a(streambuf_underflow.o)
+ .stab          0x0001e564      0x21c iostream.a(memcpy.o)
+ .stab          0x0001e780      0x1a4 iostream.a(isspace.o)
+ .stab          0x0001e924      0x444 iostream.a(streambuf_sbumpc.o)
+ .stab          0x0001ed68      0x42c iostream.a(ios_ctor.o)
+ .stab          0x0001f194      0x540 iostream.a(strstreambase_ctor_buf.o)
+ .stab          0x0001f6d4      0x4f8 iostream.a(strstreambase_dtor.o)
+ .stab          0x0001fbcc      0x444 iostream.a(ios_dtor.o)
+ .stab          0x00020010      0x498 iostream.a(ios_init.o)
+ .stab          0x000204a8      0x1e0 iostream.a(strlen.o)
+ .stab          0x00020688      0x444 iostream.a(streambuf_stossc.o)
+ .stab          0x00020acc      0x18c iostream.a(tolower.o)
+ .stab          0x00020c58      0x1ec iostream.a(strcpy.o)
+ .stab          0x00020e44      0x510 iostream.a(strstreambuf_ctor_buf.o)
+ .stab          0x00021354      0x4f8 iostream.a(strstreambuf_dtor.o)
+ .stab          0x0002184c      0x774 iostream.a(strstreambuf_init.o)
+ .stab          0x00021fc0      0x4ec iostream.a(strstreambuf_overflow.o)
+ .stab          0x000224ac      0xf78 iostream.a(strstreambuf_underflow.o)
+ .stab          0x00023424      0x480 iostream.a(streambuf_setb.o)
+
+.stabstr        0x000238a4    0x59335
+ .stabstr       0x000238a4      0x661 isr.o
+ .stabstr       0x00023f05     0x142b pwmchannel.o
+ .stabstr       0x00025330     0x12fa pwmdriver.o
+ .stabstr       0x0002662a      0xdc1 hc12ictlr.o
+ .stabstr       0x000273eb     0x3796 main.o
+ .stabstr       0x0002ab81     0x2bd9 appcmdproc.o
+ .stabstr       0x0002d75a     0x1d67 scibuf.o
+ .stabstr       0x0002f4c1      0x319 crt1.o
+ .stabstr       0x0002f7da      0xa65 prioritytask.o
+ .stabstr       0x0003023f      0x9f8 spi.o
+ .stabstr       0x00030c37      0x91f mutex.o
+ .stabstr       0x00031556     0x1af5 cmdproc.o
+ .stabstr       0x0003304b     0x1851 ltc1404.o
+ .stabstr       0x0003489c      0xc78 chipio.o
+ .stabstr       0x00035514      0x348 malloc.o
+ .stabstr       0x0003585c      0x31d fatalheaperr.o
+ .stabstr       0x00035b79     0x1185 timertask.o
+ .stabstr       0x00036cfe      0x3a2 new.o
+ .stabstr       0x000370a0     0x13c3 hc12timertask.o
+ .stabstr       0x00038463      0xa86 deltatask.o
+ .stabstr       0x00038ee9      0x2fd restart.o
+ .stabstr       0x000391e6      0xca3 task.o
+ .stabstr       0x00039e89     0x11f8 iostream.a(ostream_ctor_streambuf.o)
+ .stabstr       0x0003b081     0x11f8 iostream.a(istream_ctor_streambuf.o)
+ .stabstr       0x0003c279     0x11d2 iostream.a(ostream_ls_charp.o)
+ .stabstr       0x0003d44b     0x11c0 iostream.a(manip_endl.o)
+ .stabstr       0x0003e60b     0x1296 iostream.a(ostream_ls_float.o)
+ .stabstr       0x0003f8a1     0x11c2 iostream.a(manip_flush.o)
+ .stabstr       0x00040a63     0x12e7 iostream.a(istream_rs_float.o)
+ .stabstr       0x00041d4a     0x11df iostream.a(manip_hex.o)
+ .stabstr       0x00042f29     0x11d4 iostream.a(istream_rs_uint.o)
+ .stabstr       0x000440fd     0x11e7 iostream.a(ostream_ls_int.o)
+ .stabstr       0x000452e4     0x11c0 iostream.a(streambuf_ctor.o)
+ .stabstr       0x000464a4     0x11db iostream.a(streambuf_setg.o)
+ .stabstr       0x0004767f     0x11ea iostream.a(streambuf_setp.o)
+ .stabstr       0x00048869     0x11e2 iostream.a(streambuf_dtor.o)
+ .stabstr       0x00049a4b     0x11d0 iostream.a(streambuf_sputc.o)
+ .stabstr       0x0004ac1b     0x11cb iostream.a(streambuf_in_avail.o)
+ .stabstr       0x0004bde6     0x11da iostream.a(streambuf_seekoff.o)
+ .stabstr       0x0004cfc0     0x11da iostream.a(streambuf_seekpos.o)
+ .stabstr       0x0004e19a     0x12c1 iostream.a(streambuf_xsputn.o)
+ .stabstr       0x0004f45b     0x12bb iostream.a(streambuf_xsgetn.o)
+ .stabstr       0x00050716     0x11d0 iostream.a(streambuf_putbackfail.o)
+ .stabstr       0x000518e6     0x12d7 iostream.a(manip_setw.o)
+ .stabstr       0x00052bbd     0x127d iostream.a(istream_rs_charp.o)
+ .stabstr       0x00053e3a      0x33d iostream.a(strcmp.o)
+ .stabstr       0x00054177     0x11f8 iostream.a(istream_get.o)
+ .stabstr       0x0005536f      0x307 iostream.a(isprint.o)
+ .stabstr       0x00055676     0x121a iostream.a(ostream_put.o)
+ .stabstr       0x00056890     0x11fd iostream.a(ostream_flush.o)
+ .stabstr       0x00057a8d     0x1737 iostream.a(istrstream_ctor_charp.o)
+ .stabstr       0x000591c4     0x1705 iostream.a(istrstream_dtor.o)
+ .stabstr       0x0005a8c9     0x11e1 iostream.a(ostream_dtor.o)
+ .stabstr       0x0005baaa     0x11e1 iostream.a(istream_dtor.o)
+ .stabstr       0x0005cc8b     0x11d1 iostream.a(ios_ctor_streambuf.o)
+ .stabstr       0x0005de5c     0x122f iostream.a(ostream_opfx.o)
+ .stabstr       0x0005f08b     0x1499 iostream.a(ostream_puts.o)
+ .stabstr       0x00060524     0x11f8 iostream.a(ostream_osfx.o)
+ .stabstr       0x0006171c     0x12e4 iostream.a(istream_ipfx.o)
+ .stabstr       0x00062a00     0x11c5 iostream.a(streambuf_sgetc.o)
+ .stabstr       0x00063bc5     0x11c7 iostream.a(streambuf_snextc.o)
+ .stabstr       0x00064d8c      0x307 iostream.a(isdigit.o)
+ .stabstr       0x00065093     0x1344 iostream.a(istream_rs_int.o)
+ .stabstr       0x000663d7     0x12da iostream.a(ostream_puti.o)
+ .stabstr       0x000676b1     0x11c3 iostream.a(streambuf_sync.o)
+ .stabstr       0x00068874     0x11cc iostream.a(streambuf_overflow.o)
+ .stabstr       0x00069a40     0x11cd iostream.a(streambuf_underflow.o)
+ .stabstr       0x0006ac0d      0x355 iostream.a(memcpy.o)
+ .stabstr       0x0006af62      0x307 iostream.a(isspace.o)
+ .stabstr       0x0006b269     0x11c7 iostream.a(streambuf_sbumpc.o)
+ .stabstr       0x0006c430     0x11b4 iostream.a(ios_ctor.o)
+ .stabstr       0x0006d5e4     0x171e iostream.a(strstreambase_ctor_buf.o)
+ .stabstr       0x0006ed02     0x170e iostream.a(strstreambase_dtor.o)
+ .stabstr       0x00070410     0x11dd iostream.a(ios_dtor.o)
+ .stabstr       0x000715ed     0x11de iostream.a(ios_init.o)
+ .stabstr       0x000727cb      0x336 iostream.a(strlen.o)
+ .stabstr       0x00072b01     0x11c8 iostream.a(streambuf_stossc.o)
+ .stabstr       0x00073cc9      0x307 iostream.a(tolower.o)
+ .stabstr       0x00073fd0      0x353 iostream.a(strcpy.o)
+ .stabstr       0x00074323     0x1701 iostream.a(strstreambuf_ctor_buf.o)
+ .stabstr       0x00075a24     0x1706 iostream.a(strstreambuf_dtor.o)
+ .stabstr       0x0007712a     0x17aa iostream.a(strstreambuf_init.o)
+ .stabstr       0x000788d4     0x16ec iostream.a(strstreambuf_overflow.o)
+ .stabstr       0x00079fc0     0x1a3f iostream.a(strstreambuf_underflow.o)
+ .stabstr       0x0007b9ff     0x11da iostream.a(streambuf_setb.o)

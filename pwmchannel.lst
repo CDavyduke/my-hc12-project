@@ -1,0 +1,1272 @@
+   1              	gcc2_compiled.:
+   2              	___gnu_compiled_cplusplus
+   3              		stabs "/home/cdavyduke/Projects/HC12/ELEX_8030/",100,0,0,Ltext0
+   4              		stabs "pwmchannel.cc",100,0,0,Ltext0
+   5              	
+   6              		section	.text
+   7              	
+   8              	Ltext0	stabs "int:t1=r1;-32768;32767;",128,0,0,0
+   9              		stabs "char:t2=r2;0;255;",128,0,0,0
+  10              		stabs "long int:t3=r1;0020000000000;0017777777777;",128,0,0,0
+  11              		stabs "unsigned int:t4=r4;0;65535;",128,0,0,0
+  12              		stabs "long unsigned int:t5=r1;0000000000000;0037777777777;",128,0,0,0
+  13              		stabs "long long int:t6=r1;0020000000000;0017777777777;",128,0,0,0
+  14              		stabs "long long unsigned int:t7=r1;0000000000000;0037777777777;",128,0,0,0
+  15              		stabs "short int:t8=r8;-32768;32767;",128,0,0,0
+  16              		stabs "short unsigned int:t9=r9;0;65535;",128,0,0,0
+  17              		stabs "signed char:t10=r10;-128;127;",128,0,0,0
+  18              		stabs "unsigned char:t11=r11;0;255;",128,0,0,0
+  19              		stabs "float:t12=r1;4;0;",128,0,0,0
+  20              		stabs "double:t13=r1;4;0;",128,0,0,0
+  21              		stabs "long double:t14=r1;4;0;",128,0,0,0
+  22              		stabs "complex int:t15=s4real:1,0,16;imag:1,16,16;;",128,0,0,0
+  23              		stabs "complex float:t16=r16;4;0;",128,0,0,0
+  24              		stabs "complex double:t17=r17;4;0;",128,0,0,0
+  25              		stabs "complex long double:t18=r18;4;0;",128,0,0,0
+  26              		stabs "bool:t19=@s8;-16;",128,0,0,0
+  27              		stabs "void:t20=20",128,0,0,0
+  28              		stabs "__wchar_t:t21=r21;-32768;32767;",128,0,0,0
+  29              		stabs "__vtbl_ptr_type:t22=*23=f1",128,0,0,0
+  30              		stabs "Interrupts:T24=s2oldMask:/01,0,16;__as::25=##26=&24;:RC10Interrupts;2A.;\\",128,0,0,0
+  31              		stabs "Interrupts::27=##28=*24;:RC10Interrupts;2A.29=##28;:;2A.30=#24,20,28,1,20;:_$_10Interrupts;
+  32              		stabs "Interrupts:Tt24",128,0,30,0
+  33              		stabs "IoMask:t1",128,0,39,0
+  34              		stabs "pwmreg:Tt31=u2byte:32=ar0;0;1;2,0,16;word:4,0,16;\\",128,0,0,0
+  35              		stabs "__as::33=##34=&31;:RC6pwmreg;2A.;pwmreg::35=##36=*31;:RC6pwmreg;2A.37=##36;:;2A.;;",128,0,4
+  36              		stabs "sciport:Tt38=s8scbd:1,0,16;sccr1:2,16,8;\\",128,0,0,0
+  37              		stabs "loops:/21:loops;woms:/21:woms;rsrc:/21:rsrc;\\",128,0,0,0
+  38              		stabs "m:/21:m;wake:/21:wake;ilt:/21:ilt;\\",128,0,0,0
+  39              		stabs "pe:/21:pe;pt:/21:pt;sccr2:2,24,8;\\",128,0,0,0
+  40              		stabs "tie:/21:tie;tcie:/21:tcie;rie:/21:rie;\\",128,0,0,0
+  41              		stabs "ilie:/21:ilie;te:/21:te;re:/21:re;\\",128,0,0,0
+  42              		stabs "rwu:/21:rwu;sbk:/21:sbk;scsr1:2,32,8;\\",128,0,0,0
+  43              		stabs "tdre:/21:tdre;tc:/21:tc;rdrf:/21:rdrf;\\",128,0,0,0
+  44              		stabs "idle:/21:idle;or:/21:or;nf:/21:nf;\\",128,0,0,0
+  45              		stabs "fe:/21:fe;pf:/21:pf;scsr2:2,40,8;\\",128,0,0,0
+  46              		stabs "raf:/21:raf;scdrh:2,48,8;r8:/21:r8;\\",128,0,0,0
+  47              		stabs "t8:/21:t8;scdrl:2,56,8;__as::39=##40=&38;:RC7sciport;2A.;\\",128,0,0,0
+  48              		stabs "sciport::41=##42=*38;:RC7sciport;2A.43=##42;:;2A.;;",128,0,636,0
+  49              		stabs "spiport:Tt44=s6spcr1:2,0,8;spie:/21:spie;\\",128,0,0,0
+  50              		stabs "spe:/21:spe;swom:/21:swom;mstr:/21:mstr;\\",128,0,0,0
+  51              		stabs "cpol:/21:cpol;cpha:/21:cpha;ssoe:/21:ssoe;\\",128,0,0,0
+  52              		stabs "lsbf:/21:lsbf;spcr2:2,8,8;sswai:/21:sswai;\\",128,0,0,0
+  53              		stabs "spc0:/21:spc0;spbr:2,16,8;spr31:/21:spr31;\\",128,0,0,0
+  54              		stabs "spr62:/21:spr62;spr125:/21:spr125;\\",128,0,0,0
+  55              		stabs "spr250:/21:spr250;spr500:/21:spr500;\\",128,0,0,0
+  56              		stabs "spr1000:/21:spr1000;spr2000:/21:spr2000;\\",128,0,0,0
+  57              		stabs "spr4000:/21:spr4000;spsr:2,24,8;spif:/21:spif;\\",128,0,0,0
+  58              		stabs "wcol:/21:wcol;modf:/21:modf;rsvd4:2,32,8;\\",128,0,0,0
+  59              		stabs "spdr:2,40,8;__as::45=##46=&44;:RC7spiport;2A.;spiport::47=##48=*44;:RC7spiport;2A.\\",128,0
+  60              		stabs "49=##48;:;2A.;;",128,0,689,0
+  61              		stabs "Isr:Tt50=s6ictlr:/051=&52=xsIctlr:,0,16;index:/04,16,16;\\",128,0,0,0
+  62              		stabs "$vf50:53=*54=ar0;0;3;22,32;__as::55=##56=&50;:RC3Isr;2A.;Isr::57=##58=*50;:RC3Isr;2A.\\",12
+  63              		stabs "59=##58;:R5IctlrUi;1A.60=#50,20,58,1,20;:_$_3Isr;1A*2;50;;handler::61=##20;:;0A*3;50;;;~%50
+  64              		stabs "Ictlr:Tt52=s6length:/04,0,16;isrTbl:/062=*58,16,16;\\",128,0,0,0
+  65              		stabs "$vf52:63=*64=ar0;0;2;22,32;__as::65=##51;:RC5Ictlr;2A.;Ictlr::66=##67=*52;:RC5Ictlr;2A.\\",
+  66              		stabs "68=##67;:Ui;2A.69=#52,20,67,1,20;:_$_5Ictlr;2A*2;52;;attach::70=##20;:P3Isr;2A.;\\",128,0,0
+  67              		stabs "detach::70:P3Isr;2A.;runHandler::71=##20;:Ui;1A.;;~%52;",128,0,44,0
+  68              		stabs "Sources:t72=eisBdl:0,isAtd:1,isSc0:2,\\",128,0,0,0
+  69              		stabs "isSpi:3,isPai:4,isPao:5,isTof:6,\\",128,0,0,0
+  70              		stabs "isTc7:7,isTc6:8,isTc5:9,isTc4:10,\\",128,0,0,0
+  71              		stabs "isTc3:11,isTc2:12,isTc1:13,isTc0:14,\\",128,0,0,0
+  72              		stabs "isRti:15,isIrq:16,isNumSources:17,;",128,0,24,0
+  73              		stabs "HC12Ictlr:Tt73=s6!1,020,52;theHC12Ictlr:/074=*73:_9HC12Ictlr$theHC12Ictlr;\\",128,0,0,0
+  74              		stabs "__as::75=##76=&73;:RC9HC12Ictlr;2A.;HC12Ictlr::77=##74;:RC9HC12Ictlr;2A.78=##74;:;2A.\\",12
+  75              		stabs "79=#73,20,74,1,20;:_$_9HC12Ictlr;2A*2;52;;handlerTable::80=f20:;0A?;;~%52;",128,0,48,0
+  76              		stabs "OutputCompare:Tt81=s8tcx:/082=&4,0,16;mask:/04,16,16;\\",128,0,0,0
+  77              		stabs "level:/04,32,16;mode:/04,48,16;__as::83=##84=&81;:RC13OutputCompare;2A.;\\",128,0,0,0
+  78              		stabs "OutputCompare::85=##86=*81;:RC13OutputCompare;2A.87=##86;:ib;2A.88=#81,20,86,1,20;:_$_13Out
+  79              		stabs "__opUi::89=##4;:;2B.;at::90=##20;:Ui;2A.;raiseAt::90:Ui;2A.;dropAt::90:Ui;2A.;\\",128,0,0,0
+  80              		stabs "oc7::88:i;2A.;;",128,0,84,0
+  81              		stabs "PwmChannel:Tt91=s38next:/092=*91,0,16;driver:/093=&94=xsPwmDriver:,16,16;\\",128,0,0,0
+  82              		stabs "dutyCycle:/012,32,32;direction:/01,64,16;newOnTime:/04,80,16;\\",128,0,0,0
+  83              		stabs "onTime:/04,96,16;ocDir:/081,112,64;ocPwm:/081,176,64;\\",128,0,0,0
+  84              		stabs "ocBrk:/081,240,64;__as::95=##96=&91;:RC10PwmChannel;2A.;PwmChannel::97=##92;:RC10PwmChannel
+  85              		stabs "98=#91,20,92,1,20;:_$_10PwmChannel;2A.99=##92;:R9PwmDriveri;2A.;setDuty::100=##20;:f;2A.;\\
+  86              		stabs "getDuty::101=##12;:;2A.;handler::102=##92;:iUi;0A.;;",128,0,42,0
+  87              		stabs "PwmDriver:Tt94=s28!1,020,50;first:/092,48,16;\\",128,0,0,0
+  88              		stabs "period:/04,64,16;phase:/01,80,16;ocTick:/081,96,64;\\",128,0,0,0
+  89              		stabs "ocOff:/081,160,64;__as::103=##93;:RC9PwmDriver;2A.;PwmDriver::104=##105=*94;:RC9PwmDriver;2
+  90              		stabs "106=#94,20,105,1,20;:_$_9PwmDriver;2A*2;50;107=##105;:R5IctlrUi;2A.;\\",128,0,0,0
+  91              		stabs "handler::108=##20;:;1A*3;50;;attach::109=##92;:P10PwmChannel;0A.;getPeriod::110=##4;:;0B.;;
+  92              	
+  93              		section	.const
+  94              	
+  95 0000 00000000 	LC0	float	0.000000e+00
+  96              	
+  97              		section	.text
+  98              	
+  99              		global	___10PwmChannelR9PwmDriveri
+ 100              	___10PwmChannelR9PwmDriveri
+   1:pwmchannel.cc **** // $Id: pwmchannel.cc,v 1.1 2003/11/13 04:26:24 cdavyduk Exp $
+   2:pwmchannel.cc **** 
+   3:pwmchannel.cc **** // pwmchannel.cc			   Copyright (C) 2003, Real-Time Systems Inc.
+   4:pwmchannel.cc **** //-------------------------------------------- All Rights Reserved ----------
+   5:pwmchannel.cc **** //
+   6:pwmchannel.cc **** //	PWM Channel
+   7:pwmchannel.cc **** //
+   8:pwmchannel.cc **** //---------------------------------------------------------------------------
+   9:pwmchannel.cc **** 
+  10:pwmchannel.cc **** #include "interrupts.h"
+  11:pwmchannel.cc **** #include "chipio.h"
+  12:pwmchannel.cc **** #include "hc12ictlr.h"
+  13:pwmchannel.cc **** #include "pwm.h"
+  14:pwmchannel.cc **** 
+  15:pwmchannel.cc **** 
+  16:pwmchannel.cc **** // The LMD18200 data sheet says that we must enforce a minimum delay between
+  17:pwmchannel.cc **** // transitions on the PWM, DIR, and BRAKE lines
+  18:pwmchannel.cc **** 
+  19:pwmchannel.cc **** static const int transDelay = 8;	// minimum transition delay, tcnt's
+  20:pwmchannel.cc **** 
+  21:pwmchannel.cc **** 
+  22:pwmchannel.cc **** //---------------------------------------------------------------------------
+  23:pwmchannel.cc **** //
+  24:pwmchannel.cc **** //	Pwm Channel Class
+  25:pwmchannel.cc **** //
+  26:pwmchannel.cc **** 
+  27:pwmchannel.cc **** PwmChannel::PwmChannel(PwmDriver& dr, int num)
+  28:pwmchannel.cc **** : next(0),
+ 101              		stabd 68,0,28
+ 102 0000 1BF1EF   		leas	-17,s
+ 103              	
+ 104 0003 6C8D     		std	13,s
+ 105 0005 87C7     		clrd	
+ 106 0007 6CF3000D 		std	[13,s]
+ 107 000b ECF013   		ldd	19,s
+ 108 000e ED8D     		ldy	13,s
+ 109 0010 6C42     		std	2,y
+ 110 0012 FC0000   		ldd	LC0
+ 111 0015 6C44     		std	4,y
+ 112 0017 FC0002   		ldd	LC0+2
+ 113 001a 6C46     		std	6,y
+ 114 001c 87C7     		clrd	
+ 115 001e 6C4A     		std	10,y
+ 116 0020 6C4C     		std	12,y
+ 117              		stabs "outputcompare.h",132,0,0,Ltext1
+ 118              	
+   1:outputcompare.h **** // Filename:		OUTPUTCOMPARE.H
+   2:outputcompare.h **** // Author:			C. DAVYDUKE
+   3:outputcompare.h **** // File Created:	03/10/21
+   4:outputcompare.h **** // Last Modified: 03/10/29
+   5:outputcompare.h **** // Description:	This file contains the class definitions for outputcompare.
+   6:outputcompare.h **** 
+   7:outputcompare.h **** #ifndef __OUTPUTCOMPARE_H__
+   8:outputcompare.h **** #define __OUTPUTCOMPARE_H__
+   9:outputcompare.h **** 
+  10:outputcompare.h **** #include "chipio.h"
+  11:outputcompare.h **** 
+  12:outputcompare.h **** class OutputCompare	// Controls 1 oc channel of the 8
+  13:outputcompare.h **** {
+  14:outputcompare.h **** 	private:
+  15:outputcompare.h **** 		volatile unsigned int & tcx;		// A reference to one of the TC0-TC7 compare registers
+  16:outputcompare.h **** 		unsigned mask;	// 1 << num ( chan number )
+  17:outputcompare.h **** 		unsigned level;	// Choose one of the 4 possible actions
+  18:outputcompare.h **** 		unsigned mode;	// on compare.
+  19:outputcompare.h **** 
+  20:outputcompare.h **** 	public:
+  21:outputcompare.h **** 		OutputCompare( int num, bool enable = false )
+  22:outputcompare.h **** 		:	tcx( ( & tc0 )[num] ),
+ 119              	Ltext1	stabd 68,0,22
+ 120 0022 1A4E     		leax	14,y
+ 121 0024 ECF015   		ldd	21,s
+ 122 0027 59       		asld	
+ 123 0028 59       		asld	
+ 124 0029 6C8B     		std	11,s
+ 125              	
+ 126 002b ECF015   	LBB2	ldd	21,s
+ 127 002e 59       		asld	
+ 128 002f 59       		asld	
+ 129 0030 59       		asld	
+ 130 0031 6C84     		std	4,s
+ 131 0033 B746     		tfr	d,y
+ 132 0035 19EA0000 		leay	_tc0,y
+ 133 0039 6D82     		sty	2,s
+ 134 003b 6D00     		sty	0,x
+ 135 003d CC0001   		ldd	#1
+ 136 0040 ED8B     		ldy	11,s
+ 137 0042 34       		pshx	
+ 138 0043 B765     		tfr	y,x
+ 139 0045 160000   		jsr	___hc12_ashlhi	 
+ 140 0048 30       		pulx	
+ 141 0049 6C02     		std	2,x
+ 142 004b CC0001   		ldd	#1
+ 143 004e ED84     		ldy	4,s
+ 144 0050 34       		pshx	
+ 145 0051 B765     		tfr	y,x
+ 146 0053 160000   		jsr	___hc12_ashlhi	 
+ 147 0056 30       		pulx	
+ 148 0057 6C04     		std	4,x
+ 149 0059 CC0002   		ldd	#2
+ 150 005c 34       		pshx	
+ 151 005d B765     		tfr	y,x
+ 152 005f 160000   		jsr	___hc12_ashlhi	 
+ 153 0062 30       		pulx	
+ 154 0063 6C06     		std	6,x
+  23:outputcompare.h **** 			mask( 1 << num ),
+  24:outputcompare.h **** 			level( ol << ( 2 * num ) ),
+  25:outputcompare.h **** 			mode( om << ( 2 * num ) )
+  26:outputcompare.h **** 			{
+ 155              		stabd 68,0,26
+ 156              	
+  27:outputcompare.h **** 				tscr |= ( ten | tffca );	// Set up tcnt and interrupt ack system
+ 157              	LBB3	stabd 68,0,27
+ 158 0065 F60000   		ldab	_tscr
+ 159 0068 CA90     		orab	#144
+ 160 006a 7B0000   		stab	_tscr
+  28:outputcompare.h **** 				tcx = tcnt - 1;		// Set max time till next compare
+ 161              		stabd 68,0,28
+ 162 006d ED00     		ldy	0,x
+ 163 006f 6D82     		sty	2,s
+ 164 0071 FC0000   		ldd	_tcnt
+ 165 0074 C3FFFF   		addd	#-1
+ 166 0077 6CF30002 		std	[2,s]
+  29:outputcompare.h **** 				tios |= mask;		// Set channel to compare mode
+ 167              		stabd 68,0,29
+ 168 007b F60000   		ldab	_tios
+ 169 007e EA03     		orab	3,x
+ 170 0080 7B0000   		stab	_tios
+  30:outputcompare.h **** 
+  31:outputcompare.h **** 				if( enable )
+  32:outputcompare.h **** 				{
+  33:outputcompare.h **** 					tflg1 |= mask;	// ack any previous int.
+  34:outputcompare.h **** 					tmsk1 |= mask;	// enable the interrupt.
+ 171              		stabd 68,0,34
+ 172              	
+  35:outputcompare.h **** 				}
+  36:outputcompare.h **** 			}
+ 173              	LBE3	stabd 68,0,36
+ 174              	
+ 175              	LBE2	stabd 68,0,22
+ 176 0083 ED8D     		ldy	13,s
+ 177 0085 19E816   		leay	22,y
+ 178 0088 6D89     		sty	9,s
+ 179 008a EE8B     		ldx	11,s
+ 180 008c 08       		inx	
+ 181              	
+ 182 008d B754     	LBB4	tfr	x,d
+ 183 008f 59       		asld	
+ 184 0090 6C84     		std	4,s
+ 185 0092 B746     		tfr	d,y
+ 186 0094 19EA0000 		leay	_tc0,y
+ 187 0098 6D82     		sty	2,s
+ 188 009a 6DF30009 		sty	[9,s]
+ 189 009e CC0001   		ldd	#1
+ 190 00a1 34       		pshx	
+ 191 00a2 B755     		tfr	x,x
+ 192 00a4 160000   		jsr	___hc12_ashlhi	 
+ 193 00a7 30       		pulx	
+ 194 00a8 B745     		tfr	d,x
+ 195 00aa ED89     		ldy	9,s
+ 196 00ac 6E42     		stx	2,y
+ 197 00ae CC0001   		ldd	#1
+ 198 00b1 ED84     		ldy	4,s
+ 199 00b3 34       		pshx	
+ 200 00b4 B765     		tfr	y,x
+ 201 00b6 160000   		jsr	___hc12_ashlhi	 
+ 202 00b9 30       		pulx	
+ 203 00ba B745     		tfr	d,x
+ 204 00bc ED89     		ldy	9,s
+ 205 00be 6E44     		stx	4,y
+ 206 00c0 CC0002   		ldd	#2
+ 207 00c3 ED84     		ldy	4,s
+ 208 00c5 34       		pshx	
+ 209 00c6 B765     		tfr	y,x
+ 210 00c8 160000   		jsr	___hc12_ashlhi	 
+ 211 00cb 30       		pulx	
+ 212 00cc B745     		tfr	d,x
+ 213 00ce ED89     		ldy	9,s
+ 214 00d0 6E46     		stx	6,y
+ 215              		stabd 68,0,26
+ 216              	
+ 217              	LBB5	stabd 68,0,27
+ 218 00d2 F60000   		ldab	_tscr
+ 219 00d5 CA90     		orab	#144
+ 220 00d7 7B0000   		stab	_tscr
+ 221              		stabd 68,0,28
+ 222 00da EDF30009 		ldy	[9,s]
+ 223 00de 6D82     		sty	2,s
+ 224 00e0 FE0000   		ldx	_tcnt
+ 225 00e3 09       		dex	
+ 226 00e4 6EF30002 		stx	[2,s]
+ 227              		stabd 68,0,29
+ 228 00e8 F60000   		ldab	_tios
+ 229 00eb ED89     		ldy	9,s
+ 230 00ed EA43     		orab	3,y
+ 231 00ef 7B0000   		stab	_tios
+ 232              		stabd 68,0,34
+ 233              	
+ 234              	LBE5	stabd 68,0,36
+ 235              	
+ 236              	LBE4	stabd 68,0,22
+ 237 00f2 ED8D     		ldy	13,s
+ 238 00f4 1AE81E   		leax	30,y
+ 239 00f7 EC8B     		ldd	11,s
+ 240 00f9 C30002   		addd	#2
+ 241 00fc 6C87     		std	7,s
+ 242              	
+ 243 00fe 59       	LBB6	asld	
+ 244 00ff 6C84     		std	4,s
+ 245 0101 B746     		tfr	d,y
+ 246 0103 19EA0000 		leay	_tc0,y
+ 247 0107 6D82     		sty	2,s
+ 248 0109 6D00     		sty	0,x
+ 249 010b CC0001   		ldd	#1
+ 250 010e ED87     		ldy	7,s
+ 251 0110 34       		pshx	
+ 252 0111 B765     		tfr	y,x
+ 253 0113 160000   		jsr	___hc12_ashlhi	 
+ 254 0116 30       		pulx	
+ 255 0117 6C02     		std	2,x
+ 256 0119 CC0001   		ldd	#1
+ 257 011c ED84     		ldy	4,s
+ 258 011e 34       		pshx	
+ 259 011f B765     		tfr	y,x
+ 260 0121 160000   		jsr	___hc12_ashlhi	 
+ 261 0124 30       		pulx	
+ 262 0125 6C04     		std	4,x
+ 263 0127 CC0002   		ldd	#2
+ 264 012a 34       		pshx	
+ 265 012b B765     		tfr	y,x
+ 266 012d 160000   		jsr	___hc12_ashlhi	 
+ 267 0130 30       		pulx	
+ 268 0131 6C06     		std	6,x
+ 269              		stabd 68,0,26
+ 270              	
+ 271              	LBB7	stabd 68,0,27
+ 272 0133 F60000   		ldab	_tscr
+ 273 0136 CA90     		orab	#144
+ 274 0138 7B0000   		stab	_tscr
+ 275              		stabd 68,0,28
+ 276 013b ED00     		ldy	0,x
+ 277 013d 6D82     		sty	2,s
+ 278 013f FC0000   		ldd	_tcnt
+ 279 0142 C3FFFF   		addd	#-1
+ 280 0145 6CF30002 		std	[2,s]
+ 281              		stabd 68,0,29
+ 282 0149 F60000   		ldab	_tios
+ 283 014c EA03     		orab	3,x
+ 284 014e 7B0000   		stab	_tios
+ 285              		stabd 68,0,34
+ 286              	
+ 287              	LBE7	stabd 68,0,36
+ 288              	
+ 289              	LBE6	stabs "pwmchannel.cc",132,0,0,Ltext2
+ 290              	
+  29:pwmchannel.cc ****   driver(dr),
+  30:pwmchannel.cc ****   dutyCycle(0),
+  31:pwmchannel.cc ****   newOnTime(0),
+  32:pwmchannel.cc ****   onTime(0),
+  33:pwmchannel.cc ****   ocDir(num * 4),
+  34:pwmchannel.cc ****   ocPwm(num * 4 + 1),
+  35:pwmchannel.cc ****   ocBrk(num * 4 + 2)
+  36:pwmchannel.cc **** {
+ 291              	Ltext2	stabd 68,0,36
+ 292              	
+ 293              	LBB8	stabs "interrupts.h",132,0,0,Ltext3
+ 294              	
+   1:interrupts.h  **** // Filename:		INTERRUPTS.H
+   2:interrupts.h  **** // Author:			C. DAVYDUKE
+   3:interrupts.h  **** // File Created:	03/10/20
+   4:interrupts.h  **** // Last Modified: 03/10/29
+   5:interrupts.h  **** // Description:	This file contains the class definition of interrupts and some low level code.
+   6:interrupts.h  **** 
+   7:interrupts.h  **** #ifndef __INTERRUPTS_H__
+   8:interrupts.h  **** #define __INTERRUPTS_H__
+   9:interrupts.h  **** 
+  10:interrupts.h  **** // This class definition allows us to use the properties of classes (e.g. constructors and
+  11:interrupts.h  **** // destructors) to ensure that interrupts are always enabled and disabled, and one or
+  12:interrupts.h  **** // the other is not forgotten.  Very HC12 specific.
+  13:interrupts.h  **** class Interrupts
+  14:interrupts.h  **** {
+  15:interrupts.h  **** 	public:
+  16:interrupts.h  **** 		Interrupts()
+  17:interrupts.h  **** 		{
+ 295              	Ltext3	stabd 68,0,17
+ 296              	
+ 297              	LBB9
+  18:interrupts.h  **** 			asm( "tfr ccr, b" );
+ 298              	LBB10	stabd 68,0,18
+ 299 0151 B721     		tfr ccr, b
+  19:interrupts.h  **** 			asm( "std %0" : : "m"(oldMask) : "d" );
+ 300              		stabd 68,0,19
+ 301 0153 6C8F     		std 15,s
+  20:interrupts.h  **** 			asm( "sei" );
+ 302              		stabd 68,0,20
+ 303 0155 1410     		sei
+ 304              	
+  21:interrupts.h  **** 		}
+ 305              	LBE10	stabd 68,0,21
+ 306              	
+ 307              	LBE9	stabs "pwmchannel.cc",132,0,0,Ltext4
+ 308              	
+  37:pwmchannel.cc ****   Interrupts masked;
+  38:pwmchannel.cc **** 
+  39:pwmchannel.cc ****   // set up oc7 action for PWM output
+  40:pwmchannel.cc **** 
+  41:pwmchannel.cc ****   ocPwm.oc7(0);
+ 309              	Ltext4	stabd 68,0,41
+ 310              		stabs "outputcompare.h",132,0,0,Ltext5
+ 311              	
+  37:outputcompare.h **** 
+  38:outputcompare.h **** 		~OutputCompare()
+  39:outputcompare.h **** 		{
+  40:outputcompare.h **** 			// fill in later
+  41:outputcompare.h **** 		}
+  42:outputcompare.h **** 
+  43:outputcompare.h **** 		operator unsigned int() const	// conversion operator
+  44:outputcompare.h **** 		{
+  45:outputcompare.h **** 			return tcx;
+  46:outputcompare.h **** 		}
+  47:outputcompare.h **** 
+  48:outputcompare.h **** 		void at( unsigned time )
+  49:outputcompare.h **** 		{
+  50:outputcompare.h **** 			tcx = time;
+  51:outputcompare.h **** 		}
+  52:outputcompare.h **** 
+  53:outputcompare.h **** 		void raiseAt( unsigned time )
+  54:outputcompare.h **** 		{
+  55:outputcompare.h **** 			tctl1 |= mode;
+  56:outputcompare.h **** 			tctl1 |= level;
+  57:outputcompare.h **** 			at( time );
+  58:outputcompare.h **** 		}
+  59:outputcompare.h **** 
+  60:outputcompare.h **** 		void dropAt( unsigned time )
+  61:outputcompare.h **** 		{
+  62:outputcompare.h **** 			tctl1 |= mode;
+  63:outputcompare.h **** 			tctl1 &= ~level;
+  64:outputcompare.h **** 			at( time );
+  65:outputcompare.h **** 		}
+  66:outputcompare.h **** 
+  67:outputcompare.h **** 		void oc7( int level )
+  68:outputcompare.h **** 		{
+ 312              	Ltext5	stabd 68,0,68
+ 313              	
+ 314              	LBB11
+  69:outputcompare.h **** 			if( level < 0 )
+  70:outputcompare.h **** 			{
+  71:outputcompare.h **** 				oc7m &= ~mask;
+  72:outputcompare.h **** 				oc7d &= ~mask;
+  73:outputcompare.h **** 			}
+  74:outputcompare.h **** 
+  75:outputcompare.h **** 			else
+  76:outputcompare.h **** 			{
+  77:outputcompare.h **** 				if( level )
+  78:outputcompare.h **** 					oc7d |= mask;
+  79:outputcompare.h **** 				else
+  80:outputcompare.h **** 					oc7d &= ~mask;
+ 315              	LBB12	stabd 68,0,80
+ 316 0157 ED89     		ldy	9,s
+ 317 0159 E643     		ldab	3,y
+ 318 015b 51       		comb	
+ 319 015c 6B86     		stab	6,s
+ 320 015e F60000   		ldab	_oc7d
+ 321 0161 E486     		andb	6,s
+ 322 0163 7B0000   		stab	_oc7d
+  81:outputcompare.h **** 				oc7m |= mask;
+ 323              		stabd 68,0,81
+ 324 0166 F60000   		ldab	_oc7m
+ 325 0169 EA43     		orab	3,y
+ 326 016b 7B0000   		stab	_oc7m
+ 327              	
+  82:outputcompare.h **** 			}
+  83:outputcompare.h **** 		}
+ 328              	LBE12	stabd 68,0,83
+ 329              	
+ 330              	LBE11	stabs "pwmchannel.cc",132,0,0,Ltext6
+ 331              	
+  42:pwmchannel.cc **** 
+  43:pwmchannel.cc ****   // attach to channel list
+  44:pwmchannel.cc **** 
+  45:pwmchannel.cc ****   next = driver.attach(this);
+ 332              	Ltext6	stabd 68,0,45
+ 333 016e ED8D     		ldy	13,s
+ 334 0170 EE42     		ldx	2,y
+ 335 0172 6D80     		sty	0,s
+ 336 0174 B754     		tfr	x,d
+ 337 0176 160000   		jsr	_attach__9PwmDriverP10PwmChannel
+ 338 0179 B745     		tfr	d,x
+ 339 017b 6EF3000D 		stx	[13,s]
+ 340              		stabs "interrupts.h",132,0,0,Ltext7
+ 341              	
+  22:interrupts.h  **** 		~Interrupts()
+  23:interrupts.h  **** 		{
+ 342              	Ltext7	stabd 68,0,23
+ 343              	
+ 344              	LBB13
+  24:interrupts.h  **** 			asm( "ldd %0" : : "m"(oldMask) : "d" );
+ 345              	LBB14	stabd 68,0,24
+ 346 017f EC8F     		ldd 15,s
+  25:interrupts.h  **** 			asm( "tfr b, ccr" );
+ 347              		stabd 68,0,25
+ 348 0181 B712     		tfr b, ccr
+ 349              	
+  26:interrupts.h  **** 		}
+ 350              	LBE14	stabd 68,0,26
+ 351              	
+ 352              	LBE13	stabs "pwmchannel.cc",132,0,0,Ltext8
+ 353              	
+  46:pwmchannel.cc **** }
+ 354              	Ltext8	stabd 68,0,46
+ 355              	
+ 356 0183 EC8D     	LBE8	ldd	13,s
+ 357              	
+ 358 0185 1BF011   		leas	17,s
+ 359 0188 3D       		rts
+ 360              	
+ 361              		stabs "__10PwmChannelR9PwmDriveri:F92",36,0,28,___10PwmChannelR9PwmDriveri
+ 362              		stabs "this:p92",160,0,28,13
+ 363              		stabs "dr:p93",160,0,28,19
+ 364              		stabs "num:p1",160,0,28,21
+ 365              		stabs "this:r86",64,0,36,2
+ 366              		stabs "num:1",128,0,36,11
+ 367              		stabn 192,0,0,LBB2
+ 368              		stabn 192,0,0,LBB3
+ 369              		stabn 224,0,0,LBE3
+ 370              		stabn 224,0,0,LBE2
+ 371              		stabs "this:86",128,0,36,9
+ 372              		stabs "num:r1",64,0,36,2
+ 373              		stabn 192,0,0,LBB4
+ 374              		stabn 192,0,0,LBB5
+ 375              		stabn 224,0,0,LBE5
+ 376              		stabn 224,0,0,LBE4
+ 377              		stabs "this:r86",64,0,36,2
+ 378              		stabs "num:1",128,0,36,7
+ 379              		stabn 192,0,0,LBB6
+ 380              		stabn 192,0,0,LBB7
+ 381              		stabn 224,0,0,LBE7
+ 382              		stabn 224,0,0,LBE6
+ 383              		stabs "masked:24",128,0,37,15
+ 384              		stabn 192,0,0,LBB8
+ 385              		stabn 192,0,0,LBB9
+ 386              		stabn 192,0,0,LBB10
+ 387              		stabn 224,0,0,LBE10
+ 388              		stabn 224,0,0,LBE9
+ 389              		stabn 192,0,0,LBB11
+ 390              		stabn 192,0,0,LBB12
+ 391              		stabn 224,0,0,LBE12
+ 392              		stabn 224,0,0,LBE11
+ 393              		stabn 192,0,0,LBB13
+ 394              		stabn 192,0,0,LBB14
+ 395              		stabn 224,0,0,LBE14
+ 396              		stabn 224,0,0,LBE13
+ 397              		stabn 224,0,0,LBE8
+ 398              	
+ 399              	Lscope0	stabs "",36,0,0,Lscope0-___10PwmChannelR9PwmDriveri
+ 400              	
+ 401              		global	_setDuty__10PwmChannelf
+ 402              	_setDuty__10PwmChannelf
+  47:pwmchannel.cc **** 
+  48:pwmchannel.cc **** 
+  49:pwmchannel.cc **** void PwmChannel::setDuty(float duty)
+  50:pwmchannel.cc **** {
+ 403              		stabd 68,0,50
+ 404 0189 1BF1DE   		leas	-34,s
+ 405              	
+ 406 018c B745     		tfr	d,x
+ 407 018e ECF024   		ldd	36,s
+ 408 0191 6CF01C   		std	28,s
+ 409 0194 ECF026   		ldd	38,s
+ 410 0197 6CF01E   		std	30,s
+ 411              	
+  51:pwmchannel.cc ****   dutyCycle = duty;
+ 412              	LBB15	stabd 68,0,51
+ 413 019a ECF01C   		ldd	28,s
+ 414 019d 6C04     		std	4,x
+ 415 019f ECF026   		ldd	38,s
+ 416 01a2 6C06     		std	6,x
+  52:pwmchannel.cc ****   int dir = dutyCycle >= 0 ? 1 : -1;
+ 417              		stabd 68,0,52
+ 418 01a4 EC04     		ldd	4,x
+ 419 01a6 6CF016   		std	22,s
+ 420 01a9 ECF026   		ldd	38,s
+ 421 01ac 6CF018   		std	24,s
+ 422 01af CCFFFF   		ldd	#-1
+ 423 01b2 6CF01A   		std	26,s
+ 424 01b5 160000   		jsr	___hc12_tstsf	 
+ 425 01b8 16       		dc.b	22
+ 426 01b9 2D06     		blt	L80
+ 427              		
+ 428 01bb CC0001   		ldd	#1
+ 429 01be 6CF01A   		std	26,s
+ 430              	
+  53:pwmchannel.cc **** 
+  54:pwmchannel.cc ****   unsigned ot = unsigned(driver.getPeriod() * dutyCycle * dir);
+ 431              	L80	stabd 68,0,54
+ 432              		stabs "pwm.h",132,0,0,Ltext9
+ 433              	
+   1:pwm.h         **** // $Id: pwm.h,v 1.1 2003/11/06 05:27:26 cdavyduk Exp $
+   2:pwm.h         **** 
+   3:pwm.h         **** // pwm.h			   Copyright (C) 2003, Real-Time Systems Inc.
+   4:pwm.h         **** //-------------------------------------------- All Rights Reserved ----------
+   5:pwm.h         **** //
+   6:pwm.h         **** //	PWM Driver
+   7:pwm.h         **** //
+   8:pwm.h         **** //---------------------------------------------------------------------------
+   9:pwm.h         **** 
+  10:pwm.h         **** #ifndef PWM_H
+  11:pwm.h         **** #define PWM_H
+  12:pwm.h         **** 
+  13:pwm.h         **** #include "isr.h"
+  14:pwm.h         **** #include "outputcompare.h"
+  15:pwm.h         **** 
+  16:pwm.h         **** 
+  17:pwm.h         **** class PwmChannel
+  18:pwm.h         **** {
+  19:pwm.h         **** public:
+  20:pwm.h         ****   PwmChannel(class PwmDriver& driver, int chanNum);
+  21:pwm.h         **** 
+  22:pwm.h         ****   void setDuty(float duty);
+  23:pwm.h         ****   float getDuty();
+  24:pwm.h         **** 
+  25:pwm.h         **** private:
+  26:pwm.h         ****   PwmChannel* handler(int phase, unsigned nextCycle);
+  27:pwm.h         **** 
+  28:pwm.h         ****   friend class PwmDriver;
+  29:pwm.h         **** 
+  30:pwm.h         **** private:  
+  31:pwm.h         ****   PwmChannel* next;
+  32:pwm.h         ****   class PwmDriver& driver;
+  33:pwm.h         ****   
+  34:pwm.h         ****   float dutyCycle;
+  35:pwm.h         ****   int direction;
+  36:pwm.h         ****   unsigned newOnTime;
+  37:pwm.h         ****   unsigned onTime;
+  38:pwm.h         ****   
+  39:pwm.h         ****   OutputCompare ocDir;
+  40:pwm.h         ****   OutputCompare ocPwm;
+  41:pwm.h         ****   OutputCompare ocBrk;
+  42:pwm.h         **** };
+  43:pwm.h         **** 
+  44:pwm.h         **** 
+  45:pwm.h         **** class PwmDriver : public Isr
+  46:pwm.h         **** {
+  47:pwm.h         **** public:
+  48:pwm.h         ****   PwmDriver(Ictlr& ic, unsigned period);
+  49:pwm.h         **** 
+  50:pwm.h         **** protected:
+  51:pwm.h         ****   virtual void handler();
+  52:pwm.h         ****   
+  53:pwm.h         **** private:
+  54:pwm.h         ****   PwmChannel* attach(PwmChannel* chan);
+  55:pwm.h         **** 
+  56:pwm.h         ****   unsigned getPeriod() const
+  57:pwm.h         ****   {
+ 434              	Ltext9	stabd 68,0,57
+ 435 01c1 ED02     		ldy	2,x
+ 436              	
+ 437              	LBB16
+  58:pwm.h         ****     return period;
+ 438              	LBB17	stabd 68,0,58
+ 439 01c3 ED48     		ldy	8,y
+ 440 01c5 6D80     		sty	0,s
+ 441              	
+  59:pwm.h         ****   }
+ 442              	LBE17	stabd 68,0,59
+ 443              	
+ 444              	LBE16	stabs "pwmchannel.cc",132,0,0,Ltext10
+ 445              	
+ 446              	Ltext10	stabd 68,0,54
+ 447 01c7 B764     		tfr	y,d
+ 448 01c9 160000   		jsr	___hc12_floatunshisf	 
+ 449 01cc 12       		dc.b	18
+ 450 01cd 1802048E 		movw	4,x,14,s
+ 451 01d1 ECF026   		ldd	38,s
+ 452 01d4 6CF010   		std	16,s
+ 453 01d7 160000   		jsr	___hc12_mulsf	 
+ 454 01da 0A120E   		dc.b	10,18,14
+ 455 01dd ECF01A   		ldd	26,s
+ 456 01e0 160000   		jsr	___hc12_floathisf	 
+ 457 01e3 06       		dc.b	6
+ 458 01e4 160000   		jsr	___hc12_mulsf	 
+ 459 01e7 020A06   		dc.b	2,10,6
+ 460 01ea 160000   		jsr	___hc12_fixuns_truncsfhi	 
+ 461 01ed 02       		dc.b	2
+ 462 01ee B746     		tfr	d,y
+ 463              		stabs "pwm.h",132,0,0,Ltext11
+ 464              	
+ 465              	Ltext11	stabd 68,0,57
+ 466              	
+ 467              	LBB18
+ 468              	LBB19	stabd 68,0,58
+ 469              	
+ 470              	LBE19	stabd 68,0,59
+ 471              	
+ 472              	LBE18	stabs "pwmchannel.cc",132,0,0,Ltext12
+ 473              	
+  55:pwmchannel.cc ****   ot <?= driver.getPeriod() - 4 * transDelay;
+ 474              	Ltext12	stabd 68,0,55
+ 475 01f0 EC80     		ldd	0,s
+ 476 01f2 C3FFE0   		addd	#-32
+ 477 01f5 6C80     		std	0,s
+ 478 01f7 AD80     		cpy	0,s
+ 479 01f9 2302     		bls	L84
+ 480              		
+ 481 01fb B746     		tfr	d,y
+ 482              	
+ 483              	L84	stabs "interrupts.h",132,0,0,Ltext13
+ 484              	
+ 485              	Ltext13	stabd 68,0,17
+ 486              	
+ 487              	LBB20
+ 488              	LBB21	stabd 68,0,18
+ 489 01fd B721     		tfr ccr, b
+ 490              		stabd 68,0,19
+ 491 01ff 6CF020   		std 32,s
+ 492              		stabd 68,0,20
+ 493 0202 1410     		sei
+ 494              	
+ 495              	LBE21	stabd 68,0,21
+ 496              	
+ 497              	LBE20	stabs "pwmchannel.cc",132,0,0,Ltext14
+ 498              	
+  56:pwmchannel.cc **** 
+  57:pwmchannel.cc ****   Interrupts masked;
+ 499              	Ltext14	stabd 68,0,57
+  58:pwmchannel.cc **** 
+  59:pwmchannel.cc ****   direction = dir;
+ 500              		stabd 68,0,59
+ 501 0204 ECF01A   		ldd	26,s
+ 502 0207 6C08     		std	8,x
+  60:pwmchannel.cc ****   newOnTime = ot;
+ 503              		stabd 68,0,60
+ 504 0209 6D0A     		sty	10,x
+ 505              		stabs "interrupts.h",132,0,0,Ltext15
+ 506              	
+ 507              	Ltext15	stabd 68,0,23
+ 508              	
+ 509              	LBB22
+ 510              	LBB23	stabd 68,0,24
+ 511 020b ECF020   		ldd 32,s
+ 512              		stabd 68,0,25
+ 513 020e B712     		tfr b, ccr
+ 514              	
+ 515              	LBE23	stabd 68,0,26
+ 516              	
+ 517              	LBE22	stabs "pwmchannel.cc",132,0,0,Ltext16
+ 518              	
+  61:pwmchannel.cc **** }
+ 519              	Ltext16	stabd 68,0,61
+ 520              	
+ 521              	LBE15
+ 522 0210 1BF022   		leas	34,s
+ 523 0213 3D       		rts
+ 524              	
+ 525              		stabs "setDuty__10PwmChannelf:F20",36,0,50,_setDuty__10PwmChannelf
+ 526              		stabs "this:P92",64,0,50,2
+ 527              		stabs "duty:p12",160,0,50,36
+ 528              		stabs "duty:12",128,0,50,28
+ 529              		stabs "dir:1",128,0,52,26
+ 530              		stabs "ot:r4",64,0,54,1
+ 531              		stabs "masked:24",128,0,57,32
+ 532              		stabn 192,0,0,LBB15
+ 533              		stabs "this:r111=*94",64,0,54,1
+ 534              		stabn 192,0,0,LBB16
+ 535              		stabn 192,0,0,LBB17
+ 536              		stabn 224,0,0,LBE17
+ 537              		stabn 224,0,0,LBE16
+ 538              		stabn 192,0,0,LBB18
+ 539              		stabn 192,0,0,LBB19
+ 540              		stabn 224,0,0,LBE19
+ 541              		stabn 224,0,0,LBE18
+ 542              		stabn 192,0,0,LBB20
+ 543              		stabn 192,0,0,LBB21
+ 544              		stabn 224,0,0,LBE21
+ 545              		stabn 224,0,0,LBE20
+ 546              		stabn 192,0,0,LBB22
+ 547              		stabn 192,0,0,LBB23
+ 548              		stabn 224,0,0,LBE23
+ 549              		stabn 224,0,0,LBE22
+ 550              		stabn 224,0,0,LBE15
+ 551              	
+ 552              	Lscope1	stabs "",36,0,0,Lscope1-_setDuty__10PwmChannelf
+ 553              	
+ 554              		global	_getDuty__10PwmChannel
+ 555              	_getDuty__10PwmChannel
+  62:pwmchannel.cc ****   
+  63:pwmchannel.cc **** 
+  64:pwmchannel.cc **** float PwmChannel::getDuty()
+  65:pwmchannel.cc **** {
+ 556              		stabd 68,0,65
+ 557 0214 1B9E     		leas	-2,s
+ 558              	
+ 559 0216 B745     		tfr	d,x
+ 560 0218 ED84     		ldy	4,s
+ 561              	
+ 562              	LBB24	stabs "interrupts.h",132,0,0,Ltext17
+ 563              	
+ 564              	Ltext17	stabd 68,0,17
+ 565              	
+ 566              	LBB25
+ 567              	LBB26	stabd 68,0,18
+ 568 021a B721     		tfr ccr, b
+ 569              		stabd 68,0,19
+ 570 021c 6C80     		std 0,s
+ 571              		stabd 68,0,20
+ 572 021e 1410     		sei
+ 573              	
+ 574              	LBE26	stabd 68,0,21
+ 575              	
+ 576              	LBE25	stabs "pwmchannel.cc",132,0,0,Ltext18
+ 577              	
+  66:pwmchannel.cc ****   Interrupts masked;
+  67:pwmchannel.cc **** 
+  68:pwmchannel.cc ****   return dutyCycle;
+ 578              	Ltext18	stabd 68,0,68
+ 579 0220 18024400 		movw	4,y,0,x
+ 580 0224 18024602 		movw	6,y,2,x
+ 581              	
+ 582              	LBB27	stabs "interrupts.h",132,0,0,Ltext19
+ 583              	
+ 584              	Ltext19	stabd 68,0,23
+ 585              	
+ 586              	LBB28
+ 587              	LBB29	stabd 68,0,24
+ 588 0228 EC80     		ldd 0,s
+ 589              		stabd 68,0,25
+ 590 022a B712     		tfr b, ccr
+ 591              	
+ 592              	LBE29	stabd 68,0,26
+ 593              	
+ 594              	LBE28	stabs "pwmchannel.cc",132,0,0,Ltext20
+ 595              	
+  69:pwmchannel.cc **** }
+ 596              	Ltext20	stabd 68,0,69
+ 597              	
+ 598              	LBE27
+ 599 022c B754     	LBE24	tfr	x,d
+ 600              	
+ 601 022e 1B82     		leas	2,s
+ 602 0230 3D       		rts
+ 603              	
+ 604              		stabs "getDuty__10PwmChannel:F12",36,0,65,_getDuty__10PwmChannel
+ 605              		stabs "this:p92",160,0,65,4
+ 606              		stabs "this:r92",64,0,65,1
+ 607              		stabs "masked:r112=*24",64,0,66,3
+ 608              		stabn 192,0,0,LBB24
+ 609              		stabn 192,0,0,LBB25
+ 610              		stabn 192,0,0,LBB26
+ 611              		stabn 224,0,0,LBE26
+ 612              		stabn 224,0,0,LBE25
+ 613              		stabn 192,0,0,LBB27
+ 614              		stabn 192,0,0,LBB28
+ 615              		stabn 192,0,0,LBB29
+ 616              		stabn 224,0,0,LBE29
+ 617              		stabn 224,0,0,LBE28
+ 618              		stabn 224,0,0,LBE27
+ 619              		stabn 224,0,0,LBE24
+ 620              	
+ 621              	Lscope2	stabs "",36,0,0,Lscope2-_getDuty__10PwmChannel
+ 622              	
+ 623              		global	_handler__10PwmChanneliUi
+ 624              	_handler__10PwmChanneliUi
+  70:pwmchannel.cc **** 
+  71:pwmchannel.cc **** 
+  72:pwmchannel.cc **** PwmChannel* PwmChannel::handler(int phase, unsigned nextCycle)
+  73:pwmchannel.cc **** {
+ 625              		stabd 68,0,73
+ 626 0231 1B96     		leas	-10,s
+ 627              	
+ 628 0233 6C88     		std	8,s
+ 629              	
+ 630              	LBB30	stabs "pwm.h",132,0,0,Ltext21
+ 631              	
+ 632              	Ltext21	stabd 68,0,57
+ 633 0235 B746     		tfr	d,y
+ 634 0237 EE42     		ldx	2,y
+ 635              	
+ 636              	LBB31
+ 637              	LBB32	stabd 68,0,58
+ 638 0239 EC08     		ldd	8,x
+ 639 023b 6C86     		std	6,s
+ 640 023d B745     		tfr	d,x
+ 641              	
+ 642              	LBE32	stabd 68,0,59
+ 643              	
+ 644              	LBE31	stabs "pwmchannel.cc",132,0,0,Ltext22
+ 645              	
+  74:pwmchannel.cc ****   unsigned period = driver.getPeriod();
+  75:pwmchannel.cc **** 
+  76:pwmchannel.cc ****   if (phase == 0)
+ 646              	Ltext22	stabd 68,0,76
+ 647              	
+ 648 023f ED8C     	LBB33	ldy	12,s
+ 649 0241 18260054 		lbne	L100
+ 650              		
+  77:pwmchannel.cc ****   {
+ 651              		stabd 68,0,77
+ 652              	
+  78:pwmchannel.cc ****     onTime = newOnTime;		// pick up new setting synchronously
+ 653              	LBB34	stabd 68,0,78
+ 654 0245 ED88     		ldy	8,s
+ 655 0247 EC4A     		ldd	10,y
+ 656 0249 6C4C     		std	12,y
+  79:pwmchannel.cc **** 
+  80:pwmchannel.cc ****     if (onTime < period / 2)
+ 657              		stabd 68,0,80
+ 658              	
+ 659 024b EC86     	LBB35	ldd	6,s
+ 660 024d 49       		lsrd	
+ 661 024e 6C80     		std	0,s
+ 662 0250 EE4C     		ldx	12,y
+ 663 0252 AE80     		cpx	0,s
+ 664 0254 2430     		bhs	L101
+ 665              		
+  81:pwmchannel.cc ****       ocPwm.raiseAt(nextCycle - onTime);
+ 666              		stabd 68,0,81
+ 667              	
+ 668 0256 EC8E     	LBB36	ldd	14,s
+ 669 0258 34       		pshx	
+ 670 0259 A3B1     		subd	2,s+
+ 671 025b B745     		tfr	d,x
+ 672              		stabs "outputcompare.h",132,0,0,Ltext23
+ 673              	
+ 674              	Ltext23	stabd 68,0,54
+ 675 025d 19E816   		leay	22,y
+ 676 0260 6D80     		sty	0,s
+ 677              	
+ 678              	LBB37
+ 679              	LBB38	stabd 68,0,55
+ 680 0262 FC0000   		ldd	_tctl1
+ 681 0265 AA46     		oraa	0+6,y
+ 682 0267 EA47     		orab	1+6,y
+ 683 0269 7C0000   		std	_tctl1
+ 684              		stabd 68,0,56
+ 685 026c FD0000   		ldy	_tctl1
+ 686 026f 6D82     		sty	2,s
+ 687 0271 B764     		tfr	y,d
+ 688 0273 ED80     		ldy	0,s
+ 689 0275 AA44     		oraa	0+4,y
+ 690 0277 EA45     		orab	1+4,y
+ 691 0279 7C0000   		std	_tctl1
+ 692              		stabd 68,0,49
+ 693              	
+ 694              	LBB39
+ 695              	LBB40	stabd 68,0,50
+ 696 027c EDF30000 		ldy	[0,s]
+ 697 0280 6D80     		sty	0,s
+ 698 0282 6EF30000 		stx	[0,s]
+ 699              	
+ 700              	LBE40	stabd 68,0,51
+ 701              	
+ 702              	LBE39	stabd 68,0,57
+ 703              	
+ 704              	LBE38	stabd 68,0,58
+ 705              	
+ 706              	LBE37	stabs "pwmchannel.cc",132,0,0,Ltext24
+ 707              	
+ 708              	Ltext24	stabd 68,0,81
+ 709              	
+ 710              	LBE36
+ 711              	L101
+ 712              	LBE35	stabs "outputcompare.h",132,0,0,Ltext25
+ 713              	
+ 714              	Ltext25	stabd 68,0,54
+ 715 0286 ED88     		ldy	8,s
+ 716 0288 19E81E   		leay	30,y
+ 717 028b 6D80     		sty	0,s
+ 718 028d ED8E     		ldy	14,s
+ 719 028f EC86     		ldd	6,s
+ 720 0291 1AEE     		leax	d,y
+ 721 0293 1AE010   		leax	16,x
+ 722              	
+ 723              	LBB41
+ 724              	LBB42	stabd 68,0,49
+ 725              	
+ 726              	LBB43
+ 727              	LBB44	stabd 68,0,50
+ 728              	
+ 729              	LBE44	stabd 68,0,51
+ 730              	
+ 731              	LBE43	stabd 68,0,57
+ 732              	
+ 733              	LBE42	stabd 68,0,58
+ 734              	
+ 735              	LBE41	stabs "pwmchannel.cc",132,0,0,Ltext26
+ 736              	
+  82:pwmchannel.cc **** 
+  83:pwmchannel.cc ****     ocBrk.raiseAt(nextCycle + period + 2 * transDelay);
+ 737              	Ltext26	stabd 68,0,83
+ 738              	
+ 739 0296 0602ED   	LBE34	jmp	L116
+ 740              		
+ 741              	
+  84:pwmchannel.cc ****   }
+  85:pwmchannel.cc ****   else
+  86:pwmchannel.cc ****   {
+ 742              	L100	stabd 68,0,86
+ 743              	
+  87:pwmchannel.cc ****     if (onTime >= period / 2)
+ 744              	LBB45	stabd 68,0,87
+ 745              	
+ 746 0299 B754     	LBB46	tfr	x,d
+ 747 029b 49       		lsrd	
+ 748 029c 6C82     		std	2,s
+ 749 029e ED88     		ldy	8,s
+ 750 02a0 ED4C     		ldy	12,y
+ 751 02a2 6D80     		sty	0,s
+ 752 02a4 AD82     		cpy	2,s
+ 753 02a6 2537     		blo	L107
+ 754              		
+  88:pwmchannel.cc ****       ocPwm.raiseAt(nextCycle + period - onTime);
+ 755              		stabd 68,0,88
+ 756              	
+ 757 02a8 ED8E     	LBB47	ldy	14,s
+ 758 02aa B754     		tfr	x,d
+ 759 02ac 1AEE     		leax	d,y
+ 760 02ae B7C5     		xgdx	
+ 761 02b0 A380     		subd	0,s
+ 762 02b2 B7C5     		xgdx	
+ 763              		stabs "outputcompare.h",132,0,0,Ltext27
+ 764              	
+ 765              	Ltext27	stabd 68,0,54
+ 766 02b4 ED88     		ldy	8,s
+ 767 02b6 19E816   		leay	22,y
+ 768 02b9 6D80     		sty	0,s
+ 769              	
+ 770              	LBB48
+ 771              	LBB49	stabd 68,0,55
+ 772 02bb FC0000   		ldd	_tctl1
+ 773 02be AA46     		oraa	0+6,y
+ 774 02c0 EA47     		orab	1+6,y
+ 775 02c2 7C0000   		std	_tctl1
+ 776              		stabd 68,0,56
+ 777 02c5 FD0000   		ldy	_tctl1
+ 778 02c8 6D82     		sty	2,s
+ 779 02ca B764     		tfr	y,d
+ 780 02cc ED80     		ldy	0,s
+ 781 02ce AA44     		oraa	0+4,y
+ 782 02d0 EA45     		orab	1+4,y
+ 783 02d2 7C0000   		std	_tctl1
+ 784              		stabd 68,0,49
+ 785              	
+ 786              	LBB50
+ 787              	LBB51	stabd 68,0,50
+ 788 02d5 EDF30000 		ldy	[0,s]
+ 789 02d9 6D80     		sty	0,s
+ 790 02db 6EF30000 		stx	[0,s]
+ 791              	
+ 792              	LBE51	stabd 68,0,51
+ 793              	
+ 794              	LBE50	stabd 68,0,57
+ 795              	
+ 796              	LBE49	stabd 68,0,58
+ 797              	
+ 798              	LBE48	stabs "pwmchannel.cc",132,0,0,Ltext28
+ 799              	
+ 800              	Ltext28	stabd 68,0,88
+ 801              	
+ 802              	LBE47
+ 803              	L107
+  89:pwmchannel.cc **** 
+  90:pwmchannel.cc ****     if (direction >= 0)
+ 804              	LBE46	stabd 68,0,90
+ 805              	
+ 806 02df ED88     	LBB52	ldy	8,s
+ 807 02e1 EC48     		ldd	8,y
+ 808 02e3 2D27     		blt	L110
+ 809              		
+  91:pwmchannel.cc ****       ocDir.raiseAt(nextCycle + transDelay);
+ 810              		stabd 68,0,91
+ 811              	
+ 812              	LBB53	stabs "outputcompare.h",132,0,0,Ltext29
+ 813              	
+ 814              	Ltext29	stabd 68,0,54
+ 815 02e5 194E     		leay	14,y
+ 816 02e7 6D80     		sty	0,s
+ 817 02e9 ED8E     		ldy	14,s
+ 818 02eb 1A48     		leax	8,y
+ 819              	
+ 820              	LBB54
+ 821              	LBB55	stabd 68,0,55
+ 822              	
+ 823 02ed FC0000   	L116	ldd	_tctl1
+ 824 02f0 ED80     		ldy	0,s
+ 825 02f2 AA46     		oraa	0+6,y
+ 826 02f4 EA47     		orab	1+6,y
+ 827              		stabd 68,0,56
+ 828 02f6 7C0000   		std	_tctl1	; redundant load
+ 829 02f9 AA44     		oraa	0+4,y
+ 830 02fb EA45     		orab	1+4,y
+ 831 02fd 7C0000   		std	_tctl1
+ 832              		stabd 68,0,49
+ 833              	
+ 834              	LBB56
+ 835              	LBB57	stabd 68,0,50
+ 836 0300 EDF30000 		ldy	[0,s]
+ 837 0304 6D80     		sty	0,s
+ 838 0306 6EF30000 		stx	[0,s]
+ 839              	
+ 840              	LBE57	stabd 68,0,51
+ 841              	
+ 842              	LBE56	stabd 68,0,57
+ 843              	
+ 844              	LBE55	stabd 68,0,58
+ 845              	
+ 846              	LBE54	stabs "pwmchannel.cc",132,0,0,Ltext30
+ 847              	
+ 848              	Ltext30	stabd 68,0,91
+ 849              	
+ 850 030a 2039     	LBE53	bra	L106
+ 851              		
+ 852              	
+  92:pwmchannel.cc ****     else
+  93:pwmchannel.cc ****       ocDir.dropAt(nextCycle + transDelay);
+ 853              	L110	stabd 68,0,93
+ 854              	
+ 855              	LBB58	stabs "outputcompare.h",132,0,0,Ltext31
+ 856              	
+ 857              	Ltext31	stabd 68,0,61
+ 858 030c ED88     		ldy	8,s
+ 859 030e 194E     		leay	14,y
+ 860 0310 6D80     		sty	0,s
+ 861 0312 ED8E     		ldy	14,s
+ 862 0314 1948     		leay	8,y
+ 863 0316 6D84     		sty	4,s
+ 864              	
+ 865              	LBB59
+ 866              	LBB60	stabd 68,0,62
+ 867 0318 FE0000   		ldx	_tctl1
+ 868 031b B754     		tfr	x,d
+ 869 031d ED80     		ldy	0,s
+ 870 031f AA46     		oraa	0+6,y
+ 871 0321 EA47     		orab	1+6,y
+ 872 0323 B745     		tfr	d,x
+ 873 0325 7E0000   		stx	_tctl1
+ 874              		stabd 68,0,63
+ 875 0328 EC44     		ldd	4,y
+ 876 032a 4151     		comd	
+ 877 032c B745     		tfr	d,x
+ 878 032e FD0000   		ldy	_tctl1
+ 879 0331 B764     		tfr	y,d
+ 880 0333 34       		pshx	
+ 881 0334 A4B0     		anda	1,s+
+ 882 0336 E4B0     		andb	1,s+
+ 883 0338 B745     		tfr	d,x
+ 884 033a 7E0000   		stx	_tctl1
+ 885              		stabd 68,0,49
+ 886              	
+ 887              	LBB61
+ 888              	LBB62	stabd 68,0,50
+ 889 033d EEF30000 		ldx	[0,s]
+ 890 0341 ED84     		ldy	4,s
+ 891 0343 6D00     		sty	0,x
+ 892              	
+ 893              	LBE62	stabd 68,0,51
+ 894              	
+ 895              	LBE61	stabd 68,0,64
+ 896              	
+ 897              	LBE60	stabd 68,0,65
+ 898              	
+ 899              	LBE59	stabs "pwmchannel.cc",132,0,0,Ltext32
+ 900              	
+ 901              	Ltext32	stabd 68,0,93
+ 902              	
+ 903              	LBE58
+ 904              	LBE52
+ 905              	LBE45
+ 906              	L106
+  94:pwmchannel.cc ****   }
+  95:pwmchannel.cc **** 
+  96:pwmchannel.cc ****   return next;
+ 907              	LBE33	stabd 68,0,96
+ 908 0345 ECF30008 		ldd	[8,s]
+ 909              	
+  97:pwmchannel.cc **** }
+ 910              	LBE30	stabd 68,0,97
+ 911              	
+ 912 0349 1B8A     		leas	10,s
+ 913 034b 3D       		rts
+ 914              	
+ 915              		stabs "handler__10PwmChanneliUi:F92",36,0,73,_handler__10PwmChanneliUi
+ 916              		stabs "this:p92",160,0,73,8
+ 917              		stabs "phase:p1",160,0,73,12
+ 918              		stabs "nextCycle:p4",160,0,73,14
+ 919              		stabs "period:r4",64,0,74,2
+ 920              		stabn 192,0,0,LBB30
+ 921              		stabs "this:r111",64,0,74,2
+ 922              		stabn 192,0,0,LBB31
+ 923              		stabn 192,0,0,LBB32
+ 924              		stabn 224,0,0,LBE32
+ 925              		stabn 224,0,0,LBE31
+ 926              		stabn 192,0,0,LBB33
+ 927              		stabn 192,0,0,LBB34
+ 928              		stabn 192,0,0,LBB35
+ 929              		stabn 192,0,0,LBB36
+ 930              		stabs "this:r113=*86",64,0,81,3
+ 931              		stabn 192,0,0,LBB37
+ 932              		stabn 192,0,0,LBB38
+ 933              		stabs "this:r114=*86",64,0,57,3
+ 934              		stabn 192,0,0,LBB39
+ 935              		stabn 192,0,0,LBB40
+ 936              		stabn 224,0,0,LBE40
+ 937              		stabn 224,0,0,LBE39
+ 938              		stabn 224,0,0,LBE38
+ 939              		stabn 224,0,0,LBE37
+ 940              		stabn 224,0,0,LBE36
+ 941              		stabn 224,0,0,LBE35
+ 942              		stabs "this:r115=*86",64,0,83,3
+ 943              		stabs "time:r4",64,0,83,2
+ 944              		stabn 192,0,0,LBB41
+ 945              		stabn 192,0,0,LBB42
+ 946              		stabs "time:r4",64,0,57,2
+ 947              		stabs "this:r116=*86",64,0,57,3
+ 948              		stabn 192,0,0,LBB43
+ 949              		stabn 192,0,0,LBB44
+ 950              		stabn 224,0,0,LBE44
+ 951              		stabn 224,0,0,LBE43
+ 952              		stabn 224,0,0,LBE42
+ 953              		stabn 224,0,0,LBE41
+ 954              		stabn 224,0,0,LBE34
+ 955              		stabn 192,0,0,LBB45
+ 956              		stabn 192,0,0,LBB46
+ 957              		stabn 192,0,0,LBB47
+ 958              		stabs "this:r117=*86",64,0,88,3
+ 959              		stabn 192,0,0,LBB48
+ 960              		stabn 192,0,0,LBB49
+ 961              		stabs "this:r118=*86",64,0,57,3
+ 962              		stabn 192,0,0,LBB50
+ 963              		stabn 192,0,0,LBB51
+ 964              		stabn 224,0,0,LBE51
+ 965              		stabn 224,0,0,LBE50
+ 966              		stabn 224,0,0,LBE49
+ 967              		stabn 224,0,0,LBE48
+ 968              		stabn 224,0,0,LBE47
+ 969              		stabn 224,0,0,LBE46
+ 970              		stabn 192,0,0,LBB52
+ 971              		stabn 192,0,0,LBB53
+ 972              		stabs "this:r119=*86",64,0,91,3
+ 973              		stabs "time:r4",64,0,91,2
+ 974              		stabn 192,0,0,LBB54
+ 975              		stabn 192,0,0,LBB55
+ 976              		stabs "time:r4",64,0,57,2
+ 977              		stabs "this:r120=*86",64,0,57,3
+ 978              		stabn 192,0,0,LBB56
+ 979              		stabn 192,0,0,LBB57
+ 980              		stabn 224,0,0,LBE57
+ 981              		stabn 224,0,0,LBE56
+ 982              		stabn 224,0,0,LBE55
+ 983              		stabn 224,0,0,LBE54
+ 984              		stabn 224,0,0,LBE53
+ 985              		stabn 192,0,0,LBB58
+ 986              		stabs "this:r121=*86",64,0,93,3
+ 987              		stabs "time:4",128,0,93,4
+ 988              		stabn 192,0,0,LBB59
+ 989              		stabn 192,0,0,LBB60
+ 990              		stabs "time:4",128,0,64,4
+ 991              		stabs "this:r122=*86",64,0,64,3
+ 992              		stabn 192,0,0,LBB61
+ 993              		stabn 192,0,0,LBB62
+ 994              		stabn 224,0,0,LBE62
+ 995              		stabn 224,0,0,LBE61
+ 996              		stabn 224,0,0,LBE60
+ 997              		stabn 224,0,0,LBE59
+ 998              		stabn 224,0,0,LBE58
+ 999              		stabn 224,0,0,LBE52
+ 1000              		stabn 224,0,0,LBE45
+ 1001              		stabn 224,0,0,LBE33
+ 1002              		stabn 224,0,0,LBE30
+ 1003              	
+ 1004              	Lscope3	stabs "",36,0,0,Lscope3-_handler__10PwmChanneliUi
+ 1005              	
+ 1006              	
+ 1007              		end

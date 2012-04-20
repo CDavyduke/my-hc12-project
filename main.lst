@@ -1,0 +1,2285 @@
+   1              	gcc2_compiled.:
+   2              	___gnu_compiled_cplusplus
+   3              		stabs "/home/cdavyduke/Projects/HC12/ELEX_8030/",100,0,0,Ltext0
+   4              		stabs "main.cc",100,0,0,Ltext0
+   5              	
+   6              		section	.text
+   7              	
+   8              	Ltext0	stabs "int:t1=r1;-32768;32767;",128,0,0,0
+   9              		stabs "char:t2=r2;0;255;",128,0,0,0
+  10              		stabs "long int:t3=r1;0020000000000;0017777777777;",128,0,0,0
+  11              		stabs "unsigned int:t4=r4;0;65535;",128,0,0,0
+  12              		stabs "long unsigned int:t5=r1;0000000000000;0037777777777;",128,0,0,0
+  13              		stabs "long long int:t6=r1;0020000000000;0017777777777;",128,0,0,0
+  14              		stabs "long long unsigned int:t7=r1;0000000000000;0037777777777;",128,0,0,0
+  15              		stabs "short int:t8=r8;-32768;32767;",128,0,0,0
+  16              		stabs "short unsigned int:t9=r9;0;65535;",128,0,0,0
+  17              		stabs "signed char:t10=r10;-128;127;",128,0,0,0
+  18              		stabs "unsigned char:t11=r11;0;255;",128,0,0,0
+  19              		stabs "float:t12=r1;4;0;",128,0,0,0
+  20              		stabs "double:t13=r1;4;0;",128,0,0,0
+  21              		stabs "long double:t14=r1;4;0;",128,0,0,0
+  22              		stabs "complex int:t15=s4real:1,0,16;imag:1,16,16;;",128,0,0,0
+  23              		stabs "complex float:t16=r16;4;0;",128,0,0,0
+  24              		stabs "complex double:t17=r17;4;0;",128,0,0,0
+  25              		stabs "complex long double:t18=r18;4;0;",128,0,0,0
+  26              		stabs "bool:t19=@s8;-16;",128,0,0,0
+  27              		stabs "void:t20=20",128,0,0,0
+  28              		stabs "__wchar_t:t21=r21;-32768;32767;",128,0,0,0
+  29              		stabs "__vtbl_ptr_type:t22=*23=f1",128,0,0,0
+  30              		stabs "size_t:t4",128,0,11,0
+  31              		stabs "ptrdiff_t:t1",128,0,12,0
+  32              		stabs "IoMask:t1",128,0,39,0
+  33              		stabs "pwmreg:T24=u2byte:25=ar0;0;1;2,0,16;word:4,0,16;\\",128,0,0,0
+  34              		stabs "__as::26=##27=&24;:RC6pwmreg;2A.;pwmreg::28=##29=*24;:RC6pwmreg;2A.30=##29;:;2A.;;",128,0,0
+  35              		stabs "pwmreg:Tt24",128,0,428,0
+  36              		stabs "sciport:Tt31=s8scbd:1,0,16;sccr1:2,16,8;\\",128,0,0,0
+  37              		stabs "loops:/21:loops;woms:/21:woms;rsrc:/21:rsrc;\\",128,0,0,0
+  38              		stabs "m:/21:m;wake:/21:wake;ilt:/21:ilt;\\",128,0,0,0
+  39              		stabs "pe:/21:pe;pt:/21:pt;sccr2:2,24,8;\\",128,0,0,0
+  40              		stabs "tie:/21:tie;tcie:/21:tcie;rie:/21:rie;\\",128,0,0,0
+  41              		stabs "ilie:/21:ilie;te:/21:te;re:/21:re;\\",128,0,0,0
+  42              		stabs "rwu:/21:rwu;sbk:/21:sbk;scsr1:2,32,8;\\",128,0,0,0
+  43              		stabs "tdre:/21:tdre;tc:/21:tc;rdrf:/21:rdrf;\\",128,0,0,0
+  44              		stabs "idle:/21:idle;or:/21:or;nf:/21:nf;\\",128,0,0,0
+  45              		stabs "fe:/21:fe;pf:/21:pf;scsr2:2,40,8;\\",128,0,0,0
+  46              		stabs "raf:/21:raf;scdrh:2,48,8;r8:/21:r8;\\",128,0,0,0
+  47              		stabs "t8:/21:t8;scdrl:2,56,8;__as::32=##33=&31;:RC7sciport;2A.;\\",128,0,0,0
+  48              		stabs "sciport::34=##35=*31;:RC7sciport;2A.36=##35;:;2A.;;",128,0,636,0
+  49              		stabs "spiport:Tt37=s6spcr1:2,0,8;spie:/21:spie;\\",128,0,0,0
+  50              		stabs "spe:/21:spe;swom:/21:swom;mstr:/21:mstr;\\",128,0,0,0
+  51              		stabs "cpol:/21:cpol;cpha:/21:cpha;ssoe:/21:ssoe;\\",128,0,0,0
+  52              		stabs "lsbf:/21:lsbf;spcr2:2,8,8;sswai:/21:sswai;\\",128,0,0,0
+  53              		stabs "spc0:/21:spc0;spbr:2,16,8;spr31:/21:spr31;\\",128,0,0,0
+  54              		stabs "spr62:/21:spr62;spr125:/21:spr125;\\",128,0,0,0
+  55              		stabs "spr250:/21:spr250;spr500:/21:spr500;\\",128,0,0,0
+  56              		stabs "spr1000:/21:spr1000;spr2000:/21:spr2000;\\",128,0,0,0
+  57              		stabs "spr4000:/21:spr4000;spsr:2,24,8;spif:/21:spif;\\",128,0,0,0
+  58              		stabs "wcol:/21:wcol;modf:/21:modf;rsvd4:2,32,8;\\",128,0,0,0
+  59              		stabs "spdr:2,40,8;__as::38=##39=&37;:RC7spiport;2A.;spiport::40=##41=*37;:RC7spiport;2A.\\",128,0
+  60              		stabs "42=##41;:;2A.;;",128,0,689,0
+  61              		stabs "streampos:t1",128,0,19,0
+  62              		stabs "streamoff:t1",128,0,20,0
+  63              		stabs "open_mode:t43=ein:1,out:2,ate:4,\\",128,0,0,0
+  64              		stabs "app:8,trunc:16,nocreate:32,noreplace:64,\\",128,0,0,0
+  65              		stabs "binary:128,;",128,0,38,0
+  66              		stabs "io_state:t44=egoodbit:0,eofbit:1,failbit:2,\\",128,0,0,0
+  67              		stabs "badbit:4,;",128,0,50,0
+  68              		stabs "seek_dir:t45=ebeg:0,cur:1,end:2,;",128,0,58,0
+  69              		stabs "ios:Tt46=s16_sb:/047=*48=xsstreambuf:,0,16;_tie:/049=*50=xsostream:,16,16;\\",128,0,0,0
+  70              		stabs "_state:/01,32,16;_flags:/01,48,16;_width:/01,64,16;\\",128,0,0,0
+  71              		stabs "_precision:/01,80,16;_fill:/01,96,16;$vf46:51=*52=ar0;0;2;22,112;\\",128,0,0,0
+  72              		stabs "ios::53=##54=*46;:P9streambuf;2A.55=#46,20,54,1,20;:_$_3ios;2A*2;46;;\\",128,0,0,0
+  73              		stabs "rdbuf::56=##47;:;2B.;rdstate::57=##1;:;2B.;good::57:;2B.;eof::57:;2B.;\\",128,0,0,0
+  74              		stabs "fail::57:;2B.;bad::57:;2B.;__opPCv::58=##59=*20;:;2B.;__nt::57:;2B.;clear::60=##20;:i;2A.;\
+  75              		stabs "set::55:i;2A.;setstate::55:i;2A.;flags::57:;2B.61=##1;:i;2A.;setf::61:i;2A.\\",128,0,0,0
+  76              		stabs "62=##1;:ii;2A.;unsetf::61:i;2A.;width::57:;2B.61:i;2A.;fill::63=##2;:;2B.\\",128,0,0,0
+  77              		stabs "64=##2;:c;2A.;precision::57:;2B.61:i;2A.;tie::65=##49;:;2B.66=##49;:P7ostream;2A.;\\",128,0
+  78              		stabs "ios::67=##54;:;1A.;init::68=##20;:P9streambufP7ostream;1A.;ios::69=##54;:R3ios;0A.;\\",128,
+  79              		stabs "__as::70=##1;:R3ios;0A.;;~%46;",128,0,310,0
+  80              		stabs "streambuf:Tt48=s20_del:/01,0,16;_base:/071=*2,16,16;\\",128,0,0,0
+  81              		stabs "_ebuf:/071,32,16;_pbase:/071,48,16;_pptr:/071,64,16;\\",128,0,0,0
+  82              		stabs "_epptr:/071,80,16;_eback:/071,96,16;_gptr:/071,112,16;\\",128,0,0,0
+  83              		stabs "_egptr:/071,128,16;$vf48:72=*73=ar0;0;11;22,144;streambuf::74=#48,20,47,1,20;:_$_9streambuf
+  84              		stabs "out_waiting::75=##1;:;2A.;sputc::76=##1;:i;2A.;sputn::77=##1;:PCci;2A.;\\",128,0,0,0
+  85              		stabs "in_avail::75:;2A*3;48;;sgetc::75:;2A.;snextc::75:;2A.;sbumpc::75:;2A.;\\",128,0,0,0
+  86              		stabs "stossc::78=##20;:;2A.;sgetn::79=##1;:Pci;2A.;sputbackc::80=##1;:c;2A.;\\",128,0,0,0
+  87              		stabs "seekoff::81=##1;:iQ23ios8seek_diri;2A*4;48;;seekpos::82=##1;:ii;2A*5;48;;\\",128,0,0,0
+  88              		stabs "sync::75:;2A*6;48;;streambuf::83=##47;:;1A.84=##47;:Pci;1A.;setb::85=##20;:PcT1i;1A.;\\",12
+  89              		stabs "setp::86=##20;:PcT1;1A.;setg::87=##20;:PcN21;1A.;blen::88=##1;:;1B.;base::89=##71;:;1B.;\\"
+  90              		stabs "ebuf::89:;1B.;pbase::89:;1B.;pptr::89:;1B.;epptr::89:;1B.;eback::89:;1B.;\\",128,0,0,0
+  91              		stabs "gptr::89:;1B.;egptr::89:;1B.;pbump::74:i;1A.;gbump::74:i;1A.;overflow::90=##1;:i;1A*7;48;;\
+  92              		stabs "xsputn::77:PCci;1A*8;48;;underflow::75:;1A*9;48;;xsgetn::79:Pci;1A*10;48;;\\",128,0,0,0
+  93              		stabs "pbackfail::76:i;1A*11;48;;streambuf::91=##47;:R9streambuf;0A.;__as::92=##1;:R9streambuf;0A.
+  94              		stabs "istream:Tt93=s20!1,120,46;$vb46:54,0;_gcount:/01,16,16;\\",128,0,0,0
+  95              		stabs "istream::94=##95=*93;:iP9streambuf;2A.96=#93,20,95,1,20;:_$_7istream;2A*2;46;;\\",128,0,0,0
+  96              		stabs "ipfx::97=##1;:i;2A.;isfx::98=##20;:;2A.;tellg::99=##1;:;2A.;seekg::100=##101=&93;:i;2A.\\",
+  97              		stabs "102=##101;:iQ23ios8seek_dir;2A.;sync::99:;2A.;get::99:;2A.;peek::99:;2A.;get::103=##101;:Rc
+  98              		stabs "104=##101;:R9streambufi;2A.105=##101;:Pcii;2A.;getline::106=##101;:Pcii;2A.;read::107=##101
+  99              		stabs "putback::108=##101;:c;2A.;ignore::109=##101;:ii;2A.;gcount::99:;2A.;__rs::103:Rc;2A.\\",128
+ 100              		stabs "110=##101;:Ri;2A.111=##101;:RUi;2A.112=##101;:Rl;2A.113=##101;:RUl;2A.114=##101;:Rf;2A.\\",
+ 101              		stabs "115=##101;:Rd;2A.116=##101;:Pc;2A.117=##101;:P9streambuf;2A.118=##101;:PFR7istream_R7istrea
+ 102              		stabs "119=##101;:PFR3ios_R3ios;2A.;istream::120=##95;:i;1A.121=##95;:iR7istream;0A.;\\",128,0,0,0
+ 103              		stabs "__as::122=##1;:R7istream;0A.;;",128,0,678,0
+ 104              		stabs "ostream:Tt50=s18!1,120,46;$vb46:54,0;ostream::123=##49;:iP9streambuf;2A.\\",128,0,0,0
+ 105              		stabs "124=#50,20,49,1,20;:_$_7ostream;2A*2;46;;opfx::125=##1;:;2A.;osfx::126=##20;:;2A.;\\",128,0
+ 106              		stabs "flush::127=##128=&50;:;2A.;tellp::125:;2A.;seekp::129=##128;:i;2A.130=##128;:iQ23ios8seek_d
+ 107              		stabs "put::131=##128;:c;2A.;write::132=##128;:PCci;2A.;__ls::131:c;2A.129:i;2A.133=##128;:Ui;2A.\
+ 108              		stabs "134=##128;:l;2A.135=##128;:Ul;2A.136=##128;:f;2A.137=##128;:d;2A.138=##128;:PCc;2A.\\",128,
+ 109              		stabs "139=##128;:Pv;2A.140=##128;:P9streambuf;2A.141=##128;:PFR7ostream_R7ostream;2A.\\",128,0,0,
+ 110              		stabs "142=##128;:PFR3ios_R3ios;2A.;ostream::143=##49;:i;1A.144=##49;:iR7ostream;0A.;\\",128,0,0,0
+ 111              		stabs "__as::145=##1;:R7ostream;0A.;puts::146=##20;:PCcT1;0A.;puti::147=##20;:Uii;0A.;\\",128,0,0,
+ 112              		stabs "putl::148=##20;:Uli;0A.;;",128,0,795,0
+ 113              		stabs "iostream:Tt149=s22!2,020,93;0232,50;__as::150=##151=&149;:R8iostream;2A.;\\",128,0,0,0
+ 114              		stabs "iostream::152=##153=*149;:iR8iostream;2A.154=##153;:iP9streambuf;2A.155=#149,20,153,1,20;:_
+ 115              		stabs "156=##153;:i;1A.;;",128,0,815,0
+ 116              		stabs "SciBuf:Tt157=s30!1,020,48;sci:/0158=&31,160,16;\\",128,0,0,0
+ 117              		stabs "rxBuf:/071,176,16;rxEnd:/071,192,16;txBuf:/071,208,16;\\",128,0,0,0
+ 118              		stabs "txEnd:/071,224,16;__as::159=##160=&157;:R6SciBuf;2A.;SciBuf::161=##162=*157;:R6SciBuf;2A.\\
+ 119              		stabs "163=##162;:RV7sciportUiUi;2A.164=#157,20,162,1,20;:_$_6SciBuf;2A*2;48;;\\",128,0,0,0
+ 120              		stabs "underflow::165=##1;:;1A*9;48;;overflow::166=##1;:i;1A*7;48;;sync::165:;1A*6;48;;\\",128,0,0
+ 121              		stabs "poll::165:;0A.;recv::167=##2;:;0A.;send::168=##20;:c;0A.;;~%48;",128,0,34,0
+ 122              		stabs "Cmd:Tt169=s4name:/0170=*2,0,16;$vf169:51,16;__as::171=##172=&169;:RC3Cmd;2A.;\\",128,0,0,0
+ 123              		stabs "Cmd::173=##174=*169;:RC3Cmd;2A.175=##174;:PCc;2A.;match::176=##19;:R7istream;2A.;\\",128,0,
+ 124              		stabs "parse::177=##170;:R7istreamR7ostream;2A*2;169;;;~%169;",128,0,21,0
+ 125              		stabs "CmdProc:Tt178=s4sbuf:/047,0,16;prompt:/0170,16,16;\\",128,0,0,0
+ 126              		stabs "__as::179=##180=&178;:RC7CmdProc;2A.;CmdProc::181=##182=*178;:RC7CmdProc;2A.183=##182;:P9st
+ 127              		stabs "present::184=##20;:PP3Cmd;1A.;;",128,0,34,0
+ 128              		stabs "Isr:Tt185=s6ictlr:/0186=&187=xsIctlr:,0,16;index:/04,16,16;\\",128,0,0,0
+ 129              		stabs "$vf185:188=*189=ar0;0;3;22,32;__as::190=##191=&185;:RC3Isr;2A.;Isr::192=##193=*185;:RC3Isr;
+ 130              		stabs "194=##193;:R5IctlrUi;1A.195=#185,20,193,1,20;:_$_3Isr;1A*2;185;;handler::196=##20;:;0A*3;18
+ 131              		stabs "Ictlr:Tt187=s6length:/04,0,16;isrTbl:/0197=*193,16,16;\\",128,0,0,0
+ 132              		stabs "$vf187:51,32;__as::198=##186;:RC5Ictlr;2A.;Ictlr::199=##200=*187;:RC5Ictlr;2A.201=##200;:Ui
+ 133              		stabs "202=#187,20,200,1,20;:_$_5Ictlr;2A*2;187;;attach::203=##20;:P3Isr;2A.;\\",128,0,0,0
+ 134              		stabs "detach::203:P3Isr;2A.;runHandler::204=##20;:Ui;1A.;;~%187;",128,0,44,0
+ 135              		stabs "OutputCompare:Tt205=s8tcx:/0206=&4,0,16;mask:/04,16,16;\\",128,0,0,0
+ 136              		stabs "level:/04,32,16;mode:/04,48,16;__as::207=##208=&205;:RC13OutputCompare;2A.;\\",128,0,0,0
+ 137              		stabs "OutputCompare::209=##210=*205;:RC13OutputCompare;2A.211=##210;:ib;2A.212=#205,20,210,1,20;:
+ 138              		stabs "__opUi::213=##4;:;2B.;at::214=##20;:Ui;2A.;raiseAt::214:Ui;2A.;dropAt::214:Ui;2A.;\\",128,0
+ 139              		stabs "oc7::212:i;2A.;;",128,0,84,0
+ 140              		stabs "PwmChannel:Tt215=s38next:/0216=*215,0,16;driver:/0217=&218=xsPwmDriver:,16,16;\\",128,0,0,0
+ 141              		stabs "dutyCycle:/012,32,32;direction:/01,64,16;newOnTime:/04,80,16;\\",128,0,0,0
+ 142              		stabs "onTime:/04,96,16;ocDir:/0205,112,64;ocPwm:/0205,176,64;\\",128,0,0,0
+ 143              		stabs "ocBrk:/0205,240,64;__as::219=##220=&215;:RC10PwmChannel;2A.;PwmChannel::221=##216;:RC10PwmC
+ 144              		stabs "222=#215,20,216,1,20;:_$_10PwmChannel;2A.223=##216;:R9PwmDriveri;2A.;setDuty::224=##20;:f;2
+ 145              		stabs "getDuty::225=##12;:;2A.;handler::226=##216;:iUi;0A.;;",128,0,42,0
+ 146              		stabs "PwmDriver:Tt218=s28!1,020,185;first:/0216,48,16;\\",128,0,0,0
+ 147              		stabs "period:/04,64,16;phase:/01,80,16;ocTick:/0205,96,64;\\",128,0,0,0
+ 148              		stabs "ocOff:/0205,160,64;__as::227=##217;:RC9PwmDriver;2A.;PwmDriver::228=##229=*218;:RC9PwmDrive
+ 149              		stabs "230=#218,20,229,1,20;:_$_9PwmDriver;2A*2;185;231=##229;:R5IctlrUi;2A.;\\",128,0,0,0
+ 150              		stabs "handler::232=##20;:;1A*3;185;;attach::233=##216;:P10PwmChannel;0A.;getPeriod::234=##4;:;0B.
+ 151              		stabs "Task:Tt235=s8current:/0236=*235:_4Task$current;stack:/0237=*238=*20,0,16;\\",128,0,0,0
+ 152              		stabs "sp:/0237,16,16;priority:/04,32,16;$vf235:188,48;\\",128,0,0,0
+ 153              		stabs "__as::239=##240=&235;:RC4Task;2A.;Task::241=##236;:RC4Task;2A.242=##236;:UiUi;2A.\\",128,0,
+ 154              		stabs "243=#235,20,236,1,20;:_$_4Task;2A*2;235;;yield::244=f20:;2A?;lowerPriorityThan::245=##19;:P
+ 155              		stabs "fork::246=##20;:;1A.;main::246:;1A*3;235;;start::244:;0A?;dispatch::247=f20:P4Task;0A?;;~%2
+ 156              		stabs "Node:Tt248=s6next:249=*248,0,16;task:236,16,16;\\",128,0,0,0
+ 157              		stabs "time:1,32,16;__as::250=##251=&248;:Q28TaskList4NodeRCQ28TaskList4Node;2A.;\\",128,0,0,0
+ 158              		stabs "Node::252=##249;:__Q28TaskList4NodeRCQ28TaskList4Node;2A.253=##249;:__Q28TaskList4NodeP4Tas
+ 159              		stabs "TaskList:Tt254=s4first:/1249,0,16;$vf254:188,16;__as::255=##256=&254;:RC8TaskList;2A.;\\",1
+ 160              		stabs "TaskList::257=##258=*254;:RC8TaskList;2A.259=##258;:P4Task;2A.260=#254,20,258,1,20;:_$_8Tas
+ 161              		stabs "block::261=##20;:;2A.;unblock::261:;2A.;getCurrent::262=##236;:;2A.;insert::263=##20;:PQ28T
+ 162              		stabs "remove::264=##249;:;0A.;;~%254;",128,0,60,0
+ 163              		stabs "AppCmdProc:Tt265=s16!2,020,178;0232,235;rpChannel0:/0220,96,16;\\",128,0,0,0
+ 164              		stabs "rpChannel1:/0220,112,16;__as::266=##267=&265;:RC10AppCmdProc;2A.;\\",128,0,0,0
+ 165              		stabs "AppCmdProc::268=##269=*265;:RC10AppCmdProc;2A.270=#265,20,269,1,20;:_$_10AppCmdProc;2A*2;23
+ 166              		stabs "271=##269;:P9streambufUiUiR10PwmChannelT4;2A.;main::272=##20;:;2A*3;235;;;~%235;",128,0,23,
+ 167              		stabs "Sources:t273=eisBdl:0,isAtd:1,isSc0:2,\\",128,0,0,0
+ 168              		stabs "isSpi:3,isPai:4,isPao:5,isTof:6,\\",128,0,0,0
+ 169              		stabs "isTc7:7,isTc6:8,isTc5:9,isTc4:10,\\",128,0,0,0
+ 170              		stabs "isTc3:11,isTc2:12,isTc1:13,isTc0:14,\\",128,0,0,0
+ 171              		stabs "isRti:15,isIrq:16,isNumSources:17,;",128,0,24,0
+ 172              		stabs "HC12Ictlr:Tt274=s6!1,020,187;theHC12Ictlr:/0275=*274:_9HC12Ictlr$theHC12Ictlr;\\",128,0,0,0
+ 173              		stabs "__as::276=##277=&274;:RC9HC12Ictlr;2A.;HC12Ictlr::278=##275;:RC9HC12Ictlr;2A.279=##275;:;2A
+ 174              		stabs "280=#274,20,275,1,20;:_$_9HC12Ictlr;2A*2;187;;handlerTable::244:;0A?;;~%187;",128,0,48,0
+ 175              		stabs "DeltaTaskList:Tt281=s6!1,020,254;time:/01,32,16;\\",128,0,0,0
+ 176              		stabs "__as::282=##283=&281;:RC13DeltaTaskList;2A.;DeltaTaskList::284=##285=*281;:RC13DeltaTaskLis
+ 177              		stabs "286=##285;:;2A.287=#281,20,285,1,20;:_$_13DeltaTaskList;2A*2;254;;block::287:i;2A.;\\",128,
+ 178              		stabs "decrement::288=##20;:;2A.;zero::289=##19;:;2A.;insert::290=##20;:PQ28TaskList4Node;0A*3;254
+ 179              		stabs "block::288:;0A.;;~%254;",128,0,22,0
+ 180              		stabs "TimerTask:Tt291=s26!2,020,235;0264,185;deltaList:/0281,112,48;\\",128,0,0,0
+ 181              		stabs "waitList:/0254,160,32;rate:/01,192,16;theTimerTask:/0292=*291:_9TimerTask$theTimerTask;\\",
+ 182              		stabs "__as::293=##294=&291;:RC9TimerTask;2A.;TimerTask::295=##292;:RC9TimerTask;2A.;delay::296=f2
+ 183              		stabs "TimerTask::297=##292;:UiUiR5Ictlrii;1A.298=#291,20,292,1,20;:_$_9TimerTask;1A*2;235;;\\",12
+ 184              		stabs "handler::299=##20;:;1A*3;185;;main::299:;0A*3;235;;;~%235;",128,0,29,0
+ 185              		stabs "Interrupts:Tt300=s2oldMask:/01,0,16;__as::301=##302=&300;:RC10Interrupts;2A.;\\",128,0,0,0
+ 186              		stabs "Interrupts::303=##304=*300;:RC10Interrupts;2A.305=##304;:;2A.306=#300,20,304,1,20;:_$_10Int
+ 187              		stabs "TestTask:Tt307=s14!1,020,235;bitmask:/04,64,16;\\",128,0,0,0
+ 188              		stabs "count:/04,80,16;time:/01,96,16;__as::308=##309=&307;:RC8TestTask;2A.;\\",128,0,0,0
+ 189              		stabs "TestTask::310=##311=*307;:RC8TestTask;2A.312=#307,20,311,1,20;:_$_8TestTask;2A*2;235;\\",12
+ 190              		stabs "313=##311;:UiUiUiUii;2A.;main::314=##20;:;1A*3;235;;;~%235;",128,0,57,0
+ 191              		stabs "HC12TimerTask:Tt315=s26!1,020,291;rtres:/01:rtres;\\",128,0,0,0
+ 192              		stabs "__as::316=##317=&315;:RC13HC12TimerTask;2A.;HC12TimerTask::318=##319=*315;:RC13HC12TimerTas
+ 193              		stabs "320=##319;:UiUiR5Ictlr;2A.321=#315,20,319,1,20;:_$_13HC12TimerTask;2A*2;235;;\\",128,0,0,0
+ 194              		stabs "handler::322=##20;:;0A*3;185;;;~%235;",128,0,21,0
+ 195              		stabs "Priorities:t323=epriHC12TmrTask:0,priTestTask1:1,\\",128,0,0,0
+ 196              		stabs "priTestTask2:2,priTestTask3:3,priLTC1404Task:4,\\",128,0,0,0
+ 197              		stabs "priAppCmdProcTask:5,priInitTask:6,;",128,0,12,0
+ 198              		stabs "Mutex:Tt324=s6!1,020,254;holder:/0325=*235,32,16;\\",128,0,0,0
+ 199              		stabs "__as::326=##327=&324;:RC5Mutex;2A.;Mutex::328=##329=*324;:RC5Mutex;2A.330=#324,20,329,1,20;
+ 200              		stabs "331=##329;:;2A.;acquire::332=##20;:;2A.;release::332:;2A.;;~%254;",128,0,20,0
+ 201              		stabs "Spi:Tt333=s8mutex:/0324,0,48;$vf333:334=*335=ar0;0;4;22,48;\\",128,0,0,0
+ 202              		stabs "__as::336=##337=&333;:RC3Spi;2A.;Spi::338=##339=*333;:RC3Spi;2A.340=##339;:;2A.\\",128,0,0,
+ 203              		stabs "341=#333,20,339,1,20;:_$_3Spi;2A*2;333;;get::342=##20;:Pvi;0A*3;333;;\\",128,0,0,0
+ 204              		stabs "put::342:Pvi;0A*4;333;;open::343=##20;:;0A.;close::343:;0A.;;~%333;",128,0,34,0
+ 205              		stabs "SpiUser:Tt344=s2spi:/0337,0,16;__as::345=##346=&344;:RC7SpiUser;2A.;\\",128,0,0,0
+ 206              		stabs "SpiUser::347=##348=*344;:RC7SpiUser;2A.349=##348;:R3Spi;2A.350=#344,20,348,1,20;:_$_7SpiUse
+ 207              		stabs "get::351=##20;:Pvi;2A.;put::351:Pvi;2A.;;",128,0,58,0
+ 208              		stabs "Ltc1404SpiUser:Tt352=s2!1,020,344;__as::353=##354=&352;:Q27Ltc140414Ltc1404SpiUserRCQ27Ltc1
+ 209              		stabs "Ltc1404SpiUser::355=##356=*352;:__Q27Ltc140414Ltc1404SpiUserRCQ27Ltc140414Ltc1404SpiUser;2A
+ 210              		stabs "357=##356;:__Q27Ltc140414Ltc1404SpiUserR3Spi;2A.358=#352,20,356,1,20;:_$_Q27Ltc140414Ltc140
+ 211              		stabs "__opi::359=##1;:Q27Ltc140414Ltc1404SpiUser;2A.;;",128,0,73,0
+ 212              		stabs "Ltc1404:Tt360=s12!1,020,235;spi:/0337,64,16;\\",128,0,0,0
+ 213              		stabs "time:/01,80,16;__as::361=##362=&360;:RC7Ltc1404;2A.;Ltc1404::363=##364=*360;:RC7Ltc1404;2A.
+ 214              		stabs "365=##364;:UiUiR3Spii;2A.366=#360,20,364,1,20;:_$_7Ltc1404;2A*2;235;;main::367=##20;:;1A*3;
+ 215              		stabs "HC12Spi:Tt368=s10!1,020,333;spi:/0369=&37,64,16;\\",128,0,0,0
+ 216              		stabs "__as::370=##371=&368;:RC7HC12Spi;2A.;HC12Spi::372=##373=*368;:RC7HC12Spi;2A.374=##373;:RV7s
+ 217              		stabs "375=#368,20,373,1,20;:_$_7HC12Spi;2A*2;333;;put::376=##20;:Pvi;0A*4;333;;\\",128,0,0,0
+ 218              		stabs "get::376:Pvi;0A*3;333;;;~%333;",128,0,60,0
+ 219              	
+ 220              		section	.const
+ 221              	
+ 222 0000 48656C6C 	LC0	dc.b	048h,065h,06Ch,06Ch,06Fh,02Ch,020h,077h
+ 222      6F2C2077 
+ 223 0008 6F726C64 		dc.b	06Fh,072h,06Ch,064h,021h,000h
+ 223      2100
+ 224              	
+ 225              		section	.text
+ 226              	
+ 227              		global	_main
+ 228              	_main
+   1:main.cc       **** // Filename:        MAIN.CC
+   2:main.cc       **** // Author:            C. DAVYDUKE
+   3:main.cc       **** // File Created:    03/09/11
+   4:main.cc       **** // Last Modified:  03/12/20
+   5:main.cc       **** // Description:     This file contains the function main().
+   6:main.cc       **** 
+   7:main.cc       **** #include "new.h"
+   8:main.cc       **** #include "scibuf.h"
+   9:main.cc       **** #include "appcmdproc.h"
+  10:main.cc       **** #include "hc12ictlr.h"
+  11:main.cc       **** #include "pwm.h"
+  12:main.cc       **** #include "testtask.h"
+  13:main.cc       **** #include "stddef.h"
+  14:main.cc       **** #include "hc12timertask.h"
+  15:main.cc       **** #include "priorities.h"
+  16:main.cc       **** #include "ltc1404.h"
+  17:main.cc       **** #include "hc12spi.h"
+  18:main.cc       **** 
+  19:main.cc       **** // Needed to create bit masks for the test tasks.
+  20:main.cc       **** const unsigned int bitmask2 = ( 1 << 2 );
+  21:main.cc       **** const unsigned int bitmask4 = ( 1 << 4 );
+  22:main.cc       **** const unsigned int bitmask5 = ( 1 << 5 );
+  23:main.cc       **** 
+  24:main.cc       **** const size_t stackSize = 512;
+  25:main.cc       **** 
+  26:main.cc       **** const int AdcTime = 100;  // in ms
+  27:main.cc       **** 
+  28:main.cc       **** int main( )
+  29:main.cc       **** {  
+ 229              		stabd 68,0,29
+ 230 0000 1BF104   		leas	-252,s
+ 231              	
+ 232              	
+  30:main.cc       ****   SciBuf * sciBuf = new SciBuf( sci0, 80, 16 );
+ 233              	LBB2	stabd 68,0,30
+ 234 0003 CC001E   		ldd	#30
+ 235 0006 160000   		jsr	___builtin_new
+ 236 0009 6C8A     		std	10,s
+ 237 000b 18008000 		movw	#_sci0,0,s
+ 237      00
+ 238 0010 18008200 		movw	#80,2,s
+ 238      50
+ 239 0015 18008400 		movw	#16,4,s
+ 239      10
+ 240 001a 160000   		jsr	___6SciBufRV7sciportUiUi
+ 241 001d 6CF024   		std	36,s
+  31:main.cc       ****   HC12Ictlr hc12Ictlr;
+ 242              		stabd 68,0,31
+ 243 0020 19F0F6   		leay	246,s
+ 244 0023 6DF022   		sty	34,s
+ 245 0026 B764     		tfr	y,d
+ 246 0028 160000   		jsr	___9HC12Ictlr
+  32:main.cc       ****   PwmDriver pwmDriver( hc12Ictlr, 4000 );
+ 247              		stabd 68,0,32
+ 248 002b 1AF0DA   		leax	218,s
+ 249 002e 6EF020   		stx	32,s
+ 250 0031 EDF022   		ldy	34,s
+ 251 0034 6D80     		sty	0,s
+ 252 0036 1800820F 		movw	#4000,2,s
+ 252      A0
+ 253 003b B754     		tfr	x,d
+ 254 003d 160000   		jsr	___9PwmDriverR5IctlrUi
+  33:main.cc       ****   PwmChannel pwmChannel0( pwmDriver, 0 );
+ 255              		stabd 68,0,33
+ 256 0040 1AF0B4   		leax	180,s
+ 257 0043 6EF01E   		stx	30,s
+ 258 0046 EDF020   		ldy	32,s
+ 259 0049 6D80     		sty	0,s
+ 260 004b 18008200 		movw	#0,2,s
+ 260      00
+ 261 0050 B754     		tfr	x,d
+ 262 0052 160000   		jsr	___10PwmChannelR9PwmDriveri
+  34:main.cc       ****   PwmChannel pwmChannel1( pwmDriver, 1 );
+ 263              		stabd 68,0,34
+ 264 0055 1AF08E   		leax	142,s
+ 265 0058 6EF01C   		stx	28,s
+ 266 005b EDF020   		ldy	32,s
+ 267 005e 6D80     		sty	0,s
+ 268 0060 18008200 		movw	#1,2,s
+ 268      01
+ 269 0065 B754     		tfr	x,d
+ 270 0067 160000   		jsr	___10PwmChannelR9PwmDriveri
+  35:main.cc       ****   HC12TimerTask hc12TimerTask( stackSize, priHC12TmrTask, hc12Ictlr );
+ 271              		stabd 68,0,35
+ 272 006a 1AF074   		leax	116,s
+ 273 006d 6E8A     		stx	10,s
+ 274 006f 18008002 		movw	#512,0,s
+ 274      00
+ 275 0074 18008200 		movw	#0,2,s
+ 275      00
+ 276 0079 EDF022   		ldy	34,s
+ 277 007c 6D84     		sty	4,s
+ 278 007e B754     		tfr	x,d
+ 279 0080 160000   		jsr	___13HC12TimerTaskUiUiR5Ictlr
+ 280              		stabs "hc12spi.h",132,0,0,Ltext1
+ 281              	
+   1:hc12spi.h     **** // $Id: hc12spi.h,v 1.1 2003/12/20 17:28:58 cdavyduk Exp $
+   2:hc12spi.h     **** 
+   3:hc12spi.h     **** // hc12spi.h			   Copyright (C) 2003, Real-Time Systems Inc.
+   4:hc12spi.h     **** //-------------------------------------------- All Rights Reserved ----------
+   5:hc12spi.h     **** //
+   6:hc12spi.h     **** //	68HC12 SPI Driver
+   7:hc12spi.h     **** //
+   8:hc12spi.h     **** //---------------------------------------------------------------------------
+   9:hc12spi.h     **** 
+  10:hc12spi.h     **** #ifndef HC12SPI_H
+  11:hc12spi.h     **** #define HC12SPI_H
+  12:hc12spi.h     **** 
+  13:hc12spi.h     **** #include "chipio.h"
+  14:hc12spi.h     **** #include "spi.h"
+  15:hc12spi.h     **** 
+  16:hc12spi.h     **** 
+  17:hc12spi.h     **** class HC12Spi : public Spi
+  18:hc12spi.h     **** {
+  19:hc12spi.h     **** public:
+  20:hc12spi.h     ****   HC12Spi(volatile spiport& s)
+  21:hc12spi.h     ****   : spi(s)
+ 282              	Ltext1	stabd 68,0,21
+ 283              	
+ 284 0083 B774     	LBB3	tfr	s,d
+ 285 0085 C3006A   		addd	#106
+ 286 0088 160000   		jsr	___3Spi
+ 287 008b CE000E   		ldx	#___vt_7HC12Spi
+ 288 008e 6EF070   		stx	112,s
+ 289 0091 CC0000   		ldd	#_spi0
+ 290 0094 6CF072   		std	114,s
+  22:hc12spi.h     ****   {
+ 291              		stabd 68,0,22
+ 292              	
+  23:hc12spi.h     ****     ddrs |= 0xE0;	// turn on SS, SCK, and MOSI outputs
+ 293              	LBB4	stabd 68,0,23
+ 294 0097 F60000   		ldab	_ddrs
+ 295 009a CAE0     		orab	#224
+ 296 009c 7B0000   		stab	_ddrs
+  24:hc12spi.h     ****     spi.spcr1 = spi.spe | spi.mstr | spi.cpha;
+ 297              		stabd 68,0,24
+ 298 009f 180B5400 		movb	#84,_spi0
+ 298      00
+  25:hc12spi.h     ****     spi.spdr = 0;
+ 299              		stabd 68,0,25
+ 300 00a4 180B0000 		movb	#0,_spi0+5
+ 300      05
+ 301              	
+  26:hc12spi.h     ****   }
+ 302              	LBE4	stabd 68,0,26
+ 303              	
+ 304              	LBE3	stabs "ltc1404.h",132,0,0,Ltext2
+ 305              	
+   1:ltc1404.h     **** // $Id: ltc1404.h,v 1.2 2003/12/20 22:54:19 cdavyduk Exp $
+   2:ltc1404.h     **** 
+   3:ltc1404.h     **** // ltc1404.h			   Copyright (C) 2003, Real-Time Systems Inc.
+   4:ltc1404.h     **** //-------------------------------------------- All Rights Reserved ----------
+   5:ltc1404.h     **** //
+   6:ltc1404.h     **** //	LTC1404 A/D Converter Driver
+   7:ltc1404.h     **** //
+   8:ltc1404.h     **** //---------------------------------------------------------------------------
+   9:ltc1404.h     **** 
+  10:ltc1404.h     **** #ifndef LTC1404_H
+  11:ltc1404.h     **** #define LTC1404_H
+  12:ltc1404.h     **** 
+  13:ltc1404.h     **** #include "chipio.h"
+  14:ltc1404.h     **** #include "spi.h"
+  15:ltc1404.h     **** #include "task.h"
+  16:ltc1404.h     **** #include "interrupts.h"
+  17:ltc1404.h     **** 
+  18:ltc1404.h     **** // Need a mask to configure SCK and SS as outputs.
+  19:ltc1404.h     **** const unsigned int selMask = 0xC0;
+  20:ltc1404.h     **** 
+  21:ltc1404.h     **** class Ltc1404 : public Task
+  22:ltc1404.h     **** {
+  23:ltc1404.h     **** public:
+  24:ltc1404.h     ****   Ltc1404( size_t stackSize, unsigned int priority, Spi & s, int t )
+  25:ltc1404.h     ****   : Task( stackSize, priority ),
+ 306              	Ltext2	stabd 68,0,25
+ 307 00a9 19F05E   		leay	94,s
+ 308 00ac 6DF01A   		sty	26,s
+ 309 00af 1AF06A   		leax	106,s
+ 310 00b2 6EF018   		stx	24,s
+ 311              	
+ 312 00b5 18008002 	LBB5	movw	#512,0,s
+ 312      00
+ 313 00ba 18008200 		movw	#4,2,s
+ 313      04
+ 314 00bf B764     		tfr	y,d
+ 315 00c1 160000   		jsr	___4TaskUiUi
+ 316 00c4 CC0000   		ldd	#___vt_7Ltc1404
+ 317 00c7 6CF064   		std	100,s
+ 318 00ca EEF018   		ldx	24,s
+ 319 00cd EDF01A   		ldy	26,s
+ 320 00d0 6E48     		stx	8,y
+ 321 00d2 CC0064   		ldd	#100
+ 322 00d5 6CF068   		std	104,s
+  26:ltc1404.h     ****     spi( s ),
+  27:ltc1404.h     ****     time( t )
+  28:ltc1404.h     ****   {
+ 323              		stabd 68,0,28
+ 324              	
+ 325              	LBB6	stabs "interrupts.h",132,0,0,Ltext3
+ 326              	
+   1:interrupts.h  **** // Filename:		INTERRUPTS.H
+   2:interrupts.h  **** // Author:			C. DAVYDUKE
+   3:interrupts.h  **** // File Created:	03/10/20
+   4:interrupts.h  **** // Last Modified: 03/10/29
+   5:interrupts.h  **** // Description:	This file contains the class definition of interrupts and some low level code.
+   6:interrupts.h  **** 
+   7:interrupts.h  **** #ifndef __INTERRUPTS_H__
+   8:interrupts.h  **** #define __INTERRUPTS_H__
+   9:interrupts.h  **** 
+  10:interrupts.h  **** // This class definition allows us to use the properties of classes (e.g. constructors and
+  11:interrupts.h  **** // destructors) to ensure that interrupts are always enabled and disabled, and one or
+  12:interrupts.h  **** // the other is not forgotten.  Very HC12 specific.
+  13:interrupts.h  **** class Interrupts
+  14:interrupts.h  **** {
+  15:interrupts.h  **** 	public:
+  16:interrupts.h  **** 		Interrupts()
+  17:interrupts.h  **** 		{
+ 327              	Ltext3	stabd 68,0,17
+ 328              	
+ 329              	LBB7
+  18:interrupts.h  **** 			asm( "tfr ccr, b" );
+ 330              	LBB8	stabd 68,0,18
+ 331 00d8 B721     		tfr ccr, b
+  19:interrupts.h  **** 			asm( "std %0" : : "m"(oldMask) : "d" );
+ 332              		stabd 68,0,19
+ 333 00da 6CF05C   		std 92,s
+  20:interrupts.h  **** 			asm( "sei" );
+ 334              		stabd 68,0,20
+ 335 00dd 1410     		sei
+ 336              	
+  21:interrupts.h  **** 		}
+ 337              	LBE8	stabd 68,0,21
+ 338              	
+ 339              	LBE7	stabs "ltc1404.h",132,0,0,Ltext4
+ 340              	
+  29:ltc1404.h     ****     Interrupts masked;
+ 341              	Ltext4	stabd 68,0,29
+  30:ltc1404.h     ****     
+  31:ltc1404.h     ****     ddrs |= selMask;
+ 342              		stabd 68,0,31
+ 343 00df F60000   		ldab	_ddrs
+ 344 00e2 CAC0     		orab	#192
+ 345 00e4 7B0000   		stab	_ddrs
+  32:ltc1404.h     **** 
+  33:ltc1404.h     ****     ddrdlc |= ( 1 << 6 );
+ 346              		stabd 68,0,33
+ 347 00e7 F60000   		ldab	_ddrdlc
+ 348 00ea CA40     		orab	#64
+ 349 00ec 7B0000   		stab	_ddrdlc
+  34:ltc1404.h     ****     portdlc &= ~(1 << 6 );
+ 350              		stabd 68,0,34
+ 351 00ef F60000   		ldab	_portdlc
+ 352 00f2 C4BF     		andb	#191
+ 353 00f4 7B0000   		stab	_portdlc
+  35:ltc1404.h     ****     fork();
+ 354              		stabd 68,0,35
+ 355 00f7 ECF01A   		ldd	26,s
+ 356 00fa 160000   		jsr	_fork__4Task
+ 357              		stabs "interrupts.h",132,0,0,Ltext5
+ 358              	
+  22:interrupts.h  **** 		~Interrupts()
+  23:interrupts.h  **** 		{
+ 359              	Ltext5	stabd 68,0,23
+ 360              	
+ 361              	LBB9
+  24:interrupts.h  **** 			asm( "ldd %0" : : "m"(oldMask) : "d" );
+ 362              	LBB10	stabd 68,0,24
+ 363 00fd ECF05C   		ldd 92,s
+  25:interrupts.h  **** 			asm( "tfr b, ccr" );
+ 364              		stabd 68,0,25
+ 365 0100 B712     		tfr b, ccr
+ 366              	
+  26:interrupts.h  **** 		}
+ 367              	LBE10	stabd 68,0,26
+ 368              	
+ 369              	LBE9	stabs "ltc1404.h",132,0,0,Ltext6
+ 370              	
+  36:ltc1404.h     ****   }
+ 371              	Ltext6	stabd 68,0,36
+ 372              	
+ 373              	LBE6
+ 374              	LBE5	stabs "main.cc",132,0,0,Ltext7
+ 375              	
+  36:main.cc       ****   HC12Spi hc12Spi( spi0 );
+  37:main.cc       ****   Ltc1404 ltc1404( stackSize, priLTC1404Task, hc12Spi, AdcTime );
+  38:main.cc       **** 	
+  39:main.cc       ****   ostream os( sciBuf );
+ 376              	Ltext7	stabd 68,0,39
+ 377 0102 19F04A   		leay	74,s
+ 378 0105 6DF016   		sty	22,s
+ 379 0108 18008000 		movw	#1,0,s
+ 379      01
+ 380 010d EEF024   		ldx	36,s
+ 381 0110 6E82     		stx	2,s
+ 382 0112 B764     		tfr	y,d
+ 383 0114 160000   		jsr	___7ostreamiP9streambuf
+  40:main.cc       ****   istream is( sciBuf );
+ 384              		stabd 68,0,40
+ 385 0117 19F036   		leay	54,s
+ 386 011a 6D8A     		sty	10,s
+ 387 011c 18008000 		movw	#1,0,s
+ 387      01
+ 388 0121 EEF024   		ldx	36,s
+ 389 0124 6E82     		stx	2,s
+ 390 0126 B764     		tfr	y,d
+ 391 0128 160000   		jsr	___7istreamiP9streambuf
+  41:main.cc       **** 
+  42:main.cc       ****   // Display introductory welcome message.
+  43:main.cc       ****   os << "Hello, world!" << endl;
+ 392              		stabd 68,0,43
+ 393 012b 18008000 		movw	#LC0,0,s
+ 393      00
+ 394 0130 ECF016   		ldd	22,s
+ 395 0133 160000   		jsr	___ls__7ostreamPCc
+ 396 0136 6C8A     		std	10,s
+ 397              		stabs "iostream.h",132,0,0,Ltext8
+ 398              	
+   1:iostream.h    **** // $Id: iostream.h,v 1.1 2003/10/16 03:28:02 cdavyduk Exp $
+   2:iostream.h    **** 
+   3:iostream.h    **** // iostream.h	 	      Copyright (C) 1996-1997, Real-Time Systems Inc.
+   4:iostream.h    **** //------------------------------------------ All Rights Reserved ------------
+   5:iostream.h    **** //
+   6:iostream.h    **** //	C++ Streams Library
+   7:iostream.h    **** //
+   8:iostream.h    **** //---------------------------------------------------------------------------
+   9:iostream.h    **** 
+  10:iostream.h    **** #ifndef IOSTREAM_H
+  11:iostream.h    **** #define IOSTREAM_H
+  12:iostream.h    **** 
+  13:iostream.h    **** 
+  14:iostream.h    **** //---------------------------------------------------------------------------
+  15:iostream.h    **** //
+  16:iostream.h    **** //	Basic definitions
+  17:iostream.h    **** //
+  18:iostream.h    **** 
+  19:iostream.h    **** typedef int streampos;		// position in stream
+  20:iostream.h    **** typedef int streamoff;		// delta position in stream
+  21:iostream.h    **** 
+  22:iostream.h    **** const int EOF = -1;		// end of file sentinel
+  23:iostream.h    **** 
+  24:iostream.h    **** 
+  25:iostream.h    **** //---------------------------------------------------------------------------
+  26:iostream.h    **** //
+  27:iostream.h    **** //	Base class for all streams
+  28:iostream.h    **** //
+  29:iostream.h    **** 
+  30:iostream.h    **** class ios
+  31:iostream.h    **** {
+  32:iostream.h    **** public:
+  33:iostream.h    **** 
+  34:iostream.h    ****   // special values
+  35:iostream.h    **** 
+  36:iostream.h    ****   enum open_mode		// stream opening modes
+  37:iostream.h    ****   {
+  38:iostream.h    ****     in		= 0x01,		// open for reading
+  39:iostream.h    ****     out		= 0x02,		// open for writing
+  40:iostream.h    ****     ate		= 0x04,		// seek to eof upon original open
+  41:iostream.h    ****     app		= 0x08,		// append mode: all additions at eof
+  42:iostream.h    ****     trunc	= 0x10,		// truncate file if already exists
+  43:iostream.h    ****     nocreate	= 0x20,		// open fails if file doesn't exist
+  44:iostream.h    ****     noreplace	= 0x40,		// open fails if file already exists
+  45:iostream.h    ****     binary	= 0x80		// binary file    
+  46:iostream.h    ****   };
+  47:iostream.h    **** 
+  48:iostream.h    ****   enum io_state			// stream state flags
+  49:iostream.h    ****   {
+  50:iostream.h    ****     goodbit	= 0x00,		   // no errors
+  51:iostream.h    ****     eofbit	= 0x01,		   // end of file reached
+  52:iostream.h    ****     failbit	= 0x02,		   // formatting/parsing error
+  53:iostream.h    ****     badbit	= 0x04		   // serious error, data may be lost
+  54:iostream.h    ****   };
+  55:iostream.h    **** 
+  56:iostream.h    ****   enum seek_dir			// seek starting points
+  57:iostream.h    ****   {
+  58:iostream.h    ****     beg,			   // start from beginning, seek forward
+  59:iostream.h    ****     cur,			   // start from current, seek either way
+  60:iostream.h    ****     end				   // start from end, seek backward
+  61:iostream.h    ****   };
+  62:iostream.h    **** 
+  63:iostream.h    ****   enum				// formatting flags
+  64:iostream.h    ****   {
+  65:iostream.h    ****     skipws	= 0x0001,	   // skip whitespace
+  66:iostream.h    ****     left	= 0x0002,	   // align left in field
+  67:iostream.h    ****     internal	= 0x0004,	   // pad between sign and number
+  68:iostream.h    ****     right	= 0x0008,	   // align right in field
+  69:iostream.h    ****     oct		= 0x0010,	   // octal base
+  70:iostream.h    ****     dec		= 0x0020,	   // decimal base
+  71:iostream.h    ****     hex		= 0x0040,	   // hexadecimal base
+  72:iostream.h    ****     showbase	= 0x0080,	   // show base indicator for integers
+  73:iostream.h    ****     showpoint	= 0x0100,	   // always show point for floats
+  74:iostream.h    ****     uppercase	= 0x0200,	   // show 'X' for hex, 'E' for floats
+  75:iostream.h    ****     showpos	= 0x0400,	   // show '+' for positive numbers
+  76:iostream.h    ****     scientific	= 0x0800,	   // show n.nnnnEnn for floats
+  77:iostream.h    ****     fixed	= 0x1000,	   // show nnn.nnn for floats
+  78:iostream.h    ****     unitbuf	= 0x2000,	   // flush after each output operation
+  79:iostream.h    ****     stdio	= 0x4000,	   // flush after each character
+  80:iostream.h    **** 
+  81:iostream.h    ****     basefield	= oct | dec | hex,		// all number base bits
+  82:iostream.h    ****     adjustfield	= left | internal | right,	// all alignment bits
+  83:iostream.h    ****     floatfield	= scientific | fixed		// all float format bits
+  84:iostream.h    ****   };
+  85:iostream.h    **** 
+  86:iostream.h    **** 
+  87:iostream.h    ****   // constructors and destructor
+  88:iostream.h    **** 
+  89:iostream.h    ****   ios				// create stream
+  90:iostream.h    ****   (
+  91:iostream.h    ****     class streambuf* buf	   // buffer for stream
+  92:iostream.h    ****   );
+  93:iostream.h    **** 
+  94:iostream.h    ****   virtual ~ios();		// destroy stream
+  95:iostream.h    **** 
+  96:iostream.h    ****   class streambuf* rdbuf() const // return pointer to streambuf
+  97:iostream.h    ****   {
+  98:iostream.h    ****     return _sb;
+  99:iostream.h    ****   }
+ 100:iostream.h    **** 
+ 101:iostream.h    **** 
+ 102:iostream.h    ****   // stream state interrogation
+ 103:iostream.h    **** 
+ 104:iostream.h    ****   int rdstate() const		// get entire state word
+ 105:iostream.h    ****   {
+ 106:iostream.h    ****     return _state;
+ 107:iostream.h    ****   }
+ 108:iostream.h    **** 
+ 109:iostream.h    ****   int good() const		// no errors on stream?
+ 110:iostream.h    ****   {
+ 111:iostream.h    ****     return _state == 0;
+ 112:iostream.h    ****   }
+ 113:iostream.h    **** 
+ 114:iostream.h    ****   int eof() const		// at end of file?
+ 115:iostream.h    ****   {
+ 116:iostream.h    ****     return _state & eofbit;
+ 117:iostream.h    ****   }
+ 118:iostream.h    **** 
+ 119:iostream.h    ****   int fail() const		// error on stream?
+ 120:iostream.h    ****   {
+ 121:iostream.h    ****     return _state & (failbit | badbit);
+ 122:iostream.h    ****   }
+ 123:iostream.h    **** 
+ 124:iostream.h    ****   int bad() const		// serious error on stream?
+ 125:iostream.h    ****   {
+ 126:iostream.h    ****     return _state & badbit;
+ 127:iostream.h    ****   }
+ 128:iostream.h    **** 
+ 129:iostream.h    ****   operator const void* () const	// test stream state
+ 130:iostream.h    ****   {
+ 131:iostream.h    ****     return fail() ? 0 : this;
+ 132:iostream.h    ****   }
+ 133:iostream.h    **** 
+ 134:iostream.h    ****   int operator ! () const	// test stream state
+ 135:iostream.h    ****   {
+ 136:iostream.h    ****     return fail();
+ 137:iostream.h    ****   }
+ 138:iostream.h    **** 
+ 139:iostream.h    **** 
+ 140:iostream.h    ****   // stream state control
+ 141:iostream.h    **** 
+ 142:iostream.h    ****   void clear			// set stream state
+ 143:iostream.h    ****   (
+ 144:iostream.h    ****     int s = 0			   // new stream state
+ 145:iostream.h    ****   )
+ 146:iostream.h    ****   {
+ 147:iostream.h    ****     _state = s;
+ 148:iostream.h    ****   }
+ 149:iostream.h    **** 
+ 150:iostream.h    ****   void set			// set bits in stream state
+ 151:iostream.h    ****   (
+ 152:iostream.h    ****     int mask			   // bits to set
+ 153:iostream.h    ****   )
+ 154:iostream.h    ****   {
+ 155:iostream.h    ****     _state |= mask;
+ 156:iostream.h    ****   }
+ 157:iostream.h    **** 
+ 158:iostream.h    ****   void setstate			// set bits in stream state
+ 159:iostream.h    ****   (
+ 160:iostream.h    ****     int mask			   // bits to set
+ 161:iostream.h    ****   )
+ 162:iostream.h    ****   {
+ 163:iostream.h    ****     _state |= mask;
+ 164:iostream.h    ****   }
+ 165:iostream.h    **** 
+ 166:iostream.h    **** 
+ 167:iostream.h    ****   // formatting and parsing flags
+ 168:iostream.h    **** 
+ 169:iostream.h    ****   int flags() const		// get current formatting flags
+ 170:iostream.h    ****   {
+ 171:iostream.h    ****     return _flags;
+ 172:iostream.h    ****   }
+ 173:iostream.h    **** 
+ 174:iostream.h    ****   int flags			// get/set all formatting flags at once
+ 175:iostream.h    ****   (
+ 176:iostream.h    ****     int word			   // entire flags word
+ 177:iostream.h    ****   )
+ 178:iostream.h    ****   {
+ 179:iostream.h    ****     int old = _flags;
+ 180:iostream.h    ****     _flags = word;
+ 181:iostream.h    ****     return old;
+ 182:iostream.h    ****   }
+ 183:iostream.h    **** 
+ 184:iostream.h    ****   int setf			// set some formatting flags unconditionally
+ 185:iostream.h    ****   (
+ 186:iostream.h    ****     int bits			   // flag bits to set
+ 187:iostream.h    ****   )
+ 188:iostream.h    ****   {
+ 189:iostream.h    ****     int old = _flags;
+ 190:iostream.h    ****     _flags |= bits;
+ 191:iostream.h    ****     return old;
+ 192:iostream.h    ****   }
+ 193:iostream.h    **** 
+ 194:iostream.h    ****   int setf			// set some flags in given field
+ 195:iostream.h    ****   (
+ 196:iostream.h    ****     int bits,			   // flag bits to set
+ 197:iostream.h    ****     int field			   // flag bits to clear first
+ 198:iostream.h    ****   )
+ 199:iostream.h    ****   {
+ 200:iostream.h    ****     int old = _flags;
+ 201:iostream.h    ****     _flags = (_flags & ~field) | (bits & field);
+ 202:iostream.h    ****     return old;
+ 203:iostream.h    ****   }
+ 204:iostream.h    **** 
+ 205:iostream.h    ****   int unsetf			// clear some formatting flags
+ 206:iostream.h    ****   (
+ 207:iostream.h    ****     int bits			   // flag bits to clear
+ 208:iostream.h    ****   )
+ 209:iostream.h    ****   {
+ 210:iostream.h    ****     int old = _flags;
+ 211:iostream.h    ****     _flags &= ~bits;
+ 212:iostream.h    ****     return old;
+ 213:iostream.h    ****   }
+ 214:iostream.h    **** 
+ 215:iostream.h    **** 
+ 216:iostream.h    ****   // field width control
+ 217:iostream.h    **** 
+ 218:iostream.h    ****   int width() const		// get current field width
+ 219:iostream.h    ****   {
+ 220:iostream.h    ****     return _width;
+ 221:iostream.h    ****   }
+ 222:iostream.h    **** 
+ 223:iostream.h    ****   int width			// get/set field width
+ 224:iostream.h    ****   (
+ 225:iostream.h    ****     int w			   // new width to set
+ 226:iostream.h    ****   )
+ 227:iostream.h    ****   {
+ 228:iostream.h    ****     int old = _width;
+ 229:iostream.h    ****     _width = w;
+ 230:iostream.h    ****     return old;
+ 231:iostream.h    ****   }
+ 232:iostream.h    **** 
+ 233:iostream.h    **** 
+ 234:iostream.h    ****   // output padding character control
+ 235:iostream.h    **** 
+ 236:iostream.h    ****   char fill() const		// get current fill character
+ 237:iostream.h    ****   {
+ 238:iostream.h    ****     return _fill;
+ 239:iostream.h    ****   }
+ 240:iostream.h    **** 
+ 241:iostream.h    ****   char fill			// get/set fill character
+ 242:iostream.h    ****   (
+ 243:iostream.h    ****     char f			   // new fill character
+ 244:iostream.h    ****   )
+ 245:iostream.h    ****   {
+ 246:iostream.h    ****     char old = _fill;
+ 247:iostream.h    ****     _fill = f;
+ 248:iostream.h    ****     return old;
+ 249:iostream.h    ****   }
+ 250:iostream.h    **** 
+ 251:iostream.h    **** 
+ 252:iostream.h    ****   // float output precision control
+ 253:iostream.h    **** 
+ 254:iostream.h    ****   int precision() const		// get float output precision
+ 255:iostream.h    ****   {
+ 256:iostream.h    ****     return _precision;
+ 257:iostream.h    ****   }
+ 258:iostream.h    **** 
+ 259:iostream.h    ****   int precision			// get/set output precision
+ 260:iostream.h    ****   (
+ 261:iostream.h    ****     int p			   // new float precision
+ 262:iostream.h    ****   )
+ 263:iostream.h    ****   {
+ 264:iostream.h    ****     int old = _precision;
+ 265:iostream.h    ****     _precision = p;
+ 266:iostream.h    ****     return old;
+ 267:iostream.h    ****   }
+ 268:iostream.h    **** 
+ 269:iostream.h    **** 
+ 270:iostream.h    ****   // tied stream control
+ 271:iostream.h    **** 
+ 272:iostream.h    ****   class ostream* tie() const	// return pointer to tied ostream
+ 273:iostream.h    ****   {
+ 274:iostream.h    ****     return _tie;
+ 275:iostream.h    ****   }
+ 276:iostream.h    **** 
+ 277:iostream.h    ****   class ostream* ios::tie	// set/get pointer to tied stream
+ 278:iostream.h    ****   (
+ 279:iostream.h    ****     ostream* os      		   // new tied output stream
+ 280:iostream.h    ****   )
+ 281:iostream.h    ****   {
+ 282:iostream.h    ****     ostream* old = _tie;
+ 283:iostream.h    ****     _tie = os;
+ 284:iostream.h    ****     return old;
+ 285:iostream.h    ****   }
+ 286:iostream.h    **** 
+ 287:iostream.h    **** 
+ 288:iostream.h    **** protected:
+ 289:iostream.h    ****   ios();			// create uninitialized ios
+ 290:iostream.h    **** 
+ 291:iostream.h    ****   void init			// initialize stream
+ 292:iostream.h    ****   (
+ 293:iostream.h    ****     class streambuf* s,		   // buffer for stream
+ 294:iostream.h    ****     class ostream* t = 0	   // ostream to tie to
+ 295:iostream.h    ****   );
+ 296:iostream.h    ****   
+ 297:iostream.h    **** private:
+ 298:iostream.h    ****   ios(ios&);			// protect from copying
+ 299:iostream.h    ****   operator = (ios&);		// protect from assignment
+ 300:iostream.h    **** 
+ 301:iostream.h    ****   class streambuf* _sb;		// the associated streambuf
+ 302:iostream.h    ****   class ostream* _tie;		// tied ostream, if any
+ 303:iostream.h    **** 
+ 304:iostream.h    ****   int _state;			// stream state
+ 305:iostream.h    **** 
+ 306:iostream.h    ****   int _flags;			// formatting flags
+ 307:iostream.h    ****   int _width;			// field width for next operation
+ 308:iostream.h    ****   int _precision;		// float output precision
+ 309:iostream.h    ****   int _fill;			// output fill character
+ 310:iostream.h    **** };
+ 311:iostream.h    **** 
+ 312:iostream.h    **** 
+ 313:iostream.h    **** //---------------------------------------------------------------------------
+ 314:iostream.h    **** //
+ 315:iostream.h    **** //	Base class for all stream buffers
+ 316:iostream.h    **** //
+ 317:iostream.h    **** 
+ 318:iostream.h    **** class streambuf
+ 319:iostream.h    **** {
+ 320:iostream.h    **** public:
+ 321:iostream.h    **** 
+ 322:iostream.h    ****   // destructor
+ 323:iostream.h    **** 
+ 324:iostream.h    ****   virtual ~streambuf();		// destroy streambuf
+ 325:iostream.h    **** 
+ 326:iostream.h    **** 
+ 327:iostream.h    ****   // inserting characters
+ 328:iostream.h    **** 
+ 329:iostream.h    ****   int out_waiting();		// get number of characters waiting
+ 330:iostream.h    **** 
+ 331:iostream.h    ****   int sputc			// put character to streambuf
+ 332:iostream.h    ****   (
+ 333:iostream.h    ****     int c			   // character to put
+ 334:iostream.h    ****   );
+ 335:iostream.h    **** 
+ 336:iostream.h    ****   int sputn			// put block to streambuf
+ 337:iostream.h    ****   (
+ 338:iostream.h    ****     const char* buf, int len	   // buffer and length
+ 339:iostream.h    ****   )
+ 340:iostream.h    ****   {
+ 341:iostream.h    ****     return xsputn(buf, len);
+ 342:iostream.h    ****   }
+ 343:iostream.h    **** 
+ 344:iostream.h    **** 
+ 345:iostream.h    ****   // extracting characters
+ 346:iostream.h    **** 
+ 347:iostream.h    ****   virtual int in_avail();	// get number of characters available
+ 348:iostream.h    **** 
+ 349:iostream.h    ****   int sgetc();			// get character, leave in buffer
+ 350:iostream.h    **** 
+ 351:iostream.h    ****   int snextc();			// advance to and get next character
+ 352:iostream.h    **** 
+ 353:iostream.h    ****   int sbumpc();			// get character, advance to next character
+ 354:iostream.h    **** 
+ 355:iostream.h    ****   void stossc();		// advance to next character
+ 356:iostream.h    **** 
+ 357:iostream.h    ****   int sgetn			// get block from streambuf
+ 358:iostream.h    ****   (
+ 359:iostream.h    ****     char* buf, int len		   // buffer and length
+ 360:iostream.h    ****   )
+ 361:iostream.h    ****   {
+ 362:iostream.h    ****     return xsgetn(buf, len);
+ 363:iostream.h    ****   }
+ 364:iostream.h    **** 
+ 365:iostream.h    ****   int sputbackc			// push character back on stream
+ 366:iostream.h    ****   (
+ 367:iostream.h    ****     char c
+ 368:iostream.h    ****   );
+ 369:iostream.h    **** 
+ 370:iostream.h    **** 
+ 371:iostream.h    ****   // positioning stream
+ 372:iostream.h    **** 
+ 373:iostream.h    ****   virtual streampos seekoff	// seek from given point
+ 374:iostream.h    ****   (
+ 375:iostream.h    ****     streamoff off,		     // desired offset
+ 376:iostream.h    ****     ios::seek_dir dir,		     // point to seek from
+ 377:iostream.h    ****     int mode = (ios::in | ios::out)  // stream mode to seek
+ 378:iostream.h    ****   );
+ 379:iostream.h    **** 
+ 380:iostream.h    ****   virtual streampos seekpos	// seek to absolute position
+ 381:iostream.h    ****   (
+ 382:iostream.h    ****     streampos pos,		     // desired offset
+ 383:iostream.h    ****     int mode = (ios::in | ios::out)  // stream mode to seek
+ 384:iostream.h    ****   );
+ 385:iostream.h    **** 
+ 386:iostream.h    **** 
+ 387:iostream.h    ****   // buffer maintenance
+ 388:iostream.h    **** 
+ 389:iostream.h    ****   virtual int sync();		// flush output buffer
+ 390:iostream.h    **** 
+ 391:iostream.h    **** 
+ 392:iostream.h    **** protected:
+ 393:iostream.h    **** 
+ 394:iostream.h    ****   // constructors
+ 395:iostream.h    **** 
+ 396:iostream.h    ****   streambuf();			// create without buffer
+ 397:iostream.h    **** 
+ 398:iostream.h    ****   streambuf			// create from supplied buffer
+ 399:iostream.h    ****   (
+ 400:iostream.h    ****     char* buf, int len		   // buffer and length
+ 401:iostream.h    ****   );
+ 402:iostream.h    **** 
+ 403:iostream.h    **** 
+ 404:iostream.h    ****   // pointer manipulation
+ 405:iostream.h    **** 
+ 406:iostream.h    ****   void setb			// set up physical buffer
+ 407:iostream.h    ****   (
+ 408:iostream.h    ****     char* base,			   // base pointer
+ 409:iostream.h    ****     char* ebuf,			   // end pointer
+ 410:iostream.h    ****     int del			   // non-zero if destructor should delete
+ 411:iostream.h    ****   );
+ 412:iostream.h    **** 
+ 413:iostream.h    ****   void setp			// set up put area pointers
+ 414:iostream.h    ****   (
+ 415:iostream.h    ****     char* base_cur,		   // base and current pointer
+ 416:iostream.h    ****     char* end			   // end pointer
+ 417:iostream.h    ****   );
+ 418:iostream.h    **** 
+ 419:iostream.h    ****   void setg			// set up get area pointers
+ 420:iostream.h    ****   (
+ 421:iostream.h    ****     char* base,			   // base pointer
+ 422:iostream.h    ****     char* cur,			   // current pointer
+ 423:iostream.h    ****     char* end			   // end pointer
+ 424:iostream.h    ****   );
+ 425:iostream.h    **** 
+ 426:iostream.h    ****   int blen() const		// get length of physical buffer
+ 427:iostream.h    ****   {
+ 428:iostream.h    ****     return _ebuf - _base;
+ 429:iostream.h    ****   }   
+ 430:iostream.h    **** 
+ 431:iostream.h    ****   char* base() const		// get start of physical buffer
+ 432:iostream.h    ****   {
+ 433:iostream.h    ****     return _base;
+ 434:iostream.h    ****   }
+ 435:iostream.h    **** 
+ 436:iostream.h    ****   char* ebuf() const		// get end of physical buffer
+ 437:iostream.h    ****   {
+ 438:iostream.h    ****     return _ebuf;
+ 439:iostream.h    ****   }
+ 440:iostream.h    **** 
+ 441:iostream.h    ****   char* pbase()	const		// get start of put area
+ 442:iostream.h    ****   {
+ 443:iostream.h    ****     return _pbase;
+ 444:iostream.h    ****   }
+ 445:iostream.h    **** 
+ 446:iostream.h    ****   char* pptr() const		// get current position in put area
+ 447:iostream.h    ****   {
+ 448:iostream.h    ****     return _pptr;
+ 449:iostream.h    ****   }
+ 450:iostream.h    **** 
+ 451:iostream.h    ****   char* epptr()	const		// get end of put area
+ 452:iostream.h    ****   {
+ 453:iostream.h    ****     return _epptr;
+ 454:iostream.h    ****   }
+ 455:iostream.h    **** 
+ 456:iostream.h    ****   char* eback()	const		// get start of get area
+ 457:iostream.h    ****   {
+ 458:iostream.h    ****     return _eback;
+ 459:iostream.h    ****   }
+ 460:iostream.h    **** 
+ 461:iostream.h    ****   char* gptr() const		// get current position in get area
+ 462:iostream.h    ****   {
+ 463:iostream.h    ****     return _gptr;
+ 464:iostream.h    ****   }
+ 465:iostream.h    **** 
+ 466:iostream.h    ****   char* egptr()	const		// get end of get area
+ 467:iostream.h    ****   {
+ 468:iostream.h    ****     return _egptr;
+ 469:iostream.h    ****   }
+ 470:iostream.h    **** 
+ 471:iostream.h    ****   void pbump			// update the put pointer (no checking)
+ 472:iostream.h    ****   (
+ 473:iostream.h    ****     int change			   // change amount
+ 474:iostream.h    ****   )
+ 475:iostream.h    ****   {
+ 476:iostream.h    ****     _pptr += change;
+ 477:iostream.h    ****   }
+ 478:iostream.h    **** 
+ 479:iostream.h    ****   void gbump			// update the get pointer (no checking)
+ 480:iostream.h    ****   (
+ 481:iostream.h    ****     int change			   // change amount
+ 482:iostream.h    ****   )
+ 483:iostream.h    ****   {
+ 484:iostream.h    ****     _gptr += change;
+ 485:iostream.h    ****   }
+ 486:iostream.h    **** 
+ 487:iostream.h    **** 
+ 488:iostream.h    ****   // inserting characters
+ 489:iostream.h    ****   
+ 490:iostream.h    ****   virtual int overflow		// flush buffer, put one more character
+ 491:iostream.h    ****   (
+ 492:iostream.h    ****     int c = EOF			   // character to send after flush
+ 493:iostream.h    ****   );
+ 494:iostream.h    **** 
+ 495:iostream.h    ****   virtual int xsputn		// implementation of sputn
+ 496:iostream.h    ****   (
+ 497:iostream.h    ****     const char* buf, int len	   // buffer and length
+ 498:iostream.h    ****   );
+ 499:iostream.h    **** 
+ 500:iostream.h    **** 
+ 501:iostream.h    ****   // extracting characters
+ 502:iostream.h    **** 
+ 503:iostream.h    ****   virtual int underflow();	// fill empty buffer, get one more character
+ 504:iostream.h    **** 
+ 505:iostream.h    ****   virtual int xsgetn		// implementation of sgetn
+ 506:iostream.h    ****   (
+ 507:iostream.h    ****     char* buf, int len		   // buffer and length
+ 508:iostream.h    ****   );
+ 509:iostream.h    **** 
+ 510:iostream.h    ****   virtual int pbackfail		// implementation of sputbackc
+ 511:iostream.h    ****   (
+ 512:iostream.h    ****     int c			   // character to put back
+ 513:iostream.h    ****   );
+ 514:iostream.h    **** 
+ 515:iostream.h    **** 
+ 516:iostream.h    **** private:
+ 517:iostream.h    ****   streambuf(streambuf&);	// protect from copying
+ 518:iostream.h    ****   operator = (streambuf&);	// protect from assignment
+ 519:iostream.h    **** 
+ 520:iostream.h    ****   int _del;			// destructor should delete buffer
+ 521:iostream.h    **** 
+ 522:iostream.h    ****   char* _base;			// start of physical buffer
+ 523:iostream.h    ****   char* _ebuf;			// end of physical buffer
+ 524:iostream.h    **** 
+ 525:iostream.h    ****   char* _pbase;			// start of put area
+ 526:iostream.h    ****   char* _pptr;			// current position in put area
+ 527:iostream.h    ****   char* _epptr;			// end of put area
+ 528:iostream.h    **** 
+ 529:iostream.h    ****   char* _eback;			// start of get area
+ 530:iostream.h    ****   char* _gptr;			// current position in get area
+ 531:iostream.h    ****   char* _egptr;			// end of get area
+ 532:iostream.h    **** };
+ 533:iostream.h    **** 
+ 534:iostream.h    **** 
+ 535:iostream.h    **** //---------------------------------------------------------------------------
+ 536:iostream.h    **** //
+ 537:iostream.h    **** //	Base class for all input streams
+ 538:iostream.h    **** //
+ 539:iostream.h    **** 
+ 540:iostream.h    **** class istream : virtual public ios
+ 541:iostream.h    **** {
+ 542:iostream.h    **** public:
+ 543:iostream.h    **** 
+ 544:iostream.h    ****   // constructor and destructor
+ 545:iostream.h    **** 
+ 546:iostream.h    ****   istream                       // create stream
+ 547:iostream.h    ****   (
+ 548:iostream.h    ****     streambuf* s		   // buffer to use
+ 549:iostream.h    ****   );
+ 550:iostream.h    **** 
+ 551:iostream.h    ****   virtual ~istream();		// destroy stream
+ 552:iostream.h    **** 
+ 553:iostream.h    **** 
+ 554:iostream.h    ****   // buffer maintenance
+ 555:iostream.h    **** 
+ 556:iostream.h    ****   int ipfx			// called before extraction operation
+ 557:iostream.h    ****   (
+ 558:iostream.h    ****     int unformatted = 0		   // zero to skip whitespace
+ 559:iostream.h    ****   );
+ 560:iostream.h    **** 
+ 561:iostream.h    ****   void isfx()			// called after extraction operation
+ 562:iostream.h    ****   {
+ 563:iostream.h    ****   }
+ 564:iostream.h    **** 
+ 565:iostream.h    **** 
+ 566:iostream.h    ****   // stream positioning
+ 567:iostream.h    **** 
+ 568:iostream.h    ****   streampos tellg();		// get stream position
+ 569:iostream.h    **** 
+ 570:iostream.h    ****   istream& seekg		// set stream to absolute position
+ 571:iostream.h    ****   (
+ 572:iostream.h    ****     streampos p			   // desired position
+ 573:iostream.h    ****   );
+ 574:iostream.h    **** 
+ 575:iostream.h    ****   istream& seekg		// set stream position relative to point
+ 576:iostream.h    ****   (
+ 577:iostream.h    ****     streamoff o,		   // offset from given point
+ 578:iostream.h    ****     ios::seek_dir d		   // point to seek from
+ 579:iostream.h    ****   );
+ 580:iostream.h    **** 
+ 581:iostream.h    ****   int sync()			// flush associated output stream
+ 582:iostream.h    ****   {
+ 583:iostream.h    ****     return rdbuf()->sync();
+ 584:iostream.h    ****   }
+ 585:iostream.h    **** 
+ 586:iostream.h    **** 
+ 587:iostream.h    ****   // unformatted extraction
+ 588:iostream.h    **** 
+ 589:iostream.h    ****   int get();			// get one character from stream
+ 590:iostream.h    **** 
+ 591:iostream.h    ****   int peek();			// get one character, leave in stream
+ 592:iostream.h    **** 
+ 593:iostream.h    ****   istream& get			// get one character from stream
+ 594:iostream.h    ****   (
+ 595:iostream.h    ****     char& c			   // target character
+ 596:iostream.h    ****   );
+ 597:iostream.h    **** 
+ 598:iostream.h    ****   istream& get  		// get block into streambuf
+ 599:iostream.h    ****   (
+ 600:iostream.h    ****     streambuf& s,		   // buffer
+ 601:iostream.h    ****     int term = '\n'		   // terminator (not copied, left in source)
+ 602:iostream.h    ****   );
+ 603:iostream.h    **** 
+ 604:iostream.h    ****   istream& get 			// get block into character string
+ 605:iostream.h    ****   (
+ 606:iostream.h    ****     char* buf, int len,		   // buffer and length
+ 607:iostream.h    ****     int term = '\n'		   // terminator (not copied, left in source)
+ 608:iostream.h    ****   );
+ 609:iostream.h    **** 
+ 610:iostream.h    ****   istream& getline		// get block into character string
+ 611:iostream.h    ****   (
+ 612:iostream.h    ****     char* buf, int len,		   // buffer and length
+ 613:iostream.h    ****     int term = '\n'		   // terminator (extract and discarded)
+ 614:iostream.h    ****   );
+ 615:iostream.h    **** 
+ 616:iostream.h    ****   istream& read			// get block of characters into buffer
+ 617:iostream.h    ****   (
+ 618:iostream.h    ****     char* buf, int len		   // buffer and length
+ 619:iostream.h    ****   );
+ 620:iostream.h    **** 
+ 621:iostream.h    ****   istream& putback		// push character back on stream
+ 622:iostream.h    ****   (
+ 623:iostream.h    ****     char c			   // character to push
+ 624:iostream.h    ****   );
+ 625:iostream.h    **** 
+ 626:iostream.h    ****   istream& ignore		// ignore characters
+ 627:iostream.h    ****   (
+ 628:iostream.h    ****     int count = 1,		   // number to ignore
+ 629:iostream.h    ****     int term = EOF		   // terminator (extract and discard)
+ 630:iostream.h    ****   );
+ 631:iostream.h    **** 
+ 632:iostream.h    ****   int gcount()			// extraction count from last unformatted op.
+ 633:iostream.h    ****   {
+ 634:iostream.h    ****     return _gcount;
+ 635:iostream.h    ****   }
+ 636:iostream.h    **** 
+ 637:iostream.h    **** 
+ 638:iostream.h    ****   // formatted extraction
+ 639:iostream.h    **** 
+ 640:iostream.h    ****   istream& operator >> (char&);		 // extract character
+ 641:iostream.h    **** 
+ 642:iostream.h    ****   istream& operator >> (int&);		 // extract integer
+ 643:iostream.h    **** 
+ 644:iostream.h    ****   istream& operator >> (unsigned int&);	 // extract unsigned integer
+ 645:iostream.h    **** 
+ 646:iostream.h    ****   istream& operator >> (long&);		 // extract long integer
+ 647:iostream.h    **** 
+ 648:iostream.h    ****   istream& operator >> (unsigned long&); // extract unsigned long integer
+ 649:iostream.h    **** 
+ 650:iostream.h    ****   istream& operator >> (float&);	 // extract single float
+ 651:iostream.h    **** 
+ 652:iostream.h    ****   istream& operator >> (double&);	 // extract double float
+ 653:iostream.h    **** 
+ 654:iostream.h    ****   istream& operator >> (char*);		 // extract token to string
+ 655:iostream.h    **** 
+ 656:iostream.h    ****   istream& operator >> (streambuf*);	 // extract into streambuf
+ 657:iostream.h    **** 
+ 658:iostream.h    ****   istream& operator >> (istream& (*f)(istream&))	// manipulator
+ 659:iostream.h    ****   {
+ 660:iostream.h    ****     return (*f)(*this);
+ 661:iostream.h    ****   }
+ 662:iostream.h    **** 
+ 663:iostream.h    ****   istream& operator >> (ios& (*f)(ios&))		// manipulator
+ 664:iostream.h    ****   {
+ 665:iostream.h    ****     (*f)(*this);
+ 666:iostream.h    ****     return *this;
+ 667:iostream.h    ****   }
+ 668:iostream.h    **** 
+ 669:iostream.h    **** 
+ 670:iostream.h    **** protected:
+ 671:iostream.h    ****   istream();			// create without initializing
+ 672:iostream.h    **** 
+ 673:iostream.h    **** private:
+ 674:iostream.h    ****   istream(istream&);		// protect from copying
+ 675:iostream.h    ****   operator = (istream&);	// protect from assignment
+ 676:iostream.h    **** 
+ 677:iostream.h    ****   int _gcount;			// count from last unformatted extraction
+ 678:iostream.h    **** };
+ 679:iostream.h    **** 
+ 680:iostream.h    **** 
+ 681:iostream.h    **** //---------------------------------------------------------------------------
+ 682:iostream.h    **** //
+ 683:iostream.h    **** //	Base class for all output streams
+ 684:iostream.h    **** //
+ 685:iostream.h    **** 
+ 686:iostream.h    **** class ostream : virtual public ios
+ 687:iostream.h    **** {
+ 688:iostream.h    **** public:
+ 689:iostream.h    **** 
+ 690:iostream.h    ****   // constructor and destructor
+ 691:iostream.h    **** 
+ 692:iostream.h    ****   ostream       		// create stream
+ 693:iostream.h    ****   (
+ 694:iostream.h    ****     streambuf* s		   // buffer to use
+ 695:iostream.h    ****   );
+ 696:iostream.h    **** 
+ 697:iostream.h    ****   virtual ~ostream();		// destroy stream
+ 698:iostream.h    **** 
+ 699:iostream.h    **** 
+ 700:iostream.h    ****   // buffer maintenance
+ 701:iostream.h    **** 
+ 702:iostream.h    ****   int opfx();			// called before insertion
+ 703:iostream.h    **** 
+ 704:iostream.h    ****   void osfx();			// called after insertion
+ 705:iostream.h    **** 
+ 706:iostream.h    ****   ostream& flush();		// flush output buffer
+ 707:iostream.h    **** 
+ 708:iostream.h    **** 
+ 709:iostream.h    ****   // stream positioning
+ 710:iostream.h    **** 
+ 711:iostream.h    ****   streampos tellp();		// get stream position
+ 712:iostream.h    **** 
+ 713:iostream.h    ****   ostream& seekp		// set stream to absolute position
+ 714:iostream.h    ****   (
+ 715:iostream.h    ****     streampos p			   // desired position
+ 716:iostream.h    ****   );
+ 717:iostream.h    **** 
+ 718:iostream.h    ****   ostream& seekp		// set stream position relative to point
+ 719:iostream.h    ****   (
+ 720:iostream.h    ****     streamoff o,		   // offset from given point
+ 721:iostream.h    ****     ios::seek_dir d		   // point to seek from
+ 722:iostream.h    ****   );
+ 723:iostream.h    **** 
+ 724:iostream.h    **** 
+ 725:iostream.h    ****   // unformatted insertion
+ 726:iostream.h    **** 
+ 727:iostream.h    ****   ostream& put			// put character onto stream
+ 728:iostream.h    ****   (
+ 729:iostream.h    ****     char c			   // character to put
+ 730:iostream.h    ****   );
+ 731:iostream.h    **** 
+ 732:iostream.h    ****   ostream& write		// put buffer onto stream
+ 733:iostream.h    ****   (
+ 734:iostream.h    ****     const char* buf, int len	   // buffer and length
+ 735:iostream.h    ****   );
+ 736:iostream.h    **** 
+ 737:iostream.h    **** 
+ 738:iostream.h    ****   // formatted insertion
+ 739:iostream.h    **** 
+ 740:iostream.h    ****   ostream& operator << (char);		// insert character
+ 741:iostream.h    **** 
+ 742:iostream.h    ****   ostream& operator << (int);		// insert integer
+ 743:iostream.h    **** 
+ 744:iostream.h    ****   ostream& operator << (unsigned int);	// insert unsigned integer
+ 745:iostream.h    **** 
+ 746:iostream.h    ****   ostream& operator << (long);		// insert long integer
+ 747:iostream.h    **** 
+ 748:iostream.h    ****   ostream& operator << (unsigned long);	// insert unsigned long integer
+ 749:iostream.h    **** 
+ 750:iostream.h    ****   ostream& operator << (float);		// insert single float
+ 751:iostream.h    **** 
+ 752:iostream.h    ****   ostream& operator << (double d);	// insert double float
+ 753:iostream.h    **** 
+ 754:iostream.h    ****   ostream& operator << (const char*);	// insert zero-terminated string
+ 755:iostream.h    **** 
+ 756:iostream.h    ****   ostream& operator << (void*);		// insert pointer value
+ 757:iostream.h    **** 
+ 758:iostream.h    ****   ostream& operator << (streambuf*);	// insert contents of streambuf
+ 759:iostream.h    **** 
+ 760:iostream.h    ****   ostream& operator << (ostream& (*f)(ostream&))	// manipulator
+ 761:iostream.h    ****   {
+ 399              	Ltext8	stabd 68,0,761
+ 400              	
+ 401              	LBB11
+ 762:iostream.h    ****     return (*f)(*this);
+ 402              	LBB12	stabd 68,0,762
+ 403 0138 160000   		jsr	_endl__FR7ostream
+ 404              	
+ 763:iostream.h    ****   }
+ 405              	LBE12	stabd 68,0,763
+ 406              	
+ 407              	LBE11	stabs "main.cc",132,0,0,Ltext9
+ 408              	
+  44:main.cc       **** 
+  45:main.cc       ****   TestTask * tt2 = 0;
+  46:main.cc       ****   TestTask * tt4 = 0;
+  47:main.cc       ****   TestTask * tt5 = 0;
+  48:main.cc       **** 
+  49:main.cc       ****   // Just some simple little tasks for toggling bits.
+  50:main.cc       ****   tt2 = new TestTask( stackSize, priTestTask1, bitmask2, 5, 2 );
+ 409              	Ltext9	stabd 68,0,50
+ 410 013b CC000E   		ldd	#14
+ 411 013e 160000   		jsr	___builtin_new
+ 412 0141 6CF014   		std	20,s
+ 413              		stabs "testtask.h",132,0,0,Ltext10
+ 414              	
+   1:testtask.h    **** // Filename:      TESTTASK.H
+   2:testtask.h    **** // Author:        C. DAVYDUKE
+   3:testtask.h    **** // File Created:  03/11/28
+   4:testtask.h    **** // Last Modified: 03/12/17
+   5:testtask.h    **** // Description:	This file contains the class definitions for the testtask class.
+   6:testtask.h    **** 
+   7:testtask.h    **** #ifndef __TESTTASK_H__
+   8:testtask.h    **** #define __TESTTASK_H__
+   9:testtask.h    **** 
+  10:testtask.h    **** #include "stddef.h"
+  11:testtask.h    **** #include "task.h"
+  12:testtask.h    **** #include "chipio.h"
+  13:testtask.h    **** #include "timertask.h"
+  14:testtask.h    **** #include "interrupts.h"
+  15:testtask.h    **** 
+  16:testtask.h    **** class TestTask : public Task
+  17:testtask.h    **** {
+  18:testtask.h    ****   public:
+  19:testtask.h    ****     TestTask( size_t ss, unsigned int p, unsigned int b, unsigned int c, int t )
+  20:testtask.h    ****     : Task( ss, p ),
+ 415              	Ltext10	stabd 68,0,20
+ 416              	
+ 417 0144 18008002 	LBB13	movw	#512,0,s
+ 417      00
+ 418 0149 18008200 		movw	#1,2,s
+ 418      01
+ 419 014e 160000   		jsr	___4TaskUiUi
+ 420 0151 CE0018   		ldx	#___vt_8TestTask
+ 421 0154 EDF014   		ldy	20,s
+ 422 0157 6E46     		stx	6,y
+ 423 0159 CC0004   		ldd	#4
+ 424 015c 6C48     		std	8,y
+ 425 015e CE0005   		ldx	#5
+ 426 0161 6E4A     		stx	10,y
+ 427 0163 CC0002   		ldd	#2
+ 428 0166 6C4C     		std	12,y
+  21:testtask.h    ****       bitmask( b ),
+  22:testtask.h    ****       count( c ),
+  23:testtask.h    ****       time( t )
+  24:testtask.h    ****     {
+ 429              		stabd 68,0,24
+ 430              	
+  25:testtask.h    ****       ddrdlc |= bitmask;
+ 431              	LBB14	stabd 68,0,25
+ 432 0168 F60000   		ldab	_ddrdlc
+ 433 016b EA49     		orab	9,y
+ 434 016d 7B0000   		stab	_ddrdlc
+  26:testtask.h    ****       portdlc &= ~bitmask;
+ 435              		stabd 68,0,26
+ 436 0170 E649     		ldab	9,y
+ 437 0172 51       		comb	
+ 438 0173 6BF013   		stab	19,s
+ 439 0176 F60000   		ldab	_portdlc
+ 440 0179 E4F013   		andb	19,s
+ 441 017c 7B0000   		stab	_portdlc
+  27:testtask.h    ****       fork();
+ 442              		stabd 68,0,27
+ 443 017f ECF014   		ldd	20,s
+ 444 0182 160000   		jsr	_fork__4Task
+ 445              	
+  28:testtask.h    ****     }
+ 446              	LBE14	stabd 68,0,28
+ 447              	
+ 448              	LBE13	stabs "main.cc",132,0,0,Ltext11
+ 449              	
+  51:main.cc       ****   tt4 = new TestTask( stackSize, priTestTask2, bitmask4, 1, 4 );
+ 450              	Ltext11	stabd 68,0,51
+ 451 0185 CC000E   		ldd	#14
+ 452 0188 160000   		jsr	___builtin_new
+ 453 018b 6CF011   		std	17,s
+ 454              		stabs "testtask.h",132,0,0,Ltext12
+ 455              	
+ 456              	Ltext12	stabd 68,0,20
+ 457              	
+ 458 018e 18008002 	LBB15	movw	#512,0,s
+ 458      00
+ 459 0193 18008200 		movw	#2,2,s
+ 459      02
+ 460 0198 160000   		jsr	___4TaskUiUi
+ 461 019b CE0018   		ldx	#___vt_8TestTask
+ 462 019e EDF011   		ldy	17,s
+ 463 01a1 6E46     		stx	6,y
+ 464 01a3 CC0010   		ldd	#16
+ 465 01a6 6C48     		std	8,y
+ 466 01a8 CE0001   		ldx	#1
+ 467 01ab 6E4A     		stx	10,y
+ 468 01ad CC0004   		ldd	#4
+ 469 01b0 6C4C     		std	12,y
+ 470              		stabd 68,0,24
+ 471              	
+ 472              	LBB16	stabd 68,0,25
+ 473 01b2 F60000   		ldab	_ddrdlc
+ 474 01b5 EA49     		orab	9,y
+ 475 01b7 7B0000   		stab	_ddrdlc
+ 476              		stabd 68,0,26
+ 477 01ba E649     		ldab	9,y
+ 478 01bc 51       		comb	
+ 479 01bd 6BF010   		stab	16,s
+ 480 01c0 F60000   		ldab	_portdlc
+ 481 01c3 E4F010   		andb	16,s
+ 482 01c6 7B0000   		stab	_portdlc
+ 483              		stabd 68,0,27
+ 484 01c9 ECF011   		ldd	17,s
+ 485 01cc 160000   		jsr	_fork__4Task
+ 486              	
+ 487              	LBE16	stabd 68,0,28
+ 488              	
+ 489              	LBE15	stabs "main.cc",132,0,0,Ltext13
+ 490              	
+  52:main.cc       ****   tt5 = new TestTask( stackSize, priTestTask3, bitmask5, 15, 8 );
+ 491              	Ltext13	stabd 68,0,52
+ 492 01cf CC000E   		ldd	#14
+ 493 01d2 160000   		jsr	___builtin_new
+ 494 01d5 6C8E     		std	14,s
+ 495              		stabs "testtask.h",132,0,0,Ltext14
+ 496              	
+ 497              	Ltext14	stabd 68,0,20
+ 498              	
+ 499 01d7 18008002 	LBB17	movw	#512,0,s
+ 499      00
+ 500 01dc 18008200 		movw	#3,2,s
+ 500      03
+ 501 01e1 160000   		jsr	___4TaskUiUi
+ 502 01e4 CE0018   		ldx	#___vt_8TestTask
+ 503 01e7 ED8E     		ldy	14,s
+ 504 01e9 6E46     		stx	6,y
+ 505 01eb CC0020   		ldd	#32
+ 506 01ee 6C48     		std	8,y
+ 507 01f0 CE000F   		ldx	#15
+ 508 01f3 6E4A     		stx	10,y
+ 509 01f5 CC0008   		ldd	#8
+ 510 01f8 6C4C     		std	12,y
+ 511              		stabd 68,0,24
+ 512              	
+ 513              	LBB18	stabd 68,0,25
+ 514 01fa F60000   		ldab	_ddrdlc
+ 515 01fd EA49     		orab	9,y
+ 516 01ff 7B0000   		stab	_ddrdlc
+ 517              		stabd 68,0,26
+ 518 0202 E649     		ldab	9,y
+ 519 0204 51       		comb	
+ 520 0205 6B8D     		stab	13,s
+ 521 0207 F60000   		ldab	_portdlc
+ 522 020a E48D     		andb	13,s
+ 523 020c 7B0000   		stab	_portdlc
+ 524              		stabd 68,0,27
+ 525 020f EC8E     		ldd	14,s
+ 526 0211 160000   		jsr	_fork__4Task
+ 527              	
+ 528              	LBE18	stabd 68,0,28
+ 529              	
+ 530              	LBE17	stabs "main.cc",132,0,0,Ltext15
+ 531              	
+  53:main.cc       ****   
+  54:main.cc       ****   // Must create appCmdProc task last, otherwise above tasks never run.
+  55:main.cc       ****   AppCmdProc appCmdProc( sciBuf, stackSize, priAppCmdProcTask,
+  56:main.cc       ****     pwmChannel0, pwmChannel1 );
+ 532              	Ltext15	stabd 68,0,56
+ 533 0214 19F026   		leay	38,s
+ 534 0217 6D8A     		sty	10,s
+ 535 0219 EEF024   		ldx	36,s
+ 536 021c 6E80     		stx	0,s
+ 537 021e 18008202 		movw	#512,2,s
+ 537      00
+ 538 0223 18008400 		movw	#5,4,s
+ 538      05
+ 539 0228 EDF01E   		ldy	30,s
+ 540 022b 6D86     		sty	6,s
+ 541 022d EEF01C   		ldx	28,s
+ 542 0230 6E88     		stx	8,s
+ 543 0232 EC8A     		ldd	10,s
+ 544 0234 160000   		jsr	___10AppCmdProcP9streambufUiUiR10PwmChannelT4
+  57:main.cc       ****  
+  58:main.cc       ****   // Code should never reach here, but just in case, clean up the heap.
+  59:main.cc       ****   delete tt2;
+ 545              		stabd 68,0,59
+ 546 0237 EDF014   		ldy	20,s
+ 547 023a 270D     		beq	L490
+ 548              		
+ 549 023c EE46     		ldx	6,y
+ 550 023e 18008000 		movw	#3,0,s
+ 550      03
+ 551 0243 B764     		tfr	y,d
+ 552 0245 15E30004 		jsr	[4,x]
+ 553              	
+  60:main.cc       ****   delete tt4;
+ 554              	L490	stabd 68,0,60
+ 555 0249 EDF011   		ldy	17,s
+ 556 024c 270D     		beq	L492
+ 557              		
+ 558 024e EE46     		ldx	6,y
+ 559 0250 18008000 		movw	#3,0,s
+ 559      03
+ 560 0255 B764     		tfr	y,d
+ 561 0257 15E30004 		jsr	[4,x]
+ 562              	
+  61:main.cc       ****   delete tt5;
+ 563              	L492	stabd 68,0,61
+ 564 025b ED8E     		ldy	14,s
+ 565 025d 270D     		beq	L497
+ 566              		
+ 567 025f EE46     		ldx	6,y
+ 568 0261 18008000 		movw	#3,0,s
+ 568      03
+ 569 0266 B764     		tfr	y,d
+ 570 0268 15E30004 		jsr	[4,x]
+ 571              	
+  62:main.cc       ****     
+  63:main.cc       ****   while( 1 )
+  64:main.cc       ****     Task::yield();
+ 572              	L497	stabd 68,0,64
+ 573 026c 160000   		jsr	_yield__4Task
+ 574 026f 20FB     		bra	L497
+ 575              		
+  65:main.cc       ****   
+  66:main.cc       ****   return 0;
+ 576              		stabd 68,0,66
+ 577              	
+ 578              	LBB19	stabd 68,0,56
+ 579              	
+ 580              	LBB20
+ 581              	LBE20	stabs "ltc1404.h",132,0,0,Ltext16
+ 582              	
+  37:ltc1404.h     **** 
+  38:ltc1404.h     ****   ~Ltc1404()
+  39:ltc1404.h     ****   {
+ 583              	Ltext16	stabd 68,0,39
+ 584              	
+ 585              	LBB21
+ 586              	LBB22	stabs "interrupts.h",132,0,0,Ltext17
+ 587              	
+ 588              	Ltext17	stabd 68,0,17
+ 589              	
+ 590              	LBB23
+ 591              	LBB24	stabd 68,0,20
+ 592              	
+ 593              	LBE24	stabd 68,0,21
+ 594              	
+ 595              	LBE23	stabs "ltc1404.h",132,0,0,Ltext18
+ 596              	
+  40:ltc1404.h     ****     Interrupts masked;
+ 597              	Ltext18	stabd 68,0,40
+ 598              		stabs "interrupts.h",132,0,0,Ltext19
+ 599              	
+ 600              	Ltext19	stabd 68,0,23
+ 601              	
+ 602              	LBB25
+ 603              	LBB26	stabd 68,0,25
+ 604              	
+ 605              	LBE26	stabd 68,0,26
+ 606              	
+ 607              	LBE25	stabs "ltc1404.h",132,0,0,Ltext20
+ 608              	
+  41:ltc1404.h     ****     
+  42:ltc1404.h     ****     ddrs &= ~selMask;
+  43:ltc1404.h     ****   }
+ 609              	Ltext20	stabd 68,0,43
+ 610              	
+ 611              	LBE22
+ 612              	LBE21	stabs "hc12spi.h",132,0,0,Ltext21
+ 613              	
+  27:hc12spi.h     **** 
+  28:hc12spi.h     ****   virtual ~HC12Spi()
+  29:hc12spi.h     ****   {
+ 614              	Ltext21	stabd 68,0,29
+ 615              	
+ 616              	LBB27
+  30:hc12spi.h     ****     spi.spcr1 = spi.cpha;
+ 617              	LBB28	stabd 68,0,30
+ 618              	
+  31:hc12spi.h     ****   }
+ 619              	LBE28	stabd 68,0,31
+ 620              	
+ 621              	LBE27	stabs "main.cc",132,0,0,Ltext22
+ 622              	
+ 623              	Ltext22	stabd 68,0,33
+ 624              	
+ 625              	LBB29	stabs "outputcompare.h",132,0,0,Ltext23
+ 626              	
+   1:outputcompare.h **** // Filename:		OUTPUTCOMPARE.H
+   2:outputcompare.h **** // Author:			C. DAVYDUKE
+   3:outputcompare.h **** // File Created:	03/10/21
+   4:outputcompare.h **** // Last Modified: 03/10/29
+   5:outputcompare.h **** // Description:	This file contains the class definitions for outputcompare.
+   6:outputcompare.h **** 
+   7:outputcompare.h **** #ifndef __OUTPUTCOMPARE_H__
+   8:outputcompare.h **** #define __OUTPUTCOMPARE_H__
+   9:outputcompare.h **** 
+  10:outputcompare.h **** #include "chipio.h"
+  11:outputcompare.h **** 
+  12:outputcompare.h **** class OutputCompare	// Controls 1 oc channel of the 8
+  13:outputcompare.h **** {
+  14:outputcompare.h **** 	private:
+  15:outputcompare.h **** 		volatile unsigned int & tcx;		// A reference to one of the TC0-TC7 compare registers
+  16:outputcompare.h **** 		unsigned mask;	// 1 << num ( chan number )
+  17:outputcompare.h **** 		unsigned level;	// Choose one of the 4 possible actions
+  18:outputcompare.h **** 		unsigned mode;	// on compare.
+  19:outputcompare.h **** 
+  20:outputcompare.h **** 	public:
+  21:outputcompare.h **** 		OutputCompare( int num, bool enable = false )
+  22:outputcompare.h **** 		:	tcx( ( & tc0 )[num] ),
+  23:outputcompare.h **** 			mask( 1 << num ),
+  24:outputcompare.h **** 			level( ol << ( 2 * num ) ),
+  25:outputcompare.h **** 			mode( om << ( 2 * num ) )
+  26:outputcompare.h **** 			{
+  27:outputcompare.h **** 				tscr |= ( ten | tffca );	// Set up tcnt and interrupt ack system
+  28:outputcompare.h **** 				tcx = tcnt - 1;		// Set max time till next compare
+  29:outputcompare.h **** 				tios |= mask;		// Set channel to compare mode
+  30:outputcompare.h **** 
+  31:outputcompare.h **** 				if( enable )
+  32:outputcompare.h **** 				{
+  33:outputcompare.h **** 					tflg1 |= mask;	// ack any previous int.
+  34:outputcompare.h **** 					tmsk1 |= mask;	// enable the interrupt.
+  35:outputcompare.h **** 				}
+  36:outputcompare.h **** 			}
+  37:outputcompare.h **** 
+  38:outputcompare.h **** 		~OutputCompare()
+  39:outputcompare.h **** 		{
+ 627              	Ltext23	stabd 68,0,39
+ 628              	
+ 629              	LBB30
+ 630              	LBB31
+  40:outputcompare.h **** 			// fill in later
+  41:outputcompare.h **** 		}
+ 631              	LBE31	stabd 68,0,41
+ 632              	
+ 633              	LBE30	stabs "main.cc",132,0,0,Ltext24
+ 634              	
+ 635              	Ltext24	stabd 68,0,33
+ 636              		stabs "outputcompare.h",132,0,0,Ltext25
+ 637              	
+ 638              	Ltext25	stabd 68,0,39
+ 639              	
+ 640              	LBB32
+ 641              	LBB33
+ 642              	LBE33	stabd 68,0,41
+ 643              	
+ 644              	LBE32	stabs "main.cc",132,0,0,Ltext26
+ 645              	
+ 646              	Ltext26	stabd 68,0,33
+ 647              		stabs "outputcompare.h",132,0,0,Ltext27
+ 648              	
+ 649              	Ltext27	stabd 68,0,39
+ 650              	
+ 651              	LBB34
+ 652              	LBB35
+ 653              	LBE35	stabd 68,0,41
+ 654              	
+ 655              	LBE34	stabs "main.cc",132,0,0,Ltext28
+ 656              	
+ 657              	Ltext28	stabd 68,0,33
+ 658              	
+ 659              	LBE29	stabd 68,0,33
+ 660              	
+ 661              	LBB36	stabs "outputcompare.h",132,0,0,Ltext29
+ 662              	
+ 663              	Ltext29	stabd 68,0,39
+ 664              	
+ 665              	LBB37
+ 666              	LBB38
+ 667              	LBE38	stabd 68,0,41
+ 668              	
+ 669              	LBE37	stabs "main.cc",132,0,0,Ltext30
+ 670              	
+ 671              	Ltext30	stabd 68,0,33
+ 672              		stabs "outputcompare.h",132,0,0,Ltext31
+ 673              	
+ 674              	Ltext31	stabd 68,0,39
+ 675              	
+ 676              	LBB39
+ 677              	LBB40
+ 678              	LBE40	stabd 68,0,41
+ 679              	
+ 680              	LBE39	stabs "main.cc",132,0,0,Ltext32
+ 681              	
+ 682              	Ltext32	stabd 68,0,33
+ 683              		stabs "outputcompare.h",132,0,0,Ltext33
+ 684              	
+ 685              	Ltext33	stabd 68,0,39
+ 686              	
+ 687              	LBB41
+ 688              	LBB42
+ 689              	LBE42	stabd 68,0,41
+ 690              	
+ 691              	LBE41	stabs "main.cc",132,0,0,Ltext34
+ 692              	
+ 693              	Ltext34	stabd 68,0,33
+ 694              	
+ 695              	LBE36	stabd 68,0,32
+ 696              	
+ 697              	LBB43	stabs "outputcompare.h",132,0,0,Ltext35
+ 698              	
+ 699              	Ltext35	stabd 68,0,39
+ 700              	
+ 701              	LBB44
+ 702              	LBB45
+ 703              	LBE45	stabd 68,0,41
+ 704              	
+ 705              	LBE44	stabs "main.cc",132,0,0,Ltext36
+ 706              	
+ 707              	Ltext36	stabd 68,0,32
+ 708              		stabs "outputcompare.h",132,0,0,Ltext37
+ 709              	
+ 710              	Ltext37	stabd 68,0,39
+ 711              	
+ 712              	LBB46
+ 713              	LBB47
+ 714              	LBE47	stabd 68,0,41
+ 715              	
+ 716              	LBE46	stabs "main.cc",132,0,0,Ltext38
+ 717              	
+ 718              	Ltext38	stabd 68,0,32
+ 719              	
+  67:main.cc       **** }
+ 720              	LBE43	stabd 68,0,67
+ 721              	
+ 722              	LBE19
+ 723              	LBE2
+ 724 0271 1BF0FC   		leas	252,s
+ 725 0274 3D       		rts
+ 726              	
+ 727              		stabs "main:F1",36,0,29,_main
+ 728              		stabs "sciBuf:162",128,0,30,36
+ 729              		stabs "hc12Ictlr:274",128,0,31,246
+ 730              		stabs "pwmDriver:218",128,0,32,218
+ 731              		stabs "pwmChannel0:215",128,0,33,180
+ 732              		stabs "pwmChannel1:215",128,0,34,142
+ 733              		stabs "hc12TimerTask:315",128,0,35,116
+ 734              		stabs "hc12Spi:368",128,0,36,106
+ 735              		stabs "ltc1404:360",128,0,37,94
+ 736              		stabs "os:50",128,0,39,74
+ 737              		stabs "is:93",128,0,40,54
+ 738              		stabs "appCmdProc:265",128,0,56,38
+ 739              		stabn 192,0,0,LBB2
+ 740              		stabn 192,0,0,LBB3
+ 741              		stabn 192,0,0,LBB4
+ 742              		stabn 224,0,0,LBE4
+ 743              		stabn 224,0,0,LBE3
+ 744              		stabn 192,0,0,LBB5
+ 745              		stabs "masked:300",128,0,29,92
+ 746              		stabn 192,0,0,LBB6
+ 747              		stabn 192,0,0,LBB7
+ 748              		stabn 192,0,0,LBB8
+ 749              		stabn 224,0,0,LBE8
+ 750              		stabn 224,0,0,LBE7
+ 751              		stabn 192,0,0,LBB9
+ 752              		stabn 192,0,0,LBB10
+ 753              		stabn 224,0,0,LBE10
+ 754              		stabn 224,0,0,LBE9
+ 755              		stabn 224,0,0,LBE6
+ 756              		stabn 224,0,0,LBE5
+ 757              		stabn 192,0,0,LBB11
+ 758              		stabn 192,0,0,LBB12
+ 759              		stabn 224,0,0,LBE12
+ 760              		stabn 224,0,0,LBE11
+ 761              		stabn 192,0,0,LBB13
+ 762              		stabn 192,0,0,LBB14
+ 763              		stabn 224,0,0,LBE14
+ 764              		stabn 224,0,0,LBE13
+ 765              		stabn 192,0,0,LBB15
+ 766              		stabn 192,0,0,LBB16
+ 767              		stabn 224,0,0,LBE16
+ 768              		stabn 224,0,0,LBE15
+ 769              		stabn 192,0,0,LBB17
+ 770              		stabn 192,0,0,LBB18
+ 771              		stabn 224,0,0,LBE18
+ 772              		stabn 224,0,0,LBE17
+ 773              		stabn 192,0,0,LBB19
+ 774              		stabn 192,0,0,LBB20
+ 775              		stabn 224,0,0,LBE20
+ 776              		stabn 192,0,0,LBB21
+ 777              		stabs "masked:300",128,0,40,92
+ 778              		stabn 192,0,0,LBB22
+ 779              		stabn 192,0,0,LBB23
+ 780              		stabn 192,0,0,LBB24
+ 781              		stabn 224,0,0,LBE24
+ 782              		stabn 224,0,0,LBE23
+ 783              		stabn 192,0,0,LBB25
+ 784              		stabn 192,0,0,LBB26
+ 785              		stabn 224,0,0,LBE26
+ 786              		stabn 224,0,0,LBE25
+ 787              		stabn 224,0,0,LBE22
+ 788              		stabn 224,0,0,LBE21
+ 789              		stabn 192,0,0,LBB27
+ 790              		stabn 192,0,0,LBB28
+ 791              		stabn 224,0,0,LBE28
+ 792              		stabn 224,0,0,LBE27
+ 793              		stabn 192,0,0,LBB29
+ 794              		stabn 192,0,0,LBB30
+ 795              		stabn 192,0,0,LBB31
+ 796              		stabn 224,0,0,LBE31
+ 797              		stabn 224,0,0,LBE30
+ 798              		stabn 192,0,0,LBB32
+ 799              		stabn 192,0,0,LBB33
+ 800              		stabn 224,0,0,LBE33
+ 801              		stabn 224,0,0,LBE32
+ 802              		stabn 192,0,0,LBB34
+ 803              		stabn 192,0,0,LBB35
+ 804              		stabn 224,0,0,LBE35
+ 805              		stabn 224,0,0,LBE34
+ 806              		stabn 224,0,0,LBE29
+ 807              		stabn 192,0,0,LBB36
+ 808              		stabn 192,0,0,LBB37
+ 809              		stabn 192,0,0,LBB38
+ 810              		stabn 224,0,0,LBE38
+ 811              		stabn 224,0,0,LBE37
+ 812              		stabn 192,0,0,LBB39
+ 813              		stabn 192,0,0,LBB40
+ 814              		stabn 224,0,0,LBE40
+ 815              		stabn 224,0,0,LBE39
+ 816              		stabn 192,0,0,LBB41
+ 817              		stabn 192,0,0,LBB42
+ 818              		stabn 224,0,0,LBE42
+ 819              		stabn 224,0,0,LBE41
+ 820              		stabn 224,0,0,LBE36
+ 821              		stabn 192,0,0,LBB43
+ 822              		stabn 192,0,0,LBB44
+ 823              		stabn 192,0,0,LBB45
+ 824              		stabn 224,0,0,LBE45
+ 825              		stabn 224,0,0,LBE44
+ 826              		stabn 192,0,0,LBB46
+ 827              		stabn 192,0,0,LBB47
+ 828              		stabn 224,0,0,LBE47
+ 829              		stabn 224,0,0,LBE46
+ 830              		stabn 224,0,0,LBE43
+ 831              		stabn 224,0,0,LBE19
+ 832              		stabn 224,0,0,LBE2
+ 833              	
+ 834              	Lscope0	stabs "",36,0,0,Lscope0-_main
+ 835              	
+ 836              		section	.const
+ 837              		stabs "__vt_7HC12Spi:S335",38,0,60,___vt_7HC12Spi
+ 838              	___vt_7HC12Spi
+ 839 000e 0000     		dc.w	0
+ 840 0010 0000     		dc.w	0
+ 841 0012 0314     		dc.w	__$_7HC12Spi
+ 842 0014 0275     		dc.w	_get__7HC12SpiPvi
+ 843 0016 02C8     		dc.w	_put__7HC12SpiPvi
+ 844              		stabs "__vt_8TestTask:S189",38,0,57,___vt_8TestTask
+ 845              	___vt_8TestTask
+ 846 0018 0000     		dc.w	0
+ 847 001a 0000     		dc.w	0
+ 848 001c 037D     		dc.w	__$_8TestTask
+ 849 001e 032D     		dc.w	_main__8TestTask
+ 850              	
+ 851              		section	.text
+ 852              	_get__7HC12SpiPvi
+ 853              		stabs "hc12spi.h",132,0,0,Ltext39
+ 854              	
+  32:hc12spi.h     **** 
+  33:hc12spi.h     **** private:
+  34:hc12spi.h     ****   virtual void put(void* data, int bits)
+  35:hc12spi.h     ****   {
+  36:hc12spi.h     ****     char* p = static_cast<char*>(data);
+  37:hc12spi.h     ****     
+  38:hc12spi.h     ****     for (int i = 0; i < bits / 8; ++i)
+  39:hc12spi.h     ****     {
+  40:hc12spi.h     ****       spi.spdr = *p++;
+  41:hc12spi.h     ****       while ((spi.spsr & spi.spif) == 0)
+  42:hc12spi.h     ****         ;
+  43:hc12spi.h     ****     }
+  44:hc12spi.h     ****   }
+  45:hc12spi.h     **** 
+  46:hc12spi.h     ****   virtual void get(void* data, int bits)
+  47:hc12spi.h     ****   {
+ 855              	Ltext39	stabd 68,0,47
+ 856 0275 1B99     		leas	-7,s
+ 857              	
+ 858 0277 6C85     		std	5,s
+ 859              	
+  48:hc12spi.h     ****     char* p = static_cast<char*>(data);
+ 860              	LBB48	stabd 68,0,48
+ 861 0279 EE89     		ldx	9,s
+  49:hc12spi.h     ****     
+  50:hc12spi.h     ****     for (int i = 0; i < bits / 8; ++i)
+ 862              		stabd 68,0,50
+ 863              	
+ 864 027b 87C7     	LBB49	clrd	
+ 865              	
+ 866 027d 6C83     	L555	std	3,s
+ 867 027f ED8B     		ldy	11,s
+ 868 0281 6D81     		sty	1,s
+ 869 0283 2C07     		bge	L392
+ 870              		
+ 871 0285 B764     		tfr	y,d
+ 872 0287 C30007   		addd	#7
+ 873 028a 6C81     		std	1,s
+ 874              	
+ 875 028c EC81     	L392	ldd	1,s
+ 876 028e 4756     		asrd	
+ 877 0290 4756     		asrd	
+ 878 0292 4756     		asrd	
+ 879 0294 6C81     		std	1,s
+ 880 0296 ED83     		ldy	3,s
+ 881 0298 AD81     		cpy	1,s
+ 882 029a 2C29     		bge	L389
+ 883              		
+  51:hc12spi.h     ****     {
+  52:hc12spi.h     ****       spi.spdr = 0;
+ 884              		stabd 68,0,52
+ 885 029c ED85     		ldy	5,s
+ 886 029e ED48     		ldy	8,y
+ 887 02a0 C7       		clrb	
+ 888 02a1 6B45     		stab	5,y
+  53:hc12spi.h     ****       while ((spi.spsr & spi.spif) == 0)
+ 889              		stabd 68,0,53
+ 890 02a3 ED85     		ldy	5,s
+ 891 02a5 ED48     		ldy	8,y
+ 892 02a7 6D81     		sty	1,s
+ 893 02a9 E643     		ldab	3,y
+ 894 02ab 6B80     		stab	0,s
+ 895 02ad 2D06     		blt	L394
+ 896              		
+ 897              	
+ 898 02af ED81     	L393	ldy	1,s
+ 899 02b1 E643     		ldab	3,y
+ 900 02b3 2CFA     		bge	L393
+ 901              		
+ 902              	
+  54:hc12spi.h     ****         ;
+  55:hc12spi.h     ****       *p++ = spi.spdr;
+ 903              	L394	stabd 68,0,55
+ 904 02b5 ED85     		ldy	5,s
+ 905 02b7 ED48     		ldy	8,y
+ 906 02b9 E645     		ldab	5,y
+ 907 02bb 6B30     		stab	1,x+
+  56:hc12spi.h     ****     }
+ 908              		stabd 68,0,56
+ 909 02bd EC83     		ldd	3,s
+ 910 02bf C30001   		addd	#1
+ 911 02c2 06027D   		jmp	L555
+ 912              		
+ 913              	
+ 914              	L389
+ 915              	LBE49
+  57:hc12spi.h     ****   }
+ 916              	LBE48	stabd 68,0,57
+ 917              	
+ 918 02c5 1B87     		leas	7,s
+ 919 02c7 3D       		rts
+ 920              	
+ 921              		stabs "get__7HC12SpiPvi:f20",36,0,47,_get__7HC12SpiPvi
+ 922              		stabs "this:p373",160,0,47,5
+ 923              		stabs "data:p238",160,0,47,9
+ 924              		stabs "bits:p1",160,0,47,11
+ 925              		stabs "p:r71",64,0,48,2
+ 926              		stabn 192,0,0,LBB48
+ 927              		stabs "i:1",128,0,50,3
+ 928              		stabn 192,0,0,LBB49
+ 929              		stabn 224,0,0,LBE49
+ 930              		stabn 224,0,0,LBE48
+ 931              	
+ 932              	Lscope1	stabs "",36,0,0,Lscope1-_get__7HC12SpiPvi
+ 933              	_put__7HC12SpiPvi
+ 934              		stabd 68,0,35
+ 935 02c8 1B99     		leas	-7,s
+ 936              	
+ 937 02ca 6C85     		std	5,s
+ 938              	
+ 939              	LBB50	stabd 68,0,36
+ 940 02cc EE89     		ldx	9,s
+ 941              		stabd 68,0,38
+ 942              	
+ 943 02ce 87C7     	LBB51	clrd	
+ 944              	
+ 945 02d0 6C83     	L556	std	3,s
+ 946 02d2 ED8B     		ldy	11,s
+ 947 02d4 6D81     		sty	1,s
+ 948 02d6 2C07     		bge	L372
+ 949              		
+ 950 02d8 B764     		tfr	y,d
+ 951 02da C30007   		addd	#7
+ 952 02dd 6C81     		std	1,s
+ 953              	
+ 954 02df EC81     	L372	ldd	1,s
+ 955 02e1 4756     		asrd	
+ 956 02e3 4756     		asrd	
+ 957 02e5 4756     		asrd	
+ 958 02e7 6C81     		std	1,s
+ 959 02e9 ED83     		ldy	3,s
+ 960 02eb AD81     		cpy	1,s
+ 961 02ed 2C22     		bge	L369
+ 962              		
+ 963              		stabd 68,0,40
+ 964 02ef ED85     		ldy	5,s
+ 965 02f1 ED48     		ldy	8,y
+ 966 02f3 E630     		ldab	1,x+
+ 967 02f5 6B45     		stab	5,y
+ 968              		stabd 68,0,41
+ 969 02f7 ED85     		ldy	5,s
+ 970 02f9 ED48     		ldy	8,y
+ 971 02fb 6D81     		sty	1,s
+ 972 02fd E643     		ldab	3,y
+ 973 02ff 6B80     		stab	0,s
+ 974 0301 2D06     		blt	L370
+ 975              		
+ 976              	
+ 977 0303 ED81     	L373	ldy	1,s
+ 978 0305 E643     		ldab	3,y
+ 979 0307 2CFA     		bge	L373
+ 980              		
+ 981              		stabd 68,0,43
+ 982              	
+ 983 0309 EC83     	L370	ldd	3,s
+ 984 030b C30001   		addd	#1
+ 985 030e 0602D0   		jmp	L556
+ 986              		
+ 987              	
+ 988              	L369
+ 989              	LBE51
+ 990              	LBE50	stabd 68,0,44
+ 991              	
+ 992 0311 1B87     		leas	7,s
+ 993 0313 3D       		rts
+ 994              	
+ 995              		stabs "put__7HC12SpiPvi:f20",36,0,35,_put__7HC12SpiPvi
+ 996              		stabs "this:p373",160,0,35,5
+ 997              		stabs "data:p238",160,0,35,9
+ 998              		stabs "bits:p1",160,0,35,11
+ 999              		stabs "p:r71",64,0,36,2
+ 1000              		stabn 192,0,0,LBB50
+ 1001              		stabs "i:1",128,0,38,3
+ 1002              		stabn 192,0,0,LBB51
+ 1003              		stabn 224,0,0,LBE51
+ 1004              		stabn 224,0,0,LBE50
+ 1005              	
+ 1006              	Lscope2	stabs "",36,0,0,Lscope2-_put__7HC12SpiPvi
+ 1007              	__$_7HC12Spi
+ 1008              		stabd 68,0,29
+ 1009 0314 1B9E     		leas	-2,s
+ 1010              	
+ 1011 0316 B746     		tfr	d,y
+ 1012 0318 18004600 		movw	#___vt_7HC12Spi,6,y
+ 1012      0E
+ 1013              	
+ 1014              	LBB52	stabd 68,0,30
+ 1015 031d EE48     		ldx	8,y
+ 1016 031f 18080004 		movb	#4,0,x
+ 1017              	
+ 1018 0323 18028480 	LBE52	movw	4,s,0,s
+ 1019 0327 160000   		jsr	__$_3Spi
+ 1020              		stabd 68,0,31
+ 1021              	
+ 1022 032a 1B82     		leas	2,s
+ 1023 032c 3D       		rts
+ 1024              	
+ 1025              		stabs "_$_7HC12Spi:f20",36,0,29,__$_7HC12Spi
+ 1026              		stabs "this:P373",64,0,29,1
+ 1027              		stabs "__in_chrg:p1",160,0,29,4
+ 1028              		stabn 192,0,0,LBB52
+ 1029              		stabn 224,0,0,LBE52
+ 1030              	
+ 1031              	Lscope3	stabs "",36,0,0,Lscope3-__$_7HC12Spi
+ 1032              	_main__8TestTask
+ 1033              		stabs "testtask.h",132,0,0,Ltext40
+ 1034              	
+  29:testtask.h    ****     
+  30:testtask.h    ****   protected:
+  31:testtask.h    ****     virtual void main()
+  32:testtask.h    ****     {
+ 1035              	Ltext40	stabd 68,0,32
+ 1036 032d 1B9A     		leas	-6,s
+ 1037              	
+ 1038 032f 6C82     		std	2,s
+ 1039              	
+  33:testtask.h    ****       while( 1 )
+ 1040              	LBB53	stabd 68,0,33
+ 1041              	
+ 1042              	L206
+  34:testtask.h    ****       {
+  35:testtask.h    ****         TimerTask::delay( time );
+ 1043              	LBB54	stabd 68,0,35
+ 1044 0331 ED82     		ldy	2,s
+ 1045 0333 EE4C     		ldx	12,y
+ 1046 0335 B754     		tfr	x,d
+ 1047 0337 160000   		jsr	_delay__9TimerTaski
+  36:testtask.h    **** 	
+  37:testtask.h    **** 	if( 1 )
+ 1048              		stabd 68,0,37
+ 1049              	
+  38:testtask.h    **** 	{
+ 1050              	LBB55	stabd 68,0,38
+ 1051              	
+ 1052              	LBB56	stabs "interrupts.h",132,0,0,Ltext41
+ 1053              	
+ 1054              	Ltext41	stabd 68,0,17
+ 1055              	
+ 1056              	LBB57
+ 1057              	LBB58	stabd 68,0,18
+ 1058 033a B721     		tfr ccr, b
+ 1059              		stabd 68,0,19
+ 1060 033c 6C84     		std 4,s
+ 1061              		stabd 68,0,20
+ 1062 033e 1410     		sei
+ 1063              	
+ 1064              	LBE58	stabd 68,0,21
+ 1065              	
+ 1066              	LBE57	stabs "testtask.h",132,0,0,Ltext42
+ 1067              	
+  39:testtask.h    ****           Interrupts masked;  
+  40:testtask.h    **** 	  portdlc &= ~bitmask;
+ 1068              	Ltext42	stabd 68,0,40
+ 1069 0340 ED82     		ldy	2,s
+ 1070 0342 E649     		ldab	9,y
+ 1071 0344 51       		comb	
+ 1072 0345 6B81     		stab	1,s
+ 1073 0347 F60000   		ldab	_portdlc
+ 1074 034a E481     		andb	1,s
+ 1075 034c 7B0000   		stab	_portdlc
+ 1076              		stabs "interrupts.h",132,0,0,Ltext43
+ 1077              	
+ 1078              	Ltext43	stabd 68,0,23
+ 1079              	
+ 1080              	LBB59
+ 1081              	LBB60	stabd 68,0,24
+ 1082 034f EC84     		ldd 4,s
+ 1083              		stabd 68,0,25
+ 1084 0351 B712     		tfr b, ccr
+ 1085              	
+ 1086              	LBE60	stabd 68,0,26
+ 1087              	
+ 1088              	LBE59	stabs "testtask.h",132,0,0,Ltext44
+ 1089              	
+  41:testtask.h    **** 	}
+ 1090              	Ltext44	stabd 68,0,41
+ 1091              	
+ 1092              	LBE56
+  42:testtask.h    ****         
+  43:testtask.h    ****         for( unsigned int i = 0; i < count; i++ )
+ 1093              	LBE55	stabd 68,0,43
+ 1094              	
+ 1095 0353 CE0000   	LBB61	ldx	#0
+ 1096              	
+ 1097              	L216
+ 1098 0356 ED82     	LBB62	ldy	2,s
+ 1099 0358 AE4A     		cpx	10,y
+ 1100 035a 18240016 		lbhs	L217
+ 1101              		
+ 1102              		stabs "interrupts.h",132,0,0,Ltext45
+ 1103              	
+ 1104              	Ltext45	stabd 68,0,17
+ 1105              	
+ 1106              	LBB63
+ 1107              	LBB64	stabd 68,0,18
+ 1108 035e B721     		tfr ccr, b
+ 1109              		stabd 68,0,19
+ 1110 0360 6C84     		std 4,s
+ 1111              		stabd 68,0,20
+ 1112 0362 1410     		sei
+ 1113              	
+ 1114              	LBE64	stabd 68,0,21
+ 1115              	
+ 1116              	LBE63	stabs "testtask.h",132,0,0,Ltext46
+ 1117              	
+  44:testtask.h    **** 	{
+  45:testtask.h    **** 	  Interrupts masked;
+  46:testtask.h    ****           portdlc ^= bitmask;
+ 1118              	Ltext46	stabd 68,0,46
+ 1119 0364 F60000   		ldab	_portdlc
+ 1120 0367 E849     		eorb	9,y
+ 1121 0369 7B0000   		stab	_portdlc
+ 1122              		stabs "interrupts.h",132,0,0,Ltext47
+ 1123              	
+ 1124              	Ltext47	stabd 68,0,23
+ 1125              	
+ 1126              	LBB65
+ 1127              	LBB66	stabd 68,0,24
+ 1128 036c EC84     		ldd 4,s
+ 1129              		stabd 68,0,25
+ 1130 036e B712     		tfr b, ccr
+ 1131              	
+ 1132              	LBE66	stabd 68,0,26
+ 1133              	
+ 1134              	LBE65	stabs "testtask.h",132,0,0,Ltext48
+ 1135              	
+  47:testtask.h    **** 	}
+ 1136              	Ltext48	stabd 68,0,47
+ 1137              	
+ 1138 0370 08       	LBE62	inx	
+ 1139 0371 060356   		jmp	L216
+ 1140              		
+ 1141              	
+ 1142              	L217
+  48:testtask.h    ****           
+  49:testtask.h    ****         yield();
+ 1143              	LBE61	stabd 68,0,49
+ 1144 0374 160000   		jsr	_yield__4Task
+ 1145              	
+ 1146 0377 060331   	LBE54	jmp	L206
+ 1147              		
+ 1148              	
+  50:testtask.h    ****       }
+  51:testtask.h    ****     }
+ 1149              	LBE53	stabd 68,0,51
+ 1150              	
+ 1151 037a 1B86     		leas	6,s
+ 1152 037c 3D       		rts
+ 1153              	
+ 1154              		stabs "main__8TestTask:f20",36,0,32,_main__8TestTask
+ 1155              		stabs "this:p311",160,0,32,2
+ 1156              		stabn 192,0,0,LBB53
+ 1157              		stabn 192,0,0,LBB54
+ 1158              		stabn 192,0,0,LBB55
+ 1159              		stabs "masked:300",128,0,39,4
+ 1160              		stabn 192,0,0,LBB56
+ 1161              		stabn 192,0,0,LBB57
+ 1162              		stabn 192,0,0,LBB58
+ 1163              		stabn 224,0,0,LBE58
+ 1164              		stabn 224,0,0,LBE57
+ 1165              		stabn 192,0,0,LBB59
+ 1166              		stabn 192,0,0,LBB60
+ 1167              		stabn 224,0,0,LBE60
+ 1168              		stabn 224,0,0,LBE59
+ 1169              		stabn 224,0,0,LBE56
+ 1170              		stabn 224,0,0,LBE55
+ 1171              		stabs "i:r4",64,0,43,2
+ 1172              		stabn 192,0,0,LBB61
+ 1173              		stabs "masked:300",128,0,45,4
+ 1174              		stabn 192,0,0,LBB62
+ 1175              		stabn 192,0,0,LBB63
+ 1176              		stabn 192,0,0,LBB64
+ 1177              		stabn 224,0,0,LBE64
+ 1178              		stabn 224,0,0,LBE63
+ 1179              		stabn 192,0,0,LBB65
+ 1180              		stabn 192,0,0,LBB66
+ 1181              		stabn 224,0,0,LBE66
+ 1182              		stabn 224,0,0,LBE65
+ 1183              		stabn 224,0,0,LBE62
+ 1184              		stabn 224,0,0,LBE61
+ 1185              		stabn 224,0,0,LBE54
+ 1186              		stabn 224,0,0,LBE53
+ 1187              	
+ 1188              	Lscope4	stabs "",36,0,0,Lscope4-_main__8TestTask
+ 1189              	__$_8TestTask
+ 1190              		stabs "main.cc",132,0,0,Ltext49
+ 1191              	
+ 1192              	Ltext49	stabd 68,0,59
+ 1193 037d 1B9E     		leas	-2,s
+ 1194              	
+ 1195 037f 18028480 		movw	4,s,0,s
+ 1196 0383 160000   		jsr	__$_4Task
+ 1197              	
+ 1198 0386 1B82     		leas	2,s
+ 1199 0388 3D       		rts
+ 1200              	
+ 1201              		stabs "_$_8TestTask:f20",36,0,57,__$_8TestTask
+ 1202              		stabs "this:P311",64,0,57,0
+ 1203              		stabs "__in_chrg:p1",160,0,57,4
+ 1204              	
+ 1205              	Lscope5	stabs "",36,0,0,Lscope5-__$_8TestTask
+ 1206              	
+ 1207              	
+ 1208              		end

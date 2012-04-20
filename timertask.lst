@@ -1,0 +1,465 @@
+   1              	gcc2_compiled.:
+   2              	___gnu_compiled_cplusplus
+   3              		stabs "/home/cdavyduke/Projects/HC12/ELEX_8030/",100,0,0,Ltext0
+   4              		stabs "timertask.cc",100,0,0,Ltext0
+   5              	
+   6              		section	.text
+   7              	
+   8              	Ltext0	stabs "int:t1=r1;-32768;32767;",128,0,0,0
+   9              		stabs "char:t2=r2;0;255;",128,0,0,0
+  10              		stabs "long int:t3=r1;0020000000000;0017777777777;",128,0,0,0
+  11              		stabs "unsigned int:t4=r4;0;65535;",128,0,0,0
+  12              		stabs "long unsigned int:t5=r1;0000000000000;0037777777777;",128,0,0,0
+  13              		stabs "long long int:t6=r1;0020000000000;0017777777777;",128,0,0,0
+  14              		stabs "long long unsigned int:t7=r1;0000000000000;0037777777777;",128,0,0,0
+  15              		stabs "short int:t8=r8;-32768;32767;",128,0,0,0
+  16              		stabs "short unsigned int:t9=r9;0;65535;",128,0,0,0
+  17              		stabs "signed char:t10=r10;-128;127;",128,0,0,0
+  18              		stabs "unsigned char:t11=r11;0;255;",128,0,0,0
+  19              		stabs "float:t12=r1;4;0;",128,0,0,0
+  20              		stabs "double:t13=r1;4;0;",128,0,0,0
+  21              		stabs "long double:t14=r1;4;0;",128,0,0,0
+  22              		stabs "complex int:t15=s4real:1,0,16;imag:1,16,16;;",128,0,0,0
+  23              		stabs "complex float:t16=r16;4;0;",128,0,0,0
+  24              		stabs "complex double:t17=r17;4;0;",128,0,0,0
+  25              		stabs "complex long double:t18=r18;4;0;",128,0,0,0
+  26              		stabs "bool:t19=@s8;-16;",128,0,0,0
+  27              		stabs "void:t20=20",128,0,0,0
+  28              		stabs "__wchar_t:t21=r21;-32768;32767;",128,0,0,0
+  29              		stabs "__vtbl_ptr_type:t22=*23=f1",128,0,0,0
+  30              		stabs "size_t:t4",128,0,11,0
+  31              		stabs "ptrdiff_t:t1",128,0,12,0
+  32              		stabs "Task:T24=s8current:/025=*24:_4Task$current;stack:/026=*27=*20,0,16;\\",128,0,0,0
+  33              		stabs "sp:/026,16,16;priority:/04,32,16;$vf24:28=*29=ar0;0;3;22,48;\\",128,0,0,0
+  34              		stabs "__as::30=##31=&24;:RC4Task;2A.;Task::32=##25;:RC4Task;2A.33=##25;:UiUi;2A.\\",128,0,0,0
+  35              		stabs "34=#24,20,25,1,20;:_$_4Task;2A*2;24;;yield::35=f20:;2A?;lowerPriorityThan::36=##19;:PC4Task
+  36              		stabs "fork::37=##20;:;1A.;main::37:;1A*3;24;;start::35:;0A?;dispatch::38=f20:P4Task;0A?;;~%24;",1
+  37              		stabs "Task:Tt24",128,0,34,0
+  38              		stabs "Node:Tt39=s6next:40=*39,0,16;task:25,16,16;\\",128,0,0,0
+  39              		stabs "time:1,32,16;__as::41=##42=&39;:Q28TaskList4NodeRCQ28TaskList4Node;2A.;\\",128,0,0,0
+  40              		stabs "Node::43=##40;:__Q28TaskList4NodeRCQ28TaskList4Node;2A.44=##40;:__Q28TaskList4NodeP4Task;2A
+  41              		stabs "TaskList:Tt45=s4first:/140,0,16;$vf45:28,16;__as::46=##47=&45;:RC8TaskList;2A.;\\",128,0,0,
+  42              		stabs "TaskList::48=##49=*45;:RC8TaskList;2A.50=##49;:P4Task;2A.51=#45,20,49,1,20;:_$_8TaskList;2A
+  43              		stabs "block::52=##20;:;2A.;unblock::52:;2A.;getCurrent::53=##25;:;2A.;insert::54=##20;:PQ28TaskLi
+  44              		stabs "remove::55=##40;:;0A.;;~%45;",128,0,60,0
+  45              		stabs "Isr:Tt56=s6ictlr:/057=&58=xsIctlr:,0,16;index:/04,16,16;\\",128,0,0,0
+  46              		stabs "$vf56:28,32;__as::59=##60=&56;:RC3Isr;2A.;Isr::61=##62=*56;:RC3Isr;2A.63=##62;:R5IctlrUi;1A
+  47              		stabs "64=#56,20,62,1,20;:_$_3Isr;1A*2;56;;handler::65=##20;:;0A*3;56;;;~%56;",128,0,24,0
+  48              		stabs "Ictlr:Tt58=s6length:/04,0,16;isrTbl:/066=*62,16,16;\\",128,0,0,0
+  49              		stabs "$vf58:67=*68=ar0;0;2;22,32;__as::69=##57;:RC5Ictlr;2A.;Ictlr::70=##71=*58;:RC5Ictlr;2A.\\",
+  50              		stabs "72=##71;:Ui;2A.73=#58,20,71,1,20;:_$_5Ictlr;2A*2;58;;attach::74=##20;:P3Isr;2A.;\\",128,0,0
+  51              		stabs "detach::74:P3Isr;2A.;runHandler::75=##20;:Ui;1A.;;~%58;",128,0,44,0
+  52              		stabs "DeltaTaskList:Tt76=s6!1,020,45;time:/01,32,16;\\",128,0,0,0
+  53              		stabs "__as::77=##78=&76;:RC13DeltaTaskList;2A.;DeltaTaskList::79=##80=*76;:RC13DeltaTaskList;2A.\
+  54              		stabs "81=##80;:;2A.82=#76,20,80,1,20;:_$_13DeltaTaskList;2A*2;45;;block::82:i;2A.;\\",128,0,0,0
+  55              		stabs "decrement::83=##20;:;2A.;zero::84=##19;:;2A.;insert::85=##20;:PQ28TaskList4Node;0A*3;45;;\\
+  56              		stabs "block::83:;0A.;;~%45;",128,0,22,0
+  57              		stabs "TimerTask:Tt86=s26!2,020,24;0264,56;deltaList:/076,112,48;\\",128,0,0,0
+  58              		stabs "waitList:/045,160,32;rate:/01,192,16;theTimerTask:/087=*86:_9TimerTask$theTimerTask;\\",128
+  59              		stabs "__as::88=##89=&86;:RC9TimerTask;2A.;TimerTask::90=##87;:RC9TimerTask;2A.;delay::91=f20:i;2A
+  60              		stabs "TimerTask::92=##87;:UiUiR5Ictlrii;1A.93=#86,20,87,1,20;:_$_9TimerTask;1A*2;24;;\\",128,0,0,
+  61              		stabs "handler::94=##20;:;1A*3;56;;main::94:;0A*3;24;;;~%24;",128,0,29,0
+  62              		stabs "IoMask:t1",128,0,39,0
+  63              		stabs "pwmreg:Tt95=u2byte:96=ar0;0;1;2,0,16;word:4,0,16;\\",128,0,0,0
+  64              		stabs "__as::97=##98=&95;:RC6pwmreg;2A.;pwmreg::99=##100=*95;:RC6pwmreg;2A.101=##100;:;2A.;;",128,
+  65              		stabs "sciport:Tt102=s8scbd:1,0,16;sccr1:2,16,8;\\",128,0,0,0
+  66              		stabs "loops:/21:loops;woms:/21:woms;rsrc:/21:rsrc;\\",128,0,0,0
+  67              		stabs "m:/21:m;wake:/21:wake;ilt:/21:ilt;\\",128,0,0,0
+  68              		stabs "pe:/21:pe;pt:/21:pt;sccr2:2,24,8;\\",128,0,0,0
+  69              		stabs "tie:/21:tie;tcie:/21:tcie;rie:/21:rie;\\",128,0,0,0
+  70              		stabs "ilie:/21:ilie;te:/21:te;re:/21:re;\\",128,0,0,0
+  71              		stabs "rwu:/21:rwu;sbk:/21:sbk;scsr1:2,32,8;\\",128,0,0,0
+  72              		stabs "tdre:/21:tdre;tc:/21:tc;rdrf:/21:rdrf;\\",128,0,0,0
+  73              		stabs "idle:/21:idle;or:/21:or;nf:/21:nf;\\",128,0,0,0
+  74              		stabs "fe:/21:fe;pf:/21:pf;scsr2:2,40,8;\\",128,0,0,0
+  75              		stabs "raf:/21:raf;scdrh:2,48,8;r8:/21:r8;\\",128,0,0,0
+  76              		stabs "t8:/21:t8;scdrl:2,56,8;__as::103=##104=&102;:RC7sciport;2A.;\\",128,0,0,0
+  77              		stabs "sciport::105=##106=*102;:RC7sciport;2A.107=##106;:;2A.;;",128,0,636,0
+  78              		stabs "spiport:Tt108=s6spcr1:2,0,8;spie:/21:spie;\\",128,0,0,0
+  79              		stabs "spe:/21:spe;swom:/21:swom;mstr:/21:mstr;\\",128,0,0,0
+  80              		stabs "cpol:/21:cpol;cpha:/21:cpha;ssoe:/21:ssoe;\\",128,0,0,0
+  81              		stabs "lsbf:/21:lsbf;spcr2:2,8,8;sswai:/21:sswai;\\",128,0,0,0
+  82              		stabs "spc0:/21:spc0;spbr:2,16,8;spr31:/21:spr31;\\",128,0,0,0
+  83              		stabs "spr62:/21:spr62;spr125:/21:spr125;\\",128,0,0,0
+  84              		stabs "spr250:/21:spr250;spr500:/21:spr500;\\",128,0,0,0
+  85              		stabs "spr1000:/21:spr1000;spr2000:/21:spr2000;\\",128,0,0,0
+  86              		stabs "spr4000:/21:spr4000;spsr:2,24,8;spif:/21:spif;\\",128,0,0,0
+  87              		stabs "wcol:/21:wcol;modf:/21:modf;rsvd4:2,32,8;\\",128,0,0,0
+  88              		stabs "spdr:2,40,8;__as::109=##110=&108;:RC7spiport;2A.;spiport::111=##112=*108;:RC7spiport;2A.\\"
+  89              		stabs "113=##112;:;2A.;;",128,0,689,0
+  90              	
+  91              		global	___9TimerTaskUiUiR5Ictlrii
+  92              	___9TimerTaskUiUiR5Ictlrii
+   1:timertask.cc  **** // Filename:		      TIMERTASK.CC
+   2:timertask.cc  **** // Author:			       C. DAVYDUKE
+   3:timertask.cc  **** // File Created:	   03/11/22
+   4:timertask.cc  **** // Last Modified: 03/12/09
+   5:timertask.cc  **** // Description:	   This file contains the class definitions for the consent multi-tasking base clas
+   6:timertask.cc  **** 
+   7:timertask.cc  **** 
+   8:timertask.cc  **** #include "timertask.h"
+   9:timertask.cc  **** #include "chipio.h"
+  10:timertask.cc  **** 
+  11:timertask.cc  **** TimerTask * TimerTask::theTimerTask;  // singleton
+  12:timertask.cc  **** 
+  13:timertask.cc  **** TimerTask::TimerTask( size_t stackSize, unsigned int priority, Ictlr & ictlr, int index, int r )
+  14:timertask.cc  **** : Task( stackSize, priority ),
+  93              		stabd 68,0,14
+  94 0000 1B97     		leas	-9,s
+  95              	
+  96 0002 6C87     		std	7,s
+  97 0004 18028B80 		movw	11,s,0,s
+  98 0008 18028D82 		movw	13,s,2,s
+  99 000c 160000   		jsr	___4TaskUiUi
+ 100 000f ED87     		ldy	7,s
+ 101 0011 1A48     		leax	8,y
+ 102 0013 EC8F     		ldd	15,s
+ 103 0015 6C80     		std	0,s
+ 104 0017 EDF011   		ldy	17,s
+ 105 001a 6D82     		sty	2,s
+ 106 001c B754     		tfr	x,d
+ 107 001e 160000   		jsr	___3IsrR5IctlrUi
+ 108 0021 CC0000   		ldd	#___vt_9TimerTask$3Isr
+ 109 0024 ED87     		ldy	7,s
+ 110 0026 6C4C     		std	12,y
+ 111 0028 CC0008   		ldd	#___vt_9TimerTask
+ 112 002b 6C46     		std	6,y
+  15:timertask.cc  ****   Isr( ictlr, index ),
+  16:timertask.cc  ****   rate( r )
+  17:timertask.cc  **** {
+ 113              		stabd 68,0,17
+ 114 002d 194E     		leay	14,y
+ 115 002f 6D85     		sty	5,s
+ 116              	
+ 117              	LBB2	stabs "deltatask.h",132,0,0,Ltext1
+ 118              	
+   1:deltatask.h   **** // Filename:      DELTATASK.H
+   2:deltatask.h   **** // Author:          	C. DAVYDUKE
+   3:deltatask.h   **** // File Created:   03/11/22
+   4:deltatask.h   **** // Last Modified: 03/11/22
+   5:deltatask.h   **** // Description:     This file contains the class definitions for the consent multi-tasking base cla
+   6:deltatask.h   **** 
+   7:deltatask.h   **** #ifndef __DELTATASK_H__
+   8:deltatask.h   **** #define __DELTATASK_H__
+   9:deltatask.h   **** 
+  10:deltatask.h   **** #include "task.h"
+  11:deltatask.h   **** 
+  12:deltatask.h   **** class DeltaTaskList : public TaskList
+  13:deltatask.h   **** {
+  14:deltatask.h   ****   public:
+  15:deltatask.h   ****     void block( int msec );
+  16:deltatask.h   ****     void decrement();  // dec top entries time
+  17:deltatask.h   ****     bool zero();  // is top entry time == 0?
+  18:deltatask.h   ****   private:
+  19:deltatask.h   ****     virtual void insert( TaskList::Node * );
+  20:deltatask.h   ****     int time;  // temporary
+  21:deltatask.h   ****     void block();  // avoid offering original block()
+  22:deltatask.h   **** };
+ 119              	Ltext1	stabd 68,0,22
+ 120 0031 18008000 		movw	#0,0,s
+ 120      00
+ 121 0036 B764     		tfr	y,d
+ 122 0038 160000   		jsr	___8TaskListP4Task
+ 123 003b CC0000   		ldd	#___vt_13DeltaTaskList
+ 124 003e ED85     		ldy	5,s
+ 125 0040 6C42     		std	2,y
+ 126              		stabs "timertask.cc",132,0,0,Ltext2
+ 127              	
+ 128              	Ltext2	stabd 68,0,17
+ 129              	
+ 130 0042 ED87     	LBE2	ldy	7,s
+ 131 0044 1AE814   		leax	20,y
+ 132 0047 18008000 		movw	#0,0,s
+ 132      00
+ 133 004c B754     		tfr	x,d
+ 134 004e 160000   		jsr	___8TaskListP4Task
+ 135 0051 ECF013   		ldd	19,s
+ 136 0054 ED87     		ldy	7,s
+ 137 0056 6CE818   		std	24,y
+ 138              	
+  18:timertask.cc  ****   theTimerTask = this;
+ 139              	LBB3	stabd 68,0,18
+ 140 0059 7D0000   		sty	__9TimerTask$theTimerTask
+  19:timertask.cc  ****   ddrdlc |= ( 1 << 1 );
+ 141              		stabd 68,0,19
+ 142 005c F60000   		ldab	_ddrdlc
+ 143 005f CA02     		orab	#2
+ 144 0061 7B0000   		stab	_ddrdlc
+  20:timertask.cc  ****   portdlc &= ~( 1 << 1 ); // set bit 1 to zero to start.
+ 145              		stabd 68,0,20
+ 146 0064 F60000   		ldab	_portdlc
+ 147 0067 C4FD     		andb	#253
+ 148 0069 7B0000   		stab	_portdlc
+ 149              	
+ 150 006c B764     	LBE3	tfr	y,d
+  21:timertask.cc  **** }
+ 151              		stabd 68,0,21
+ 152              	
+ 153 006e 1B89     		leas	9,s
+ 154 0070 3D       		rts
+ 155              	
+ 156              		stabs "__9TimerTaskUiUiR5Ictlrii:F87",36,0,14,___9TimerTaskUiUiR5Ictlrii
+ 157              		stabs "this:p87",160,0,14,7
+ 158              		stabs "stackSize:p4",160,0,14,11
+ 159              		stabs "priority:p4",160,0,14,13
+ 160              		stabs "ictlr:p57",160,0,14,15
+ 161              		stabs "index:p1",160,0,14,17
+ 162              		stabs "r:p1",160,0,14,19
+ 163              		stabs "this:80",128,0,17,5
+ 164              		stabn 192,0,0,LBB2
+ 165              		stabn 224,0,0,LBE2
+ 166              		stabn 192,0,0,LBB3
+ 167              		stabn 224,0,0,LBE3
+ 168              	
+ 169              	Lscope0	stabs "",36,0,0,Lscope0-___9TimerTaskUiUiR5Ictlrii
+ 170              	
+ 171              		global	__$_9TimerTask
+ 172              	__$_9TimerTask
+  22:timertask.cc  **** 
+  23:timertask.cc  **** TimerTask::~TimerTask()
+  24:timertask.cc  **** {
+ 173              		stabd 68,0,24
+ 174 0071 1B9C     		leas	-4,s
+ 175              	
+ 176 0073 6C82     		std	2,s
+ 177 0075 CC0000   		ldd	#___vt_9TimerTask$3Isr
+ 178 0078 ED82     		ldy	2,s
+ 179 007a 6C4C     		std	12,y
+ 180 007c CC0008   		ldd	#___vt_9TimerTask
+ 181 007f 6C46     		std	6,y
+ 182              	
+  25:timertask.cc  ****   theTimerTask = 0;
+ 183              	LBB4	stabd 68,0,25
+ 184 0081 18030000 		movw	#0,__9TimerTask$theTimerTask
+ 184      0000
+ 185              	
+ 186 0087 1AE814   	LBE4	leax	20,y
+ 187 008a 18008000 		movw	#2,0,s
+ 187      02
+ 188 008f B754     		tfr	x,d
+ 189 0091 160000   		jsr	__$_8TaskList
+ 190              		stabd 68,0,17
+ 191 0094 ED82     		ldy	2,s
+ 192 0096 1A4E     		leax	14,y
+ 193              	
+ 194 0098 18008000 	LBB5	movw	#2,0,s
+ 194      02
+ 195 009d B754     		tfr	x,d
+ 196 009f 160000   		jsr	__$_8TaskList
+ 197              	
+  26:timertask.cc  **** }
+ 198              	LBE5	stabd 68,0,26
+ 199 00a2 ED82     		ldy	2,s
+ 200 00a4 1A48     		leax	8,y
+ 201 00a6 18008000 		movw	#0,0,s
+ 201      00
+ 202 00ab B754     		tfr	x,d
+ 203 00ad 160000   		jsr	__$_3Isr
+ 204 00b0 EC86     		ldd	6,s
+ 205 00b2 6C80     		std	0,s
+ 206 00b4 EC82     		ldd	2,s
+ 207 00b6 160000   		jsr	__$_4Task
+ 208              	
+ 209 00b9 1B84     		leas	4,s
+ 210 00bb 3D       		rts
+ 211              	
+ 212              		stabs "_$_9TimerTask:F20",36,0,24,__$_9TimerTask
+ 213              		stabs "this:p87",160,0,24,2
+ 214              		stabs "__in_chrg:p1",160,0,24,6
+ 215              		stabs "this:r80",64,0,26,2
+ 216              		stabn 192,0,0,LBB4
+ 217              		stabn 224,0,0,LBE4
+ 218              		stabn 192,0,0,LBB5
+ 219              		stabn 224,0,0,LBE5
+ 220              	
+ 221              	Lscope1	stabs "",36,0,0,Lscope1-__$_9TimerTask
+ 222              	
+ 223              		global	_delay__9TimerTaski
+ 224              	_delay__9TimerTaski
+  27:timertask.cc  **** 
+  28:timertask.cc  **** void TimerTask::delay( int msec )
+  29:timertask.cc  **** {
+ 225              		stabd 68,0,29
+ 226 00bc 1B9E     		leas	-2,s
+ 227              	
+ 228 00be B746     		tfr	d,y
+ 229              	
+  30:timertask.cc  ****   if( theTimerTask )
+ 230              	LBB6	stabd 68,0,30
+ 231 00c0 FC0000   		ldd	__9TimerTask$theTimerTask
+ 232 00c3 2708     		beq	L34
+ 233              		
+  31:timertask.cc  ****     theTimerTask->deltaList.block( msec );
+ 234              		stabd 68,0,31
+ 235 00c5 C3000E   		addd	#14
+ 236 00c8 6D80     		sty	0,s
+ 237 00ca 160000   		jsr	_block__13DeltaTaskListi
+ 238              	
+ 239              	L34
+  32:timertask.cc  **** }
+ 240              	LBE6	stabd 68,0,32
+ 241              	
+ 242 00cd 1B82     		leas	2,s
+ 243 00cf 3D       		rts
+ 244              	
+ 245              		stabs "delay__9TimerTaski:F20",36,0,29,_delay__9TimerTaski
+ 246              		stabs "msec:P1",64,0,29,1
+ 247              		stabn 192,0,0,LBB6
+ 248              		stabn 224,0,0,LBE6
+ 249              	
+ 250              	Lscope2	stabs "",36,0,0,Lscope2-_delay__9TimerTaski
+ 251              	
+ 252              		global	_main__9TimerTask
+ 253              	_main__9TimerTask
+  33:timertask.cc  **** 
+  34:timertask.cc  **** void TimerTask::main()
+  35:timertask.cc  **** {
+ 254              		stabd 68,0,35
+ 255 00d0 1B99     		leas	-7,s
+ 256              	
+ 257 00d2 6C85     		std	5,s
+ 258              	
+  36:timertask.cc  ****   while( 1 )
+ 259              	LBB7	stabd 68,0,36
+ 260 00d4 B746     		tfr	d,y
+ 261 00d6 194E     		leay	14,y
+ 262 00d8 6D81     		sty	1,s
+ 263              	
+ 264              	L36
+  37:timertask.cc  ****   {
+  38:timertask.cc  ****     waitList.block();
+ 265              	LBB8	stabd 68,0,38
+ 266 00da EC85     		ldd	5,s
+ 267 00dc C30014   		addd	#20
+ 268 00df 160000   		jsr	_block__8TaskList
+  39:timertask.cc  ****     portdlc ^= ( 1 << 1 );  // toggle bit 1 each time task blocks.
+ 269              		stabd 68,0,39
+ 270 00e2 F60000   		ldab	_portdlc
+ 271 00e5 C802     		eorb	#2
+ 272 00e7 7B0000   		stab	_portdlc
+  40:timertask.cc  ****     for( int i = 0; i < rate; i++ )
+ 273              		stabd 68,0,40
+ 274              	
+ 275 00ea 87C7     	LBB9	clrd	
+ 276 00ec 6C83     		std	3,s
+ 277 00ee ED85     		ldy	5,s
+ 278 00f0 ACE818   		cpd	24,y
+ 279 00f3 2CE5     		bge	L36
+ 280              		
+ 281              	
+  41:timertask.cc  ****     {
+  42:timertask.cc  ****       deltaList.decrement();
+ 282              	L42	stabd 68,0,42
+ 283 00f5 EC85     		ldd	5,s
+ 284 00f7 C3000E   		addd	#14
+ 285 00fa 160000   		jsr	_decrement__13DeltaTaskList
+  43:timertask.cc  ****       while( deltaList.zero() )
+ 286              		stabd 68,0,43
+ 287              	
+ 288 00fd EC81     	L43	ldd	1,s
+ 289 00ff 160000   		jsr	_zero__13DeltaTaskList
+ 290 0102 D7       		tstb	
+ 291 0103 2707     		beq	L41
+ 292              		
+  44:timertask.cc  ****         deltaList.unblock();
+ 293              		stabd 68,0,44
+ 294 0105 EC81     		ldd	1,s
+ 295 0107 160000   		jsr	_unblock__8TaskList
+ 296 010a 20F1     		bra	L43
+ 297              		
+  45:timertask.cc  ****     }
+ 298              		stabd 68,0,45
+ 299              	
+ 300 010c EC83     	L41	ldd	3,s
+ 301 010e C30001   		addd	#1
+ 302 0111 6C83     		std	3,s
+ 303 0113 ED85     		ldy	5,s
+ 304 0115 ACE818   		cpd	24,y
+ 305 0118 2DDB     		blt	L42
+ 306              		
+ 307              	
+ 308              	LBE9
+ 309 011a 20BE     	LBE8	bra	L36
+ 310              		
+ 311              	
+  46:timertask.cc  ****   }
+  47:timertask.cc  **** }
+ 312              	LBE7	stabd 68,0,47
+ 313              	
+ 314 011c 1B87     		leas	7,s
+ 315 011e 3D       		rts
+ 316              	
+ 317              		stabs "main__9TimerTask:F20",36,0,35,_main__9TimerTask
+ 318              		stabs "this:p87",160,0,35,5
+ 319              		stabn 192,0,0,LBB7
+ 320              		stabn 192,0,0,LBB8
+ 321              		stabs "i:1",128,0,40,3
+ 322              		stabn 192,0,0,LBB9
+ 323              		stabn 224,0,0,LBE9
+ 324              		stabn 224,0,0,LBE8
+ 325              		stabn 224,0,0,LBE7
+ 326              	
+ 327              	Lscope3	stabs "",36,0,0,Lscope3-_main__9TimerTask
+ 328              	
+ 329              		global	_handler__9TimerTask
+ 330              	_handler__9TimerTask
+  48:timertask.cc  **** 
+  49:timertask.cc  **** void TimerTask::handler()
+  50:timertask.cc  **** {
+ 331              		stabd 68,0,50
+ 332              	
+ 333              	
+  51:timertask.cc  ****   waitList.unblock();
+ 334              	LBB10	stabd 68,0,51
+ 335 011f C30014   		addd	#20
+ 336 0122 160000   		jsr	_unblock__8TaskList
+ 337              	
+  52:timertask.cc  **** }
+ 338              	LBE10	stabd 68,0,52
+ 339              	
+ 340 0125 3D       		rts
+ 341              	
+ 342              		stabs "handler__9TimerTask:F20",36,0,50,_handler__9TimerTask
+ 343              		stabs "this:P87",64,0,50,0
+ 344              		stabn 192,0,0,LBB10
+ 345              		stabn 224,0,0,LBE10
+ 346              	
+ 347              	Lscope4	stabs "",36,0,0,Lscope4-_handler__9TimerTask
+ 348              	
+ 349              		global	__9TimerTask$theTimerTask
+ 350              	
+ 351              		section	.data
+ 352              		stabs "_9TimerTask$theTimerTask:G87",32,0,11,0
+ 353              	__9TimerTask$theTimerTask
+ 354 0000 0000     		dcb.b	2,0
+ 355              	
+ 356              		section	.text
+ 357              	___thunk_8__$_9TimerTask
+ 358 0126 C3FFF8   		addd	#-8
+ 359 0129 060071   		jmp	__$_9TimerTask
+ 360              	
+ 361              	___thunk_8_handler__9TimerTask
+ 362 012c C3FFF8   		addd	#-8
+ 363 012f 06011F   		jmp	_handler__9TimerTask
+ 364              	
+ 365              	
+ 366              		global	___vt_9TimerTask$3Isr
+ 367              	
+ 368              		section	.const
+ 369              		stabs "__vt_9TimerTask$3Isr:G29",32,0,29,0
+ 370              	___vt_9TimerTask$3Isr
+ 371 0000 FFF8     		dc.w	-8
+ 372 0002 0000     		dc.w	0
+ 373 0004 0126     		dc.w	___thunk_8__$_9TimerTask
+ 374 0006 012C     		dc.w	___thunk_8_handler__9TimerTask
+ 375              	
+ 376              		global	___vt_9TimerTask
+ 377              		stabs "__vt_9TimerTask:G29",32,0,29,0
+ 378              	___vt_9TimerTask
+ 379 0008 0000     		dc.w	0
+ 380 000a 0000     		dc.w	0
+ 381 000c 0071     		dc.w	__$_9TimerTask
+ 382 000e 00D0     		dc.w	_main__9TimerTask
+ 383              	
+ 384              	
+ 385              		end
