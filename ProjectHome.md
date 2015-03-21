@@ -1,0 +1,1 @@
+This was the project that we worked on at BCIT in the course "ELEX 8030:  Real-Time Embedded Systems."  We used the HC12 as the embedded processor for this project.
